@@ -6,6 +6,7 @@ import sys
 from sanity import passes_sanity_checks
 from autodetect import detect_settings
 import status
+import resume
 
 
 def main():
@@ -21,14 +22,23 @@ def main():
   parser.add_argument("--list-devices", "-l", action="store_true", default=False,
                       help="List all known devices, by name and type")
 
+  parser.add_argument("--sanity", "-S", action="store_true", default=False,
+                      help="Run sanity checks and then exit")
+
+  parser.add_argument("devices", nargs=*, type=str,
+                      help="Devices to test. Glob rules such as * and ? apply.")
+
 
   # Configuration of paths, etc
 
-  parser.add_argument("--continue-file", "-O", type=str, default="./.macdongler.continue",
+  parser.add_argument("--resume-file", "-R", type=str, default="./.macdongler.resume",
                       help="File to save state in, in case operation is interrupted.")
 
-  parser.add_argument("--continue", "-o", action="store_true", default=False,
-                      help="Load state from the --continue-file and start from the next untested device.")
+  parser.add_argument("--resume", "-r", action="store_true", default=False,
+                      help="Load state from the --resume-file and start from the next untested device.")
+
+  parser.add_argument("--resume-from", "-n", type=int, default=0,
+                      help="Start from the Nth device in the list of devices to test")
 
   parser.add_argument("--udc-controller", "-u", type=str, default=None,
                       help="UDC controller to attach devices to, one of the names available under /sys/class/udc/. Default: autoselect")
@@ -39,28 +49,40 @@ def main():
   parser.add_argument("--configfs", "-C", type=str, default=None,
                       help="Path to mounted configfs. Default: autodetect")
 
-  parser.add_argument("--sanity", "-S", action="store_true", default=False,
-                      help="Run sanity checks and then exit")
-
   parser.add_argument("--transmit-pcap", "-t", type=str, default=None,
-                      help="PCAP file of network packets to send when emulating USB Ethernet adapters. Requires tcpdump.")
+                      help="PCAP file of network packets to send when emulating USB Ethernet adapters. Requires tcpreplay.")
 
   parser.add_argument("--status-file", "-f", type=str, default=None,
                       help="Path to structured log file where status updates are written")
 
 
   conf = parser.parse_args()
+  if conf.resume:
+    resume.load(conf)
+    conf.resume = True
 
-  conf = detect_settings(conf)
-  print(conf)
 
   status.setup(conf)
+
+
+  detect_settings(conf)
+  print(conf)
 
   ok, msg = passes_sanity_checks(conf)
   if (not ok):
     status.error("Sanity check failed: " + msg)
     return 1
 
+  if conf.sanity:
+    # Just run the sanity checks, do nothing else
+    return 0
+
+  if conf.list:
+    # TODO: List all known devices by name
+    return 0
+
+  if conf.resume_file and not conf.resume:
+    resume.save(conf, careful=True)
 
 if __name__ == "__main__":
   sys.exit(main())

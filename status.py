@@ -13,6 +13,10 @@ def error(msg):
   print("ERROR: " + msg)
   if not STATUS_FILE: return
 
+def warn(msg):
+  print("WARNING: " + msg)
+  if not STATUS_FILE: return
+
 def info(msg):
   print("INFO: " + msg)
   if not STATUS_FILE: return

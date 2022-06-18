@@ -55,3 +55,20 @@ The above steps are general instructions for a typical linux install (tested on 
   fe980000.usb
   ```
 
+
+## Usage
+
+### Results
+
+
+### Stability hacks
+Given the risk of driver failure, since this script is basically fuzzing your USB stack, a number of features exist to help make the process more robust.
+
+#### Resuming
+By providing `--resume`, you can pick up where the last execution left off. This will start from the next un-tested USB device. This allows you to reboot your dongle machine, if needed.
+
+#### Rebooting
+TODO: Add a `--reboot` flag to auto-reboot the dongle machine after each test. With `--resume`, this lets you work with a clean setup. It's slow, but may help with unstable UDC drivers, etc.
+
+#### Delaying
+TODO: Add a configurable delay between tests.

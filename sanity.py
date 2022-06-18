@@ -16,9 +16,9 @@ def find_cmd(name):
 
 
 def sanity_options(conf):
-  modes = [ conf.create_device, conf.delete_device, conf.list_devices ]
+  modes = [ conf.create_device, conf.delete_device, conf.list_devices, conf.sanity ]
   if sum(modes) > 1:
-    return False, "More than one operation specified. Only one of --create-device, --delete-device, --list-devices supported."
+    return False, "More than one operation specified. Only one of --create-device, --delete-device, --list-devices, --sanity supported."
 
   if sum(modes) == 0:
     return False, "No operation specified. See --help for more information."
@@ -33,14 +33,14 @@ def sanity_commands(conf):
 
 def sanity_udc(conf):
   if not os.path.isdir("/sys/class/udc"):
-    return False, "No /sys/class/udc/ found. Ensure your UDC driver is loaded. "+
-                  " If this system has no UDC controller in hardware, load the 'dummy_hdc' kernel module."
+    return False, ("No /sys/class/udc/ found. Ensure your UDC driver is loaded. "+
+                  " If this system has no UDC controller in hardware, load the 'dummy_hdc' kernel module.")
 
-  _,_,filenames = next(os.walk("/sys/class/udc/"))
+  _,dirnames,_ = next(os.walk("/sys/class/udc/", followlinks=True))
   if not conf.udc_controller:
-    return False, "No --udc-controller specified. This system supports the following: " + str(filenames)
-  if conf.udc_controller not in filenames:
-    return False, "Unknown --udc-controller specified. This system supports the following: " + str(filenames)
+    return False, "No --udc-controller specified. This system supports the following: " + str(dirnames)
+  if conf.udc_controller not in dirnames:
+    return False, "Unknown --udc-controller specified. This system supports the following: " + str(dirnames)
   return True,""
 
 
