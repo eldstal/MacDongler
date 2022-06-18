@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+
+import argparse
+import sys
+
+from sanity import passes_sanity_checks
+from autodetect import detect_settings
+import status
+
+
+def main():
+  parser = argparse.ArgumentParser()
+
+  # Operating modes
+  parser.add_argument("--create-device", "-c", action="store_true", default=False,
+                      help="Emulate the named device(s), and do nothing else.")
+
+  parser.add_argument("--delete-device", "-d", action="store_true", default=False,
+                      help="Delete emulated device(s), and do nothing else.")
+
+  parser.add_argument("--list-devices", "-l", action="store_true", default=False,
+                      help="List all known devices, by name and type")
+
+
+  # Configuration of paths, etc
+
+  parser.add_argument("--continue-file", "-O", type=str, default="./.macdongler.continue",
+                      help="File to save state in, in case operation is interrupted.")
+
+  parser.add_argument("--continue", "-o", action="store_true", default=False,
+                      help="Load state from the --continue-file and start from the next untested device.")
+
+  parser.add_argument("--udc-controller", "-u", type=str, default=None,
+                      help="UDC controller to attach devices to, one of the names available under /sys/class/udc/. Default: autoselect")
+
+  parser.add_argument("--gadgetfs", "-G", type=str, default=None,
+                      help="Path to mounted gadgetfs. Default: autodetect")
+
+  parser.add_argument("--configfs", "-C", type=str, default=None,
+                      help="Path to mounted configfs. Default: autodetect")
+
+  parser.add_argument("--sanity", "-S", action="store_true", default=False,
+                      help="Run sanity checks and then exit")
+
+  parser.add_argument("--transmit-pcap", "-t", type=str, default=None,
+                      help="PCAP file of network packets to send when emulating USB Ethernet adapters. Requires tcpdump.")
+
+  parser.add_argument("--status-file", "-f", type=str, default=None,
+                      help="Path to structured log file where status updates are written")
+
+
+  conf = parser.parse_args()
+
+  conf = detect_settings(conf)
+  print(conf)
+
+  status.setup(conf)
+
+  ok, msg = passes_sanity_checks(conf)
+  if (not ok):
+    status.error("Sanity check failed: " + msg)
+    return 1
+
+
+if __name__ == "__main__":
+  sys.exit(main())
