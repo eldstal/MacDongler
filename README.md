@@ -70,5 +70,61 @@ By providing `--resume`, you can pick up where the last execution left off. This
 #### Rebooting
 TODO: Add a `--reboot` flag to auto-reboot the dongle machine after each test. With `--resume`, this lets you work with a clean setup. It's slow, but may help with unstable UDC drivers, etc.
 
+#### Single-step
+Run with the `--single-step` (`-1`) to terminate after testing a single device. On particularly troublesome hardware, this allows you to easily script a rebooting loop by putting something like this in your autostart:
+
+```
+MacDongler --resume --single-step --scan-devices 'ecm.*' 'rndis.*'
+[ $_ -eq 10 ] && reboot
+```
+
+This way, the system will boot, a single new device will be tested (`--resume` ensures that progress is saved), and then the system will reboot again. This will continue until all devices have been tested.
+
 #### Delaying
 TODO: Add a configurable delay between tests.
+
+
+
+## Device database
+Supported devices are specified in JSON5 files, in a simple hierarchical directory structure. Each device specification has a name, which is how it is referred to on the command line.
+
+Each device specification can designate a single "template", which is another device name. The new device will be based on the template device, only overriding the settings present in the new specification.
+
+The template can be the name of any device defined __in a parent directory__ of the current device specification. The following example illustrates the template support:
+
+```
+File structure:
+devices/net/rndis_template.json5
+devices/net/rndis_devices/abcd.json5
+devices/msc/msc_template.json5
+
+
+rndis_template.json5:
+[
+   { "name": "rndis",
+     "feature": "value",
+     "identifier": "TMPL",
+   },
+]
+
+
+abcd.json5:
+[
+  { "name": "abcd",
+    "template": "rndis",
+    "identifier": "ABCD"
+  },
+
+  { "name": "qwer",
+    "template": "rndis",
+    "feature": "another_value",
+  }
+]
+
+```
+
+
+The two devices `abcd` and `qwer` will inherit all properties from the `rndis` device. `abcd` will override the `identifier` field, and get `feature` from the template.
+
+These devices **cannot** specify anything from `msc_template` as their template, since these aren't in a parent directory.
+

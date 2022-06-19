@@ -1,0 +1,20 @@
+/*
+ * Basic USB 2.0 device
+ * This is strictly a template,
+ * meant to be used as a basis for more specific device classes
+ */
+[
+  {
+    "name": "usb-3.0",
+    "type": "template",
+    "properties": {
+      "bcdUSB": 0x0300,
+      "bcdDevice": 0x3000,
+    },
+    "strings": {
+      "manufacturer": "MacDongler",
+      "product": "Generic USB2",
+      "serial": "deadbeeffeedface",
+    }
+  }
+]

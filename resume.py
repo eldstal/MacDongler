@@ -1,5 +1,5 @@
 import argparse
-import json
+import json5
 import os
 import time
 
@@ -10,12 +10,12 @@ def load(conf):
     status.info("Resume file not found. Starting from scratch.")
     return
 
-  j = json.loads(open(conf.resume_file, "r").read())
+  j = json5.loads(open(conf.resume_file, "r").read())
 
   argparse_dict = vars(conf)
   argparse_dict.update(j)
 
-  status.info("Loaded resume file.")
+  status.info(f"Loaded resume file {conf.resume_file}.")
 
 
 def save(conf, careful=False):
@@ -23,8 +23,8 @@ def save(conf, careful=False):
 
   if os.path.exists(conf.resume_file):
     if careful:
-      status.warn("Resume file already exists. You have 10 seconds to hit CTRL+C to avoid overwriting it.")
-      time.sleep(10)
+      status.warn(f"Resume file {conf.resume_file} already exists. You have 15 seconds to hit CTRL+C to avoid overwriting it.")
+      time.sleep(15)
 
   argparse_dict = vars(conf)
-  open(conf.resume_file, "w+").write(json.dumps(argparse_dict))
+  open(conf.resume_file, "w+").write(json5.dumps(argparse_dict))

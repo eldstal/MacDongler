@@ -1,0 +1,46 @@
+/*
+ * Template for USB ECM (Ethernet Control Module)
+ */
+
+[
+  {
+    "name": "ecm-3.0",
+    "template": "usb-3.0",
+    "type": "net",        // Once the device is set up, test it as a network device
+
+    "properties": {
+      "bDeviceClass": 0x00,
+      "bDeviceSubClass": 0x00,
+      "bDeviceProtocol": 0x00,
+    },
+
+    "strings": {
+      "manufacturer": "MacDongler",
+      "product": "Generic ECM netdev",
+      "serial": "ecECecECecECecEC",
+    },
+
+    "functions": {
+      "ecm.usb0": {                            // the "ecm" here is important - the kernel will set up an ecm gadget.
+        "dev_addr": "01:23:45:67:89:ab",      // MAC of emulated network adapter
+        "host_addr": "11:22:33:44:55:66",     // MAC of our device-side view of the adapter
+      }
+    },
+
+    "configurations": {
+      "c.1": {
+        "function": "ecm.usb0",
+        "properties" : {
+          "bmAttributes": 0x80,    // bus powered
+          "MaxPower": "250",
+        }
+      }
+    },
+
+    "os_desc": {
+      
+    }
+
+
+  }
+]

@@ -2,9 +2,11 @@
 
 import argparse
 import sys
+import json5
 
 from sanity import passes_sanity_checks
 from autodetect import detect_settings
+from devicespec import load_devices, expand_device_list
 import status
 import resume
 
@@ -13,6 +15,9 @@ def main():
   parser = argparse.ArgumentParser()
 
   # Operating modes
+  parser.add_argument("--scan-devices", "-s", action="store_true", default=False,
+                      help="Test the named device(s) one by one.")
+
   parser.add_argument("--create-device", "-c", action="store_true", default=False,
                       help="Emulate the named device(s), and do nothing else.")
 
@@ -20,13 +25,16 @@ def main():
                       help="Delete emulated device(s), and do nothing else.")
 
   parser.add_argument("--list-devices", "-l", action="store_true", default=False,
-                      help="List all known devices, by name and type")
+                      help="List device info. If only one device is specified, shows all its properties")
 
   parser.add_argument("--sanity", "-S", action="store_true", default=False,
                       help="Run sanity checks and then exit")
 
-  parser.add_argument("devices", nargs=*, type=str,
-                      help="Devices to test. Glob rules such as * and ? apply.")
+  parser.add_argument("--one-step", "-1", action="store_true", default=False,
+                      help="Test one device, save state for --resume and then exit. Return code will be 0 if all jobs are complete, 10 if there are devices left to test.")
+
+  parser.add_argument("devices", nargs="*", type=str,
+                      help="Devices to test. Matches device names or device types. Glob rules such as * and ? apply to names. See --list-devices for known values. Example: 'ecm.*' net")
 
 
   # Configuration of paths, etc
@@ -42,6 +50,9 @@ def main():
 
   parser.add_argument("--udc-controller", "-u", type=str, default=None,
                       help="UDC controller to attach devices to, one of the names available under /sys/class/udc/. Default: autoselect")
+
+  parser.add_argument("--device-db", "-D", type=str, default=None,
+                      help="Path to device database directory. Default: automatic")
 
   parser.add_argument("--gadgetfs", "-G", type=str, default=None,
                       help="Path to mounted gadgetfs. Default: autodetect")
@@ -59,26 +70,53 @@ def main():
   conf = parser.parse_args()
   if conf.resume:
     resume.load(conf)
-    conf.resume = True
+    conf.resume = True    # Don't accidentally turn that setting off, damnit!
 
-
+  # Set up the logger
   status.setup(conf)
 
-
+  # Handle any settings that are set to auto-detect
   detect_settings(conf)
-  print(conf)
 
   ok, msg = passes_sanity_checks(conf)
   if (not ok):
     status.error("Sanity check failed: " + msg)
     return 1
 
+  # Load our device database from disk
+  devices,msg = load_devices(conf)
+  if devices is None:
+    status.error("Failed to load device specs: " + msg)
+    return 1
+
   if conf.sanity:
     # Just run the sanity checks, do nothing else
     return 0
 
-  if conf.list:
-    # TODO: List all known devices by name
+  # Handle globs, etc,
+  # After this, the list of globs will be a list of device names matching the patterns.
+  conf.devices = expand_device_list(conf, conf.devices)
+
+  if conf.list_devices:
+    if len(conf.devices) == 0:
+      types = set()
+      print("Device names:")
+      for name,obj in devices.items():
+        print(f"   {name}")
+        types.add(obj['type'])
+
+      print("Device types:")
+      for t in types:
+        print(f"   {t}")
+
+    elif len(conf.devices) == 1:
+      dev = devices[conf.devices[0]]
+      print(json5.dumps(dev, indent=4))
+
+    else:
+      for name in conf.devices:
+        print(name)
+
     return 0
 
   if conf.resume_file and not conf.resume:

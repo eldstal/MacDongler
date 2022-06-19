@@ -20,6 +20,15 @@ def detect_gadgetfs(conf):
 
   conf.gadgetfs = mountpoint
 
+def detect_configfs(conf):
+  if conf.configfs: return
+  mountpoint = find_mount("configfs")
+  if mountpoint is None:
+    status.error("Unable to detect a mounted configfs. Try something like   mount -t configfs -o noexec,nodev,nosuid,relatime none /sys/kernel/config")
+    return
+
+  conf.configfs = mountpoint
+
 def detect_udc(conf):
   if conf.udc_controller: return
 
@@ -42,6 +51,17 @@ def detect_udc(conf):
   if "dummy" in conf.udc_controller:
     status.warn(f"This UDC controller appears to be a software dummy. This means you are targeting _this_ system.")
 
+def detect_devices(conf):
+  if conf.device_db: return
+
+  default_dir = os.path.dirname(__file__)
+  default_dir = os.path.join(default_dir, "devices")
+
+  if not os.path.isdir(default_dir):
+    status.error("Unable to auto-select device database dir. Make sure devices/ is in the script's directory, or pass --device-db.")
+    return
+
+  conf.device_db = default_dir
 
 
 #
@@ -50,6 +70,7 @@ def detect_udc(conf):
 #
 def detect_settings(conf):
   detect_gadgetfs(conf)
-
+  detect_configfs(conf)
   detect_udc(conf)
+  detect_devices(conf)
   return
