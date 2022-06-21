@@ -24,8 +24,10 @@
 
     "functions": {
       "ecm.usb0": {                           // the "ecm" here is important - the kernel will set up an ecm gadget.
-        "dev_addr": "aa:bb:cc:dd:ee:ff",      // MAC of our device-side view of the adapter
-        "host_addr": "12:22:33:44:55:66",     // MAC of the emulated device, as seen by the host
+        "properties": {
+          "dev_addr": "aa:bb:cc:dd:ee:ff",      // MAC of our device-side view of the adapter
+          "host_addr": "12:22:33:44:55:66",     // MAC of the emulated device, as seen by the host
+        }
       }
     },
 
@@ -68,8 +70,10 @@
 
     "functions": {
       "ecm.usb0": {                           // the "ecm" here is important - the kernel will set up an ecm gadget.
-        "dev_addr": "aa:bb:cc:dd:ee:ff",      // MAC of our device-side view of the adapter
-        "host_addr": "12:22:33:44:55:66",     // MAC of the emulated device, as seen by the host
+        "properties": {
+          "dev_addr": "aa:bb:cc:dd:ee:ff",      // MAC of our device-side view of the adapter
+          "host_addr": "12:22:33:44:55:66",     // MAC of the emulated device, as seen by the host
+        }
       }
     },
 

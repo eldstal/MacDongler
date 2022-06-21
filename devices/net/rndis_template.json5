@@ -1,0 +1,68 @@
+/*
+ * Template for RNDIS (windows networking) devices
+ * This is a port of the example of Ian Finch:
+ * https://gist.github.com/ianfinch/08288379b3575f360b64dee62a9f453f
+ */
+
+[
+  {
+    "name": "rndis-2.0",
+    "template": "usb-2.0",
+    "type": "net",        // Once the device is set up, test it as a network device
+
+    "properties": {
+      "bDeviceClass": 0xEF,
+      "bDeviceSubClass": 0x02,
+      "bDeviceProtocol": 0x01,
+      "idVendor": 0x1d6b,
+      "idProduct": 0x104,
+
+      "os_desc": {
+        "use": 1,
+        "b_vendor_code": 0xcd,    // Microsoft
+        "qw_sign": "MSFT100",
+      },
+    },
+
+    "strings": {
+      "manufacturer": "MacDongler",
+      "product": "Generic RNDIS netdev",
+      "serialnumber": "ecECecECecECecEC",
+    },
+
+    "functions": {
+      "rndis.usb0": {                         // the "rndis" here is important - the kernel will set up an ecm gadget.
+        "properties": {
+          "dev_addr": "aa:bb:cc:dd:ee:ff",      // MAC of our device-side view of the adapter
+          "host_addr": "aa:bb:cc:dd:ee:f0",     // MAC of the emulated device, as seen by the host
+                                                // On the dummy HCD, this is ignored, and a random host MAC is assigned.
+
+          // Yes, each function also has an os_desc.
+          "os_desc": {
+            "interface.rndis": {
+              "compatible_id": "RNDIS",
+              "sub_compatible_id": "5162001"  // RNDIS 6.0
+            }
+          }
+        }
+      }
+    },
+
+    "configs": {
+      "c.1": {
+        "functions": [
+          "rndis.usb0",
+        ],
+        "properties" : {
+          "bmAttributes": 0x80,    // bus powered
+          "MaxPower": "250",
+        },
+        "strings": {
+          "configuration": "RNDIS"
+        }
+      }
+    },
+
+  },
+
+]

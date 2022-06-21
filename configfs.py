@@ -34,6 +34,38 @@ def _putstr(conf, root, subpath, contents):
   except Exception as e:
     return False,str(e)
 
+# Recursively apply a set of properties to the configfs,
+# by creating directories and writing to files.
+# If any write or mkdir fails, we bail out and report it.
+def _put_properties(conf, root, tree):
+  props = { name: val for name,val in tree.items() if type(val) in [ str, int, float, bool ]}
+  subdirs = { name: val for name,val in tree.items() if type(val) == dict}
+
+  for name,val in tree.items():
+    if name not in props and name not in subdirs:
+      return False,f"Property {name} applied to {root} is of unsupported type: {type(name)}"
+
+  for key,val in props.items():
+    if "/" in key:
+      return False,f"Invalid key {key} in properties of {root}."
+
+    ok,msg = _putstr(conf, root, key, val)
+    if not ok:
+      return False,(f"Failed to set configuration property {key} at {root}: " + msg)
+
+  # Recurse down the tree of properties
+  for key,sub_tree in subdirs.items():
+    if "/" in key:
+      return False,f"Invalid subdir {key} in properties of {root}."
+
+    sub_root = f"{root}/{key}"
+    ok,msg = _put_properties(conf, sub_root, sub_tree)
+    if not ok:
+      return False,(f"Failed to set up configuration tree {key} at {root}: " + msg)
+
+  return True,""
+
+
 # Generate a new, currently unused, configfs gadget directory
 def select_gadget_path(conf):
   conf_root = os.path.join(conf.configfs, "usb_gadget")
@@ -71,68 +103,68 @@ def create_gadget(conf, dev):
 
 
   # Basic properties of the USB device
-  for key,val in dev["properties"].items():
-    assert("/" not in key)
-    if type(val) is dict:
-      status.warn(f"Device {dev['name']} contains nested properties. Not supported.")
-      continue
-
-    ok,msg = _putstr(conf, path, key, val)
+  if "properties" in dev:
+    ok,msg = _put_properties(conf, path, dev["properties"])
     if not ok:
-      status.warn(f"Failed to set property {key} of {dev['name']}. Probably not supported by the kernel. Outdated device database? " + msg)
+      status.warn(f"Failed to set property of {dev['name']}. Probably not supported by the kernel. Outdated device database? " + msg)
 
   #if conf.debug: input("RETURN to continue")
 
 
   # Device strings
-  os.mkdir(f"{path}/strings/{conf.language_code}")
-  for key,val in dev["strings"].items():
-    assert("/" not in key)
-    ok,msg = _putstr(conf, path, f"strings/{conf.language_code}/{key}", val)
-    if not ok:
-      status.warn(f"Failed to set string {key} of {dev['name']}: " + msg)
+  if "strings" in dev:
+    os.mkdir(f"{path}/strings/{conf.language_code}")
+    for key,val in dev["strings"].items():
+      assert("/" not in key)
+      ok,msg = _putstr(conf, path, f"strings/{conf.language_code}/{key}", val)
+      if not ok:
+        status.warn(f"Failed to set string {key} of {dev['name']}: " + msg)
 
 
   #if conf.debug: input("RETURN to continue")
 
   # Defined functions of the device
-  for fname,fproperties in dev["functions"].items():
-    assert("/" not in fname)
-    os.mkdir(f"{path}/functions/{fname}")
-    for key,val in fproperties.items():
-      assert("/" not in key)
-      ok,msg = _putstr(conf, path, f"functions/{fname}/{key}", val)
-      if not ok:
-        status.warn(f"Failed to set function property {key} of {dev['name']} function {fname}: " + msg)
+  if "functions" in dev:
+    for fname,fspec in dev["functions"].items():
+      assert("/" not in fname)
+
+      fpath = f"{path}/functions/{fname}"
+      os.mkdir(fpath)
+
+      if "properties" in fspec:
+        ok,msg = _put_properties(conf, fpath, fspec["properties"])
+        if not ok:
+          status.warn(f"Failed to configure function {fname} of {dev['name']}: " + msg)
 
   #if conf.debug: input("RETURN to continue")
 
-  for cname, cspec in dev["configs"].items():
-    assert("/" not in cname)
-    cpath = f"{path}/configs/{cname}"
-    os.mkdir(cpath)
+  if "configs" in dev:
+    for cname, cspec in dev["configs"].items():
+      assert("/" not in cname)
+      cpath = f"{path}/configs/{cname}"
+      os.mkdir(cpath)
 
-    if "properties" in cspec:
-      for key,val in cspec["properties"].items():
-        _putstr(conf, cpath, key, val)
+      if "properties" in cspec:
+        ok,msg = _put_properties(conf, cpath, cspec["properties"])
         if not ok:
-          status.warn(f"Failed to set configuration property {key} of {dev['name']} configuration {cname}: " + msg)
+          status.warn(f"Failed to configure configuration {cname} of {dev['name']}: " + msg)
 
-    if "strings" in cspec:
-      os.mkdir(f"{cpath}/strings/{conf.language_code}")
-      for key,val in cspec["strings"].items():
-        assert("/" not in key)
-        ok,msg = _putstr(conf, cpath, f"strings/{conf.language_code}/{key}", val)
-        if not ok:
-          status.warn(f"Failed to set configuration string {key} of {dev['name']} configuration {cname}: " + msg)
+      if "strings" in cspec:
+        os.mkdir(f"{cpath}/strings/{conf.language_code}")
+        for key,val in cspec["strings"].items():
+          assert("/" not in key)
+          ok,msg = _putstr(conf, cpath, f"strings/{conf.language_code}/{key}", val)
+          if not ok:
+            status.warn(f"Failed to set configuration string {key} of {dev['name']} configuration {cname}: " + msg)
 
-    if "functions" in cspec:
-      for func in cspec["functions"]:
-        if func not in dev["functions"].keys():
-          status.warn("Device {dev['name']} configuration {cname} uses undefined function {func}. Ignoring.")
-          continue
+      if "functions" in cspec:
+        for func in cspec["functions"]:
+          if func not in dev["functions"].keys():
+            status.warn("Device {dev['name']} configuration {cname} uses undefined function {func}. Ignoring.")
+            continue
 
-        os.symlink(f"{path}/functions/{func}", f"{cpath}/{func}")
+          os.symlink(f"{path}/functions/{func}", f"{cpath}/{func}")
+
 
   # Finally, connect the device to the host!
   ok,msg = _putstr(conf, path, "UDC", conf.udc_controller)

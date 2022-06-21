@@ -125,3 +125,18 @@ To get an idea for the exact values expected from a device specification, take a
 MacDongler --list-devices linksys-usb3gigv1
 ```
 
+
+## TODO
+ - Sanity check device database. Are you using functions that aren't defined? Do you have a valid device type? Are the function types as expected (soft error)
+ - A basic brute-force loop for testing multiple devices, one by one
+ - More device types
+ - Automatic activity test once a device is set up
+    - net: received anything?
+    - net: send a pcap and then measure incoming traffic
+    - net: is the link up?
+    - serial: got configured?
+    - serial: received anything?
+    - storage: was the FAT read?
+    - storage: was anything updated (last mount time?!)
+    - storage: transferred bytes?
+    - generic: number of USB commands received...?
