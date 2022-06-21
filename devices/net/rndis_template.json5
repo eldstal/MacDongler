@@ -16,12 +16,6 @@
       "bDeviceProtocol": 0x01,
       "idVendor": 0x1d6b,
       "idProduct": 0x104,
-
-      "os_desc": {
-        "use": 1,
-        "b_vendor_code": 0xcd,    // Microsoft
-        "qw_sign": "MSFT100",
-      },
     },
 
     "strings": {
@@ -60,6 +54,15 @@
         "strings": {
           "configuration": "RNDIS"
         }
+      }
+    },
+
+    "os_desc": {
+      "configs": [ "c.1" ],
+      "properties": {
+        "use": 1,
+        "b_vendor_code": 0xcd,    // Microsoft
+        "qw_sign": "MSFT100",
       }
     },
 

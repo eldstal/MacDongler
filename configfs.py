@@ -165,6 +165,25 @@ def create_gadget(conf, dev):
 
           os.symlink(f"{path}/functions/{func}", f"{cpath}/{func}")
 
+  # Defined functions of the device
+  if "os_desc" in dev:
+    osd = dev["os_desc"]
+    spath = f"{path}/os_desc"
+
+    if "configs" in osd:
+      for cname in osd["configs"]:
+        assert("/" not in cname)
+        if cname not in dev["configs"]:
+          status.warn("os_desc of {dev['name']} references undefined config {cname}. Ignoring.")
+          continue
+
+        os.symlink(f"{path}/configs/{cname}", f"{spath}/{cname}")
+
+    if "properties" in osd:
+      ok,msg = _put_properties(conf, spath, osd["properties"])
+      if not ok:
+        status.warn(f"Failed to configure os_desc of {dev['name']}: " + msg)
+
 
   # Finally, connect the device to the host!
   ok,msg = _putstr(conf, path, "UDC", conf.udc_controller)

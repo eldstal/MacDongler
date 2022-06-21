@@ -87,7 +87,7 @@
           "MaxPower": "250",
         },
         "strings": {
-
+          "configuration": "CDC"
         }
       }
     },
