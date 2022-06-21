@@ -16,5 +16,19 @@
       "product": "Generic USB2",
       "serialnumber": "deadbeeffeedface",
     }
+  },
+
+  {
+    "name": "usb-3.0",
+    "type": "template",
+    "properties": {
+      "bcdUSB": 0x0300,
+      "bcdDevice": 0x3000,
+    },
+    "strings": {
+      "manufacturer": "MacDongler",
+      "product": "Generic USB3",
+      "serialnumber": "deadbeeffeedface",
+    }
   }
 ]

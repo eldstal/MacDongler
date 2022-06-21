@@ -3,6 +3,9 @@
  */
 [
   /*
+   * This does not work on Linux - the real device has EEPROM
+   * with version info embedded. The emulated gadget doesn't return a proper value.
+   */
   {
     "name": "linksys-usb3gigv1",
     "template": "ecm-3.0",
@@ -10,6 +13,8 @@
     "properties": {
       "idVendor": 0x13B1,
       "idProduct": 0x41,
+      "bDeviceClass": 0x0,
+      "bDeviceSubClass": 0x0
     },
 
     "strings": {
@@ -18,5 +23,4 @@
       "serialnumber": "000001000000"
     }
   }
-  */
 ]

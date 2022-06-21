@@ -48,7 +48,7 @@ def operation_create_device(conf, devices):
       status.info(f"Created device {name} as gadget {path}")
 
 
-def operation_delete_device(conf):
+def operation_delete_devices(conf):
   for path in configfs.list_gadgets(conf):
     try:
       ok,msg = configfs.delete_gadget(conf, path)
@@ -70,7 +70,7 @@ def main():
   parser.add_argument("--create-device", "-c", action="store_true", default=False,
                       help="Emulate the named device(s), and do nothing else.")
 
-  parser.add_argument("--delete-device", "-d", action="store_true", default=False,
+  parser.add_argument("--delete-devices", "-d", action="store_true", default=False,
                       help="Delete emulated device(s), and do nothing else.")
 
   parser.add_argument("--list-devices", "-l", action="store_true", default=False,
@@ -91,11 +91,14 @@ def main():
 
   # Configuration of paths, etc
 
-  parser.add_argument("--resume-file", "-R", type=str, default="./.macdongler.resume",
+  parser.add_argument("--resume-file", "-Q", type=str, default="./.macdongler.resume",
                       help="File to save state in, in case operation is interrupted.")
 
   parser.add_argument("--resume", "-r", action="store_true", default=False,
                       help="Load state from the --resume-file and start from the next untested device.")
+
+  parser.add_argument("--no-resume", "-R", action="store_true", default=False,
+                      help="Don't wait before clobbering resume file")
 
   parser.add_argument("--resume-from", "-n", type=int, default=0,
                       help="Start from the Nth device in the list of devices to test")
@@ -126,7 +129,7 @@ def main():
 
 
   conf = parser.parse_args()
-  if conf.resume:
+  if conf.resume and not conf.no_resume:
     resume.load(conf)
     conf.resume = True    # Don't accidentally turn that setting off, damnit!
 
@@ -155,17 +158,29 @@ def main():
   # After this, the list of globs will be a list of device names matching the patterns.
   conf.devices = expand_device_list(conf, conf.devices)
 
-  if conf.list_devices:
-    return operation_list_devices(conf, devices)
-
-  elif conf.create_device:
-    return operation_create_device(conf, devices)
-
-  elif conf.delete_device:
-    return operation_delete_device(conf)
-
   if conf.resume_file and not conf.resume:
-    resume.save(conf, careful=True)
+    resume.save(conf, careful=not conf.no_resume)
+
+  # Delete isn't exclusive, we can do that before carrying out another operation
+  # This is beneficial during testing, to both clean up and then load a new device
+  if conf.delete_devices:
+    operation_delete_devices(conf)
+
+  if conf.list_devices:
+    ret = operation_list_devices(conf, devices)
+
+    if conf.resume_file:
+      resume.save(conf)
+
+    return ret
+
+  if conf.create_device:
+    ret = operation_create_device(conf, devices)
+
+    if conf.resume_file:
+      resume.save(conf)
+
+    return ret
 
 if __name__ == "__main__":
   sys.exit(main())

@@ -18,9 +18,11 @@ def find_cmd(name):
 
 
 def sanity_options(conf):
-  modes = [ conf.scan_devices, conf.create_device, conf.delete_device, conf.list_devices, conf.sanity ]
-  if sum(modes) > 1:
-    return False, "More than one operation specified. Only one of --scan-devices, --create-device, --delete-device, --list-devices, --sanity supported."
+  # --delete-devices can be specified together with another mode, if we so desire
+  exclusive_modes = [ conf.scan_devices, conf.create_device, conf.list_devices, conf.sanity ]
+  modes = [ conf.delete_devices ] + exclusive_modes
+  if sum(exclusive_modes) > 1:
+    return False, "More than one operation specified. Only one of --scan-devices, --create-device, --list-devices, --sanity supported."
 
   if sum(modes) == 0:
     return False, "No operation specified. See --help for more information."
