@@ -2,6 +2,7 @@
  * Linksys USB-Ethernet adapters
  */
 [
+  /*
   {
     "name": "linksys-usb3gigv1",
     "template": "ecm-3.0",
@@ -14,7 +15,8 @@
     "strings": {
       "manufacturer": "Linksys",
       "product": "Linksys USB3GIGV1",
-      "serial": "000001000000"
+      "serialnumber": "000001000000"
     }
   }
+  */
 ]

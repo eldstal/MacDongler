@@ -2,6 +2,8 @@
 
 import argparse
 import sys
+import traceback
+
 import json5
 
 from sanity import passes_sanity_checks
@@ -9,7 +11,54 @@ from autodetect import detect_settings
 from devicespec import load_devices, expand_device_list
 import status
 import resume
+import configfs
 
+
+def operation_list_devices(conf, devices):
+  if len(conf.devices) == 0:
+    types = set()
+    print("Device names:")
+    for name,obj in devices.items():
+      print(f"   {name}")
+      types.add(obj['type'])
+
+    print("Device types:")
+    for t in types:
+      print(f"   {t}")
+
+  elif len(conf.devices) == 1:
+    dev = devices[conf.devices[0]]
+    print(json5.dumps(dev, indent=4))
+
+  else:
+    for name in conf.devices:
+      print(name)
+  return 0
+
+
+def operation_create_device(conf, devices):
+  for name in conf.devices:
+    if name not in devices: continue
+    dev = devices[name]
+
+    path,msg = configfs.create_gadget(conf, dev)
+    if path is None:
+      status.error(f"Creating device {name}: " + msg)
+    else:
+      status.info(f"Created device {name} as gadget {path}")
+
+
+def operation_delete_device(conf):
+  for path in configfs.list_gadgets(conf):
+    try:
+      ok,msg = configfs.delete_gadget(conf, path)
+      if ok:
+        status.info(f"Deleted gadget {path}")
+      else:
+        status.error(f"Failed to delete gadget {path}: " + msg)
+    except Exception as e:
+      status.error(f"Failed to delete gadget {path}: " + str(e))
+      print(traceback.format_exc())
 
 def main():
   parser = argparse.ArgumentParser()
@@ -33,6 +82,9 @@ def main():
   parser.add_argument("--one-step", "-1", action="store_true", default=False,
                       help="Test one device, save state for --resume and then exit. Return code will be 0 if all jobs are complete, 10 if there are devices left to test.")
 
+  parser.add_argument("--debug", "-g", action="store_true", default=False,
+                      help="Run slower, pause between steps, log more verbosely")
+
   parser.add_argument("devices", nargs="*", type=str,
                       help="Devices to test. Matches device names or device types. Glob rules such as * and ? apply to names. See --list-devices for known values. Example: 'ecm.*' net")
 
@@ -54,8 +106,11 @@ def main():
   parser.add_argument("--device-db", "-D", type=str, default=None,
                       help="Path to device database directory. Default: automatic")
 
-  parser.add_argument("--gadgetfs", "-G", type=str, default=None,
-                      help="Path to mounted gadgetfs. Default: autodetect")
+  parser.add_argument("--language-code", "-L", type=str, default="0x409",
+                      help="Numeric language code for strings. Default: 0x409 (en_US)")
+
+  #parser.add_argument("--gadgetfs", "-G", type=str, default=None,
+  #                    help="Path to mounted gadgetfs. Default: autodetect")
 
   parser.add_argument("--configfs", "-C", type=str, default=None,
                       help="Path to mounted configfs. Default: autodetect")
@@ -65,6 +120,9 @@ def main():
 
   parser.add_argument("--status-file", "-f", type=str, default=None,
                       help="Path to structured log file where status updates are written")
+
+  parser.add_argument("--no-color", "-P", action="store_true", default=False,
+                      help="Suppress color in terminal output")
 
 
   conf = parser.parse_args()
@@ -98,26 +156,13 @@ def main():
   conf.devices = expand_device_list(conf, conf.devices)
 
   if conf.list_devices:
-    if len(conf.devices) == 0:
-      types = set()
-      print("Device names:")
-      for name,obj in devices.items():
-        print(f"   {name}")
-        types.add(obj['type'])
+    return operation_list_devices(conf, devices)
 
-      print("Device types:")
-      for t in types:
-        print(f"   {t}")
+  elif conf.create_device:
+    return operation_create_device(conf, devices)
 
-    elif len(conf.devices) == 1:
-      dev = devices[conf.devices[0]]
-      print(json5.dumps(dev, indent=4))
-
-    else:
-      for name in conf.devices:
-        print(name)
-
-    return 0
+  elif conf.delete_device:
+    return operation_delete_device(conf)
 
   if conf.resume_file and not conf.resume:
     resume.save(conf, careful=True)

@@ -33,20 +33,14 @@ These things need to be set up in the system before MacDongler will run properly
 
  4. Make sure the `libcomposite` kernel module is loaded
 
- 5. Mount the `gadgetfs` under `/dev/gadget/` (override check with `--no-check-gadgetfs`)
-    ```
-    # mkdir /dev/gadget
-    # mount -t gadgetfs -o user,group gadget /dev/gadget
-    ```
-
- 6. 
+ 5. 
 
 
 ## Raspbian hints
 
 The above steps are general instructions for a typical linux install (tested on Kali linux with the `dummy_hdc` driver). If you're using a Rasbpberry Pi (from the 4 or Zero families) with raspbian OS, the following instructions may be helpful:
 
- 2. The `gadgetfs` module does not need to be loaded. `dummy_hcd` is not built, but is only needed if you want to do software-only tests.
+ 1. Raspbian does not provide the `dummy_hcd` module, but is only needed if you want to do software-only tests.
 
  2. Add the line `dtoverlay=dwc2` to your `/boot/config.txt` and reboot to get the hardware UDC controller running.
   This should give you something under `/sys/class/udc`. It may have a different name, that's fine.
@@ -66,9 +60,6 @@ Given the risk of driver failure, since this script is basically fuzzing your US
 
 #### Resuming
 By providing `--resume`, you can pick up where the last execution left off. This will start from the next un-tested USB device. This allows you to reboot your dongle machine, if needed.
-
-#### Rebooting
-TODO: Add a `--reboot` flag to auto-reboot the dongle machine after each test. With `--resume`, this lets you work with a clean setup. It's slow, but may help with unstable UDC drivers, etc.
 
 #### Single-step
 Run with the `--single-step` (`-1`) to terminate after testing a single device. On particularly troublesome hardware, this allows you to easily script a rebooting loop by putting something like this in your autostart:
@@ -112,7 +103,7 @@ abcd.json5:
 [
   { "name": "abcd",
     "template": "rndis",
-    "identifier": "ABCD"
+    "identifier": "ABCD",
   },
 
   { "name": "qwer",
@@ -126,5 +117,11 @@ abcd.json5:
 
 The two devices `abcd` and `qwer` will inherit all properties from the `rndis` device. `abcd` will override the `identifier` field, and get `feature` from the template.
 
-These devices **cannot** specify anything from `msc_template` as their template, since these aren't in a parent directory.
+These devices **cannot** specify anything from `msc_template` as their template, since that file isn't in a parent directory.
+
+To get an idea for the exact values expected from a device specification, take a look at `--list-devices`:
+
+```
+MacDongler --list-devices linksys-usb3gigv1
+```
 

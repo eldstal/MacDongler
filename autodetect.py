@@ -11,14 +11,14 @@ def find_mount(fstype):
   return None
 
 
-def detect_gadgetfs(conf):
-  if conf.gadgetfs: return
-  mountpoint = find_mount("gadgetfs")
-  if mountpoint is None:
-    status.error("Unable to detect a mounted gadgetfs. Try something like   mount -t gadgetfs -o user,group gadget /dev/gadget")
-    return
-
-  conf.gadgetfs = mountpoint
+#def detect_gadgetfs(conf):
+#  if conf.gadgetfs: return
+#  mountpoint = find_mount("gadgetfs")
+#  if mountpoint is None:
+#    status.error("Unable to detect a mounted gadgetfs. Try something like   mount -t gadgetfs -o user,group gadget /dev/gadget")
+#    return
+#
+#  conf.gadgetfs = mountpoint
 
 def detect_configfs(conf):
   if conf.configfs: return
@@ -69,7 +69,7 @@ def detect_devices(conf):
 # This is where that's done.
 #
 def detect_settings(conf):
-  detect_gadgetfs(conf)
+  #detect_gadgetfs(conf)
   detect_configfs(conf)
   detect_udc(conf)
   detect_devices(conf)

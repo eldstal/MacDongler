@@ -5,16 +5,16 @@
  */
 [
   {
-    "name": "usb-3.0",
+    "name": "usb-2.0",
     "type": "template",
     "properties": {
-      "bcdUSB": 0x0300,
-      "bcdDevice": 0x3000,
+      "bcdUSB": 0x0200,
+      "bcdDevice": 0x100,
     },
     "strings": {
       "manufacturer": "MacDongler",
       "product": "Generic USB2",
-      "serial": "deadbeeffeedface",
+      "serialnumber": "deadbeeffeedface",
     }
   }
 ]
