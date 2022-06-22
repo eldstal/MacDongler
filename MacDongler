@@ -3,6 +3,7 @@
 import argparse
 import sys
 import traceback
+import time
 
 import json5
 
@@ -12,6 +13,7 @@ from devicespec import load_devices, expand_device_list
 import status
 import resume
 import configfs
+import heuristics
 
 
 def operation_list_devices(conf, devices):
@@ -48,6 +50,57 @@ def operation_create_device(conf, devices):
       status.info(f"Created device {name} as gadget {path}")
 
 
+def operation_test_multiple(conf, devices):
+  # We're resuming a test that has actually finished.
+  if conf.resume_from >= len(conf.devices):
+    status.info(f"Resumed a completed test. We're done.")
+    return 0
+
+  devs_left = conf.devices[conf.resume_from:]
+  status.info(f"{len(devs_left)} devices to test: {devs_left}")
+
+  status.progress(conf.resume_from, len(conf.devices))
+
+  # Start from where the user commanded
+  for i in range(conf.resume_from, len(conf.devices)):
+
+    name = conf.devices[i]
+    if name not in devices: continue
+
+    dev = devices[name]
+
+    path,msg = configfs.create_gadget(conf, dev)
+    if path is None:
+      status.error(f"Creating device {name}: " + msg)
+      configfs.delete_gadget(conf, path)
+      continue
+    else:
+      status.debug(f"Created device {name} as gadget {path}")
+
+    # Perform heuristic checks. Is this device accepted by the host?
+    success = heuristics.test_device(conf, dev, path)
+    if success:
+      status.found_device(conf, dev, path)
+      # TODO: Save this device to the success bunch, somehow
+
+
+    status.debug(f"Cleaning up device {name} at {path}")
+    configfs.delete_gadget(conf, path)
+
+    status.progress(i+1, len(conf.devices))
+
+    # Keep track of where we were, so we can continue later
+    conf.resume_from = i+1
+    if conf.resume_file:
+      resume.save(conf, careful=False)
+
+    # One-step mode: returns 10 if there are more tests, 0 otherwise.
+    if conf.one_step:
+      if i < len(conf.devices)-1:
+        return 10
+      return 0
+
+
 def operation_delete_devices(conf):
   for path in configfs.list_gadgets(conf):
     try:
@@ -64,17 +117,20 @@ def main():
   parser = argparse.ArgumentParser()
 
   # Operating modes
-  parser.add_argument("--scan-devices", "-s", action="store_true", default=False,
-                      help="Test the named device(s) one by one.")
-
   parser.add_argument("--create-device", "-c", action="store_true", default=False,
                       help="Emulate the named device(s), and do nothing else.")
+
+  parser.add_argument("--test-multiple-devices", "-m", action="store_true", default=False,
+                      help="Test the listed devices, one at a time. See also --heuristics to set how working devices are identified.")
 
   parser.add_argument("--delete-devices", "-d", action="store_true", default=False,
                       help="Delete emulated device(s), and do nothing else.")
 
-  parser.add_argument("--list-devices", "-l", action="store_true", default=False,
+  parser.add_argument("--list-supported-devices", "-l", action="store_true", default=False,
                       help="List device info. If only one device is specified, shows all its properties")
+
+  parser.add_argument("--list-heuristics", "-L", action="store_true", default=False,
+                      help="List supported testing heuristics")
 
   parser.add_argument("--sanity", "-S", action="store_true", default=False,
                       help="Run sanity checks and then exit")
@@ -97,7 +153,7 @@ def main():
   parser.add_argument("--resume", "-r", action="store_true", default=False,
                       help="Load state from the --resume-file and start from the next untested device.")
 
-  parser.add_argument("--no-resume", "-R", action="store_true", default=False,
+  parser.add_argument("--clobber-resume", "-R", action="store_true", default=False,
                       help="Don't wait before clobbering resume file")
 
   parser.add_argument("--resume-from", "-n", type=int, default=0,
@@ -109,7 +165,7 @@ def main():
   parser.add_argument("--device-db", "-D", type=str, default=None,
                       help="Path to device database directory. Default: automatic")
 
-  parser.add_argument("--language-code", "-L", type=str, default="0x409",
+  parser.add_argument("--language-code", type=str, default="0x409",
                       help="Numeric language code for strings. Default: 0x409 (en_US)")
 
   #parser.add_argument("--gadgetfs", "-G", type=str, default=None,
@@ -118,23 +174,40 @@ def main():
   parser.add_argument("--configfs", "-C", type=str, default=None,
                       help="Path to mounted configfs. Default: autodetect")
 
-  parser.add_argument("--transmit-pcap", "-t", type=str, default=None,
-                      help="PCAP file of network packets to send when emulating USB Ethernet adapters. Requires tcpreplay.")
-
   parser.add_argument("--status-file", "-f", type=str, default=None,
                       help="Path to structured log file where status updates are written")
 
   parser.add_argument("--no-color", "-P", action="store_true", default=False,
                       help="Suppress color in terminal output")
 
+  # Options related to testing and such
+
+  parser.add_argument("--test-duration", "-T", type=float, default=5,
+                      help="Time spent testing each device, after setup but before measurements are taken.")
+
+  parser.add_argument("--any", "-A", action="store_true", default=False,
+                      help="Only a single heuristic must match. Default: the test is successful if _all_ heuristics match.")
+
+  parser.add_argument("--net-transmit-pcap", type=str, default=None,
+                      help="PCAP file of network packets to send when emulating USB Ethernet adapters. Requires tcpreplay.")
+
+  parser.add_argument("--heuristics", "-H", type=str, nargs="*", default=None,
+                      help="List of heuristics to apply when testing multiple devices using --test-multiple-devices. Special value \"all\" applies all relevant tests. Default: \"all\" for --test-multiple-devices, none for --create-device")
+
 
   conf = parser.parse_args()
-  if conf.resume and not conf.no_resume:
+  if conf.resume and not conf.clobber_resume:
     resume.load(conf)
     conf.resume = True    # Don't accidentally turn that setting off, damnit!
 
   # Set up the logger
   status.setup(conf)
+
+  if conf.list_heuristics:
+    print("Supported heuristics:")
+    for name,spec in heuristics.list_heuristics(conf).items():
+      print(f"{name} : {spec['description']}")
+    return 0
 
   # Handle any settings that are set to auto-detect
   detect_settings(conf)
@@ -150,6 +223,10 @@ def main():
     status.error("Failed to load device specs: " + msg)
     return 1
 
+  # Basic listings of capabilities
+  if conf.list_supported_devices:
+    return operation_list_devices(conf, devices)
+
   if conf.sanity:
     # Just run the sanity checks, do nothing else
     return 0
@@ -158,21 +235,13 @@ def main():
   # After this, the list of globs will be a list of device names matching the patterns.
   conf.devices = expand_device_list(conf, conf.devices)
 
-  if conf.resume_file and not conf.resume:
-    resume.save(conf, careful=not conf.no_resume)
-
   # Delete isn't exclusive, we can do that before carrying out another operation
   # This is beneficial during testing, to both clean up and then load a new device
   if conf.delete_devices:
     operation_delete_devices(conf)
 
-  if conf.list_devices:
-    ret = operation_list_devices(conf, devices)
-
-    if conf.resume_file:
-      resume.save(conf)
-
-    return ret
+  if conf.resume_file and not conf.resume:
+    resume.save(conf, careful=not conf.clobber_resume)
 
   if conf.create_device:
     ret = operation_create_device(conf, devices)
@@ -180,6 +249,16 @@ def main():
     if conf.resume_file:
       resume.save(conf)
 
+    return ret
+
+  if conf.test_multiple_devices:
+    ret = operation_test_multiple(conf, devices)
+
+    if conf.resume_file:
+      resume.save(conf)
+
+    # Important! operation_test_multiple uses this to signal to the user that
+    # there are more devices left to test, in --one-step mode.
     return ret
 
 if __name__ == "__main__":

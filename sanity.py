@@ -19,10 +19,14 @@ def find_cmd(name):
 
 def sanity_options(conf):
   # --delete-devices can be specified together with another mode, if we so desire
-  exclusive_modes = [ conf.scan_devices, conf.create_device, conf.list_devices, conf.sanity ]
+  exclusive_modes = [ conf.test_multiple_devices,
+                      conf.create_device,
+                      conf.list_supported_devices,
+                      conf.list_heuristics,
+                      conf.sanity ]
   modes = [ conf.delete_devices ] + exclusive_modes
   if sum(exclusive_modes) > 1:
-    return False, "More than one operation specified. Only one of --scan-devices, --create-device, --list-devices, --sanity supported."
+    return False, "More than one operation specified. Only one of --scan-devices, --create-device, --list-supported-devices, --list-heuristics, --sanity supported."
 
   if sum(modes) == 0:
     return False, "No operation specified. See --help for more information."
@@ -30,7 +34,7 @@ def sanity_options(conf):
   return True, ""
 
 def sanity_commands(conf):
-  if conf.transmit_pcap:
+  if conf.net_transmit_pcap:
     if not find_cmd("tcpreplay"):
       return False, "Could not find 'tcpreplay', but --transmit-pcap is specified."
   return True,""
