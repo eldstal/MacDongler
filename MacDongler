@@ -69,6 +69,8 @@ def operation_test_multiple(conf, devices):
 
     dev = devices[name]
 
+    status.testing_device(conf, dev)
+
     path,msg = configfs.create_gadget(conf, dev)
     if path is None:
       status.error(f"Creating device {name}: " + msg)
@@ -175,7 +177,7 @@ def main():
                       help="Path to mounted configfs. Default: autodetect")
 
   parser.add_argument("--status-file", "-f", type=str, default=None,
-                      help="Path to structured log file where status updates are written")
+                      help="Path to structured log file where status updates are written, one JSON object per line")
 
   parser.add_argument("--no-color", "-P", action="store_true", default=False,
                       help="Suppress color in terminal output")

@@ -10,7 +10,7 @@ This is useful to, for example, identify specific brands or models of USB dongle
 
 These things need to be set up in the system before MacDongler will run properly. Wherever possible, the script performs these sanity checks automatically.
 
- 1. Make sure your kernel is configured with the following options (override check with --no-check-kconfig)
+ 1. Make sure your kernel is configured with the following options
     - `CONFIG_CONFIGFS_FS`
     - `CONFIG_USB_GADGET`
     - `CONFIG_USB_DUMMY_HCD`
@@ -18,7 +18,7 @@ These things need to be set up in the system before MacDongler will run properly
     - `CONFIG_USB_LIBCOMPOSITE`
 
  2. Make sure at least one `udc` kernel module is compiled in or loaded, i.e.
-    your desired USB Device Controller is visible under `/sys/class/udc` (override check with `--no-check-sysdev`)
+    your desired USB Device Controller is visible under `/sys/class/udc`
     ```
     # modprobe dummy_hcd
     # ls -l /sys/class/udc
@@ -32,8 +32,6 @@ These things need to be set up in the system before MacDongler will run properly
     ```
 
  4. Make sure the `libcomposite` kernel module is loaded
-
- 5. 
 
 
 ## Raspbian hints
@@ -119,7 +117,7 @@ The two devices `abcd` and `qwer` will inherit all properties from the `rndis` d
 
 These devices **cannot** specify anything from `msc_template` as their template, since that file isn't in a parent directory.
 
-To get an idea for the exact values expected from a device specification, take a look at `--list-devices`:
+To get an idea for the exact values expected from a device specification, take a look at `--list-devices` with exactly one device:
 
 ```
 MacDongler --list-devices linksys-usb3gigv1
@@ -128,11 +126,8 @@ MacDongler --list-devices linksys-usb3gigv1
 
 ## TODO
  - Sanity check device database. Are you using functions that aren't defined? Do you have a valid device type? Are the function types as expected (soft error)
- - A basic brute-force loop for testing multiple devices, one by one
  - More device types
  - Automatic activity test once a device is set up
-    - net: received anything?
-    - net: send a pcap and then measure incoming traffic
     - net: is the link up?
     - serial: got configured?
     - serial: received anything?
