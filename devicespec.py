@@ -158,7 +158,19 @@ def _load_devices_dir(conf, root, parent_db=None):
 def load_devices(conf):
   global DEVICE_DB
   if DEVICE_DB is None:
-    db,msg = _load_devices_dir(conf, conf.device_db)
+
+    db = None
+    msg = f"Device database is not a directory or file: {conf.device_db}"
+
+    if os.path.isfile(conf.device_db):
+      # Load a single file database,
+      # probably output from an earlier test
+      db,msg = _load_device_file(conf, {}, conf.device_db)
+
+    elif os.path.isdir(conf.device_db):
+      db,msg = _load_devices_dir(conf, conf.device_db)
+
+
     if db is None:
       msg = "Failed to load device database: " + msg
       status.error(msg)

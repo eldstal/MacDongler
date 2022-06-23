@@ -52,6 +52,27 @@ The above steps are general instructions for a typical linux install (tested on 
 
 ### Results
 
+The output file follows the exact same format as the device database, and can be used as such. If a device is tested and heuristics indicate that the device is accepted by the host, a complete device specification is appended to the output file. You can then inspect the properties (e.g VID and PID of the device) or use `--create-device` to set up persistent emulation with the same parameters
+
+```
+    # Run the scan against our host
+  $ ./MacDongler --output /tmp/network.json5 --test-multiple net
+    ...
+    FOUND: Device acm-2.0 appears to work!
+    ...
+
+    # Take a look at what was found
+  $ ./MacDongler --device-db /tmp/network.json5 --list-devices
+    ...
+    acm-2.0
+    ...
+
+    # Emulate one of the successful devices
+  $ ./MacDongler --device-db /tmp/network.json5 --create-device acm-2.0
+    ...
+    INFO: Created device acm-2.0 at /dev/ttyGS0
+
+```
 
 ### Stability hacks
 Given the risk of driver failure, since this script is basically fuzzing your USB stack, a number of features exist to help make the process more robust.
@@ -127,10 +148,19 @@ MacDongler --list-devices linksys-usb3gigv1
 ## TODO
  - Sanity check device database. Are you using functions that aren't defined? Do you have a valid device type? Are the function types as expected (soft error)
  - More device types
+    - HID
+    - Audio?
+ - Database generator
+    - Create generic devices with a template (such as rndis-2.0)
+    - Take VID/PID from the [open database](http://www.linux-usb.org/usb.ids)
+ - One-shot mode
+    - test-multiple, but stop at the first successful device and leave it up
+    - immediately bridge the network to eth0 or expose the serial port or whatever
+    - plug in, auto-hack, success!
  - Automatic activity test once a device is set up
-    - net: is the link up?
+    - net: is the link up? (conflicts with having to bring the link up for pcap transmission.)
+        - May have to do setup -> stim -> test delay -> test
     - serial: got configured?
-    - serial: received anything?
     - storage: was the FAT read?
     - storage: was anything updated (last mount time?!)
     - storage: transferred bytes?

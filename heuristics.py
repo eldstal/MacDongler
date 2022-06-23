@@ -42,6 +42,16 @@ def list_heuristics(conf):
   return copy.deepcopy(HEURISTICS)
 
 
+def user_friendly_device(conf, dev, path):
+  devpath = None
+  if dev["type"] == "net":
+    devpath = heur.net.util.find_iface(conf, dev, path)
+  elif dev["type"] == "serial":
+    devpath = heur.serial.util.find_tty(conf, dev, path)
+  if devpath is None:
+    return path
+  return devpath
+
 def expand_heuristics_list(conf, pattern_list):
   if pattern_list is None:
     if conf.create_device:

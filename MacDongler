@@ -44,10 +44,13 @@ def operation_create_device(conf, devices):
     dev = devices[name]
 
     path,msg = configfs.create_gadget(conf, dev)
+
+    user_friendly = heuristics.user_friendly_device(conf, dev, path)
+
     if path is None:
       status.error(f"Creating device {name}: " + msg)
     else:
-      status.info(f"Created device {name} as gadget {path}")
+      status.info(f"Created device {name} as {user_friendly}")
 
 
 def operation_test_multiple(conf, devices):
@@ -173,7 +176,7 @@ def main():
                       help="UDC controller to attach devices to, one of the names available under /sys/class/udc/. Default: autoselect")
 
   parser.add_argument("--device-db", "-D", type=str, default=None,
-                      help="Path to device database directory. Default: automatic")
+                      help="Path to device database directory or file. Default: automatic")
 
   parser.add_argument("--language-code", type=str, default="0x409",
                       help="Numeric language code for strings. Default: 0x409 (en_US)")
