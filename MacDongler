@@ -10,10 +10,10 @@ import json5
 from sanity import passes_sanity_checks
 from autodetect import detect_settings
 from devicespec import load_devices, expand_device_list
+import heuristics
 import status
 import resume
 import configfs
-import heuristics
 
 
 def operation_list_devices(conf, devices):
@@ -104,7 +104,9 @@ def operation_test_multiple(conf, devices):
 
 
 def operation_delete_devices(conf):
-  for path in configfs.list_gadgets(conf):
+  also_other_gadgets = conf.delete_all_devices
+
+  for path in configfs.list_gadgets(conf, list_all=also_other_gadgets):
     try:
       ok,msg = configfs.delete_gadget(conf, path)
       if ok:
@@ -118,15 +120,20 @@ def operation_delete_devices(conf):
 def main():
   parser = argparse.ArgumentParser()
 
+  #
   # Operating modes
+  #
   parser.add_argument("--create-device", "-c", action="store_true", default=False,
                       help="Emulate the named device(s), and do nothing else.")
 
   parser.add_argument("--test-multiple-devices", "-m", action="store_true", default=False,
                       help="Test the listed devices, one at a time. See also --heuristics to set how working devices are identified.")
 
-  parser.add_argument("--delete-devices", "-d", action="store_true", default=False,
-                      help="Delete emulated device(s), and do nothing else.")
+  parser.add_argument("--delete-devices", "-x", action="store_true", default=False,
+                      help="Delete emulated device(s) before continuing")
+
+  parser.add_argument("--delete-all-devices", "-X", action="store_true", default=False,
+                      help="Delete all usb_gadget device(s), even ones not created by MacDongler. MAY CAUSE ADVERSE EFFECTS.")
 
   parser.add_argument("--list-supported-devices", "-l", action="store_true", default=False,
                       help="List device info. If only one device is specified, shows all its properties")
@@ -147,8 +154,9 @@ def main():
                       help="Devices to test. Matches device names or device types. Glob rules such as * and ? apply to names. See --list-devices for known values. Example: 'ecm.*' net")
 
 
+  #
   # Configuration of paths, etc
-
+  #
   parser.add_argument("--resume-file", "-Q", type=str, default="./.macdongler.resume",
                       help="File to save state in, in case operation is interrupted.")
 
@@ -170,9 +178,6 @@ def main():
   parser.add_argument("--language-code", type=str, default="0x409",
                       help="Numeric language code for strings. Default: 0x409 (en_US)")
 
-  #parser.add_argument("--gadgetfs", "-G", type=str, default=None,
-  #                    help="Path to mounted gadgetfs. Default: autodetect")
-
   parser.add_argument("--configfs", "-C", type=str, default=None,
                       help="Path to mounted configfs. Default: autodetect")
 
@@ -182,19 +187,34 @@ def main():
   parser.add_argument("--no-color", "-P", action="store_true", default=False,
                       help="Suppress color in terminal output")
 
+
+  #
   # Options related to testing and such
+  #
+  parser.add_argument("--heuristics", "-H", type=str, nargs="*", default=None,
+                      help="List of heuristics to apply when testing multiple devices using --test-multiple-devices. Special value \"all\" applies all relevant tests. Default: \"all\" for --test-multiple-devices, none for --create-device")
 
   parser.add_argument("--test-duration", "-T", type=float, default=5,
                       help="Time spent testing each device, after setup but before measurements are taken.")
 
+  parser.add_argument("--setup-duration", type=float, default=0,
+                      help="Time spent waiting after creating gadget, before setting up tests. Increase if you get warnings about network or serial devices not being found.")
+
   parser.add_argument("--any", "-A", action="store_true", default=False,
-                      help="Only a single heuristic must match. Default: the test is successful if _all_ heuristics match.")
+                      help="Any single heuristic is a good enough test. Default: the device test is successful only if _all_ heuristics match.")
 
-  parser.add_argument("--net-transmit-pcap", type=str, default=None,
-                      help="PCAP file of network packets to send when emulating USB Ethernet adapters. Requires tcpreplay.")
+  parser.add_argument("--serial-device", type=str, default=None,
+                      help="Serial port device of USB gadgets. Default: auto-select from /dev/ttyGS*")
 
-  parser.add_argument("--heuristics", "-H", type=str, nargs="*", default=None,
-                      help="List of heuristics to apply when testing multiple devices using --test-multiple-devices. Special value \"all\" applies all relevant tests. Default: \"all\" for --test-multiple-devices, none for --create-device")
+  #
+  # Stimulation options
+  #
+  parser.add_argument("--net-transmit-pcap", type=str, nargs="*", default=None,
+                      help="PCAP file(s) of network packets to send when emulating network adapters. Requires tcpreplay.")
+
+  parser.add_argument("--serial-transmit-file", type=str, nargs="*", default=None,
+                      help="Binary file(s) of data to transmit over each established serial link before performing tests.")
+
 
 
   conf = parser.parse_args()
@@ -237,9 +257,12 @@ def main():
   # After this, the list of globs will be a list of device names matching the patterns.
   conf.devices = expand_device_list(conf, conf.devices)
 
+  # Handle the magic "all" keyword
+  conf.heuristics = heuristics.expand_heuristics_list(conf, conf.devices)
+
   # Delete isn't exclusive, we can do that before carrying out another operation
   # This is beneficial during testing, to both clean up and then load a new device
-  if conf.delete_devices:
+  if conf.delete_devices or conf.delete_all_devices:
     operation_delete_devices(conf)
 
   if conf.resume_file and not conf.resume:

@@ -83,10 +83,13 @@ def select_gadget_path(conf):
 # List all configfs directories which are created by MacDongler,
 # in this instance or any other. Don't run multiple MacDonglers on the same
 # machine.
-def list_gadgets(conf):
+def list_gadgets(conf, list_all=False):
   conf_root = os.path.join(conf.configfs, "usb_gadget")
 
-  return list(glob.glob(os.path.join(conf_root, "macdongler_*")))
+  if not list_all:
+    return list(glob.glob(os.path.join(conf_root, "macdongler_*")))
+  else:
+    return list(glob.glob(os.path.join(conf_root, "*")))
 
 
 # Create a configfs directory and set up a device based on the provided spec
@@ -198,6 +201,9 @@ def create_gadget(conf, dev):
 def delete_gadget(conf, path):
   if os.path.dirname(path) != os.path.join(conf.configfs, "usb_gadget"):
     return False,"Invalid path passed to delete_gadget. This is a bug in the software!. Bailing out."
+
+  if "macdongler" not in path:
+    status.warn(f"Removing gadget {path}, created by someone else. You're doing this at your own risk.")
 
 
   # Disconnect the USB device from the host

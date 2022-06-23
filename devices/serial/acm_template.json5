@@ -1,0 +1,48 @@
+/*
+ * Template for USB CDC ACM (One standardized form of serial port)
+ */
+
+[
+  {
+    "name": "acm-2.0",
+    "template": "usb-2.0",
+    "type": "serial",        // Once the device is set up, test it as a serial device
+
+    "properties": {
+      "bDeviceClass": 0x00,
+      "bDeviceSubClass": 0x00,
+      "bDeviceProtocol": 0x01,
+      "idVendor": 0xabcd,
+      "idProduct": 0x1234,
+    },
+
+    "strings": {
+      "manufacturer": "MacDongler",
+      "product": "Generic ACM serial",
+      "serialnumber": "acacacacacacacac",
+    },
+
+    "functions": {
+      "acm.usb0": {                           // the "ecm" here is important - the kernel will set up an ecm gadget.
+        "properties": {
+        }
+      }
+    },
+
+    "configs": {
+      "c.1": {
+        "functions": [
+          "acm.usb0",
+        ],
+        "properties" : {
+          "bmAttributes": 0x80,    // bus powered
+          "MaxPower": "125",
+        },
+        "strings": {
+          "configuration": "ACM"
+        }
+      }
+    },
+
+  }
+]

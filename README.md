@@ -36,7 +36,7 @@ These things need to be set up in the system before MacDongler will run properly
 
 ## Raspbian hints
 
-The above steps are general instructions for a typical linux install (tested on Kali linux with the `dummy_hdc` driver). If you're using a Rasbpberry Pi (from the 4 or Zero families) with raspbian OS, the following instructions may be helpful:
+The above steps are general instructions for a typical linux install (tested on Kali linux with the `dummy_hcd` driver). If you're using a Rasbpberry Pi (from the 4 or Zero families) with raspbian OS, the following instructions may be helpful:
 
  1. Raspbian does not provide the `dummy_hcd` module, but is only needed if you want to do software-only tests.
 

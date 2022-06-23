@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Run MacDongler in a rebooting loop
-# 1. Set up your command line below
+# 1. Set up your command line below. Ensure that --resume and --single-step are present.
 # 2. Ensure that the log file is cleared
 # 3. Ensure that the resume file is cleared
 # 4. Create the file /tmp/MCD_BOOTLOOP
@@ -25,7 +25,7 @@ MACDONGLER_ROOT=$(cd "`dirname ${BASH_SRC}`"; cd ..; pwd)
 
 ${MACDONGLER_ROOT}/MacDongler --resume-file "${RESUMEFILE}" \
                               --status-file "${LOGFILE}" \
-                              --delete-devices \
+                              --delete-all-devices \
                               --resume --single-step \
                               --test-multiple-devices \
                               --test-duration 15 \

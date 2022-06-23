@@ -21,6 +21,8 @@ import status
 import heur.net.rx
 import heur.serial.rx
 
+import stimulation
+
 HEURISTICS = {
 
   "net.rx": {
@@ -40,12 +42,34 @@ def list_heuristics(conf):
   return copy.deepcopy(HEURISTICS)
 
 
+def expand_heuristics_list(conf, pattern_list):
+  if pattern_list is None:
+    if conf.create_device:
+      pattern_list = []
+    elif conf.test_multiple_devices:
+      pattern_list = ["all"]
+    else:
+      pattern_list = []
+
+  all_heuristics = [ n for n,v in HEURISTICS.items() ]
+
+  if "all" in pattern_list:
+    return all_heuristics
+  else:
+    # Only allow the ones we actually know.
+    return list(set(pattern_list) & set(all_heuristics))
 
 # Provide a loaded and active gadget
 # returns True heuristic tests indicate an active device
 # returns False if the device appears inactive
 # This is controlled by --and
 def test_device(conf, dev, path):
+
+  time.sleep(conf.setup_duration)
+
+  # Send traffic or otherwise futz around with the new interface
+  # Maybe we can make the host advertise itself!
+  stimulation.stimulate_device(conf, dev, path)
 
   tests = {}
   for name, spec in HEURISTICS.items():
@@ -60,19 +84,33 @@ def test_device(conf, dev, path):
     status.info(f"{len(tests)} tests relevant for this device: {list(tests.keys())}")
 
   for name,obj in tests.items():
-    obj.setup(conf, dev, path)
+    try:
+      obj.setup(conf, dev, path)
+    except Exception as e:
+      status.error(f"Failed to set up heuristic {name}: " + str(e))
 
   time.sleep(conf.test_duration)
 
   results = []
   for name,obj in tests.items():
-    results.append(obj.test(conf, dev, path))
+    passed = False
+    try:
+      passed = obj.test(conf, dev, path)
+    except Exception as e:
+      status.error(f"Failed to measure heuristic {name}: " + str(e))
+
+    results.append(passed)
 
   for name,obj in tests.items():
-    obj.cleanup(conf, dev, path)
+    try:
+      obj.cleanup(conf, dev, path)
+    except Exception as e:
+      status.error(f"Failed to clean up after heuristic {name}: " + str(e))
 
 
   if conf.any:
     return any(results)
   else:
     return all(results)
+
+

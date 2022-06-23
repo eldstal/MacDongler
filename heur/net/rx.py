@@ -1,19 +1,13 @@
-import glob
 import subprocess
 import json5
 
 import status
 
+import heur.net.util
+
 class RX:
   def setup(self, conf, dev, path):
-    self.iface = None
-
-    # RNDIS and ECM devices list their local interface name in configfs
-    for g in glob.glob(f"{path}/functions/*/ifname"):
-      try:
-        self.iface = open(g,"r").read().strip()
-      except:
-        pass
+    self.iface = heur.net.util.find_iface(conf, dev, path)
 
     if self.iface is None:
       status.warn(f"net.rx: Unable to determine interface name for {path}.")
