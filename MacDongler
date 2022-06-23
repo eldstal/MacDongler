@@ -4,6 +4,8 @@ import argparse
 import sys
 import traceback
 import time
+import copy
+import os
 
 import json5
 
@@ -37,6 +39,39 @@ def operation_list_devices(conf, devices):
       print(name)
   return 0
 
+# A device was found to work.
+# Save it to the JSON results file
+def save_success(conf, dev, path):
+  if conf.output is None: return
+
+  # Don't overwrite the results file if that's our device database to begin with
+  if conf.device_db is not None:
+    if os.path.normpath(conf.output) == os.path.normpath(conf.device_db):
+      return
+
+  result_list = []
+  try:
+    result_list = json5.loads(open(conf.output, "r").read())
+  except:
+    status.info(f"Creating output file {conf.output}")
+
+  # Don't save multiple devices with the same name.
+  existing_names = [ d["name"] for d in result_list ]
+
+  i=1
+  new_name = dev["name"]
+  while new_name in existing_names:
+    new_name = f"{dev['name']}_{i}"
+    i += 1
+
+  saved_dev = copy.deepcopy(dev)
+  saved_dev["name"] = new_name
+  if "template" in saved_dev:
+    del(saved_dev["template"])
+
+  result_list.append(saved_dev)
+
+  open(conf.output, "w+").write(json5.dumps(result_list, indent=4))
 
 def operation_create_device(conf, devices):
   for name in conf.devices:
@@ -86,7 +121,7 @@ def operation_test_multiple(conf, devices):
     success = heuristics.test_device(conf, dev, path)
     if success:
       status.found_device(conf, dev, path)
-      # TODO: Save this device to the success bunch, somehow
+      save_success(conf, dev, path)
 
 
     status.debug(f"Cleaning up device {name} at {path}")
@@ -160,6 +195,9 @@ def main():
   #
   # Configuration of paths, etc
   #
+  parser.add_argument("--output", "-o", type=str, default="./macdongler.json5",
+                      help="File to save successfully detected devices. This file works as input to --device-db. If the file exists, new results will be appended.")
+
   parser.add_argument("--resume-file", "-Q", type=str, default="./.macdongler.resume",
                       help="File to save state in, in case operation is interrupted.")
 
