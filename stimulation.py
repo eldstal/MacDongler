@@ -62,7 +62,8 @@ def _serial_transmit_file(conf, dev, path):
     return
 
   try:
-    fd = open(iface, "wb")
+    # Must open non-blocking, because an unconnected tty won't buffer data
+    fd = os.open(iface, os.O_WRONLY | os.O_NONBLOCK)
   except:
     status.warn(f"stim.serial.transmit: Failed to open device {iface} for writing")
     return
@@ -73,7 +74,10 @@ def _serial_transmit_file(conf, dev, path):
       return
 
     data = open(filename, "rb").read()
-    fd.write(data)
+    status.debug(f"stim.serial.transmit: Writing data to serial port (non-blocking)")
+    os.write(fd, data)
+    os.close(fd)
+    status.debug(f"stim.serial.transmit: done")
 
 # Look at the user's configuration and carry out whichever stimulation
 # is appropriate for this device

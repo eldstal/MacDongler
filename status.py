@@ -33,6 +33,11 @@ def _log_status(kind, obj):
   with open(STATUS_FILE, "a+") as f:
     f.write(j + "\n")
 
+def _fallback(obj, key, val):
+  if key in obj:
+    return obj[key]
+  return val
+
 def setup(conf):
   global STATUS_FILE
   global DO_COLOR
@@ -63,12 +68,15 @@ def testing_device(conf, dev):
   lbl = paint("TESTING", "blue")
   msg = f"Preparing to test {dev['name']}!"
   sys.stderr.write(f"{lbl}: {msg}\n")
+
+  vid = _fallback(dev["properties"], "idVendor", 0)
+  pid = _fallback(dev["properties"], "idProduct", 0)
   _log_status("current_device",
       {
         "device_name": dev["name"],
         "device_type": dev["type"],
-        "device_vid": dev["properties"]["idVendor"],
-        "device_pid": dev["properties"]["idProduct"],
+        "device_vid": vid,
+        "device_pid": pid
       })
 
 

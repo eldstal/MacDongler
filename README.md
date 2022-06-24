@@ -34,7 +34,7 @@ These things need to be set up in the system before MacDongler will run properly
  4. Make sure the `libcomposite` kernel module is loaded
 
 
-## Raspbian hints
+### Raspbian hints
 
 The above steps are general instructions for a typical linux install (tested on Kali linux with the `dummy_hcd` driver). If you're using a Rasbpberry Pi (from the 4 or Zero families) with raspbian OS, the following instructions may be helpful:
 
@@ -50,9 +50,24 @@ The above steps are general instructions for a typical linux install (tested on 
 
 ## Usage
 
+### What the program does
+When invoked with `--test-multiple-devices`, MacDongler performs the following actions, in order:
+
+  - For each device name provided on the command line
+    1. Set up an emulated version of that device
+    2. Delay for `--setup-duration` seconds
+    3. Provide stimulation to the host, for example from `--net-transmit-pcap` or `--serial-transmit-file`
+    4. Delay for `--test-duration` seconds
+    5. Apply a set of heuristic tests to see if the device appears to be active, i.e. if the host accepts this device
+    6. If the heuristics indicate success, save the device specification to the `--output` file
+    7. Tear down the emulated device
+
+At the end of a cycle like this, the `--output` file contains a set of device specs which, as far as we can tell, are
+accepted by the connected USB host.
+
 ### Results
 
-The output file follows the exact same format as the device database, and can be used as such. If a device is tested and heuristics indicate that the device is accepted by the host, a complete device specification is appended to the output file. You can then inspect the properties (e.g VID and PID of the device) or use `--create-device` to set up persistent emulation with the same parameters
+The `--output` file follows the exact same format as the device database, and can be used as such. If a device is tested and heuristics indicate that the device is accepted by the host, a complete device specification is appended to the output file. You can then inspect the properties (e.g VID and PID of the device) or use `--create-device` to set up persistent emulation withe the same parameters
 
 ```
     # Run the scan against our host
@@ -73,6 +88,17 @@ The output file follows the exact same format as the device database, and can be
     INFO: Created device acm-2.0 at /dev/ttyGS0
 
 ```
+
+### Frontends
+
+Since scanning takes a while, and typically only embedded devices have access to a USB Device Controller, the `--status-file` is machine-parsable to allow for more user-friendly front-ends.
+
+#### pioled
+If you are running MacDongler on a rasberry pi equipped with an [Adafruit PiOLED](https://www.adafruit.com/product/3527), the script `frontends/macdongler-pioled.py` visualizes the current progress:
+
+![Photo of the tiny little PiOLED screen showing MacDongler output live](frontends/macdongler-pioled.jpg)
+
+The display shows current progress, the number of successful devices found, the name of the current device under test, and the bottom line contains the latest warning, error or found device.
 
 ### Stability hacks
 Given the risk of driver failure, since this script is basically fuzzing your USB stack, a number of features exist to help make the process more robust.
@@ -146,22 +172,29 @@ MacDongler --list-devices linksys-usb3gigv1
 
 
 ## TODO
- - Sanity check device database. Are you using functions that aren't defined? Do you have a valid device type? Are the function types as expected (soft error)
+ - Sanity check device database.
+    - Are you using functions that aren't defined?
+    - Do you have a valid device type?
+    - Are the function types as expected (soft error)
+    - Does the non-template device have all expected metadata?
  - More device types
     - HID
     - Audio?
+    - Video?
  - Database generator
     - Create generic devices with a template (such as rndis-2.0)
     - Take VID/PID from the [open database](http://www.linux-usb.org/usb.ids)
  - One-shot mode
     - test-multiple, but stop at the first successful device and leave it up
     - immediately bridge the network to eth0 or expose the serial port or whatever
+      - This may be out of scope. Maybe just a zero return code for "Yes, a device was set up" and a parsable entry in the status file.
     - plug in, auto-hack, success!
- - Automatic activity test once a device is set up
+ - More heuristics
     - net: is the link up? (conflicts with having to bring the link up for pcap transmission.)
         - May have to do setup -> stim -> test delay -> test
     - serial: got configured?
     - storage: was the FAT read?
     - storage: was anything updated (last mount time?!)
     - storage: transferred bytes?
+    - hid: Hit caps lock and num lock, see if the LEDs change?
     - generic: number of USB commands received...?

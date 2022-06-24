@@ -200,6 +200,9 @@ def expand_device_list(conf, patterns):
     type_matches = [ dev['name'] for dev in all_devs if dev['type'] == p ]
     ret += type_matches
 
+  # Don't return template-only devices
+  ret = [ r for r in ret if devices[r]["type"] != "template" ]
+
   return ret
 
 
