@@ -1,0 +1,62 @@
+/*
+ * Template for USB HID devices (mice, keyboards, that sort of thing)
+ */
+
+[
+  {
+    "name": "keyboard",
+    "template": "usb-2.0",
+    "type": "hid",        // Once the device is set up, test it as a HID device
+
+    "properties": {
+      "bDeviceClass": 0x00,
+      "bDeviceSubClass": 0x01,
+      "bDeviceProtocol": 0x01,
+      "idVendor": 0x45e,    // MS
+      "idProduct": 0x2d,    // Internet Keyboard
+    },
+
+    "strings": {
+      "manufacturer": "MacDongler",
+      "product": "Generic ACM HID",
+      "serialnumber": "1D1D1D1D1D1D1D1D",
+    },
+
+    "functions": {
+      "hid.usb0": {
+        "properties": {
+          "protocol": 1,
+          "subclass": 1,
+          "report_length": 8,
+          "report_desc": [  0x05, 0x01, 0x09, 0x06, 0xa1, 0x01, 0x05, 0x07,
+                            0x19, 0xe0, 0x29, 0xe7, 0x15, 0x00, 0x25, 0x01,
+														0x75, 0x01, 0x95, 0x08, 0x81, 0x02, 0x95, 0x01,
+														0x75, 0x08, 0x81, 0x03, 0x95, 0x05, 0x75, 0x01,
+														0x05, 0x08, 0x19, 0x01, 0x29, 0x05, 0x91, 0x02,
+														0x95, 0x01, 0x75, 0x03, 0x91, 0x03, 0x95, 0x06,
+														0x75, 0x08, 0x15, 0x00, 0x25, 0x65, 0x05, 0x07,
+														0x19, 0x00, 0x29, 0x65, 0x81, 0x00, 0xc0, 0x00,
+														0x00 ]
+                            
+        }
+      }
+    },
+
+    "configs": {
+      "c.1": {
+        "functions": [
+          "hid.usb0",
+        ],
+        "properties" : {
+          "bmAttributes": 0x80,    // bus powered
+          "MaxPower": "125",
+        },
+        "strings": {
+          "configuration": "HID"
+        }
+      }
+    },
+
+  }
+]
+

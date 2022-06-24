@@ -12,21 +12,20 @@ def _globdirs(pattern):
   ret = filter(os.path.isdir, ret)
   return list(ret)
 
-def _putstr(conf, root, subpath, contents):
+def _putbytes(conf, root, subpath, contents):
   path = os.path.join(root, subpath)
   parent = os.path.dirname(path)
 
-  if type(contents) != str:
-    contents = str(contents)
+  assert(type(contents) == bytes)
 
   try:
     if not os.path.exists(parent):
       os.makedirs(parent)
 
-    open(path, "w+").write(contents + "\n")
+    open(path, "wb+").write(contents)
 
     if conf.debug:
-      readback = open(path, "r").read().strip()
+      readback = open(path, "rb").read().strip()
       status.debug(f"After writing {contents} to {path}, value is {readback}")
 
     return True,""
@@ -34,11 +33,20 @@ def _putstr(conf, root, subpath, contents):
   except Exception as e:
     return False,str(e)
 
+def _putstr(conf, root, subpath, contents):
+
+  if type(contents) != str:
+    contents = str(contents)
+
+  contents = contents + "\n"
+  return _putbytes(conf, root, subpath, contents.encode())
+
 # Recursively apply a set of properties to the configfs,
 # by creating directories and writing to files.
+# If any value is a list of integers, the corresponding byte blob will be written to file.
 # If any write or mkdir fails, we bail out and report it.
 def _put_properties(conf, root, tree):
-  props = { name: val for name,val in tree.items() if type(val) in [ str, int, float, bool ]}
+  props = { name: val for name,val in tree.items() if type(val) in [ str, int, float, bool, list ]}
   subdirs = { name: val for name,val in tree.items() if type(val) == dict}
 
   for name,val in tree.items():
@@ -49,7 +57,15 @@ def _put_properties(conf, root, tree):
     if "/" in key:
       return False,f"Invalid key {key} in properties of {root}."
 
-    ok,msg = _putstr(conf, root, key, val)
+    if type(val) is list:
+      try:
+        data = bytes(val)
+        ok,msg = _putbytes(conf, root, key, data)
+      except Exception as e:
+        return False,(f"Failed to interpret byte blob {key} at {root}: " + str(e))
+    else:
+      ok,msg = _putstr(conf, root, key, val)
+
     if not ok:
       return False,(f"Failed to set configuration property {key} at {root}: " + msg)
 
