@@ -6,7 +6,7 @@ import status
 import heur.net.util
 
 class RX:
-  def setup(self, conf, dev, path):
+  def init(self, conf, dev, path):
     self.iface = heur.net.util.find_iface(conf, dev, path)
 
     if self.iface is None:
@@ -14,6 +14,8 @@ class RX:
     else:
       status.debug(f"net.rx: Found network interface {self.iface}")
 
+  def stim(self, conf, dev, path):
+    pass
 
   def test(self, conf, dev, path):
     if self.iface is None: return False

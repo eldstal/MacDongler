@@ -241,8 +241,8 @@ def main():
   parser.add_argument("--setup-duration", type=float, default=0,
                       help="Time spent waiting after creating gadget, before setting up tests. Increase if you get warnings about network or serial devices not being found.")
 
-  parser.add_argument("--any", "-A", action="store_true", default=False,
-                      help="Any single heuristic is a good enough test. Default: the device test is successful only if _all_ heuristics match.")
+  parser.add_argument("--must-match-all", "-A", action="store_true", default=False,
+                      help="the device test is successful only if _all_ heuristics match. Default: any single heuristic is a good enough test.")
 
   parser.add_argument("--serial-device", type=str, default=None,
                       help="Serial port device of USB gadgets. Default: auto-select from /dev/ttyGS*")

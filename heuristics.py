@@ -3,14 +3,15 @@
 # The key is the name of the heuristic,
 # the value is a dict of of { description, device_types=[], handler=class) }
 
-# The class shall expose three methods:
-# - setup will be called right after the device is created
-# - test will be called after any user-configured test duration (--test-duration)
-# - cleanup will be called before the device is torn down
+# The class shall expose four methods:
+# - init() will be called right after the device is created
+# - stim() will be called after the global stimulation methods
+# - test() will be called after any user-configured test duration (--test-duration)
+# - cleanup() will be called before the device is torn down
 #
 # All methods will be called with (conf, devspec, gadget_path)
 #
-# test_function should return True if the device is deemed to have been active, i.e. it is
+# test() should return True if the device is deemed to have been active, i.e. it is
 # recognized and accepted by the target USB host.
 
 import copy
@@ -19,6 +20,7 @@ import time
 import status
 
 import heur.net.rx
+import heur.net.ifup
 import heur.serial.rx
 
 import stimulation
@@ -29,6 +31,12 @@ HEURISTICS = {
               "description": "Test if any data is received on the interface. Combine with --net-send-pcap to stimulate the host",
               "device_types": [ "net" ],
               "handler": heur.net.rx.RX
+            },
+
+  "net.ifup": {
+              "description": "Test if the link is brought up automatically by the host",
+              "device_types": [ "net" ],
+              "handler": heur.net.ifup.IfUp
             },
 
   "serial.rx": {
@@ -77,10 +85,6 @@ def test_device(conf, dev, path):
 
   time.sleep(conf.setup_duration)
 
-  # Send traffic or otherwise futz around with the new interface
-  # Maybe we can make the host advertise itself!
-  stimulation.stimulate_device(conf, dev, path)
-
   tests = {}
   for name, spec in HEURISTICS.items():
     if dev["type"] in spec["device_types"]:
@@ -95,9 +99,19 @@ def test_device(conf, dev, path):
 
   for name,obj in tests.items():
     try:
-      obj.setup(conf, dev, path)
+      obj.init(conf, dev, path)
     except Exception as e:
       status.error(f"Failed to set up heuristic {name}: " + str(e))
+
+  # Send traffic or otherwise futz around with the new interface
+  # Maybe we can make the host advertise itself!
+  stimulation.stimulate_device(conf, dev, path)
+
+  for name,obj in tests.items():
+    try:
+      obj.stim(conf, dev, path)
+    except Exception as e:
+      status.error(f"Failed to run stim() of heuristic {name}: " + str(e))
 
   time.sleep(conf.test_duration)
 
@@ -118,9 +132,9 @@ def test_device(conf, dev, path):
       status.error(f"Failed to clean up after heuristic {name}: " + str(e))
 
 
-  if conf.any:
-    return any(results)
-  else:
+  if conf.must_match_all:
     return all(results)
+  else:
+    return any(results)
 
 
