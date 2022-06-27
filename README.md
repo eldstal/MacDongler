@@ -116,8 +116,14 @@ MacDongler --resume --single-step --scan-devices 'ecm.*' 'rndis.*'
 
 This way, the system will boot, a single new device will be tested (`--resume` ensures that progress is saved), and then the system will reboot again. This will continue until all devices have been tested.
 
+A script is provided to do this, in `support/dongle_and_reboot.sh`.
+
+Alternatively, you could do something similar but reload the device controller driver between attempts. This should be faster than rebooting, but solve fewer problems.
+
 #### Delaying
-TODO: Add a configurable delay between tests.
+If you're seeing unpredictable or unstable results, try increasing `--setup-duration` to allow new devices to settle.
+
+If you're not seeing the detection you would expect (especially from the `net.rx` and `serial.rx` heuristics), try increasing `--test-duration`. This will extend the time period before a tested device is dismissed.
 
 
 
@@ -170,28 +176,32 @@ To get an idea for the exact values expected from a device specification, take a
 MacDongler --list-devices linksys-usb3gigv1
 ```
 
+### Device generator
+
+A script is provided under `support/generate_devices.sh` to auto-generate large numbers of VID/PID combinations using an existing device template. This allows you to, for example,
+write a template for a specific mass storage device, and then generate new devices with known VID/PID which inherit the configuration of that template.
+
 
 ## TODO
+ - Web frontend
+    - Serve from the same device, but run the logic in the browser to survive slow boot loops.
  - Sanity check device database.
     - Are you using functions that aren't defined?
     - Do you have a valid device type?
     - Are the function types as expected (soft error)
     - Does the non-template device have all expected metadata?
  - More device types
-    - HID
+    - Storage
+    - Joystick
+    - Mouse
     - Audio?
     - Video?
- - Database generator
-    - Create generic devices with a template (such as rndis-2.0)
-    - Take VID/PID from the [open database](http://www.linux-usb.org/usb.ids)
  - One-shot mode
     - test-multiple, but stop at the first successful device and leave it up
     - immediately bridge the network to eth0 or expose the serial port or whatever
       - This may be out of scope. Maybe just a zero return code for "Yes, a device was set up" and a parsable entry in the status file.
     - plug in, auto-hack, success!
  - More heuristics
-    - net: is the link up? (conflicts with having to bring the link up for pcap transmission.)
-        - May have to do setup -> stim -> test delay -> test
     - serial: got configured?
     - storage: was the FAT read?
     - storage: was anything updated (last mount time?!)

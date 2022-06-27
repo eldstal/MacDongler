@@ -1,0 +1,174 @@
+#!/usr/bin/env python3
+#
+#
+# Reads a usb.ids file (from http://www.linux-usb.org/usb.ids) and generates
+# device stubs from the VID/PID combinations therein.
+#
+
+import argparse
+import sys
+import os
+import re
+
+import requests
+
+def download_usb_ids(conf):
+
+  if os.path.exists(conf.usb_id_file): return
+
+  sys.stderr.write("Downloading usb.ids from www.linux-usb.org\n")
+  res = requests.get("http://www.linux-usb.org/usb.ids")
+
+  if res.status_code != 200:
+    sys.stderr.write("Failed to download usb.ids.\n")
+    return 1
+
+  open(conf.usb_id_file, "w+").write(res.text)
+
+# Parses into { vid : "manufacturer name" } and { vid : { pid : "product name" } }
+def load_usb_ids(conf):
+  vendors = {}
+  products = {}
+
+  db_lines = open(conf.usb_id_file, "r").readlines()
+
+  vendor_re = re.compile("^(?P<vid>[0-9a-f]{4})\s+(?P<vendorname>.*)$")
+  product_re = re.compile("^\t(?P<pid>[0-9a-f]{4})\s+(?P<productname>.*)$")
+  iface_re = re.compile("^\t\t.*$")
+
+  l = 0
+
+  # Filter out comments and empty lines
+  db_lines = [ re.sub("#.*", "", l) for l in db_lines ]
+  db_lines = [ l for l in db_lines if len(l.strip()) > 0 ]
+
+  # Get rid of trailing newlines
+  db_lines = [ l[:-1] for l in db_lines ]
+
+  while l < len(db_lines):
+    txt = db_lines[l]
+
+    #print(txt)
+
+    # Each block starts with a vendor line
+    v = vendor_re.match(txt)
+    if v is None:
+      # Found the end of the vendor list
+      #print(f"{txt} is not a vendor line. Done parsing.")
+      break
+
+    vid = int(v.group("vid"), 16)
+    vname = v.group("vendorname")
+
+    vendors[vid] = vname
+    if vid not in products:
+      products[vid] = {}
+
+    # Go through the following lines and parse out the products of this vendor
+    x = l + 1
+    while x < len(db_lines):
+      subtxt = db_lines[x]
+
+      if iface_re.match(subtxt):
+        #print(f"{subtxt} is an interface. Skipping.")
+        x += 1
+        continue
+
+      p = product_re.match(subtxt)
+
+      # We've found the end of this vendor block
+      if p is None:
+        #print(f"{subtxt} is not a product line. Done with vendor.")
+        break
+
+      pid = int(p.group("pid"), 16)
+      pname = p.group("productname")
+
+      #print(f"Adding product {pid} {pname} to vendor {vname}")
+
+      products[vid][pid] = pname
+      x += 1
+
+    l = x
+
+  return vendors,products
+
+def main():
+  parser = argparse.ArgumentParser()
+
+  #
+  # Operating modes
+  #
+  parser.add_argument("--template", "-t", type=str, default="usb-2.0",
+                      help="Device name to set as a template in created devices. Should probably be something like ecm-2.0 for network devices or acm-2.0 for serial devices, etc.")
+
+  parser.add_argument("--usb-id-file", "-f", type=str, default="usb.ids",
+                      help="usb.ids file from www.linux-usb.org to use as a basis. If it does not exist, the file will be downloaded.")
+
+  parser.add_argument("--vendor-regex", "-v", type=str, default=".*",
+                      help="Regular expression for USB vendor names to consider. Case-insensitive.")
+
+  parser.add_argument("--product-regex", "-e", type=str, default="keyboard|mouse",
+                      help="Regular expression for USB product names to use. Case-insensitive.")
+
+  parser.add_argument("--name-prefix", "-p", type=str, default="auto",
+                      help="Prefix of all generated device names")
+
+
+  conf = parser.parse_args()
+
+
+  download_usb_ids(conf)
+  vendors, products = load_usb_ids(conf)
+
+
+  try:
+    re.compile(conf.vendor_regex)
+  except Exception as e:
+    sys.stderr.write("Invalid --vendor-regex: " + str(e))
+    return 1
+
+  try:
+    re.compile(conf.product_regex)
+  except Exception as e:
+    sys.stderr.write("Invalid --product-regex: " + str(e))
+    return 1
+
+
+  print("/*")
+  print(" * Auto-generated device database file")
+  print(" * Do not edit, this will probably be overwritten!")
+  print(" * The command line used to generate this file was:")
+  print(" * make-device-db " + " ".join(sys.argv[1:]))
+  print(" */")
+  print("")
+
+  print("[")
+  for vid,vname in vendors.items():
+    if not re.search(conf.vendor_regex, vname, re.IGNORECASE): continue
+
+    for pid,pname in products[vid].items():
+      if not re.search(conf.product_regex, pname, re.IGNORECASE): continue
+
+      # This is the name we will use for the MacDongler device database
+      devicename = f"{conf.name_prefix}-{vid:x}:{pid:x}"
+
+      # A JSON5 entry
+      props =  '{ "idVendor": ' + f"{vid:#x}" + ', '
+      props += ' "idProduct": ' + f"{pid:#x}" + ' }'
+
+      device_entry = '{' + f'"name" : "{devicename}", '
+      device_entry += f'"properties":{props},'
+      device_entry += f'"template":"{conf.template}"'
+      device_entry += '},'
+
+      sys.stderr.write(f"{devicename}  -  {vid:x}:{pid:x}  {pname}\n")
+      print(f"  /* {vname} : {pname} */")
+      print(f"  " + device_entry)
+
+  print("]")
+
+  return 0
+
+if __name__ == "__main__":
+  sys.exit(main())

@@ -1,0 +1,1019 @@
+/*
+ * Auto-generated device database file
+ * Do not edit, this will probably be overwritten!
+ * The command line used to generate this file was:
+ * make-device-db --usb-id-file /tmp/usb.ids --template ecm-2.0 --name-prefix ecm --vendor-regex .* --product-regex network|ethernet|lan|gigabit
+ */
+
+[
+  /* Trust International B.V. : NW-3100 802.11b/g 54Mbps Wireless Network Adapter [zd1211] */
+  {"name" : "ecm-105:145f", "properties":{ "idVendor": 0x105,  "idProduct": 0x145f },"template":"ecm-2.0"},
+  /* ZWO : ASI120MC-S Planetary Camera */
+  {"name" : "ecm-3c3:120e", "properties":{ "idVendor": 0x3c3,  "idProduct": 0x120e },"template":"ecm-2.0"},
+  /* EndPoints, Inc. : 101 Ethernet [klsi] */
+  {"name" : "ecm-3e8:8", "properties":{ "idVendor": 0x3e8,  "idProduct": 0x8 },"template":"ecm-2.0"},
+  /* HP, Inc : lt4112 Gobi 4G Module Network Device */
+  {"name" : "ecm-3f0:581d", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x581d },"template":"ecm-2.0"},
+  /* HP, Inc : Ethernet HN210E */
+  {"name" : "ecm-3f0:811c", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x811c },"template":"ecm-2.0"},
+  /* Adaptec, Inc. : AWN-8020 WLAN [Intersil PRISM 2.5] */
+  {"name" : "ecm-3f3:20", "properties":{ "idVendor": 0x3f3,  "idProduct": 0x20 },"template":"ecm-2.0"},
+  /* ALi Corp. : Welland ME-740PS USB2 3.5" Power Saving Enclosure */
+  {"name" : "ecm-402:5627", "properties":{ "idVendor": 0x402,  "idProduct": 0x5627 },"template":"ecm-2.0"},
+  /* VIA Technologies, Inc. : VNT VT6656 USB-802.11 Wireless LAN Adapter */
+  {"name" : "ecm-40d:3184", "properties":{ "idVendor": 0x40d,  "idProduct": 0x3184 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : LUA-TX Ethernet [pegasus] */
+  {"name" : "ecm-411:1", "properties":{ "idVendor": 0x411,  "idProduct": 0x1 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : LUA-TX Ethernet */
+  {"name" : "ecm-411:5", "properties":{ "idVendor": 0x411,  "idProduct": 0x5 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-USB-L11 Wireless LAN Adapter */
+  {"name" : "ecm-411:6", "properties":{ "idVendor": 0x411,  "idProduct": 0x6 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : LUA2-TX Ethernet */
+  {"name" : "ecm-411:9", "properties":{ "idVendor": 0x411,  "idProduct": 0x9 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-USB-L11G-WR Wireless LAN Adapter */
+  {"name" : "ecm-411:b", "properties":{ "idVendor": 0x411,  "idProduct": 0xb },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-USB-L11G Wireless LAN Adapter */
+  {"name" : "ecm-411:d", "properties":{ "idVendor": 0x411,  "idProduct": 0xd },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : LUA-KTX Ethernet */
+  {"name" : "ecm-411:12", "properties":{ "idVendor": 0x411,  "idProduct": 0x12 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : LUA-U2-KTX Ethernet */
+  {"name" : "ecm-411:3d", "properties":{ "idVendor": 0x411,  "idProduct": 0x3d },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-USB-KB11 Wireless LAN Adapter */
+  {"name" : "ecm-411:44", "properties":{ "idVendor": 0x411,  "idProduct": 0x44 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-USB-B11 Wireless LAN Adapter */
+  {"name" : "ecm-411:4d", "properties":{ "idVendor": 0x411,  "idProduct": 0x4d },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI2-USB2-G54 Wireless LAN Adapter */
+  {"name" : "ecm-411:50", "properties":{ "idVendor": 0x411,  "idProduct": 0x50 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-U2-KG54-YB WLAN */
+  {"name" : "ecm-411:5e", "properties":{ "idVendor": 0x411,  "idProduct": 0x5e },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-U2-KG54 WLAN */
+  {"name" : "ecm-411:66", "properties":{ "idVendor": 0x411,  "idProduct": 0x66 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-U2-KG54-AI WLAN */
+  {"name" : "ecm-411:67", "properties":{ "idVendor": 0x411,  "idProduct": 0x67 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : LUA-U2-GT 10/100/1000 Ethernet Adapter */
+  {"name" : "ecm-411:6e", "properties":{ "idVendor": 0x411,  "idProduct": 0x6e },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-U2-KAMG54 Wireless LAN Adapter */
+  {"name" : "ecm-411:91", "properties":{ "idVendor": 0x411,  "idProduct": 0x91 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-U2-AMG54HP Wireless LAN Adapter */
+  {"name" : "ecm-411:a9", "properties":{ "idVendor": 0x411,  "idProduct": 0xa9 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : 802.11n Network Adapter */
+  {"name" : "ecm-411:ca", "properties":{ "idVendor": 0x411,  "idProduct": 0xca },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-UC-G300N Wireless LAN Adapter [Ralink RT2870] */
+  {"name" : "ecm-411:e8", "properties":{ "idVendor": 0x411,  "idProduct": 0xe8 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-UC-AG300N Wireless LAN Adapter */
+  {"name" : "ecm-411:12e", "properties":{ "idVendor": 0x411,  "idProduct": 0x12e },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-UC-G300HP Wireless LAN Adapter */
+  {"name" : "ecm-411:148", "properties":{ "idVendor": 0x411,  "idProduct": 0x148 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLP-UC-AG300 Wireless LAN Adapter */
+  {"name" : "ecm-411:150", "properties":{ "idVendor": 0x411,  "idProduct": 0x150 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-UC-GNHP Wireless LAN Adapter */
+  {"name" : "ecm-411:158", "properties":{ "idVendor": 0x411,  "idProduct": 0x158 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-UC-GN Wireless LAN Adapter [Ralink RT3070] */
+  {"name" : "ecm-411:15d", "properties":{ "idVendor": 0x411,  "idProduct": 0x15d },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-UC-G301N Wireless LAN Adapter [Ralink RT3072] */
+  {"name" : "ecm-411:16f", "properties":{ "idVendor": 0x411,  "idProduct": 0x16f },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-UC-GNP Wireless LAN Adapter */
+  {"name" : "ecm-411:19e", "properties":{ "idVendor": 0x411,  "idProduct": 0x19e },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-UC-GNM Wireless LAN Adapter [Ralink RT8070] */
+  {"name" : "ecm-411:1a2", "properties":{ "idVendor": 0x411,  "idProduct": 0x1a2 },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-UC-GNM2 Wireless LAN Adapter [Ralink RT3070] */
+  {"name" : "ecm-411:1ee", "properties":{ "idVendor": 0x411,  "idProduct": 0x1ee },"template":"ecm-2.0"},
+  /* BUFFALO INC. (formerly MelCo., Inc.) : WLI-UC-G450 Wireless LAN Adapter */
+  {"name" : "ecm-411:1fd", "properties":{ "idVendor": 0x411,  "idProduct": 0x1fd },"template":"ecm-2.0"},
+  /* Winbond Electronics Corp. : W89C35 802.11bg WLAN Adapter */
+  {"name" : "ecm-416:35", "properties":{ "idVendor": 0x416,  "idProduct": 0x35 },"template":"ecm-2.0"},
+  /* Samsung Info. Systems America, Inc. : Remote NDIS Network Device */
+  {"name" : "ecm-419:4602", "properties":{ "idVendor": 0x419,  "idProduct": 0x4602 },"template":"ecm-2.0"},
+  /* Nokia Mobile Phones : N9 (RNDIS/Ethernet mode) */
+  {"name" : "ecm-421:519", "properties":{ "idVendor": 0x421,  "idProduct": 0x519 },"template":"ecm-2.0"},
+  /* Computer Access Technology Corp. : NetMate Ethernet */
+  {"name" : "ecm-423:a", "properties":{ "idVendor": 0x423,  "idProduct": 0xa },"template":"ecm-2.0"},
+  /* Computer Access Technology Corp. : NetMate2 Ethernet */
+  {"name" : "ecm-423:c", "properties":{ "idVendor": 0x423,  "idProduct": 0xc },"template":"ecm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : LAN7500 Ethernet 10/100/1000 Adapter */
+  {"name" : "ecm-424:7500", "properties":{ "idVendor": 0x424,  "idProduct": 0x7500 },"template":"ecm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : LAN9500/LAN9500i */
+  {"name" : "ecm-424:9500", "properties":{ "idVendor": 0x424,  "idProduct": 0x9500 },"template":"ecm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : LAN9512/LAN9514 Ethernet 10/100 Adapter (SAL10) */
+  {"name" : "ecm-424:9904", "properties":{ "idVendor": 0x424,  "idProduct": 0x9904 },"template":"ecm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : LAN9500A/LAN9500Ai */
+  {"name" : "ecm-424:9e00", "properties":{ "idVendor": 0x424,  "idProduct": 0x9e00 },"template":"ecm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : SMSC9512/9514 Fast Ethernet Adapter */
+  {"name" : "ecm-424:ec00", "properties":{ "idVendor": 0x424,  "idProduct": 0xec00 },"template":"ecm-2.0"},
+  /* Fujitsu Component Limited : Ethernet (RNDIS and CDC ethernet) */
+  {"name" : "ecm-430:a4a2", "properties":{ "idVendor": 0x430,  "idProduct": 0xa4a2 },"template":"ecm-2.0"},
+  /* Duta Multi Robotik : Lanjutan */
+  {"name" : "ecm-449:612", "properties":{ "idVendor": 0x449,  "idProduct": 0x612 },"template":"ecm-2.0"},
+  /* Texas Instruments, Inc. : Network Bridge */
+  {"name" : "ecm-451:e013", "properties":{ "idVendor": 0x451,  "idProduct": 0xe013 },"template":"ecm-2.0"},
+  /* Silicon Integrated Systems Corp. : SiS162 usb Wireless LAN Adapter */
+  {"name" : "ecm-457:162", "properties":{ "idVendor": 0x457,  "idProduct": 0x162 },"template":"ecm-2.0"},
+  /* Silicon Integrated Systems Corp. : SiS163U 802.11 Wireless LAN Adapter */
+  {"name" : "ecm-457:163", "properties":{ "idVendor": 0x457,  "idProduct": 0x163 },"template":"ecm-2.0"},
+  /* KYE Systems Corp. (Mouse Systems) : GF3000F Ethernet Adapter */
+  {"name" : "ecm-458:6001", "properties":{ "idVendor": 0x458,  "idProduct": 0x6001 },"template":"ecm-2.0"},
+  /* Microsoft Corp. : Xbox360 Wireless Networking Adapter */
+  {"name" : "ecm-45e:292", "properties":{ "idVendor": 0x45e,  "idProduct": 0x292 },"template":"ecm-2.0"},
+  /* Microsoft Corp. : Xbox360 Wireless N Networking Adapter [Atheros AR7010+AR9280] */
+  {"name" : "ecm-45e:2a8", "properties":{ "idVendor": 0x45e,  "idProduct": 0x2a8 },"template":"ecm-2.0"},
+  /* Microsoft Corp. : RTL8153 GigE [Surface Ethernet Adapter] */
+  {"name" : "ecm-45e:7c6", "properties":{ "idVendor": 0x45e,  "idProduct": 0x7c6 },"template":"ecm-2.0"},
+  /* Microsoft Corp. : RTL8153B GigE [Surface Ethernet Adapter] */
+  {"name" : "ecm-45e:927", "properties":{ "idVendor": 0x45e,  "idProduct": 0x927 },"template":"ecm-2.0"},
+  /* Microsoft Corp. : RTL8153B GigE [Surface Ethernet Adapter] */
+  {"name" : "ecm-45e:9a0", "properties":{ "idVendor": 0x45e,  "idProduct": 0x9a0 },"template":"ecm-2.0"},
+  /* Philips (or NXP) : SG3WA1/74 802.11b WLAN Adapter [Atmel AT76C503A] */
+  {"name" : "ecm-471:408", "properties":{ "idVendor": 0x471,  "idProduct": 0x408 },"template":"ecm-2.0"},
+  /* Philips (or NXP) : Wireless Network Adapter */
+  {"name" : "ecm-471:200a", "properties":{ "idVendor": 0x471,  "idProduct": 0x200a },"template":"ecm-2.0"},
+  /* STMicroelectronics : Remote NDIS Network device with Android debug (ADB) */
+  {"name" : "ecm-483:102", "properties":{ "idVendor": 0x483,  "idProduct": 0x102 },"template":"ecm-2.0"},
+  /* STMicroelectronics : Remote NDIS Network device */
+  {"name" : "ecm-483:103", "properties":{ "idVendor": 0x483,  "idProduct": 0x103 },"template":"ecm-2.0"},
+  /* Yamaha Corp. : NetVolante RTA54i Broadband&ISDN Router */
+  {"name" : "ecm-499:4000", "properties":{ "idVendor": 0x499,  "idProduct": 0x4000 },"template":"ecm-2.0"},
+  /* Yamaha Corp. : NetVolante RTW65b Broadband Wireless Router */
+  {"name" : "ecm-499:4001", "properties":{ "idVendor": 0x499,  "idProduct": 0x4001 },"template":"ecm-2.0"},
+  /* Yamaha Corp. : NetVolante RTW65i Broadband&ISDN Wireless Router */
+  {"name" : "ecm-499:4002", "properties":{ "idVendor": 0x499,  "idProduct": 0x4002 },"template":"ecm-2.0"},
+  /* Yamaha Corp. : NetVolante RTA55i Broadband VoIP Router */
+  {"name" : "ecm-499:4004", "properties":{ "idVendor": 0x499,  "idProduct": 0x4004 },"template":"ecm-2.0"},
+  /* Compaq Computer Corp. : Wireless LAN MultiPort W100 [Intersil PRISM 2.5] */
+  {"name" : "ecm-49f:33", "properties":{ "idVendor": 0x49f,  "idProduct": 0x33 },"template":"ecm-2.0"},
+  /* Compaq Computer Corp. : Wireless LAN MultiPort W200 */
+  {"name" : "ecm-49f:76", "properties":{ "idVendor": 0x49f,  "idProduct": 0x76 },"template":"ecm-2.0"},
+  /* Compaq Computer Corp. : iPAQ Networking 10/100 Ethernet [pegasus2] */
+  {"name" : "ecm-49f:8511", "properties":{ "idVendor": 0x49f,  "idProduct": 0x8511 },"template":"ecm-2.0"},
+  /* I-O Data Device, Inc. : ET/TX Ethernet [pegasus] */
+  {"name" : "ecm-4bb:904", "properties":{ "idVendor": 0x4bb,  "idProduct": 0x904 },"template":"ecm-2.0"},
+  /* I-O Data Device, Inc. : ET/TX-S Ethernet [pegasus2] */
+  {"name" : "ecm-4bb:913", "properties":{ "idVendor": 0x4bb,  "idProduct": 0x913 },"template":"ecm-2.0"},
+  /* I-O Data Device, Inc. : WN-WAG/USL Wireless LAN Adapter */
+  {"name" : "ecm-4bb:937", "properties":{ "idVendor": 0x4bb,  "idProduct": 0x937 },"template":"ecm-2.0"},
+  /* I-O Data Device, Inc. : WN-G54/USL Wireless LAN Adapter */
+  {"name" : "ecm-4bb:938", "properties":{ "idVendor": 0x4bb,  "idProduct": 0x938 },"template":"ecm-2.0"},
+  /* I-O Data Device, Inc. : WHG-AGDN/US Wireless LAN Adapter */
+  {"name" : "ecm-4bb:944", "properties":{ "idVendor": 0x4bb,  "idProduct": 0x944 },"template":"ecm-2.0"},
+  /* I-O Data Device, Inc. : WN-GDN/US3 Wireless LAN Adapter */
+  {"name" : "ecm-4bb:945", "properties":{ "idVendor": 0x4bb,  "idProduct": 0x945 },"template":"ecm-2.0"},
+  /* I-O Data Device, Inc. : WN-G150U Wireless LAN Adapter */
+  {"name" : "ecm-4bb:947", "properties":{ "idVendor": 0x4bb,  "idProduct": 0x947 },"template":"ecm-2.0"},
+  /* I-O Data Device, Inc. : WN-G300U Wireless LAN Adapter */
+  {"name" : "ecm-4bb:948", "properties":{ "idVendor": 0x4bb,  "idProduct": 0x948 },"template":"ecm-2.0"},
+  /* Altec Lansing Technologies : Lansing HID Audio Controls */
+  {"name" : "ecm-4d2:ff47", "properties":{ "idVendor": 0x4d2,  "idProduct": 0xff47 },"template":"ecm-2.0"},
+  /* Altec Lansing Technologies : Lansing HID Audio Controls */
+  {"name" : "ecm-4d2:ff49", "properties":{ "idVendor": 0x4d2,  "idProduct": 0xff49 },"template":"ecm-2.0"},
+  /* Samsung Electronics Co., Ltd : WIS09ABGN LinkStick Wireless LAN Adapter */
+  {"name" : "ecm-4e8:2018", "properties":{ "idVendor": 0x4e8,  "idProduct": 0x2018 },"template":"ecm-2.0"},
+  /* Samsung Electronics Co., Ltd : GT-I9070 (network tethering, USB debugging enabled) */
+  {"name" : "ecm-4e8:6864", "properties":{ "idVendor": 0x4e8,  "idProduct": 0x6864 },"template":"ecm-2.0"},
+  /* Victor Company of Japan, Ltd : MP-PRX1 Ethernet */
+  {"name" : "ecm-4f1:3008", "properties":{ "idVendor": 0x4f1,  "idProduct": 0x3008 },"template":"ecm-2.0"},
+  /* Victor Company of Japan, Ltd : MP-XP7250 WLAN Adapter */
+  {"name" : "ecm-4f1:3009", "properties":{ "idVendor": 0x4f1,  "idProduct": 0x3009 },"template":"ecm-2.0"},
+  /* Acer, Inc. : Liquid Gallant Duo E350 (preloader) */
+  {"name" : "ecm-502:2008", "properties":{ "idVendor": 0x502,  "idProduct": 0x2008 },"template":"ecm-2.0"},
+  /* Acer, Inc. : Liquid Gallant Duo E350 */
+  {"name" : "ecm-502:33c3", "properties":{ "idVendor": 0x502,  "idProduct": 0x33c3 },"template":"ecm-2.0"},
+  /* Acer, Inc. : Liquid Gallant Duo E350 (debug mode) */
+  {"name" : "ecm-502:33c4", "properties":{ "idVendor": 0x502,  "idProduct": 0x33c4 },"template":"ecm-2.0"},
+  /* Acer, Inc. : Liquid Gallant Duo E350 (USB tethering) */
+  {"name" : "ecm-502:33c7", "properties":{ "idVendor": 0x502,  "idProduct": 0x33c7 },"template":"ecm-2.0"},
+  /* Acer, Inc. : Liquid Gallant Duo E350 (debug mode, USB tethering) */
+  {"name" : "ecm-502:33c8", "properties":{ "idVendor": 0x502,  "idProduct": 0x33c8 },"template":"ecm-2.0"},
+  /* 3Com Corp. : 3C19250 Ethernet [klsi] */
+  {"name" : "ecm-506:3e8", "properties":{ "idVendor": 0x506,  "idProduct": 0x3e8 },"template":"ecm-2.0"},
+  /* 3Com Corp. : 3C460B 10/100 Ethernet Adapter */
+  {"name" : "ecm-506:4601", "properties":{ "idVendor": 0x506,  "idProduct": 0x4601 },"template":"ecm-2.0"},
+  /* Aztech Systems, Ltd : Binatone ADSL500 Modem Network Interface */
+  {"name" : "ecm-509:80f", "properties":{ "idVendor": 0x509,  "idProduct": 0x80f },"template":"ecm-2.0"},
+  /* Aztech Systems, Ltd : Pirelli ADSL Modem Network Interface */
+  {"name" : "ecm-509:812", "properties":{ "idVendor": 0x509,  "idProduct": 0x812 },"template":"ecm-2.0"},
+  /* Belkin Components : F5D5050 100Mbps Ethernet */
+  {"name" : "ecm-50d:121", "properties":{ "idVendor": 0x50d,  "idProduct": 0x121 },"template":"ecm-2.0"},
+  /* Belkin Components : Ethernet Adapter */
+  {"name" : "ecm-50d:122", "properties":{ "idVendor": 0x50d,  "idProduct": 0x122 },"template":"ecm-2.0"},
+  /* Belkin Components : N300 WLAN N Adapter [ISY] */
+  {"name" : "ecm-50d:21f1", "properties":{ "idVendor": 0x50d,  "idProduct": 0x21f1 },"template":"ecm-2.0"},
+  /* Belkin Components : RTL8192CU 802.11n WLAN Adapter [ISY IWL 4000] */
+  {"name" : "ecm-50d:21f2", "properties":{ "idVendor": 0x50d,  "idProduct": 0x21f2 },"template":"ecm-2.0"},
+  /* Belkin Components : F5D5055 Gigabit Network Adapter [AX88xxx] */
+  {"name" : "ecm-50d:5055", "properties":{ "idVendor": 0x50d,  "idProduct": 0x5055 },"template":"ecm-2.0"},
+  /* Belkin Components : F5D6051 802.11b Wireless Network Adapter [ZyDAS ZD1201] */
+  {"name" : "ecm-50d:6051", "properties":{ "idVendor": 0x50d,  "idProduct": 0x6051 },"template":"ecm-2.0"},
+  /* Belkin Components : F5D9050 Wireless G+ MIMO Network Adapter v3000 [Ralink RT2573] */
+  {"name" : "ecm-50d:905b", "properties":{ "idVendor": 0x50d,  "idProduct": 0x905b },"template":"ecm-2.0"},
+  /* Belkin Components : F5D9050 Wireless G+ MIMO Network Adapter v4000 [Ralink RT2573] */
+  {"name" : "ecm-50d:905c", "properties":{ "idVendor": 0x50d,  "idProduct": 0x905c },"template":"ecm-2.0"},
+  /* Belkin Components : F6D4050 N150 Enhanced Wireless Network Adapter v1000 [Ralink RT3070] */
+  {"name" : "ecm-50d:935a", "properties":{ "idVendor": 0x50d,  "idProduct": 0x935a },"template":"ecm-2.0"},
+  /* Belkin Components : F6D4050 N150 Enhanced Wireless Network Adapter v2000 [Ralink RT3070] */
+  {"name" : "ecm-50d:935b", "properties":{ "idVendor": 0x50d,  "idProduct": 0x935b },"template":"ecm-2.0"},
+  /* Netchip Technology, Inc. : Linux-USB Ethernet Gadget */
+  {"name" : "ecm-525:a4a1", "properties":{ "idVendor": 0x525,  "idProduct": 0xa4a1 },"template":"ecm-2.0"},
+  /* Netchip Technology, Inc. : Linux-USB Ethernet/RNDIS Gadget */
+  {"name" : "ecm-525:a4a2", "properties":{ "idVendor": 0x525,  "idProduct": 0xa4a2 },"template":"ecm-2.0"},
+  /* Netchip Technology, Inc. : Linux-USB CDC Composite Gadge (Ethernet and ACM) */
+  {"name" : "ecm-525:a4aa", "properties":{ "idVendor": 0x525,  "idProduct": 0xa4aa },"template":"ecm-2.0"},
+  /* Sony Corp. : Network Walkman (E) */
+  {"name" : "ecm-54c:35", "properties":{ "idVendor": 0x54c,  "idProduct": 0x35 },"template":"ecm-2.0"},
+  /* Sony Corp. : Network Walkman (MS) */
+  {"name" : "ecm-54c:39", "properties":{ "idVendor": 0x54c,  "idProduct": 0x39 },"template":"ecm-2.0"},
+  /* Sony Corp. : Network Walkman */
+  {"name" : "ecm-54c:46", "properties":{ "idVendor": 0x54c,  "idProduct": 0x46 },"template":"ecm-2.0"},
+  /* Sony Corp. : Network Walkman (EV) */
+  {"name" : "ecm-54c:6f", "properties":{ "idVendor": 0x54c,  "idProduct": 0x6f },"template":"ecm-2.0"},
+  /* Sony Corp. : Network Walkman (MS) */
+  {"name" : "ecm-54c:e8", "properties":{ "idVendor": 0x54c,  "idProduct": 0xe8 },"template":"ecm-2.0"},
+  /* Sony Corp. : NW-E55 Network Walkman */
+  {"name" : "ecm-54c:1c3", "properties":{ "idVendor": 0x54c,  "idProduct": 0x1c3 },"template":"ecm-2.0"},
+  /* Sony Corp. : NW-E405 Network Walkman */
+  {"name" : "ecm-54c:1fb", "properties":{ "idVendor": 0x54c,  "idProduct": 0x1fb },"template":"ecm-2.0"},
+  /* Sony Corp. : IFU-WLM2 USB Wireless LAN Module (Wireless Mode) */
+  {"name" : "ecm-54c:257", "properties":{ "idVendor": 0x54c,  "idProduct": 0x257 },"template":"ecm-2.0"},
+  /* Sony Corp. : IFU-WLM2 USB Wireless LAN Module (Memory Mode) */
+  {"name" : "ecm-54c:258", "properties":{ "idVendor": 0x54c,  "idProduct": 0x258 },"template":"ecm-2.0"},
+  /* Sony Corp. : NETWORK WALKMAN */
+  {"name" : "ecm-54c:27c", "properties":{ "idVendor": 0x54c,  "idProduct": 0x27c },"template":"ecm-2.0"},
+  /* ATEN International Co., Ltd : 10Mbps Ethernet [klsi] */
+  {"name" : "ecm-557:2002", "properties":{ "idVendor": 0x557,  "idProduct": 0x2002 },"template":"ecm-2.0"},
+  /* ATEN International Co., Ltd : UC-110T 100Mbps Ethernet [pegasus] */
+  {"name" : "ecm-557:2007", "properties":{ "idVendor": 0x557,  "idProduct": 0x2007 },"template":"ecm-2.0"},
+  /* ATEN International Co., Ltd : UC-210T Ethernet */
+  {"name" : "ecm-557:2009", "properties":{ "idVendor": 0x557,  "idProduct": 0x2009 },"template":"ecm-2.0"},
+  /* ATEN International Co., Ltd : DSB-650 10Mbps Ethernet [klsi] */
+  {"name" : "ecm-557:4000", "properties":{ "idVendor": 0x557,  "idProduct": 0x4000 },"template":"ecm-2.0"},
+  /* Samsung Electro-Mechanics Co. : WLAN Adapter(SWL-2300) */
+  {"name" : "ecm-55d:a010", "properties":{ "idVendor": 0x55d,  "idProduct": 0xa010 },"template":"ecm-2.0"},
+  /* Samsung Electro-Mechanics Co. : WLAN Adapter(SWL-2300) */
+  {"name" : "ecm-55d:a012", "properties":{ "idVendor": 0x55d,  "idProduct": 0xa012 },"template":"ecm-2.0"},
+  /* Samsung Electro-Mechanics Co. : WLAN Adapter(SWL-2350) */
+  {"name" : "ecm-55d:a013", "properties":{ "idVendor": 0x55d,  "idProduct": 0xa013 },"template":"ecm-2.0"},
+  /* Samsung Electro-Mechanics Co. : 11Mbps WLAN Mini Adapter */
+  {"name" : "ecm-55d:b000", "properties":{ "idVendor": 0x55d,  "idProduct": 0xb000 },"template":"ecm-2.0"},
+  /* Samsung Electro-Mechanics Co. : Netopia 802.11b WLAN Adapter */
+  {"name" : "ecm-55d:b230", "properties":{ "idVendor": 0x55d,  "idProduct": 0xb230 },"template":"ecm-2.0"},
+  /* Samsung Electro-Mechanics Co. : LG Wireless LAN 11b Adapter */
+  {"name" : "ecm-55d:b231", "properties":{ "idVendor": 0x55d,  "idProduct": 0xb231 },"template":"ecm-2.0"},
+  /* Peracom Networks, Inc. : Enet Ethernet [klsi] */
+  {"name" : "ecm-565:2", "properties":{ "idVendor": 0x565,  "idProduct": 0x2 },"template":"ecm-2.0"},
+  /* Peracom Networks, Inc. : @Home Networks Ethernet [klsi] */
+  {"name" : "ecm-565:3", "properties":{ "idVendor": 0x565,  "idProduct": 0x3 },"template":"ecm-2.0"},
+  /* Peracom Networks, Inc. : Enet2 Ethernet [klsi] */
+  {"name" : "ecm-565:5", "properties":{ "idVendor": 0x565,  "idProduct": 0x5 },"template":"ecm-2.0"},
+  /* Peracom Networks, Inc. : Peracom Remote NDIS Ethernet Adapter */
+  {"name" : "ecm-565:41", "properties":{ "idVendor": 0x565,  "idProduct": 0x41 },"template":"ecm-2.0"},
+  /* Elecom Co., Ltd : Laneed 100Mbps Ethernet LD-USB/TX [pegasus] */
+  {"name" : "ecm-56e:4002", "properties":{ "idVendor": 0x56e,  "idProduct": 0x4002 },"template":"ecm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : StarModem Network Interface */
+  {"name" : "ecm-572:cb06", "properties":{ "idVendor": 0x572,  "idProduct": 0xcb06 },"template":"ecm-2.0"},
+  /* AVM GmbH : FRITZ!Box WLAN */
+  {"name" : "ecm-57c:3c00", "properties":{ "idVendor": 0x57c,  "idProduct": 0x3c00 },"template":"ecm-2.0"},
+  /* AVM GmbH : FRITZ!Box Fon WLAN 7050/7140/7170/IAD3331 */
+  {"name" : "ecm-57c:3d00", "properties":{ "idVendor": 0x57c,  "idProduct": 0x3d00 },"template":"ecm-2.0"},
+  /* AVM GmbH : FRITZ!Box WLAN (Annex A) */
+  {"name" : "ecm-57c:4101", "properties":{ "idVendor": 0x57c,  "idProduct": 0x4101 },"template":"ecm-2.0"},
+  /* AVM GmbH : FRITZ!Box Fon WLAN (Annex A) */
+  {"name" : "ecm-57c:4201", "properties":{ "idVendor": 0x57c,  "idProduct": 0x4201 },"template":"ecm-2.0"},
+  /* AVM GmbH : AVM Fritz!WLAN [Texas Instruments TNETW1450] */
+  {"name" : "ecm-57c:5601", "properties":{ "idVendor": 0x57c,  "idProduct": 0x5601 },"template":"ecm-2.0"},
+  /* AVM GmbH : AVM Fritz!WLAN v1.1 [Texas Instruments TNETW1450] */
+  {"name" : "ecm-57c:6201", "properties":{ "idVendor": 0x57c,  "idProduct": 0x6201 },"template":"ecm-2.0"},
+  /* AVM GmbH : AVM Fritz!WLAN USB (in CD-ROM-mode) */
+  {"name" : "ecm-57c:62ff", "properties":{ "idVendor": 0x57c,  "idProduct": 0x62ff },"template":"ecm-2.0"},
+  /* AVM GmbH : Fritz!WLAN N [Atheros AR9001U] */
+  {"name" : "ecm-57c:8401", "properties":{ "idVendor": 0x57c,  "idProduct": 0x8401 },"template":"ecm-2.0"},
+  /* AVM GmbH : Fritz!WLAN N 2.4 [Atheros AR9001U] */
+  {"name" : "ecm-57c:8402", "properties":{ "idVendor": 0x57c,  "idProduct": 0x8402 },"template":"ecm-2.0"},
+  /* AVM GmbH : Fritz!WLAN N v2 [Atheros AR9271] */
+  {"name" : "ecm-57c:8403", "properties":{ "idVendor": 0x57c,  "idProduct": 0x8403 },"template":"ecm-2.0"},
+  /* AVM GmbH : AVM Fritz!WLAN USB N (in CD-ROM-mode) */
+  {"name" : "ecm-57c:84ff", "properties":{ "idVendor": 0x57c,  "idProduct": 0x84ff },"template":"ecm-2.0"},
+  /* AVM GmbH : FRITZ WLAN N v2 [RT5572/rt2870.bin] */
+  {"name" : "ecm-57c:8501", "properties":{ "idVendor": 0x57c,  "idProduct": 0x8501 },"template":"ecm-2.0"},
+  /* ZyXEL Communications Corp. : 802.11b/g/n USB Wireless Network Adapter */
+  {"name" : "ecm-586:25", "properties":{ "idVendor": 0x586,  "idProduct": 0x25 },"template":"ecm-2.0"},
+  /* ZyXEL Communications Corp. : LAN Modem */
+  {"name" : "ecm-586:3304", "properties":{ "idVendor": 0x586,  "idProduct": 0x3304 },"template":"ecm-2.0"},
+  /* ARC International : Marvell 88W8388 802.11a/b/g WLAN */
+  {"name" : "ecm-5a3:8388", "properties":{ "idVendor": 0x5a3,  "idProduct": 0x8388 },"template":"ecm-2.0"},
+  /* Cisco Systems, Inc. : Virtual Ethernet/RNDIS */
+  {"name" : "ecm-5a6:a03", "properties":{ "idVendor": 0x5a6,  "idProduct": 0xa03 },"template":"ecm-2.0"},
+  /* Apple, Inc. : Ethernet Adapter [A1277] */
+  {"name" : "ecm-5ac:1402", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x1402 },"template":"ecm-2.0"},
+  /* ELSA AG : Micolink USB2Ethernet [pegasus] */
+  {"name" : "ecm-5cc:3000", "properties":{ "idVendor": 0x5cc,  "idProduct": 0x3000 },"template":"ecm-2.0"},
+  /* ELSA AG : AirLancer USB-11 */
+  {"name" : "ecm-5cc:3100", "properties":{ "idVendor": 0x5cc,  "idProduct": 0x3100 },"template":"ecm-2.0"},
+  /* Thomas & Betts Corp. : 10Mbps Ethernet [klsi] */
+  {"name" : "ecm-5d7:99", "properties":{ "idVendor": 0x5d7,  "idProduct": 0x99 },"template":"ecm-2.0"},
+  /* Delta Electronics, Inc. : FriendlyNET AeroLAN AL2011 */
+  {"name" : "ecm-5dd:ff32", "properties":{ "idVendor": 0x5dd,  "idProduct": 0xff32 },"template":"ecm-2.0"},
+  /* Symbol Technologies : Spectrum24 Wireless LAN Adapter */
+  {"name" : "ecm-5e0:800", "properties":{ "idVendor": 0x5e0,  "idProduct": 0x800 },"template":"ecm-2.0"},
+  /* Kawasaki LSI : KL5KUSB101B Ethernet [klsi] */
+  {"name" : "ecm-5e9:8", "properties":{ "idVendor": 0x5e9,  "idProduct": 0x8 },"template":"ecm-2.0"},
+  /* Kawasaki LSI : Sony 10Mbps Ethernet [pegasus] */
+  {"name" : "ecm-5e9:9", "properties":{ "idVendor": 0x5e9,  "idProduct": 0x9 },"template":"ecm-2.0"},
+  /* Kawasaki LSI : Ethernet Adapter */
+  {"name" : "ecm-5e9:40", "properties":{ "idVendor": 0x5e9,  "idProduct": 0x40 },"template":"ecm-2.0"},
+  /* Kawasaki LSI : Ethernet Adapter */
+  {"name" : "ecm-5e9:2008", "properties":{ "idVendor": 0x5e9,  "idProduct": 0x2008 },"template":"ecm-2.0"},
+  /* PSC Scanning, Inc. : Magellan 2200VS */
+  {"name" : "ecm-5f9:1104", "properties":{ "idVendor": 0x5f9,  "idProduct": 0x1104 },"template":"ecm-2.0"},
+  /* PSC Scanning, Inc. : Datalogic Magellan 1000i Barcode Scanner */
+  {"name" : "ecm-5f9:2601", "properties":{ "idVendor": 0x5f9,  "idProduct": 0x2601 },"template":"ecm-2.0"},
+  /* PSC Scanning, Inc. : Datalogic Magellan 1100i Barcode Scanner */
+  {"name" : "ecm-5f9:2602", "properties":{ "idVendor": 0x5f9,  "idProduct": 0x2602 },"template":"ecm-2.0"},
+  /* Chic Technology Corp. : Inland Pro 4500/5000 Mouse */
+  {"name" : "ecm-5fe:9", "properties":{ "idVendor": 0x5fe,  "idProduct": 0x9 },"template":"ecm-2.0"},
+  /* Linksys, Inc. : USB10TX Ethernet [pegasus] */
+  {"name" : "ecm-66b:2202", "properties":{ "idVendor": 0x66b,  "idProduct": 0x2202 },"template":"ecm-2.0"},
+  /* Linksys, Inc. : USB100TX Ethernet [pegasus] */
+  {"name" : "ecm-66b:2203", "properties":{ "idVendor": 0x66b,  "idProduct": 0x2203 },"template":"ecm-2.0"},
+  /* Linksys, Inc. : USB100TX HomePNA Ethernet [pegasus] */
+  {"name" : "ecm-66b:2204", "properties":{ "idVendor": 0x66b,  "idProduct": 0x2204 },"template":"ecm-2.0"},
+  /* Linksys, Inc. : USB Ethernet [pegasus] */
+  {"name" : "ecm-66b:2206", "properties":{ "idVendor": 0x66b,  "idProduct": 0x2206 },"template":"ecm-2.0"},
+  /* Linksys, Inc. : HomeLink Phoneline 10M Network Adapter */
+  {"name" : "ecm-66b:2207", "properties":{ "idVendor": 0x66b,  "idProduct": 0x2207 },"template":"ecm-2.0"},
+  /* Linksys, Inc. : Instant Wireless Network Adapter */
+  {"name" : "ecm-66b:2219", "properties":{ "idVendor": 0x66b,  "idProduct": 0x2219 },"template":"ecm-2.0"},
+  /* Efficient Networks, Inc. : Siemens SpeedStream 100MBps Ethernet */
+  {"name" : "ecm-67c:1001", "properties":{ "idVendor": 0x67c,  "idProduct": 0x1001 },"template":"ecm-2.0"},
+  /* Efficient Networks, Inc. : Efficient Networks 4060 Loader */
+  {"name" : "ecm-67c:4062", "properties":{ "idVendor": 0x67c,  "idProduct": 0x4062 },"template":"ecm-2.0"},
+  /* Efficient Networks, Inc. : Efficient Networks Virtual Bus for ADSL Modem */
+  {"name" : "ecm-67c:5667", "properties":{ "idVendor": 0x67c,  "idProduct": 0x5667 },"template":"ecm-2.0"},
+  /* Efficient Networks, Inc. : Efficient Networks Virtual Bus for ADSL Modem */
+  {"name" : "ecm-67c:d667", "properties":{ "idVendor": 0x67c,  "idProduct": 0xd667 },"template":"ecm-2.0"},
+  /* Efficient Networks, Inc. : Speedstream Ethernet Adapter E240 */
+  {"name" : "ecm-67c:e240", "properties":{ "idVendor": 0x67c,  "idProduct": 0xe240 },"template":"ecm-2.0"},
+  /* Efficient Networks, Inc. : Speedstream Ethernet Adapter E240 */
+  {"name" : "ecm-67c:e540", "properties":{ "idVendor": 0x67c,  "idProduct": 0xe540 },"template":"ecm-2.0"},
+  /* Siemens Information and Communication Products : 54g USB Network Adapter */
+  {"name" : "ecm-681:3c06", "properties":{ "idVendor": 0x681,  "idProduct": 0x3c06 },"template":"ecm-2.0"},
+  /* Askey Computer Corp. : IEEE 802.11b Wireless LAN Card */
+  {"name" : "ecm-69a:320", "properties":{ "idVendor": 0x69a,  "idProduct": 0x320 },"template":"ecm-2.0"},
+  /* Askey Computer Corp. : Scientific Atlanta WebSTAR 100 & 200 series Cable Modem */
+  {"name" : "ecm-69a:402", "properties":{ "idVendor": 0x69a,  "idProduct": 0x402 },"template":"ecm-2.0"},
+  /* Askey Computer Corp. : Scientific Atlanta WebSTAR 2000 series Cable Modem */
+  {"name" : "ecm-69a:4402", "properties":{ "idVendor": 0x69a,  "idProduct": 0x4402 },"template":"ecm-2.0"},
+  /* Askey Computer Corp. : Scientific Atlanta WebSTAR 300 series Cable Modem */
+  {"name" : "ecm-69a:4403", "properties":{ "idVendor": 0x69a,  "idProduct": 0x4403 },"template":"ecm-2.0"},
+  /* Askey Computer Corp. : Scientific-Atlanta WebSTAR 2000 series Cable Modem */
+  {"name" : "ecm-69a:4501", "properties":{ "idVendor": 0x69a,  "idProduct": 0x4501 },"template":"ecm-2.0"},
+  /* ADS Technologies, Inc. : UBS-10BT Ethernet [klsi] */
+  {"name" : "ecm-6e1:8", "properties":{ "idVendor": 0x6e1,  "idProduct": 0x8 },"template":"ecm-2.0"},
+  /* ADS Technologies, Inc. : UBS-10BT Ethernet */
+  {"name" : "ecm-6e1:9", "properties":{ "idVendor": 0x6e1,  "idProduct": 0x9 },"template":"ecm-2.0"},
+  /* Guillemot Corp. : HWGUSB2-54 WLAN */
+  {"name" : "ecm-6f8:e000", "properties":{ "idVendor": 0x6f8,  "idProduct": 0xe000 },"template":"ecm-2.0"},
+  /* Standard Microsystems Corp. : 2202 Ethernet [klsi] */
+  {"name" : "ecm-707:100", "properties":{ "idVendor": 0x707,  "idProduct": 0x100 },"template":"ecm-2.0"},
+  /* Standard Microsystems Corp. : 2202 Ethernet [pegasus] */
+  {"name" : "ecm-707:200", "properties":{ "idVendor": 0x707,  "idProduct": 0x200 },"template":"ecm-2.0"},
+  /* Standard Microsystems Corp. : EZ Connect USB Ethernet */
+  {"name" : "ecm-707:201", "properties":{ "idVendor": 0x707,  "idProduct": 0x201 },"template":"ecm-2.0"},
+  /* Standard Microsystems Corp. : SMCWUSB32 802.11b Wireless LAN Card */
+  {"name" : "ecm-707:ee04", "properties":{ "idVendor": 0x707,  "idProduct": 0xee04 },"template":"ecm-2.0"},
+  /* Surecom Technology Corp. : EP-9001-g 802.11g 54M WLAN Adapter */
+  {"name" : "ecm-769:11f2", "properties":{ "idVendor": 0x769,  "idProduct": 0x11f2 },"template":"ecm-2.0"},
+  /* Surecom Technology Corp. : 802.11g 54M WLAN Adapter */
+  {"name" : "ecm-769:11f7", "properties":{ "idVendor": 0x769,  "idProduct": 0x11f7 },"template":"ecm-2.0"},
+  /* Linksys : Network Everywhere NWU11B */
+  {"name" : "ecm-77b:2227", "properties":{ "idVendor": 0x77b,  "idProduct": 0x2227 },"template":"ecm-2.0"},
+  /* Logitec Corp. : LAN-TX/U1H2 10/100 Ethernet Adapter [pegasus II] */
+  {"name" : "ecm-789:105", "properties":{ "idVendor": 0x789,  "idProduct": 0x105 },"template":"ecm-2.0"},
+  /* Logitec Corp. : Realtek RTL8187 Wireless 802.11g 54Mbps Network Adapter */
+  {"name" : "ecm-789:10c", "properties":{ "idVendor": 0x789,  "idProduct": 0x10c },"template":"ecm-2.0"},
+  /* Logitec Corp. : LAN-GTJ/U2A */
+  {"name" : "ecm-789:160", "properties":{ "idVendor": 0x789,  "idProduct": 0x160 },"template":"ecm-2.0"},
+  /* Logitec Corp. : LAN-WN22/U2 Wireless LAN Adapter */
+  {"name" : "ecm-789:162", "properties":{ "idVendor": 0x789,  "idProduct": 0x162 },"template":"ecm-2.0"},
+  /* Logitec Corp. : LAN-WN12/U2 Wireless LAN Adapter */
+  {"name" : "ecm-789:163", "properties":{ "idVendor": 0x789,  "idProduct": 0x163 },"template":"ecm-2.0"},
+  /* Logitec Corp. : LAN-W150/U2M Wireless LAN Adapter */
+  {"name" : "ecm-789:164", "properties":{ "idVendor": 0x789,  "idProduct": 0x164 },"template":"ecm-2.0"},
+  /* Logitec Corp. : LAN-W300N/U2 Wireless LAN Adapter */
+  {"name" : "ecm-789:166", "properties":{ "idVendor": 0x789,  "idProduct": 0x166 },"template":"ecm-2.0"},
+  /* Logitec Corp. : LAN-W150N/U2 Wireless LAN Adapter */
+  {"name" : "ecm-789:168", "properties":{ "idVendor": 0x789,  "idProduct": 0x168 },"template":"ecm-2.0"},
+  /* Logitec Corp. : LAN-W300AN/U2 Wireless LAN Adapter */
+  {"name" : "ecm-789:170", "properties":{ "idVendor": 0x789,  "idProduct": 0x170 },"template":"ecm-2.0"},
+  /* ADMtek, Inc. : AN986A Ethernet */
+  {"name" : "ecm-7a6:7c2", "properties":{ "idVendor": 0x7a6,  "idProduct": 0x7c2 },"template":"ecm-2.0"},
+  /* ADMtek, Inc. : AN986 Pegasus Ethernet */
+  {"name" : "ecm-7a6:986", "properties":{ "idVendor": 0x7a6,  "idProduct": 0x986 },"template":"ecm-2.0"},
+  /* ADMtek, Inc. : Infineon WildCard-USB Wireless LAN Adapter */
+  {"name" : "ecm-7a6:8266", "properties":{ "idVendor": 0x7a6,  "idProduct": 0x8266 },"template":"ecm-2.0"},
+  /* ADMtek, Inc. : ADM8511 Pegasus II Ethernet */
+  {"name" : "ecm-7a6:8511", "properties":{ "idVendor": 0x7a6,  "idProduct": 0x8511 },"template":"ecm-2.0"},
+  /* ADMtek, Inc. : ADM8513 Pegasus II Ethernet */
+  {"name" : "ecm-7a6:8513", "properties":{ "idVendor": 0x7a6,  "idProduct": 0x8513 },"template":"ecm-2.0"},
+  /* ADMtek, Inc. : ADM8515 Pegasus II Ethernet */
+  {"name" : "ecm-7a6:8515", "properties":{ "idVendor": 0x7a6,  "idProduct": 0x8515 },"template":"ecm-2.0"},
+  /* Corega K.K. : Ether USB-T Ethernet [klsi] */
+  {"name" : "ecm-7aa:1", "properties":{ "idVendor": 0x7aa,  "idProduct": 0x1 },"template":"ecm-2.0"},
+  /* Corega K.K. : FEther USB-TX Ethernet [pegasus] */
+  {"name" : "ecm-7aa:4", "properties":{ "idVendor": 0x7aa,  "idProduct": 0x4 },"template":"ecm-2.0"},
+  /* Corega K.K. : WirelessLAN USB-11 */
+  {"name" : "ecm-7aa:c", "properties":{ "idVendor": 0x7aa,  "idProduct": 0xc },"template":"ecm-2.0"},
+  /* Corega K.K. : Wireless LAN USB-11 mini */
+  {"name" : "ecm-7aa:11", "properties":{ "idVendor": 0x7aa,  "idProduct": 0x11 },"template":"ecm-2.0"},
+  /* Corega K.K. : Wireless LAN USB-11 mini 2 */
+  {"name" : "ecm-7aa:18", "properties":{ "idVendor": 0x7aa,  "idProduct": 0x18 },"template":"ecm-2.0"},
+  /* Freecom Technologies : Freecom Classic SL Network Drive */
+  {"name" : "ecm-7ab:fcf8", "properties":{ "idVendor": 0x7ab,  "idProduct": 0xfcf8 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : Wireless LAN Card */
+  {"name" : "ecm-7b8:2573", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x2573 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : 802.11n/b/g Mini Wireless LAN USB2.0 Adapter */
+  {"name" : "ecm-7b8:2770", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x2770 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : 802.11n/b/g Wireless LAN USB2.0 Adapter */
+  {"name" : "ecm-7b8:2870", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x2870 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : 802.11n/b/g Mini Wireless LAN USB2.0 Adapter */
+  {"name" : "ecm-7b8:3070", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x3070 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : 802.11n/b/g Mini Wireless LAN USB2.0 Adapter */
+  {"name" : "ecm-7b8:3071", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x3071 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : 802.11n/b/g Mini Wireless LAN USB2.0 Adapter */
+  {"name" : "ecm-7b8:3072", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x3072 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : DU-E10 Ethernet [klsi] */
+  {"name" : "ecm-7b8:4000", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x4000 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : DU-E100 Ethernet [pegasus] */
+  {"name" : "ecm-7b8:4002", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x4002 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : 1/10/100 Ethernet Adapter */
+  {"name" : "ecm-7b8:4003", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x4003 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : USB 1.1 10/100M Fast Ethernet Adapter */
+  {"name" : "ecm-7b8:4102", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x4102 },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : UF200 Ethernet */
+  {"name" : "ecm-7b8:420a", "properties":{ "idVendor": 0x7b8,  "idProduct": 0x420a },"template":"ecm-2.0"},
+  /* AboCom Systems Inc : DU-E10 Ethernet [pegasus] */
+  {"name" : "ecm-7b8:abc1", "properties":{ "idVendor": 0x7b8,  "idProduct": 0xabc1 },"template":"ecm-2.0"},
+  /* ShareWave, Inc. : Bodega Wireless Network Adapter */
+  {"name" : "ecm-7c6:3", "properties":{ "idVendor": 0x7c6,  "idProduct": 0x3 },"template":"ecm-2.0"},
+  /* Mark of the Unicorn : FastLane MIDI Interface */
+  {"name" : "ecm-7fd:0", "properties":{ "idVendor": 0x7fd,  "idProduct": 0x0 },"template":"ecm-2.0"},
+  /* Accton Technology Corp. : 10/100 Ethernet [pegasus] */
+  {"name" : "ecm-83a:1046", "properties":{ "idVendor": 0x83a,  "idProduct": 0x1046 },"template":"ecm-2.0"},
+  /* Accton Technology Corp. : SpeedStream 10/100 Ethernet [pegasus] */
+  {"name" : "ecm-83a:5046", "properties":{ "idVendor": 0x83a,  "idProduct": 0x5046 },"template":"ecm-2.0"},
+  /* Accton Technology Corp. : CPWUE001 USB/Ethernet Adapter */
+  {"name" : "ecm-83a:b004", "properties":{ "idVendor": 0x83a,  "idProduct": 0xb004 },"template":"ecm-2.0"},
+  /* NetGear, Inc. : EA101 10 Mbps 10BASE-T Ethernet [Kawasaki LSI KL5KLUSB101B] */
+  {"name" : "ecm-846:1001", "properties":{ "idVendor": 0x846,  "idProduct": 0x1001 },"template":"ecm-2.0"},
+  /* NetGear, Inc. : Ethernet */
+  {"name" : "ecm-846:1002", "properties":{ "idVendor": 0x846,  "idProduct": 0x1002 },"template":"ecm-2.0"},
+  /* NetGear, Inc. : FA101 Fast Ethernet USB 1.1 */
+  {"name" : "ecm-846:1020", "properties":{ "idVendor": 0x846,  "idProduct": 0x1020 },"template":"ecm-2.0"},
+  /* NetGear, Inc. : FA120 Fast Ethernet USB 2.0 [Asix AX88172 / AX8817x] */
+  {"name" : "ecm-846:1040", "properties":{ "idVendor": 0x846,  "idProduct": 0x1040 },"template":"ecm-2.0"},
+  /* NetGear, Inc. : On Networks N150MA 802.11bgn [Realtek RTL8188CUS] */
+  {"name" : "ecm-846:9042", "properties":{ "idVendor": 0x846,  "idProduct": 0x9042 },"template":"ecm-2.0"},
+  /* NetGear, Inc. : On Networks N300MA 802.11bgn [Realtek RTL8192CU] */
+  {"name" : "ecm-846:f001", "properties":{ "idVendor": 0x846,  "idProduct": 0xf001 },"template":"ecm-2.0"},
+  /* Xircom : Ethernet */
+  {"name" : "ecm-85a:8", "properties":{ "idVendor": 0x85a,  "idProduct": 0x8 },"template":"ecm-2.0"},
+  /* Xircom : Ethernet */
+  {"name" : "ecm-85a:9", "properties":{ "idVendor": 0x85a,  "idProduct": 0x9 },"template":"ecm-2.0"},
+  /* DeTeWe - Deutsche Telephonwerke AG & Co. : Eumex 704PC LAN */
+  {"name" : "ecm-86c:1013", "properties":{ "idVendor": 0x86c,  "idProduct": 0x1013 },"template":"ecm-2.0"},
+  /* DeTeWe - Deutsche Telephonwerke AG & Co. : Eumex 704PC LAN (FlashLoad) */
+  {"name" : "ecm-86c:1014", "properties":{ "idVendor": 0x86c,  "idProduct": 0x1014 },"template":"ecm-2.0"},
+  /* Jaton Corp. : Ethernet */
+  {"name" : "ecm-87d:5704", "properties":{ "idVendor": 0x87d,  "idProduct": 0x5704 },"template":"ecm-2.0"},
+  /* TSI Incorporated : Remote NDIS Network Device */
+  {"name" : "ecm-894:10", "properties":{ "idVendor": 0x894,  "idProduct": 0x10 },"template":"ecm-2.0"},
+  /* smartBridges, Inc. : smartNIC Ethernet [catc] */
+  {"name" : "ecm-8d1:1", "properties":{ "idVendor": 0x8d1,  "idProduct": 0x1 },"template":"ecm-2.0"},
+  /* smartBridges, Inc. : smartNIC 2 PnP Ethernet */
+  {"name" : "ecm-8d1:3", "properties":{ "idVendor": 0x8d1,  "idProduct": 0x3 },"template":"ecm-2.0"},
+  /* Billionton Systems, Inc. : Wireless LAN Adapter */
+  {"name" : "ecm-8dd:112", "properties":{ "idVendor": 0x8dd,  "idProduct": 0x112 },"template":"ecm-2.0"},
+  /* Billionton Systems, Inc. : Wireless LAN Adapter */
+  {"name" : "ecm-8dd:113", "properties":{ "idVendor": 0x8dd,  "idProduct": 0x113 },"template":"ecm-2.0"},
+  /* Billionton Systems, Inc. : USB-100N Ethernet [pegasus] */
+  {"name" : "ecm-8dd:986", "properties":{ "idVendor": 0x8dd,  "idProduct": 0x986 },"template":"ecm-2.0"},
+  /* Billionton Systems, Inc. : USBLP-100 HomePNA Ethernet [pegasus] */
+  {"name" : "ecm-8dd:987", "properties":{ "idVendor": 0x8dd,  "idProduct": 0x987 },"template":"ecm-2.0"},
+  /* Billionton Systems, Inc. : USBEL-100 Ethernet [pegasus] */
+  {"name" : "ecm-8dd:988", "properties":{ "idVendor": 0x8dd,  "idProduct": 0x988 },"template":"ecm-2.0"},
+  /* Billionton Systems, Inc. : 10/100 LAN Adapter */
+  {"name" : "ecm-8dd:1986", "properties":{ "idVendor": 0x8dd,  "idProduct": 0x1986 },"template":"ecm-2.0"},
+  /* Billionton Systems, Inc. : USBE-100 Ethernet [pegasus2] */
+  {"name" : "ecm-8dd:8511", "properties":{ "idVendor": 0x8dd,  "idProduct": 0x8511 },"template":"ecm-2.0"},
+  /* Billionton Systems, Inc. : USB2AR Ethernet */
+  {"name" : "ecm-8dd:90ff", "properties":{ "idVendor": 0x8dd,  "idProduct": 0x90ff },"template":"ecm-2.0"},
+  /* GlobeSpan, Inc. : LAN Modem */
+  {"name" : "ecm-915:5", "properties":{ "idVendor": 0x915,  "idProduct": 0x5 },"template":"ecm-2.0"},
+  /* GlobeSpan, Inc. : ADSL LAN Modem */
+  {"name" : "ecm-915:8000", "properties":{ "idVendor": 0x915,  "idProduct": 0x8000 },"template":"ecm-2.0"},
+  /* Echelon Co. : Network Interface */
+  {"name" : "ecm-920:7500", "properties":{ "idVendor": 0x920,  "idProduct": 0x7500 },"template":"ecm-2.0"},
+  /* PLX Technology, Inc. (formerly Oxford Semiconductor, Ltd) : Blank Oxford Device */
+  {"name" : "ecm-928:ffff", "properties":{ "idVendor": 0x928,  "idProduct": 0xffff },"template":"ecm-2.0"},
+  /* Toshiba Corp. : AX88179 Gigabit Ethernet [Toshiba] */
+  {"name" : "ecm-930:a13", "properties":{ "idVendor": 0x930,  "idProduct": 0xa13 },"template":"ecm-2.0"},
+  /* Kingston Technology : Ethernet */
+  {"name" : "ecm-951:8", "properties":{ "idVendor": 0x951,  "idProduct": 0x8 },"template":"ecm-2.0"},
+  /* Kingston Technology : KNU101TX 100baseTX Ethernet */
+  {"name" : "ecm-951:a", "properties":{ "idVendor": 0x951,  "idProduct": 0xa },"template":"ecm-2.0"},
+  /* Portsmith : Express Ethernet */
+  {"name" : "ecm-95a:3003", "properties":{ "idVendor": 0x95a,  "idProduct": 0x3003 },"template":"ecm-2.0"},
+  /* FLIR Systems : Network Adapter */
+  {"name" : "ecm-9cb:1001", "properties":{ "idVendor": 0x9cb,  "idProduct": 0x1001 },"template":"ecm-2.0"},
+  /* Intellon Corp. : MicroLink dLAN */
+  {"name" : "ecm-9e1:5121", "properties":{ "idVendor": 0x9e1,  "idProduct": 0x5121 },"template":"ecm-2.0"},
+  /* GoFlight, Inc. : LGTII - Landing Gear and Trim Control Module */
+  {"name" : "ecm-9f3:48", "properties":{ "idVendor": 0x9f3,  "idProduct": 0x48 },"template":"ecm-2.0"},
+  /* AresCom : Network Adapter */
+  {"name" : "ecm-9f5:168", "properties":{ "idVendor": 0x9f5,  "idProduct": 0x168 },"template":"ecm-2.0"},
+  /* AresCom : LAN Adapter */
+  {"name" : "ecm-9f5:188", "properties":{ "idVendor": 0x9f5,  "idProduct": 0x188 },"template":"ecm-2.0"},
+  /* PentaMedia Co., Ltd : KN-W510U 1.0 Wireless LAN Adapter */
+  {"name" : "ecm-a3a:163", "properties":{ "idVendor": 0xa3a,  "idProduct": 0x163 },"template":"ecm-2.0"},
+  /* Davicom Semiconductor, Inc. : ZT6688 Fast Ethernet Adapter */
+  {"name" : "ecm-a46:6688", "properties":{ "idVendor": 0xa46,  "idProduct": 0x6688 },"template":"ecm-2.0"},
+  /* Davicom Semiconductor, Inc. : DM9000E Fast Ethernet Adapter */
+  {"name" : "ecm-a46:9000", "properties":{ "idVendor": 0xa46,  "idProduct": 0x9000 },"template":"ecm-2.0"},
+  /* Davicom Semiconductor, Inc. : DM9601 Fast Ethernet Adapter */
+  {"name" : "ecm-a46:9601", "properties":{ "idVendor": 0xa46,  "idProduct": 0x9601 },"template":"ecm-2.0"},
+  /* Broadcom Corp. : iLine10(tm) Network Adapter */
+  {"name" : "ecm-a5c:201", "properties":{ "idVendor": 0xa5c,  "idProduct": 0x201 },"template":"ecm-2.0"},
+  /* TriGem Computer, Inc. : TG 11Mbps WLAN Mini Adapter */
+  {"name" : "ecm-aa8:60", "properties":{ "idVendor": 0xaa8,  "idProduct": 0x60 },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : 802.11b/g Wireless Network Adapter */
+  {"name" : "ecm-b05:170d", "properties":{ "idVendor": 0xb05,  "idProduct": 0x170d },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : 802.11b/g Wireless Network Adapter */
+  {"name" : "ecm-b05:171c", "properties":{ "idVendor": 0xb05,  "idProduct": 0x171c },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : 802.11n Network Adapter */
+  {"name" : "ecm-b05:172a", "properties":{ "idVendor": 0xb05,  "idProduct": 0x172a },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : 802.11n Network Adapter */
+  {"name" : "ecm-b05:172b", "properties":{ "idVendor": 0xb05,  "idProduct": 0x172b },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : 802.11n Network Adapter */
+  {"name" : "ecm-b05:1731", "properties":{ "idVendor": 0xb05,  "idProduct": 0x1731 },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : 802.11n Network Adapter */
+  {"name" : "ecm-b05:1732", "properties":{ "idVendor": 0xb05,  "idProduct": 0x1732 },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : 802.11n Network Adapter */
+  {"name" : "ecm-b05:1742", "properties":{ "idVendor": 0xb05,  "idProduct": 0x1742 },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : 802.11n Network Adapter */
+  {"name" : "ecm-b05:1760", "properties":{ "idVendor": 0xb05,  "idProduct": 0x1760 },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : USB-N11 802.11n Network Adapter [Ralink RT2870] */
+  {"name" : "ecm-b05:1761", "properties":{ "idVendor": 0xb05,  "idProduct": 0x1761 },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : USB-N13 802.11n Network Adapter (rev. A1) [Ralink RT3072] */
+  {"name" : "ecm-b05:1784", "properties":{ "idVendor": 0xb05,  "idProduct": 0x1784 },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : USB-N10 802.11n Network Adapter [Realtek RTL8188SU] */
+  {"name" : "ecm-b05:1786", "properties":{ "idVendor": 0xb05,  "idProduct": 0x1786 },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : USB-N53 802.11abgn Network Adapter [Ralink RT3572] */
+  {"name" : "ecm-b05:179d", "properties":{ "idVendor": 0xb05,  "idProduct": 0x179d },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : Eee Note EA800 (network mode) */
+  {"name" : "ecm-b05:179e", "properties":{ "idVendor": 0xb05,  "idProduct": 0x179e },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : USB-N13 802.11n Network Adapter (rev. B1) [Realtek RTL8192CU] */
+  {"name" : "ecm-b05:17ab", "properties":{ "idVendor": 0xb05,  "idProduct": 0x17ab },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. : N10 Nano 802.11n Network Adapter [Realtek RTL8192CU] */
+  {"name" : "ecm-b05:17ba", "properties":{ "idVendor": 0xb05,  "idProduct": 0x17ba },"template":"ecm-2.0"},
+  /* Omnidirectional Control Technology, Inc. : USB TO Ethernet */
+  {"name" : "ecm-b39:109", "properties":{ "idVendor": 0xb39,  "idProduct": 0x109 },"template":"ecm-2.0"},
+  /* Omnidirectional Control Technology, Inc. : OCT To Fast Ethernet Converter */
+  {"name" : "ecm-b39:901", "properties":{ "idVendor": 0xb39,  "idProduct": 0x901 },"template":"ecm-2.0"},
+  /* Omnidirectional Control Technology, Inc. : LAN DOCK Serial Converter */
+  {"name" : "ecm-b39:c03", "properties":{ "idVendor": 0xb39,  "idProduct": 0xc03 },"template":"ecm-2.0"},
+  /* Tekram Technology Co., Ltd : TL-WN320G 1.0 WLAN Adapter */
+  {"name" : "ecm-b3b:163", "properties":{ "idVendor": 0xb3b,  "idProduct": 0x163 },"template":"ecm-2.0"},
+  /* Tekram Technology Co., Ltd : 802.11b Wireless LAN Adapter */
+  {"name" : "ecm-b3b:1613", "properties":{ "idVendor": 0xb3b,  "idProduct": 0x1613 },"template":"ecm-2.0"},
+  /* Tekram Technology Co., Ltd : Allnet Wireless Network Adapter [Envara WiND512] */
+  {"name" : "ecm-b3b:1620", "properties":{ "idVendor": 0xb3b,  "idProduct": 0x1620 },"template":"ecm-2.0"},
+  /* Tekram Technology Co., Ltd : QuickWLAN 802.11bg */
+  {"name" : "ecm-b3b:1630", "properties":{ "idVendor": 0xb3b,  "idProduct": 0x1630 },"template":"ecm-2.0"},
+  /* ASIX Electronics Corp. : 10/100 Ethernet */
+  {"name" : "ecm-b95:1720", "properties":{ "idVendor": 0xb95,  "idProduct": 0x1720 },"template":"ecm-2.0"},
+  /* ASIX Electronics Corp. : AX88179 Gigabit Ethernet */
+  {"name" : "ecm-b95:1790", "properties":{ "idVendor": 0xb95,  "idProduct": 0x1790 },"template":"ecm-2.0"},
+  /* ASIX Electronics Corp. : AX88772A Fast Ethernet */
+  {"name" : "ecm-b95:772a", "properties":{ "idVendor": 0xb95,  "idProduct": 0x772a },"template":"ecm-2.0"},
+  /* ASIX Electronics Corp. : AX88772B Fast Ethernet Controller */
+  {"name" : "ecm-b95:7e2b", "properties":{ "idVendor": 0xb95,  "idProduct": 0x7e2b },"template":"ecm-2.0"},
+  /* U.S. Robotics : SureConnect ADSL Ethernet/USB Router */
+  {"name" : "ecm-baf:fb", "properties":{ "idVendor": 0xbaf,  "idProduct": 0xfb },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8188ETV Wireless LAN 802.11n Network Adapter */
+  {"name" : "ecm-bda:179", "properties":{ "idVendor": 0xbda,  "idProduct": 0x179 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : Realtek 8812AU/8821AU 802.11ac WLAN Adapter [USB Wireless Dual-Band Adapter 2.4/5Ghz] */
+  {"name" : "ecm-bda:811", "properties":{ "idVendor": 0xbda,  "idProduct": 0x811 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8723AU 802.11n WLAN Adapter */
+  {"name" : "ecm-bda:1724", "properties":{ "idVendor": 0xbda,  "idProduct": 0x1724 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8188GU 802.11n WLAN Adapter (Driver CDROM Mode) */
+  {"name" : "ecm-bda:1a2b", "properties":{ "idVendor": 0xbda,  "idProduct": 0x1a2b },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL 8153 USB 3.0 hub with gigabit ethernet */
+  {"name" : "ecm-bda:5401", "properties":{ "idVendor": 0xbda,  "idProduct": 0x5401 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8150 Fast Ethernet Adapter */
+  {"name" : "ecm-bda:8150", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8150 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8151 Adapteon Business Mobile Networks BV */
+  {"name" : "ecm-bda:8151", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8151 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8152 Fast Ethernet Adapter */
+  {"name" : "ecm-bda:8152", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8152 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8153 Gigabit Ethernet Adapter */
+  {"name" : "ecm-bda:8153", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8153 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8188SU 802.11n WLAN Adapter */
+  {"name" : "ecm-bda:8171", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8171 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8191SU 802.11n WLAN Adapter */
+  {"name" : "ecm-bda:8172", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8172 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8192SU 802.11n WLAN Adapter */
+  {"name" : "ecm-bda:8174", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8174 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8188CUS 802.11n WLAN Adapter */
+  {"name" : "ecm-bda:8176", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8176 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8192CU 802.11n WLAN Adapter */
+  {"name" : "ecm-bda:8178", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8178 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8188EUS 802.11n Wireless Network Adapter */
+  {"name" : "ecm-bda:8179", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8179 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8188RU 802.11n WLAN Adapter */
+  {"name" : "ecm-bda:817f", "properties":{ "idVendor": 0xbda,  "idProduct": 0x817f },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8187B Wireless 802.11g 54Mbps Network Adapter */
+  {"name" : "ecm-bda:8189", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8189 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8192EU 802.11b/g/n WLAN Adapter */
+  {"name" : "ecm-bda:818b", "properties":{ "idVendor": 0xbda,  "idProduct": 0x818b },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8192DU 802.11an WLAN Adapter */
+  {"name" : "ecm-bda:8193", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8193 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8187SU 802.11g WLAN Adapter */
+  {"name" : "ecm-bda:8199", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8199 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8812AU 802.11a/b/g/n/ac 2T2R DB WLAN Adapter */
+  {"name" : "ecm-bda:8812", "properties":{ "idVendor": 0xbda,  "idProduct": 0x8812 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8812AU-VS 802.11a/b/g/n/ac 2T2R DB WLAN Adapter */
+  {"name" : "ecm-bda:881a", "properties":{ "idVendor": 0xbda,  "idProduct": 0x881a },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8811AU 802.11a/b/g/n/ac WLAN Adapter */
+  {"name" : "ecm-bda:a811", "properties":{ "idVendor": 0xbda,  "idProduct": 0xa811 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8188GU 802.11n WLAN Adapter (After Modeswitch) */
+  {"name" : "ecm-bda:b711", "properties":{ "idVendor": 0xbda,  "idProduct": 0xb711 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8723BU 802.11b/g/n WLAN Adapter */
+  {"name" : "ecm-bda:b720", "properties":{ "idVendor": 0xbda,  "idProduct": 0xb720 },"template":"ecm-2.0"},
+  /* Realtek Semiconductor Corp. : RTL8188FTV 802.11b/g/n 1T1R 2.4G WLAN Adapter */
+  {"name" : "ecm-bda:f179", "properties":{ "idVendor": 0xbda,  "idProduct": 0xf179 },"template":"ecm-2.0"},
+  /* Z-Com : NB 802.11g Wireless LAN Adapter(3887A) */
+  {"name" : "ecm-cde:14", "properties":{ "idVendor": 0xcde,  "idProduct": 0x14 },"template":"ecm-2.0"},
+  /* Z-Com : NB 802.11g Wireless LAN Adapter(3887A) */
+  {"name" : "ecm-cde:16", "properties":{ "idVendor": 0xcde,  "idProduct": 0x16 },"template":"ecm-2.0"},
+  /* Z-Com : NB 802.11a/b/g Wireless LAN Adapter(3887A) */
+  {"name" : "ecm-cde:18", "properties":{ "idVendor": 0xcde,  "idProduct": 0x18 },"template":"ecm-2.0"},
+  /* Z-Com : 802.11b/g Wireless Network Adapter */
+  {"name" : "ecm-cde:1c", "properties":{ "idVendor": 0xcde,  "idProduct": 0x1c },"template":"ecm-2.0"},
+  /* Z-Com : 802.11b/g/n Wireless Network Adapter */
+  {"name" : "ecm-cde:22", "properties":{ "idVendor": 0xcde,  "idProduct": 0x22 },"template":"ecm-2.0"},
+  /* Z-Com : 802.11b/g/n USB Wireless Network Adapter */
+  {"name" : "ecm-cde:25", "properties":{ "idVendor": 0xcde,  "idProduct": 0x25 },"template":"ecm-2.0"},
+  /* Agere Systems Netherland BV : WLAN Card */
+  {"name" : "ecm-d4e:47a", "properties":{ "idVendor": 0xd4e,  "idProduct": 0x47a },"template":"ecm-2.0"},
+  /* C-Media Electronics, Inc. : Audio Adapter (Planet UP-100, Genius G-Talk) */
+  {"name" : "ecm-d8c:e", "properties":{ "idVendor": 0xd8c,  "idProduct": 0xe },"template":"ecm-2.0"},
+  /* Micro Star International : PC2PC WLAN Card */
+  {"name" : "ecm-db0:1020", "properties":{ "idVendor": 0xdb0,  "idProduct": 0x1020 },"template":"ecm-2.0"},
+  /* Micro Star International : IEEE 802.11g Wireless Network Adapter */
+  {"name" : "ecm-db0:6826", "properties":{ "idVendor": 0xdb0,  "idProduct": 0x6826 },"template":"ecm-2.0"},
+  /* ELCON Systemtechnik : Goldpfeil P-LAN */
+  {"name" : "ecm-db7:2", "properties":{ "idVendor": 0xdb7,  "idProduct": 0x2 },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : WL-168 Wireless Network Adapter 54g */
+  {"name" : "ecm-df6:d", "properties":{ "idVendor": 0xdf6,  "idProduct": 0xd },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : WL-182 Wireless-N Network USB Card */
+  {"name" : "ecm-df6:17", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x17 },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : WL-188 Wireless Network 300N USB Adapter */
+  {"name" : "ecm-df6:2b", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x2b },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : WL-301 Wireless Network 300N USB Adapter */
+  {"name" : "ecm-df6:2c", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x2c },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : WL-302 Wireless Network 300N USB dongle  */
+  {"name" : "ecm-df6:2d", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x2d },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : LN-031 10/100/1000 Ethernet Adapter */
+  {"name" : "ecm-df6:56", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x56 },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : WLA-2000 v1.001 WLAN [RTL8191SU] */
+  {"name" : "ecm-df6:5d", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x5d },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : AX88179 Gigabit Ethernet [Sitecom] */
+  {"name" : "ecm-df6:72", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x72 },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : LN-028 Network USB 2.0 Adapter */
+  {"name" : "ecm-df6:61c", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x61c },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : WL-113 rev 1 Wireless Network USB Adapter */
+  {"name" : "ecm-df6:9071", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x9071 },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : WL-172 Wireless Network USB Adapter 54g Turbo */
+  {"name" : "ecm-df6:90ac", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x90ac },"template":"ecm-2.0"},
+  /* Sitecom Europe B.V. : WL-113 rev 2 Wireless Network USB Adapter */
+  {"name" : "ecm-df6:9712", "properties":{ "idVendor": 0xdf6,  "idProduct": 0x9712 },"template":"ecm-2.0"},
+  /* Gesytec : LonUSB LonTalk Network Adapter */
+  {"name" : "ecm-e0c:101", "properties":{ "idVendor": 0xe0c,  "idProduct": 0x101 },"template":"ecm-2.0"},
+  /* Neostar Technology Co., Ltd : CW-1100 Wireless Network Adapter */
+  {"name" : "ecm-e3a:1100", "properties":{ "idVendor": 0xe3a,  "idProduct": 0x1100 },"template":"ecm-2.0"},
+  /* Hawking Technologies : HAWNU1 Hi-Gain Wireless-150N Network Adapter with Range Amplifier [Ralink RT3070] */
+  {"name" : "ecm-e66:17", "properties":{ "idVendor": 0xe66,  "idProduct": 0x17 },"template":"ecm-2.0"},
+  /* Hawking Technologies : Wireless-N Network Adapter [Ralink RT2870] */
+  {"name" : "ecm-e66:18", "properties":{ "idVendor": 0xe66,  "idProduct": 0x18 },"template":"ecm-2.0"},
+  /* Hawking Technologies : UF100 10/100 Network Adapter */
+  {"name" : "ecm-e66:400b", "properties":{ "idVendor": 0xe66,  "idProduct": 0x400b },"template":"ecm-2.0"},
+  /* Hawking Technologies : UF100 Ethernet [pegasus2] */
+  {"name" : "ecm-e66:400c", "properties":{ "idVendor": 0xe66,  "idProduct": 0x400c },"template":"ecm-2.0"},
+  /* LD Didactic GmbH : Network Analyser */
+  {"name" : "ecm-f11:2020", "properties":{ "idVendor": 0xf11,  "idProduct": 0x2020 },"template":"ecm-2.0"},
+  /* ICS Advent : DM9601 Fast Ethernet Adapter */
+  {"name" : "ecm-fe6:8101", "properties":{ "idVendor": 0xfe6,  "idProduct": 0x8101 },"template":"ecm-2.0"},
+  /* ICS Advent : DM9601 Fast Ethernet Adapter */
+  {"name" : "ecm-fe6:9700", "properties":{ "idVendor": 0xfe6,  "idProduct": 0x9700 },"template":"ecm-2.0"},
+  /* Netopia, Inc. : 3380 Series Network Interface */
+  {"name" : "ecm-100d:3382", "properties":{ "idVendor": 0x100d,  "idProduct": 0x3382 },"template":"ecm-2.0"},
+  /* Netopia, Inc. : Cayman 3341 Ethernet DSL Router */
+  {"name" : "ecm-100d:cb01", "properties":{ "idVendor": 0x100d,  "idProduct": 0xcb01 },"template":"ecm-2.0"},
+  /* iCreate Technologies Corp. : Wireless Network Adapter */
+  {"name" : "ecm-1043:160f", "properties":{ "idVendor": 0x1043,  "idProduct": 0x160f },"template":"ecm-2.0"},
+  /* Chu Yuen Enterprise Co., Ltd : GN-WB30N 802.11n WLAN Card */
+  {"name" : "ecm-1044:800b", "properties":{ "idVendor": 0x1044,  "idProduct": 0x800b },"template":"ecm-2.0"},
+  /* Chu Yuen Enterprise Co., Ltd : GN-WB31N 802.11n USB WLAN Card */
+  {"name" : "ecm-1044:800c", "properties":{ "idVendor": 0x1044,  "idProduct": 0x800c },"template":"ecm-2.0"},
+  /* Chu Yuen Enterprise Co., Ltd : GN-WB32L 802.11n USB WLAN Card */
+  {"name" : "ecm-1044:800d", "properties":{ "idVendor": 0x1044,  "idProduct": 0x800d },"template":"ecm-2.0"},
+  /* BMS International Beheer N.V. : DSL 7420 LAN Modem */
+  {"name" : "ecm-1054:5005", "properties":{ "idVendor": 0x1054,  "idProduct": 0x5005 },"template":"ecm-2.0"},
+  /* TMT Technology, Inc. : Ethernet */
+  {"name" : "ecm-10bd:1427", "properties":{ "idVendor": 0x10bd,  "idProduct": 0x1427 },"template":"ecm-2.0"},
+  /* Silicon Labs : Juniper Networks BX Series System Console */
+  {"name" : "ecm-10c4:8470", "properties":{ "idVendor": 0x10c4,  "idProduct": 0x8470 },"template":"ecm-2.0"},
+  /* Analog Devices Canada, Ltd (Allied Telesyn) : Huawei MT-882 Remote NDIS Network Device */
+  {"name" : "ecm-1110:5c01", "properties":{ "idVendor": 0x1110,  "idProduct": 0x5c01 },"template":"ecm-2.0"},
+  /* Analog Devices Canada, Ltd (Allied Telesyn) : ADSL LAN Adapter */
+  {"name" : "ecm-1110:9000", "properties":{ "idVendor": 0x1110,  "idProduct": 0x9000 },"template":"ecm-2.0"},
+  /* Analog Devices Canada, Ltd (Allied Telesyn) : ADSL LAN Adapter */
+  {"name" : "ecm-1110:9031", "properties":{ "idVendor": 0x1110,  "idProduct": 0x9031 },"template":"ecm-2.0"},
+  /* Sphairon Access Systems GmbH : Turbolink UB801R WLAN Adapter */
+  {"name" : "ecm-114b:110", "properties":{ "idVendor": 0x114b,  "idProduct": 0x110 },"template":"ecm-2.0"},
+  /* Sphairon Access Systems GmbH : Turbolink UB801RE Wireless 802.11g 54Mbps Network Adapter [RTL8187] */
+  {"name" : "ecm-114b:150", "properties":{ "idVendor": 0x114b,  "idProduct": 0x150 },"template":"ecm-2.0"},
+  /* Acer Communications & Multimedia : EP-1427X-2 Ethernet Adapter [Acer] */
+  {"name" : "ecm-1189:893", "properties":{ "idVendor": 0x1189,  "idProduct": 0x893 },"template":"ecm-2.0"},
+  /* Sierra Wireless, Inc. : MP Series Network Adapter */
+  {"name" : "ecm-1199:6467", "properties":{ "idVendor": 0x1199,  "idProduct": 0x6467 },"template":"ecm-2.0"},
+  /* Sierra Wireless, Inc. : MP Series Network Adapter */
+  {"name" : "ecm-1199:6468", "properties":{ "idVendor": 0x1199,  "idProduct": 0x6468 },"template":"ecm-2.0"},
+  /* Sierra Wireless, Inc. : MP Series Network Adapter */
+  {"name" : "ecm-1199:6469", "properties":{ "idVendor": 0x1199,  "idProduct": 0x6469 },"template":"ecm-2.0"},
+  /* Generic : Zygmunt Krynicki Lantern Brightness Sensor */
+  {"name" : "ecm-1209:2000", "properties":{ "idVendor": 0x1209,  "idProduct": 0x2000 },"template":"ecm-2.0"},
+  /* Generic : Connected Community Hackerspace ESPlant */
+  {"name" : "ecm-1209:9021", "properties":{ "idVendor": 0x1209,  "idProduct": 0x9021 },"template":"ecm-2.0"},
+  /* AirVast : PRISM3 WLAN Adapter */
+  {"name" : "ecm-124a:168b", "properties":{ "idVendor": 0x124a,  "idProduct": 0x168b },"template":"ecm-2.0"},
+  /* Marvell Semiconductor, Inc. : 88W8388 802.11a/b/g WLAN */
+  {"name" : "ecm-1286:2001", "properties":{ "idVendor": 0x1286,  "idProduct": 0x2001 },"template":"ecm-2.0"},
+  /* Marvell Semiconductor, Inc. : 88W8362 802.11n WLAN */
+  {"name" : "ecm-1286:2006", "properties":{ "idVendor": 0x1286,  "idProduct": 0x2006 },"template":"ecm-2.0"},
+  /* Marvell Semiconductor, Inc. : Bluetooth and Wireless LAN Composite */
+  {"name" : "ecm-1286:204c", "properties":{ "idVendor": 0x1286,  "idProduct": 0x204c },"template":"ecm-2.0"},
+  /* Huawei Technologies Co., Ltd. : K5005 Vodafone LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "ecm-12d1:14c3", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x14c3 },"template":"ecm-2.0"},
+  /* Huawei Technologies Co., Ltd. : K5005 Vodafone LTE/UMTS/GSM MOdem/Networkcard */
+  {"name" : "ecm-12d1:14c8", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x14c8 },"template":"ecm-2.0"},
+  /* Huawei Technologies Co., Ltd. : E3372 LTE/UMTS/GSM HiLink Modem/Networkcard */
+  {"name" : "ecm-12d1:14dc", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x14dc },"template":"ecm-2.0"},
+  /* Huawei Technologies Co., Ltd. : E398 LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "ecm-12d1:1505", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1505 },"template":"ecm-2.0"},
+  /* Huawei Technologies Co., Ltd. : Modem/Networkcard */
+  {"name" : "ecm-12d1:1506", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1506 },"template":"ecm-2.0"},
+  /* Huawei Technologies Co., Ltd. : E398 LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "ecm-12d1:150a", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x150a },"template":"ecm-2.0"},
+  /* Envara Inc. : WiND 802.11abg / 802.11bg WLAN */
+  {"name" : "ecm-132a:1502", "properties":{ "idVendor": 0x132a,  "idProduct": 0x1502 },"template":"ecm-2.0"},
+  /* Mobility : Ethernet */
+  {"name" : "ecm-1342:204", "properties":{ "idVendor": 0x1342,  "idProduct": 0x204 },"template":"ecm-2.0"},
+  /* Mobility : EasiDock Ethernet */
+  {"name" : "ecm-1342:304", "properties":{ "idVendor": 0x1342,  "idProduct": 0x304 },"template":"ecm-2.0"},
+  /* CNet Technology Inc. : CWD-854 Wireless 802.11g 54Mbps Network Adapter [RTL8187] */
+  {"name" : "ecm-1371:9401", "properties":{ "idVendor": 0x1371,  "idProduct": 0x9401 },"template":"ecm-2.0"},
+  /* Linksys : USB200M 10/100 Ethernet Adapter */
+  {"name" : "ecm-13b1:18", "properties":{ "idVendor": 0x13b1,  "idProduct": 0x18 },"template":"ecm-2.0"},
+  /* Linksys : Gigabit Ethernet Adapter */
+  {"name" : "ecm-13b1:41", "properties":{ "idVendor": 0x13b1,  "idProduct": 0x41 },"template":"ecm-2.0"},
+  /* Linksys : WUSB200: Wireless-G Business Network Adapter with Rangebooster */
+  {"name" : "ecm-13b1:13b1", "properties":{ "idVendor": 0x13b1,  "idProduct": 0x13b1 },"template":"ecm-2.0"},
+  /* A-Max Technology Macao Commercial Offshore Co. Ltd. : Wireless 802.11g 54Mbps Network Adapter [RTL8187] */
+  {"name" : "ecm-13d1:abe6", "properties":{ "idVendor": 0x13d1,  "idProduct": 0xabe6 },"template":"ecm-2.0"},
+  /* Shark Multimedia : Pocket Ethernet [klsi] */
+  {"name" : "ecm-13d2:400", "properties":{ "idVendor": 0x13d2,  "idProduct": 0x400 },"template":"ecm-2.0"},
+  /* IMC Networks : 802.11 n/g/b Wireless LAN USB Adapter */
+  {"name" : "ecm-13d3:3262", "properties":{ "idVendor": 0x13d3,  "idProduct": 0x3262 },"template":"ecm-2.0"},
+  /* IMC Networks : 802.11 n/g/b Wireless LAN USB Mini-Card */
+  {"name" : "ecm-13d3:3273", "properties":{ "idVendor": 0x13d3,  "idProduct": 0x3273 },"template":"ecm-2.0"},
+  /* IMC Networks : Wireless LAN USB Mini-Card */
+  {"name" : "ecm-13d3:3284", "properties":{ "idVendor": 0x13d3,  "idProduct": 0x3284 },"template":"ecm-2.0"},
+  /* IMC Networks : Mediao 802.11n WLAN [Realtek RTL8191SU] */
+  {"name" : "ecm-13d3:3306", "properties":{ "idVendor": 0x13d3,  "idProduct": 0x3306 },"template":"ecm-2.0"},
+  /* RedOctane : wireless receiver for skylanders wii */
+  {"name" : "ecm-1430:150", "properties":{ "idVendor": 0x1430,  "idProduct": 0x150 },"template":"ecm-2.0"},
+  /* First International Computer, Inc. : OpenMoko Neo1973 kernel usbnet (g_ether, CDC Ethernet) mode */
+  {"name" : "ecm-1457:5117", "properties":{ "idVendor": 0x1457,  "idProduct": 0x5117 },"template":"ecm-2.0"},
+  /* First International Computer, Inc. : OpenMoko Neo1973 / Neo Freerunner kernel cdc_ether USB network */
+  {"name" : "ecm-1457:5122", "properties":{ "idVendor": 0x1457,  "idProduct": 0x5122 },"template":"ecm-2.0"},
+  /* Silicom : Psion Gold Port Ethernet */
+  {"name" : "ecm-1485:2", "properties":{ "idVendor": 0x1485,  "idProduct": 0x2 },"template":"ecm-2.0"},
+  /* Ralink Technology, Corp. : MT7610U ("Archer T2U" 2.4G+5G WLAN Adapter */
+  {"name" : "ecm-148f:761a", "properties":{ "idVendor": 0x148f,  "idProduct": 0x761a },"template":"ecm-2.0"},
+  /* Ralink Technology, Corp. : rt2570 802.11g WLAN */
+  {"name" : "ecm-14b2:3c05", "properties":{ "idVendor": 0x14b2,  "idProduct": 0x3c05 },"template":"ecm-2.0"},
+  /* Razer USA, Ltd : Boomslang CE */
+  {"name" : "ecm-1532:5", "properties":{ "idVendor": 0x1532,  "idProduct": 0x5 },"template":"ecm-2.0"},
+  /* Razer USA, Ltd : RZ01-0212 Gaming Mouse [Lancehead (Wired)] */
+  {"name" : "ecm-1532:59", "properties":{ "idVendor": 0x1532,  "idProduct": 0x59 },"template":"ecm-2.0"},
+  /* Razer USA, Ltd : RZ01-0212 Gaming Mouse [Lancehead (Wireless)] */
+  {"name" : "ecm-1532:5a", "properties":{ "idVendor": 0x1532,  "idProduct": 0x5a },"template":"ecm-2.0"},
+  /* Razer USA, Ltd : RZ01-0213 Gaming Mouse [Lancehead Tournament Edition] */
+  {"name" : "ecm-1532:60", "properties":{ "idVendor": 0x1532,  "idProduct": 0x60 },"template":"ecm-2.0"},
+  /* Razer USA, Ltd : RZ01-0257 Gaming Mouse [Lancehead Wireless (2019, Wireless, Receiver)] */
+  {"name" : "ecm-1532:6f", "properties":{ "idVendor": 0x1532,  "idProduct": 0x6f },"template":"ecm-2.0"},
+  /* Razer USA, Ltd : RZ01-0257 Gaming Mouse [Lancehead Wireless (2019, Wired)] */
+  {"name" : "ecm-1532:70", "properties":{ "idVendor": 0x1532,  "idProduct": 0x70 },"template":"ecm-2.0"},
+  /* OQO : model 01+ Ethernet */
+  {"name" : "ecm-1557:7720", "properties":{ "idVendor": 0x1557,  "idProduct": 0x7720 },"template":"ecm-2.0"},
+  /* OQO : model 01 Ethernet interface */
+  {"name" : "ecm-1557:8150", "properties":{ "idVendor": 0x1557,  "idProduct": 0x8150 },"template":"ecm-2.0"},
+  /* Gemtek : SparkLAN WL-682 802.11bg Wireless Adapter [Intersil ISL3887] */
+  {"name" : "ecm-15a9:2", "properties":{ "idVendor": 0x15a9,  "idProduct": 0x2 },"template":"ecm-2.0"},
+  /* SohoWare : NUB100 Ethernet [pegasus] */
+  {"name" : "ecm-15e8:9100", "properties":{ "idVendor": 0x15e8,  "idProduct": 0x9100 },"template":"ecm-2.0"},
+  /* SohoWare : 10/100 USB Ethernet */
+  {"name" : "ecm-15e8:9110", "properties":{ "idVendor": 0x15e8,  "idProduct": 0x9110 },"template":"ecm-2.0"},
+  /* Entrega [hex] : E45 Ethernet [klsi] */
+  {"name" : "ecm-1645:5", "properties":{ "idVendor": 0x1645,  "idProduct": 0x5 },"template":"ecm-2.0"},
+  /* Entrega [hex] : Ethernet */
+  {"name" : "ecm-1645:8", "properties":{ "idVendor": 0x1645,  "idProduct": 0x8 },"template":"ecm-2.0"},
+  /* Entrega [hex] : Ethernet */
+  {"name" : "ecm-1645:8005", "properties":{ "idVendor": 0x1645,  "idProduct": 0x8005 },"template":"ecm-2.0"},
+  /* Actiontec Electronics, Inc. [hex] : 802AIN Wireless N Network Adapter [Atheros AR9170+AR9101] */
+  {"name" : "ecm-1668:1200", "properties":{ "idVendor": 0x1668,  "idProduct": 0x1200 },"template":"ecm-2.0"},
+  /* Actiontec Electronics, Inc. [hex] : UAT1 Wireless Ethernet Adapter */
+  {"name" : "ecm-1668:7605", "properties":{ "idVendor": 0x1668,  "idProduct": 0x7605 },"template":"ecm-2.0"},
+  /* PiKRON Ltd. [hex] : uLan2USB Converter - PS1 protocol */
+  {"name" : "ecm-1669:1001", "properties":{ "idVendor": 0x1669,  "idProduct": 0x1001 },"template":"ecm-2.0"},
+  /* Askey Computer Corp. [hex] : Globespan Virata ADSL LAN Modem */
+  {"name" : "ecm-1690:211", "properties":{ "idVendor": 0x1690,  "idProduct": 0x211 },"template":"ecm-2.0"},
+  /* Askey Computer Corp. [hex] : WLAN */
+  {"name" : "ecm-1690:701", "properties":{ "idVendor": 0x1690,  "idProduct": 0x701 },"template":"ecm-2.0"},
+  /* Askey Computer Corp. [hex] : Wi-Fi Wireless LAN Adapter */
+  {"name" : "ecm-1690:726", "properties":{ "idVendor": 0x1690,  "idProduct": 0x726 },"template":"ecm-2.0"},
+  /* Askey Computer Corp. [hex] : 802.11n Wireless LAN Card */
+  {"name" : "ecm-1690:740", "properties":{ "idVendor": 0x1690,  "idProduct": 0x740 },"template":"ecm-2.0"},
+  /* MCS : Xylanta Ltd, XSP Device */
+  {"name" : "ecm-16d0:436", "properties":{ "idVendor": 0x16d0,  "idProduct": 0x436 },"template":"ecm-2.0"},
+  /* MCS : Xylanta Ltd, Saint3 Device */
+  {"name" : "ecm-16d0:7cc", "properties":{ "idVendor": 0x16d0,  "idProduct": 0x7cc },"template":"ecm-2.0"},
+  /* 802.11g Adapter [Linksys WUSB54GC v3] : USB1000 Gigabit Notebook Adapter */
+  {"name" : "ecm-1737:39", "properties":{ "idVendor": 0x1737,  "idProduct": 0x39 },"template":"ecm-2.0"},
+  /* 802.11g Adapter [Linksys WUSB54GC v3] : WUSB100 v1 RangePlus Wireless Network Adapter [Ralink RT2870] */
+  {"name" : "ecm-1737:70", "properties":{ "idVendor": 0x1737,  "idProduct": 0x70 },"template":"ecm-2.0"},
+  /* 802.11g Adapter [Linksys WUSB54GC v3] : WUSB600N v1 Dual-Band Wireless-N Network Adapter [Ralink RT2870] */
+  {"name" : "ecm-1737:71", "properties":{ "idVendor": 0x1737,  "idProduct": 0x71 },"template":"ecm-2.0"},
+  /* 802.11g Adapter [Linksys WUSB54GC v3] : WUSB100 v2 RangePlus Wireless Network Adapter [Ralink RT3070] */
+  {"name" : "ecm-1737:78", "properties":{ "idVendor": 0x1737,  "idProduct": 0x78 },"template":"ecm-2.0"},
+  /* 802.11g Adapter [Linksys WUSB54GC v3] : WUSB600N v2 Dual-Band Wireless-N Network Adapter [Ralink RT3572] */
+  {"name" : "ecm-1737:79", "properties":{ "idVendor": 0x1737,  "idProduct": 0x79 },"template":"ecm-2.0"},
+  /* Senao : RTL8188S WLAN Adapter */
+  {"name" : "ecm-1740:9603", "properties":{ "idVendor": 0x1740,  "idProduct": 0x9603 },"template":"ecm-2.0"},
+  /* ASUSTek Computer, Inc. (wrong ID) : 802.11n Network Adapter (wrong ID - swapped vendor and device) */
+  {"name" : "ecm-1761:b05", "properties":{ "idVendor": 0x1761,  "idProduct": 0xb05 },"template":"ecm-2.0"},
+  /* Lenovo : AX88179 Gigabit Ethernet [ThinkPad OneLink GigaLAN] */
+  {"name" : "ecm-17ef:304b", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x304b },"template":"ecm-2.0"},
+  /* Lenovo : RTL8153 Gigabit Ethernet [ThinkPad OneLink Pro Dock] */
+  {"name" : "ecm-17ef:304f", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x304f },"template":"ecm-2.0"},
+  /* Lenovo : ThinkPad Dock Ethernet [Realtek RTL8153B] */
+  {"name" : "ecm-17ef:3062", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x3062 },"template":"ecm-2.0"},
+  /* Lenovo : ThinkPad TBT3 LAN */
+  {"name" : "ecm-17ef:3069", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x3069 },"template":"ecm-2.0"},
+  /* Lenovo : Ethernet adapter [U2L 100P-Y1] */
+  {"name" : "ecm-17ef:7203", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x7203 },"template":"ecm-2.0"},
+  /* Lenovo : Thinkpad LAN */
+  {"name" : "ecm-17ef:7205", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x7205 },"template":"ecm-2.0"},
+  /* Lenovo : Ethernet */
+  {"name" : "ecm-17ef:b001", "properties":{ "idVendor": 0x17ef,  "idProduct": 0xb001 },"template":"ecm-2.0"},
+  /* Qcom : Wireless 802.11g 54Mbps Network Adapter [RTL8187] */
+  {"name" : "ecm-18e8:6232", "properties":{ "idVendor": 0x18e8,  "idProduct": 0x6232 },"template":"ecm-2.0"},
+  /* HARRIS Corp. : Remote NDIS Network Device */
+  {"name" : "ecm-19a5:4", "properties":{ "idVendor": 0x19a5,  "idProduct": 0x4 },"template":"ecm-2.0"},
+  /* Celestron : SkyScout Personal Planetarium */
+  {"name" : "ecm-19b4:2", "properties":{ "idVendor": 0x19b4,  "idProduct": 0x2 },"template":"ecm-2.0"},
+  /* ZTE WCDMA Technologies MSM : LTE4G O2 ZTE MF821D LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "ecm-19d2:325", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x325 },"template":"ecm-2.0"},
+  /* ZTE WCDMA Technologies MSM : LTE4G O2 ZTE MF821D LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "ecm-19d2:326", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x326 },"template":"ecm-2.0"},
+  /* ZTE WCDMA Technologies MSM : K3805-Z vodafone WCDMA/GSM Modem/Networkcard (made by ZTE) */
+  {"name" : "ecm-19d2:1002", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x1002 },"template":"ecm-2.0"},
+  /* ZTE WCDMA Technologies MSM : K5006-Z vodafone LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "ecm-19d2:1017", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x1017 },"template":"ecm-2.0"},
+  /* ZTE WCDMA Technologies MSM : K5006-Z vodafone LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "ecm-19d2:1018", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x1018 },"template":"ecm-2.0"},
+  /* Quanta Microsystems, Inc. : 802.11n Wireless LAN Card */
+  {"name" : "ecm-1a32:304", "properties":{ "idVendor": 0x1a32,  "idProduct": 0x304 },"template":"ecm-2.0"},
+  /* Schweitzer Engineering Laboratories, Inc : CDC Ethernet Gadget */
+  {"name" : "ecm-1adb:3", "properties":{ "idVendor": 0x1adb,  "idProduct": 0x3 },"template":"ecm-2.0"},
+  /* ARH Inc. : FXMC Neural Network Controller */
+  {"name" : "ecm-1b52:2101", "properties":{ "idVendor": 0x1b52,  "idProduct": 0x2101 },"template":"ecm-2.0"},
+  /* ARH Inc. : FXMC Neural Network Controller V2 */
+  {"name" : "ecm-1b52:2102", "properties":{ "idVendor": 0x1b52,  "idProduct": 0x2102 },"template":"ecm-2.0"},
+  /* ARH Inc. : FXMC Neural Network Controller V3 */
+  {"name" : "ecm-1b52:2103", "properties":{ "idVendor": 0x1b52,  "idProduct": 0x2103 },"template":"ecm-2.0"},
+  /* ARH Inc. : Neural Network Controller */
+  {"name" : "ecm-1b52:6101", "properties":{ "idVendor": 0x1b52,  "idProduct": 0x6101 },"template":"ecm-2.0"},
+  /* PEGATRON CORPORATION : Ralink RT2770/2720 802.11b/g/n Wireless LAN Mini-USB Device */
+  {"name" : "ecm-1d4d:2", "properties":{ "idVendor": 0x1d4d,  "idProduct": 0x2 },"template":"ecm-2.0"},
+  /* PEGATRON CORPORATION : Ralink RT3070 802.11b/g/n Wireless Lan USB Device */
+  {"name" : "ecm-1d4d:c", "properties":{ "idVendor": 0x1d4d,  "idProduct": 0xc },"template":"ecm-2.0"},
+  /* PEGATRON CORPORATION : Ralink RT3070 802.11b/g/n Wireless Lan USB Device */
+  {"name" : "ecm-1d4d:e", "properties":{ "idVendor": 0x1d4d,  "idProduct": 0xe },"template":"ecm-2.0"},
+  /* OpenMoko, Inc. : Neo1973/FreeRunner kernel usbnet (g_ether, CDC Ethernet) mode */
+  {"name" : "ecm-1d50:5117", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x5117 },"template":"ecm-2.0"},
+  /* OpenMoko, Inc. : Neo1973/FreeRunner kernel cdc_ether USB network */
+  {"name" : "ecm-1d50:5122", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x5122 },"template":"ecm-2.0"},
+  /* OpenMoko, Inc. : Duet 2 WiFi or Duet 2 Ethernet 3D printer control electronics */
+  {"name" : "ecm-1d50:60ec", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x60ec },"template":"ecm-2.0"},
+  /* Linux Foundation : NCM (Ethernet) Gadget */
+  {"name" : "ecm-1d6b:103", "properties":{ "idVendor": 0x1d6b,  "idProduct": 0x103 },"template":"ecm-2.0"},
+  /* D-Link Corp. : DUB-E100 Fast Ethernet Adapter(rev.A) [ASIX AX88172] */
+  {"name" : "ecm-2001:1a00", "properties":{ "idVendor": 0x2001,  "idProduct": 0x1a00 },"template":"ecm-2.0"},
+  /* D-Link Corp. : DUB-E100 Fast Ethernet Adapter(rev.C1) [ASIX AX88772] */
+  {"name" : "ecm-2001:1a02", "properties":{ "idVendor": 0x2001,  "idProduct": 0x1a02 },"template":"ecm-2.0"},
+  /* D-Link Corp. : 10/100 Ethernet */
+  {"name" : "ecm-2001:200c", "properties":{ "idVendor": 0x2001,  "idProduct": 0x200c },"template":"ecm-2.0"},
+  /* D-Link Corp. : Elitegroup Computer Systems WLAN card WL-162 */
+  {"name" : "ecm-2001:3500", "properties":{ "idVendor": 0x2001,  "idProduct": 0x3500 },"template":"ecm-2.0"},
+  /* D-Link Corp. : IEEE 802.11g USB2.0 Wireless Network Adapter-PN */
+  {"name" : "ecm-2001:3761", "properties":{ "idVendor": 0x2001,  "idProduct": 0x3761 },"template":"ecm-2.0"},
+  /* D-Link Corp. : WLAN Boot Device */
+  {"name" : "ecm-2001:3b01", "properties":{ "idVendor": 0x2001,  "idProduct": 0x3b01 },"template":"ecm-2.0"},
+  /* D-Link Corp. : DUB-E100 Fast Ethernet Adapter(rev.B1) [ASIX AX88772] */
+  {"name" : "ecm-2001:3c05", "properties":{ "idVendor": 0x2001,  "idProduct": 0x3c05 },"template":"ecm-2.0"},
+  /* D-Link Corp. : DSB-650C Ethernet [klsi] */
+  {"name" : "ecm-2001:4000", "properties":{ "idVendor": 0x2001,  "idProduct": 0x4000 },"template":"ecm-2.0"},
+  /* D-Link Corp. : DSB-650TX Ethernet [pegasus] */
+  {"name" : "ecm-2001:4001", "properties":{ "idVendor": 0x2001,  "idProduct": 0x4001 },"template":"ecm-2.0"},
+  /* D-Link Corp. : DSB-650TX Ethernet [pegasus] */
+  {"name" : "ecm-2001:4002", "properties":{ "idVendor": 0x2001,  "idProduct": 0x4002 },"template":"ecm-2.0"},
+  /* D-Link Corp. : DSB-650TX-PNA Ethernet [pegasus] */
+  {"name" : "ecm-2001:4003", "properties":{ "idVendor": 0x2001,  "idProduct": 0x4003 },"template":"ecm-2.0"},
+  /* D-Link Corp. : 10/100 Ethernet */
+  {"name" : "ecm-2001:400b", "properties":{ "idVendor": 0x2001,  "idProduct": 0x400b },"template":"ecm-2.0"},
+  /* D-Link Corp. : 10/100 Ethernet */
+  {"name" : "ecm-2001:4102", "properties":{ "idVendor": 0x2001,  "idProduct": 0x4102 },"template":"ecm-2.0"},
+  /* D-Link Corp. : DUB-1312 Gigabit Ethernet Adapter */
+  {"name" : "ecm-2001:4a00", "properties":{ "idVendor": 0x2001,  "idProduct": 0x4a00 },"template":"ecm-2.0"},
+  /* D-Link Corp. : Remote NDIS Network Device */
+  {"name" : "ecm-2001:5b00", "properties":{ "idVendor": 0x2001,  "idProduct": 0x5b00 },"template":"ecm-2.0"},
+  /* D-Link Corp. : DSB-650 Ethernet [pegasus] */
+  {"name" : "ecm-2001:abc1", "properties":{ "idVendor": 0x2001,  "idProduct": 0xabc1 },"template":"ecm-2.0"},
+  /* PLANEX : GW-US11S WLAN [Atmel AT76C503A] */
+  {"name" : "ecm-2019:3220", "properties":{ "idVendor": 0x2019,  "idProduct": 0x3220 },"template":"ecm-2.0"},
+  /* Broadxent (Creative Labs) : Network Blaster Wireless Adapter */
+  {"name" : "ecm-2162:2031", "properties":{ "idVendor": 0x2162,  "idProduct": 0x2031 },"template":"ecm-2.0"},
+  /* Aspeed Technology, Inc. : AST1500/1510 PC-over-LAN Virtual Hub */
+  {"name" : "ecm-2245:1500", "properties":{ "idVendor": 0x2245,  "idProduct": 0x1500 },"template":"ecm-2.0"},
+  /* Motorola PCS : EZX GSM Phone (USBLAN) */
+  {"name" : "ecm-22b8:600c", "properties":{ "idVendor": 0x22b8,  "idProduct": 0x600c },"template":"ecm-2.0"},
+  /* Motorola PCS : USBLAN */
+  {"name" : "ecm-22b8:6027", "properties":{ "idVendor": 0x22b8,  "idProduct": 0x6027 },"template":"ecm-2.0"},
+  /* TP-Link : UE300 10/100/1000 LAN (mass storage CD-ROM mode) [Realtek RTL8153] */
+  {"name" : "ecm-2357:600", "properties":{ "idVendor": 0x2357,  "idProduct": 0x600 },"template":"ecm-2.0"},
+  /* TP-Link : UE300 10/100/1000 LAN (ethernet mode) [Realtek RTL8153] */
+  {"name" : "ecm-2357:601", "properties":{ "idVendor": 0x2357,  "idProduct": 0x601 },"template":"ecm-2.0"},
+  /* Bitmanufaktur GmbH : OpenBeacon Ethernet EasyReader PoE II - Active 2.4GHz RFID Reader */
+  {"name" : "ecm-2366:7", "properties":{ "idVendor": 0x2366,  "idProduct": 0x7 },"template":"ecm-2.0"},
+  /* Bitmanufaktur GmbH : OpenBeacon WLAN */
+  {"name" : "ecm-2366:8", "properties":{ "idVendor": 0x2366,  "idProduct": 0x8 },"template":"ecm-2.0"},
+  /* SiBEAM : SB6501 802.11ad Wireless Network Adapter */
+  {"name" : "ecm-236a:1965", "properties":{ "idVendor": 0x236a,  "idProduct": 0x1965 },"template":"ecm-2.0"},
+  /* Brunner Elektronik AG : PRT.5119 [Ethernet2CAN LC Gateway] */
+  {"name" : "ecm-25bb:69", "properties":{ "idVendor": 0x25bb,  "idProduct": 0x69 },"template":"ecm-2.0"},
+  /* Xiaomi Inc. : 100Mbps Network Card Adapter */
+  {"name" : "ecm-2717:11", "properties":{ "idVendor": 0x2717,  "idProduct": 0x11 },"template":"ecm-2.0"},
+  /* StarLine LLC. : Controller Area Network car alarm module [SLCAN-2] */
+  {"name" : "ecm-2803:1", "properties":{ "idVendor": 0x2803,  "idProduct": 0x1 },"template":"ecm-2.0"},
+  /* Planex Communications : GW-US11H WLAN */
+  {"name" : "ecm-2c02:14ea", "properties":{ "idVendor": 0x2c02,  "idProduct": 0x14ea },"template":"ecm-2.0"},
+  /* HMD Global : Tethering Network Interface */
+  {"name" : "ecm-2e04:c008", "properties":{ "idVendor": 0x2e04,  "idProduct": 0xc008 },"template":"ecm-2.0"},
+  /* AEI : Fast Ethernet */
+  {"name" : "ecm-3334:1701", "properties":{ "idVendor": 0x3334,  "idProduct": 0x1701 },"template":"ecm-2.0"},
+  /* Averatec (?) : WLAN Adapter */
+  {"name" : "ecm-50c2:4013", "properties":{ "idVendor": 0x50c2,  "idProduct": 0x4013 },"template":"ecm-2.0"},
+  /* Zinwell : 802.11a/b/g/n USB Wireless LAN Card */
+  {"name" : "ecm-5a57:280", "properties":{ "idVendor": 0x5a57,  "idProduct": 0x280 },"template":"ecm-2.0"},
+  /* Zinwell : 802.11b/g/n USB Wireless LAN Card */
+  {"name" : "ecm-5a57:282", "properties":{ "idVendor": 0x5a57,  "idProduct": 0x282 },"template":"ecm-2.0"},
+  /* Zinwell : 802.11b/g/n USB Wireless LAN Card */
+  {"name" : "ecm-5a57:283", "properties":{ "idVendor": 0x5a57,  "idProduct": 0x283 },"template":"ecm-2.0"},
+  /* Zinwell : 802.11a/b/g/n USB Wireless LAN Card */
+  {"name" : "ecm-5a57:284", "properties":{ "idVendor": 0x5a57,  "idProduct": 0x284 },"template":"ecm-2.0"},
+  /* Sitecom : LN-029 10/100 Ethernet Adapter */
+  {"name" : "ecm-6189:182d", "properties":{ "idVendor": 0x6189,  "idProduct": 0x182d },"template":"ecm-2.0"},
+  /* Intel Corp. : AnyPoint (TM) Home Network 1.6 Mbps Wireless Adapter */
+  {"name" : "ecm-8086:1", "properties":{ "idVendor": 0x8086,  "idProduct": 0x1 },"template":"ecm-2.0"},
+  /* Intel Corp. : AnyPoint(TM) Wireless II Network 11Mbps Adapter [Atmel AT76C503A] */
+  {"name" : "ecm-8086:200", "properties":{ "idVendor": 0x8086,  "idProduct": 0x200 },"template":"ecm-2.0"},
+  /* Intel Corp. : AnyPoint(TM) Home Network 10 Mbps Phoneline Adapter */
+  {"name" : "ecm-8086:1010", "properties":{ "idVendor": 0x8086,  "idProduct": 0x1010 },"template":"ecm-2.0"},
+  /* Intel Corp. : PRO/Wireless LAN Module */
+  {"name" : "ecm-8086:1110", "properties":{ "idVendor": 0x8086,  "idProduct": 0x1110 },"template":"ecm-2.0"},
+  /* MosChip Semiconductor : MCS7730 10/100 Mbps Ethernet adapter */
+  {"name" : "ecm-9710:7730", "properties":{ "idVendor": 0x9710,  "idProduct": 0x7730 },"template":"ecm-2.0"},
+  /* MosChip Semiconductor : MCS7830 10/100 Mbps Ethernet adapter */
+  {"name" : "ecm-9710:7830", "properties":{ "idVendor": 0x9710,  "idProduct": 0x7830 },"template":"ecm-2.0"},
+  /* MosChip Semiconductor : MCS7832 10/100 Mbps Ethernet adapter */
+  {"name" : "ecm-9710:7832", "properties":{ "idVendor": 0x9710,  "idProduct": 0x7832 },"template":"ecm-2.0"},
+]

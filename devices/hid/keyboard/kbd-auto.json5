@@ -1,0 +1,1359 @@
+/*
+ * Auto-generated device database file
+ * Do not edit, this will probably be overwritten!
+ * The command line used to generate this file was:
+ * make-device-db --usb-id-file /tmp/usb.ids --template keyboard --name-prefix kbd --vendor-regex .* --product-regex keyboard|keypad|numpad
+ */
+
+[
+  /* Atmel Corp. : at90usbkey sample firmware (HID keyboard) */
+  {"name" : "kbd-3eb:2015", "properties":{ "idVendor": 0x3eb,  "idProduct": 0x2015 },"template":"keyboard"},
+  /* Atmel Corp. : LUFA Keyboard Demo Application */
+  {"name" : "kbd-3eb:2042", "properties":{ "idVendor": 0x3eb,  "idProduct": 0x2042 },"template":"keyboard"},
+  /* Atmel Corp. : LUFA Combined Mouse and Keyboard Demo Application */
+  {"name" : "kbd-3eb:204d", "properties":{ "idVendor": 0x3eb,  "idProduct": 0x204d },"template":"keyboard"},
+  /* Atmel Corp. : LUFA Combined Mass Storage and Keyboard Demo Application */
+  {"name" : "kbd-3eb:2061", "properties":{ "idVendor": 0x3eb,  "idProduct": 0x2061 },"template":"keyboard"},
+  /* Atmel Corp. : AT91SAM HID Keyboard Demo Application */
+  {"name" : "kbd-3eb:6127", "properties":{ "idVendor": 0x3eb,  "idProduct": 0x6127 },"template":"keyboard"},
+  /* Mitsumi : Japanese Keyboard */
+  {"name" : "kbd-3ee:5609", "properties":{ "idVendor": 0x3ee,  "idProduct": 0x5609 },"template":"keyboard"},
+  /* HP, Inc : KU-0316 Keyboard */
+  {"name" : "kbd-3f0:24", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x24 },"template":"keyboard"},
+  /* HP, Inc : Multimedia Keyboard Hub */
+  {"name" : "kbd-3f0:10c", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x10c },"template":"keyboard"},
+  /* HP, Inc : HID Internet Keyboard */
+  {"name" : "kbd-3f0:122", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x122 },"template":"keyboard"},
+  /* HP, Inc : Multimedia Keyboard */
+  {"name" : "kbd-3f0:20c", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x20c },"template":"keyboard"},
+  /* HP, Inc : SK-2885 keyboard */
+  {"name" : "kbd-3f0:324", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x324 },"template":"keyboard"},
+  /* HP, Inc : Elite Keyboard */
+  {"name" : "kbd-3f0:34a", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x34a },"template":"keyboard"},
+  /* HP, Inc : 5219 Wireless Keyboard */
+  {"name" : "kbd-3f0:50c", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x50c },"template":"keyboard"},
+  /* HP, Inc : Modular Smartcard Keyboard */
+  {"name" : "kbd-3f0:924", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x924 },"template":"keyboard"},
+  /* HP, Inc : Wireless Keyboard and Optical Mouse receiver */
+  {"name" : "kbd-3f0:b0c", "properties":{ "idVendor": 0x3f0,  "idProduct": 0xb0c },"template":"keyboard"},
+  /* HP, Inc : SK-2025 Keyboard */
+  {"name" : "kbd-3f0:d4a", "properties":{ "idVendor": 0x3f0,  "idProduct": 0xd4a },"template":"keyboard"},
+  /* HP, Inc : Wireless Keyboard and Optical Mouse receiver */
+  {"name" : "kbd-3f0:f0c", "properties":{ "idVendor": 0x3f0,  "idProduct": 0xf0c },"template":"keyboard"},
+  /* HP, Inc : Smart Card Keyboard */
+  {"name" : "kbd-3f0:1024", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x1024 },"template":"keyboard"},
+  /* HP, Inc : Virtual keyboard and mouse */
+  {"name" : "kbd-3f0:1027", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x1027 },"template":"keyboard"},
+  /* HP, Inc : Smart Card Keyboard - KR */
+  {"name" : "kbd-3f0:1524", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x1524 },"template":"keyboard"},
+  /* HP, Inc : Smart Card Keyboard - JP */
+  {"name" : "kbd-3f0:1624", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x1624 },"template":"keyboard"},
+  /* HP, Inc : Business Slim Keyboard */
+  {"name" : "kbd-3f0:2b4a", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x2b4a },"template":"keyboard"},
+  /* HP, Inc : Slim Keyboard */
+  {"name" : "kbd-3f0:304a", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x304a },"template":"keyboard"},
+  /* HP, Inc : Slim Keyboard */
+  {"name" : "kbd-3f0:354a", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x354a },"template":"keyboard"},
+  /* KeyTronic Corp. : KT-2001 Keyboard */
+  {"name" : "kbd-3f9:100", "properties":{ "idVendor": 0x3f9,  "idProduct": 0x100 },"template":"keyboard"},
+  /* KeyTronic Corp. : Keyboard */
+  {"name" : "kbd-3f9:101", "properties":{ "idVendor": 0x3f9,  "idProduct": 0x101 },"template":"keyboard"},
+  /* KeyTronic Corp. : Keyboard Mouse */
+  {"name" : "kbd-3f9:102", "properties":{ "idVendor": 0x3f9,  "idProduct": 0x102 },"template":"keyboard"},
+  /* Future Technology Devices International, Ltd : PS/2 Keyboard And Mouse */
+  {"name" : "kbd-403:8371", "properties":{ "idVendor": 0x403,  "idProduct": 0x8371 },"template":"keyboard"},
+  /* Future Technology Devices International, Ltd : Virtual keyboard */
+  {"name" : "kbd-403:9134", "properties":{ "idVendor": 0x403,  "idProduct": 0x9134 },"template":"keyboard"},
+  /* NCR Corp. : 5932-USB Keyboard */
+  {"name" : "kbd-404:320", "properties":{ "idVendor": 0x404,  "idProduct": 0x320 },"template":"keyboard"},
+  /* NCR Corp. : 5932-USB Enhanced Keyboard */
+  {"name" : "kbd-404:322", "properties":{ "idVendor": 0x404,  "idProduct": 0x322 },"template":"keyboard"},
+  /* NCR Corp. : 5932-USB Enhanced Keyboard, Flash-Recovery/Download */
+  {"name" : "kbd-404:323", "properties":{ "idVendor": 0x404,  "idProduct": 0x323 },"template":"keyboard"},
+  /* NCR Corp. : K016: USB-MSR ISO 3-Track MSR: HID Keyboard Mode */
+  {"name" : "kbd-404:32a", "properties":{ "idVendor": 0x404,  "idProduct": 0x32a },"template":"keyboard"},
+  /* NEC Corp. : PC98 Series Layout Keyboard Mouse */
+  {"name" : "kbd-409:11", "properties":{ "idVendor": 0x409,  "idProduct": 0x11 },"template":"keyboard"},
+  /* NEC Corp. : Japanese Keyboard */
+  {"name" : "kbd-409:14", "properties":{ "idVendor": 0x409,  "idProduct": 0x14 },"template":"keyboard"},
+  /* NEC Corp. : 109 Japanese Keyboard with Bus-Powered Hub */
+  {"name" : "kbd-409:19", "properties":{ "idVendor": 0x409,  "idProduct": 0x19 },"template":"keyboard"},
+  /* NEC Corp. : PC98 Series Layout Keyboard with Bus-Powered Hub */
+  {"name" : "kbd-409:1a", "properties":{ "idVendor": 0x409,  "idProduct": 0x1a },"template":"keyboard"},
+  /* NEC Corp. : Mini Keyboard with Bus-Powered Hub */
+  {"name" : "kbd-409:25", "properties":{ "idVendor": 0x409,  "idProduct": 0x25 },"template":"keyboard"},
+  /* NEC Corp. : 109 Japanese Keyboard with One-touch start buttons */
+  {"name" : "kbd-409:34", "properties":{ "idVendor": 0x409,  "idProduct": 0x34 },"template":"keyboard"},
+  /* NEC Corp. : Wireless Keyboard with One-touch start buttons */
+  {"name" : "kbd-409:3f", "properties":{ "idVendor": 0x409,  "idProduct": 0x3f },"template":"keyboard"},
+  /* NEC Corp. : Wireless Keyboard with One-touch start buttons */
+  {"name" : "kbd-409:4f", "properties":{ "idVendor": 0x409,  "idProduct": 0x4f },"template":"keyboard"},
+  /* NEC Corp. : Japanese Keyboard with One-touch start buttons */
+  {"name" : "kbd-409:94", "properties":{ "idVendor": 0x409,  "idProduct": 0x94 },"template":"keyboard"},
+  /* NEC Corp. : Japanese Keyboard */
+  {"name" : "kbd-409:95", "properties":{ "idVendor": 0x409,  "idProduct": 0x95 },"template":"keyboard"},
+  /* Weltrend Semiconductor : wired Keyboard [Dynex DX-WRK1401] */
+  {"name" : "kbd-40b:2000", "properties":{ "idVendor": 0x40b,  "idProduct": 0x2000 },"template":"keyboard"},
+  /* Weltrend Semiconductor : Human Interface Device [HP CalcPad 200 Calculator and Numeric Keypad] */
+  {"name" : "kbd-40b:2367", "properties":{ "idVendor": 0x40b,  "idProduct": 0x2367 },"template":"keyboard"},
+  /* Winbond Electronics Corp. : PC Sync Keypad */
+  {"name" : "kbd-416:551a", "properties":{ "idVendor": 0x416,  "idProduct": 0x551a },"template":"keyboard"},
+  /* Winbond Electronics Corp. : PC Async Keypad */
+  {"name" : "kbd-416:551b", "properties":{ "idVendor": 0x416,  "idProduct": 0x551b },"template":"keyboard"},
+  /* Winbond Electronics Corp. : Keyboard */
+  {"name" : "kbd-416:551e", "properties":{ "idVendor": 0x416,  "idProduct": 0x551e },"template":"keyboard"},
+  /* Winbond Electronics Corp. : Keyboard w/ Sys and Media */
+  {"name" : "kbd-416:551f", "properties":{ "idVendor": 0x416,  "idProduct": 0x551f },"template":"keyboard"},
+  /* Winbond Electronics Corp. : Keyboard */
+  {"name" : "kbd-416:5521", "properties":{ "idVendor": 0x416,  "idProduct": 0x5521 },"template":"keyboard"},
+  /* Winbond Electronics Corp. : KT108 keyboard */
+  {"name" : "kbd-416:b23c", "properties":{ "idVendor": 0x416,  "idProduct": 0xb23c },"template":"keyboard"},
+  /* Creative Technology, Ltd : Prodikeys PC-MIDI multifunction keyboard */
+  {"name" : "kbd-41e:2801", "properties":{ "idVendor": 0x41e,  "idProduct": 0x2801 },"template":"keyboard"},
+  /* Motorola Semiconductors HK, Ltd : G-Tech Wireless Mouse & Keyboard */
+  {"name" : "kbd-425:101", "properties":{ "idVendor": 0x425,  "idProduct": 0x101 },"template":"keyboard"},
+  /* Fujitsu Component Limited : 109 Keyboard */
+  {"name" : "kbd-430:2", "properties":{ "idVendor": 0x430,  "idProduct": 0x2 },"template":"keyboard"},
+  /* Fujitsu Component Limited : Type 6 Keyboard */
+  {"name" : "kbd-430:5", "properties":{ "idVendor": 0x430,  "idProduct": 0x5 },"template":"keyboard"},
+  /* Fujitsu Component Limited : 109 Japanese Keyboard */
+  {"name" : "kbd-430:a", "properties":{ "idVendor": 0x430,  "idProduct": 0xa },"template":"keyboard"},
+  /* Fujitsu Component Limited : 109 Japanese Keyboard */
+  {"name" : "kbd-430:b", "properties":{ "idVendor": 0x430,  "idProduct": 0xb },"template":"keyboard"},
+  /* Fujitsu Component Limited : 109 Japanese Keyboard */
+  {"name" : "kbd-430:82", "properties":{ "idVendor": 0x430,  "idProduct": 0x82 },"template":"keyboard"},
+  /* Fujitsu Component Limited : 109 Japanese Keyboard */
+  {"name" : "kbd-430:83", "properties":{ "idVendor": 0x430,  "idProduct": 0x83 },"template":"keyboard"},
+  /* Fujitsu Component Limited : Type 7 Keyboard */
+  {"name" : "kbd-430:a2", "properties":{ "idVendor": 0x430,  "idProduct": 0xa2 },"template":"keyboard"},
+  /* Fujitsu Component Limited : remote keyboard for P4 chip */
+  {"name" : "kbd-430:a111", "properties":{ "idVendor": 0x430,  "idProduct": 0xa111 },"template":"keyboard"},
+  /* Alps Electric, Inc. : Keyboard */
+  {"name" : "kbd-433:abab", "properties":{ "idVendor": 0x433,  "idProduct": 0xabab },"template":"keyboard"},
+  /* Gateway, Inc. : Multimedia Keyboard */
+  {"name" : "kbd-443:e", "properties":{ "idVendor": 0x443,  "idProduct": 0xe },"template":"keyboard"},
+  /* Gateway, Inc. : Millennium Keyboard */
+  {"name" : "kbd-443:2e", "properties":{ "idVendor": 0x443,  "idProduct": 0x2e },"template":"keyboard"},
+  /* NMB Technologies Corp. : Keyboard with PS/2 Mouse Port */
+  {"name" : "kbd-446:6781", "properties":{ "idVendor": 0x446,  "idProduct": 0x6781 },"template":"keyboard"},
+  /* NMB Technologies Corp. : Keyboard */
+  {"name" : "kbd-446:6782", "properties":{ "idVendor": 0x446,  "idProduct": 0x6782 },"template":"keyboard"},
+  /* Alps Electric Co., Ltd : Japanese Keyboard */
+  {"name" : "kbd-44e:1104", "properties":{ "idVendor": 0x44e,  "idProduct": 0x1104 },"template":"keyboard"},
+  /* Texas Instruments, Inc. : TI SmartPad Keyboard */
+  {"name" : "kbd-451:e010", "properties":{ "idVendor": 0x451,  "idProduct": 0xe010 },"template":"keyboard"},
+  /* CMD Technology : NMB Keyboard */
+  {"name" : "kbd-453:6781", "properties":{ "idVendor": 0x453,  "idProduct": 0x6781 },"template":"keyboard"},
+  /* CMD Technology : Chicony Composite Keyboard */
+  {"name" : "kbd-453:6783", "properties":{ "idVendor": 0x453,  "idProduct": 0x6783 },"template":"keyboard"},
+  /* KYE Systems Corp. (Mouse Systems) : Slimstar Pro Keyboard */
+  {"name" : "kbd-458:4c", "properties":{ "idVendor": 0x458,  "idProduct": 0x4c },"template":"keyboard"},
+  /* Microsoft Corp. : Natural Keyboard Elite */
+  {"name" : "kbd-45e:b", "properties":{ "idVendor": 0x45e,  "idProduct": 0xb },"template":"keyboard"},
+  /* Microsoft Corp. : Internet Keyboard Pro */
+  {"name" : "kbd-45e:1c", "properties":{ "idVendor": 0x45e,  "idProduct": 0x1c },"template":"keyboard"},
+  /* Microsoft Corp. : Natural Keyboard Pro */
+  {"name" : "kbd-45e:1d", "properties":{ "idVendor": 0x45e,  "idProduct": 0x1d },"template":"keyboard"},
+  /* Microsoft Corp. : Internet Keyboard Pro */
+  {"name" : "kbd-45e:2b", "properties":{ "idVendor": 0x45e,  "idProduct": 0x2b },"template":"keyboard"},
+  /* Microsoft Corp. : Internet Keyboard */
+  {"name" : "kbd-45e:2d", "properties":{ "idVendor": 0x45e,  "idProduct": 0x2d },"template":"keyboard"},
+  /* Microsoft Corp. : Office Keyboard 1.0A */
+  {"name" : "kbd-45e:48", "properties":{ "idVendor": 0x45e,  "idProduct": 0x48 },"template":"keyboard"},
+  /* Microsoft Corp. : Office Keyboard (106/109) */
+  {"name" : "kbd-45e:5c", "properties":{ "idVendor": 0x45e,  "idProduct": 0x5c },"template":"keyboard"},
+  /* Microsoft Corp. : Wireless MultiMedia Keyboard */
+  {"name" : "kbd-45e:5f", "properties":{ "idVendor": 0x45e,  "idProduct": 0x5f },"template":"keyboard"},
+  /* Microsoft Corp. : Wireless MultiMedia Keyboard (106/109) */
+  {"name" : "kbd-45e:61", "properties":{ "idVendor": 0x45e,  "idProduct": 0x61 },"template":"keyboard"},
+  /* Microsoft Corp. : Wireless Natural MultiMedia Keyboard */
+  {"name" : "kbd-45e:63", "properties":{ "idVendor": 0x45e,  "idProduct": 0x63 },"template":"keyboard"},
+  /* Microsoft Corp. : Wireless Natural MultiMedia Keyboard (106/109) */
+  {"name" : "kbd-45e:65", "properties":{ "idVendor": 0x45e,  "idProduct": 0x65 },"template":"keyboard"},
+  /* Microsoft Corp. : eHome Remote Control Keyboard keys */
+  {"name" : "kbd-45e:6d", "properties":{ "idVendor": 0x45e,  "idProduct": 0x6d },"template":"keyboard"},
+  /* Microsoft Corp. : Wireless MultiMedia Keyboard */
+  {"name" : "kbd-45e:70", "properties":{ "idVendor": 0x45e,  "idProduct": 0x70 },"template":"keyboard"},
+  /* Microsoft Corp. : Wireless MultiMedia Keyboard (106/109) */
+  {"name" : "kbd-45e:71", "properties":{ "idVendor": 0x45e,  "idProduct": 0x71 },"template":"keyboard"},
+  /* Microsoft Corp. : Wireless Natural MultiMedia Keyboard */
+  {"name" : "kbd-45e:72", "properties":{ "idVendor": 0x45e,  "idProduct": 0x72 },"template":"keyboard"},
+  /* Microsoft Corp. : Wireless Natural MultiMedia Keyboard (106/109) */
+  {"name" : "kbd-45e:73", "properties":{ "idVendor": 0x45e,  "idProduct": 0x73 },"template":"keyboard"},
+  /* Microsoft Corp. : Digital Media Pro Keyboard */
+  {"name" : "kbd-45e:80", "properties":{ "idVendor": 0x45e,  "idProduct": 0x80 },"template":"keyboard"},
+  /* Microsoft Corp. : Digital Media Pro Keyboard */
+  {"name" : "kbd-45e:b0", "properties":{ "idVendor": 0x45e,  "idProduct": 0xb0 },"template":"keyboard"},
+  /* Microsoft Corp. : Digital Media Keyboard 1.0A */
+  {"name" : "kbd-45e:b4", "properties":{ "idVendor": 0x45e,  "idProduct": 0xb4 },"template":"keyboard"},
+  /* Microsoft Corp. : Natural Ergonomic Keyboard 4000 V1.0 */
+  {"name" : "kbd-45e:db", "properties":{ "idVendor": 0x45e,  "idProduct": 0xdb },"template":"keyboard"},
+  /* Microsoft Corp. : Comfort Curve Keyboard 2000 V1.0 */
+  {"name" : "kbd-45e:dd", "properties":{ "idVendor": 0x45e,  "idProduct": 0xdd },"template":"keyboard"},
+  /* Microsoft Corp. : Mouse/Keyboard 2.4GHz Transceiver V2.0 */
+  {"name" : "kbd-45e:71f", "properties":{ "idVendor": 0x45e,  "idProduct": 0x71f },"template":"keyboard"},
+  /* Microsoft Corp. : Digital Media Keyboard 3000 */
+  {"name" : "kbd-45e:730", "properties":{ "idVendor": 0x45e,  "idProduct": 0x730 },"template":"keyboard"},
+  /* Microsoft Corp. : Wired Keyboard 600 */
+  {"name" : "kbd-45e:750", "properties":{ "idVendor": 0x45e,  "idProduct": 0x750 },"template":"keyboard"},
+  /* Microsoft Corp. : Wired Keyboard 400 */
+  {"name" : "kbd-45e:752", "properties":{ "idVendor": 0x45e,  "idProduct": 0x752 },"template":"keyboard"},
+  /* Microsoft Corp. : Comfort Curve Keyboard 3000 */
+  {"name" : "kbd-45e:780", "properties":{ "idVendor": 0x45e,  "idProduct": 0x780 },"template":"keyboard"},
+  /* Microsoft Corp. : Surface Pro embedded keyboard */
+  {"name" : "kbd-45e:799", "properties":{ "idVendor": 0x45e,  "idProduct": 0x799 },"template":"keyboard"},
+  /* Microsoft Corp. : Comfort Curve Keyboard 3000 */
+  {"name" : "kbd-45e:7b6", "properties":{ "idVendor": 0x45e,  "idProduct": 0x7b6 },"template":"keyboard"},
+  /* Microsoft Corp. : Wired Keyboard 200 */
+  {"name" : "kbd-45e:7b9", "properties":{ "idVendor": 0x45e,  "idProduct": 0x7b9 },"template":"keyboard"},
+  /* Microsoft Corp. : Surface Keyboard */
+  {"name" : "kbd-45e:7cd", "properties":{ "idVendor": 0x45e,  "idProduct": 0x7cd },"template":"keyboard"},
+  /* Microsoft Corp. : Wired Keyboard 600 (model 1576) */
+  {"name" : "kbd-45e:7f8", "properties":{ "idVendor": 0x45e,  "idProduct": 0x7f8 },"template":"keyboard"},
+  /* Microsoft Corp. : Wireless keyboard (All-in-One-Media) */
+  {"name" : "kbd-45e:800", "properties":{ "idVendor": 0x45e,  "idProduct": 0x800 },"template":"keyboard"},
+  /* Microsoft Corp. : Keyboard */
+  {"name" : "kbd-45e:fff8", "properties":{ "idVendor": 0x45e,  "idProduct": 0xfff8 },"template":"keyboard"},
+  /* Primax Electronics, Ltd : HP PR1101U / Primax PMX-KPR1101U Keyboard */
+  {"name" : "kbd-461:10", "properties":{ "idVendor": 0x461,  "idProduct": 0x10 },"template":"keyboard"},
+  /* Primax Electronics, Ltd : Comfort Keyboard / Kensington Orbit Elite */
+  {"name" : "kbd-461:4d01", "properties":{ "idVendor": 0x461,  "idProduct": 0x4d01 },"template":"keyboard"},
+  /* Primax Electronics, Ltd : HP Multimedia Keyboard */
+  {"name" : "kbd-461:4d8a", "properties":{ "idVendor": 0x461,  "idProduct": 0x4d8a },"template":"keyboard"},
+  /* Primax Electronics, Ltd : Lenovo Keyboard KB1021 */
+  {"name" : "kbd-461:4e04", "properties":{ "idVendor": 0x461,  "idProduct": 0x4e04 },"template":"keyboard"},
+  /* Primax Electronics, Ltd : Acer Wired Keyboard Model KBAY211 */
+  {"name" : "kbd-461:4e6f", "properties":{ "idVendor": 0x461,  "idProduct": 0x4e6f },"template":"keyboard"},
+  /* Primax Electronics, Ltd : Acer Wired Keyboard Model KBAY211 */
+  {"name" : "kbd-461:4e72", "properties":{ "idVendor": 0x461,  "idProduct": 0x4e72 },"template":"keyboard"},
+  /* Cherry GmbH : Keyboard */
+  {"name" : "kbd-46a:1", "properties":{ "idVendor": 0x46a,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Cherry GmbH : CyBoard Keyboard */
+  {"name" : "kbd-46a:4", "properties":{ "idVendor": 0x46a,  "idProduct": 0x4 },"template":"keyboard"},
+  /* Cherry GmbH : XX33 SmartCard Reader Keyboard */
+  {"name" : "kbd-46a:5", "properties":{ "idVendor": 0x46a,  "idProduct": 0x5 },"template":"keyboard"},
+  /* Cherry GmbH : Wireless Keyboard and Mouse */
+  {"name" : "kbd-46a:8", "properties":{ "idVendor": 0x46a,  "idProduct": 0x8 },"template":"keyboard"},
+  /* Cherry GmbH : G83 (RS 6000) Keyboard */
+  {"name" : "kbd-46a:11", "properties":{ "idVendor": 0x46a,  "idProduct": 0x11 },"template":"keyboard"},
+  /* Cherry GmbH : Keyboard */
+  {"name" : "kbd-46a:23", "properties":{ "idVendor": 0x46a,  "idProduct": 0x23 },"template":"keyboard"},
+  /* Cherry GmbH : CyMotion Master Solar Keyboard */
+  {"name" : "kbd-46a:27", "properties":{ "idVendor": 0x46a,  "idProduct": 0x27 },"template":"keyboard"},
+  /* Cherry GmbH : Wireless Mouse & Keyboard */
+  {"name" : "kbd-46a:2a", "properties":{ "idVendor": 0x46a,  "idProduct": 0x2a },"template":"keyboard"},
+  /* Cherry GmbH : Raptor Gaming Keyboard */
+  {"name" : "kbd-46a:3c", "properties":{ "idVendor": 0x46a,  "idProduct": 0x3c },"template":"keyboard"},
+  /* Cherry GmbH : Raptor Gaming Keyboard Integrated Hub */
+  {"name" : "kbd-46a:3d", "properties":{ "idVendor": 0x46a,  "idProduct": 0x3d },"template":"keyboard"},
+  /* Cherry GmbH : G86 6240 Keyboard */
+  {"name" : "kbd-46a:41", "properties":{ "idVendor": 0x46a,  "idProduct": 0x41 },"template":"keyboard"},
+  /* Cherry GmbH : eHealth Keyboard G87 1504 */
+  {"name" : "kbd-46a:81", "properties":{ "idVendor": 0x46a,  "idProduct": 0x81 },"template":"keyboard"},
+  /* Cherry GmbH : SmartCard Reader Keyboard KC 1000 SC */
+  {"name" : "kbd-46a:a1", "properties":{ "idVendor": 0x46a,  "idProduct": 0xa1 },"template":"keyboard"},
+  /* Cherry GmbH : MX-Board 3.0 Keyboard */
+  {"name" : "kbd-46a:10d", "properties":{ "idVendor": 0x46a,  "idProduct": 0x10d },"template":"keyboard"},
+  /* Cherry GmbH : Keyboard */
+  {"name" : "kbd-46a:b090", "properties":{ "idVendor": 0x46a,  "idProduct": 0xb090 },"template":"keyboard"},
+  /* American Megatrends, Inc. : Keyboard */
+  {"name" : "kbd-46b:1", "properties":{ "idVendor": 0x46b,  "idProduct": 0x1 },"template":"keyboard"},
+  /* American Megatrends, Inc. : PS/2 Keyboard, Mouse & Joystick Ports */
+  {"name" : "kbd-46b:101", "properties":{ "idVendor": 0x46b,  "idProduct": 0x101 },"template":"keyboard"},
+  /* American Megatrends, Inc. : Virtual Keyboard and Mouse */
+  {"name" : "kbd-46b:ff10", "properties":{ "idVendor": 0x46b,  "idProduct": 0xff10 },"template":"keyboard"},
+  /* Logitech, Inc. : M2452 Keyboard */
+  {"name" : "kbd-46d:203", "properties":{ "idVendor": 0x46d,  "idProduct": 0x203 },"template":"keyboard"},
+  /* Logitech, Inc. : G11/G15 Keyboard / Keyboard */
+  {"name" : "kbd-46d:c221", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc221 },"template":"keyboard"},
+  /* Logitech, Inc. : G15 Keyboard / LCD */
+  {"name" : "kbd-46d:c222", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc222 },"template":"keyboard"},
+  /* Logitech, Inc. : G11/G15 Keyboard / USB Hub */
+  {"name" : "kbd-46d:c223", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc223 },"template":"keyboard"},
+  /* Logitech, Inc. : G11/G15 Keyboard / G keys */
+  {"name" : "kbd-46d:c225", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc225 },"template":"keyboard"},
+  /* Logitech, Inc. : G15 Refresh Keyboard */
+  {"name" : "kbd-46d:c226", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc226 },"template":"keyboard"},
+  /* Logitech, Inc. : G15 Refresh Keyboard */
+  {"name" : "kbd-46d:c227", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc227 },"template":"keyboard"},
+  /* Logitech, Inc. : G19 Gaming Keyboard */
+  {"name" : "kbd-46d:c228", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc228 },"template":"keyboard"},
+  /* Logitech, Inc. : G19 Gaming Keyboard Macro Interface */
+  {"name" : "kbd-46d:c229", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc229 },"template":"keyboard"},
+  /* Logitech, Inc. : Gaming Keyboard G110 */
+  {"name" : "kbd-46d:c22a", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc22a },"template":"keyboard"},
+  /* Logitech, Inc. : Gaming Keyboard G110 G-keys */
+  {"name" : "kbd-46d:c22b", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc22b },"template":"keyboard"},
+  /* Logitech, Inc. : G510 Gaming Keyboard */
+  {"name" : "kbd-46d:c22d", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc22d },"template":"keyboard"},
+  /* Logitech, Inc. : G510 Gaming Keyboard onboard audio */
+  {"name" : "kbd-46d:c22e", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc22e },"template":"keyboard"},
+  /* Logitech, Inc. : Gaming Virtual Keyboard */
+  {"name" : "kbd-46d:c232", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc232 },"template":"keyboard"},
+  /* Logitech, Inc. : G105 Gaming Keyboard */
+  {"name" : "kbd-46d:c248", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc248 },"template":"keyboard"},
+  /* Logitech, Inc. : G710 Gaming Keyboard */
+  {"name" : "kbd-46d:c24d", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc24d },"template":"keyboard"},
+  /* Logitech, Inc. : iTouch Keyboard */
+  {"name" : "kbd-46d:c301", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc301 },"template":"keyboard"},
+  /* Logitech, Inc. : iTouch Pro Keyboard */
+  {"name" : "kbd-46d:c302", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc302 },"template":"keyboard"},
+  /* Logitech, Inc. : iTouch Keyboard */
+  {"name" : "kbd-46d:c303", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc303 },"template":"keyboard"},
+  /* Logitech, Inc. : Internet Keyboard */
+  {"name" : "kbd-46d:c305", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc305 },"template":"keyboard"},
+  /* Logitech, Inc. : Internet Keyboard */
+  {"name" : "kbd-46d:c307", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc307 },"template":"keyboard"},
+  /* Logitech, Inc. : Internet Navigator Keyboard */
+  {"name" : "kbd-46d:c308", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc308 },"template":"keyboard"},
+  /* Logitech, Inc. : Y-BF37 [Internet Navigator Keyboard] */
+  {"name" : "kbd-46d:c309", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc309 },"template":"keyboard"},
+  /* Logitech, Inc. : NetPlay Keyboard */
+  {"name" : "kbd-46d:c30b", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc30b },"template":"keyboard"},
+  /* Logitech, Inc. : UltraX Keyboard (Y-BL49) */
+  {"name" : "kbd-46d:c30e", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc30e },"template":"keyboard"},
+  /* Logitech, Inc. : Logicool HID-Compliant Keyboard (106 key) */
+  {"name" : "kbd-46d:c30f", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc30f },"template":"keyboard"},
+  /* Logitech, Inc. : Y-UF49 [Internet Pro Keyboard] */
+  {"name" : "kbd-46d:c311", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc311 },"template":"keyboard"},
+  /* Logitech, Inc. : DeLuxe 250 Keyboard */
+  {"name" : "kbd-46d:c312", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc312 },"template":"keyboard"},
+  /* Logitech, Inc. : Internet 350 Keyboard */
+  {"name" : "kbd-46d:c313", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc313 },"template":"keyboard"},
+  /* Logitech, Inc. : Classic Keyboard 200 */
+  {"name" : "kbd-46d:c315", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc315 },"template":"keyboard"},
+  /* Logitech, Inc. : HID-Compliant Keyboard */
+  {"name" : "kbd-46d:c316", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc316 },"template":"keyboard"},
+  /* Logitech, Inc. : Wave Corded Keyboard */
+  {"name" : "kbd-46d:c317", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc317 },"template":"keyboard"},
+  /* Logitech, Inc. : Illuminated Keyboard */
+  {"name" : "kbd-46d:c318", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc318 },"template":"keyboard"},
+  /* Logitech, Inc. : Compact Keyboard K300 */
+  {"name" : "kbd-46d:c31b", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc31b },"template":"keyboard"},
+  /* Logitech, Inc. : Keyboard K120 */
+  {"name" : "kbd-46d:c31c", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc31c },"template":"keyboard"},
+  /* Logitech, Inc. : Media Keyboard K200 */
+  {"name" : "kbd-46d:c31d", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc31d },"template":"keyboard"},
+  /* Logitech, Inc. : Comfort Keyboard K290 */
+  {"name" : "kbd-46d:c31f", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc31f },"template":"keyboard"},
+  /* Logitech, Inc. : Washable Keyboard K310 */
+  {"name" : "kbd-46d:c326", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc326 },"template":"keyboard"},
+  /* Logitech, Inc. : Corded Keyboard K280e */
+  {"name" : "kbd-46d:c328", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc328 },"template":"keyboard"},
+  /* Logitech, Inc. : G910 Orion Spark Mechanical Keyboard */
+  {"name" : "kbd-46d:c32b", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc32b },"template":"keyboard"},
+  /* Logitech, Inc. : G910 Orion Spectrum Mechanical Keyboard */
+  {"name" : "kbd-46d:c335", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc335 },"template":"keyboard"},
+  /* Logitech, Inc. : G213 Prodigy Gaming Keyboard */
+  {"name" : "kbd-46d:c336", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc336 },"template":"keyboard"},
+  /* Logitech, Inc. : G413 Gaming Keyboard */
+  {"name" : "kbd-46d:c33a", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc33a },"template":"keyboard"},
+  /* Logitech, Inc. : G815 Mechanical Keyboard */
+  {"name" : "kbd-46d:c33f", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc33f },"template":"keyboard"},
+  /* Logitech, Inc. : Cordless Mouse+Keyboard Receiver */
+  {"name" : "kbd-46d:c503", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc503 },"template":"keyboard"},
+  /* Logitech, Inc. : Cordless Mouse+Keyboard Receiver */
+  {"name" : "kbd-46d:c504", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc504 },"template":"keyboard"},
+  /* Logitech, Inc. : Cordless Mouse+Keyboard Receiver */
+  {"name" : "kbd-46d:c505", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc505 },"template":"keyboard"},
+  /* Logitech, Inc. : Cordless Keyboard & Mouse */
+  {"name" : "kbd-46d:c509", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc509 },"template":"keyboard"},
+  /* Logitech, Inc. : Logitech Keyboard + Mice */
+  {"name" : "kbd-46d:c529", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc529 },"template":"keyboard"},
+  /* Logitech, Inc. : G631 Keyboard */
+  {"name" : "kbd-46d:c53d", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc53d },"template":"keyboard"},
+  /* Logitech, Inc. : Elite Keyboard Y-RP20 + Mouse MX900 (Bluetooth) */
+  {"name" : "kbd-46d:c703", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc703 },"template":"keyboard"},
+  /* Logitech, Inc. : diNovo Edge Keyboard */
+  {"name" : "kbd-46d:c714", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc714 },"template":"keyboard"},
+  /* Logitech, Inc. : diNovo Mini Wireless Keyboard */
+  {"name" : "kbd-46d:c71f", "properties":{ "idVendor": 0x46d,  "idProduct": 0xc71f },"template":"keyboard"},
+  /* Logitech, Inc. : Cordless Keyboard for Wii HID Receiver */
+  {"name" : "kbd-46d:cab1", "properties":{ "idVendor": 0x46d,  "idProduct": 0xcab1 },"template":"keyboard"},
+  /* Behavior Tech. Computer Corp. : Keyboard */
+  {"name" : "kbd-46e:100", "properties":{ "idVendor": 0x46e,  "idProduct": 0x100 },"template":"keyboard"},
+  /* Behavior Tech. Computer Corp. : KeyMaestro Multimedia Keyboard */
+  {"name" : "kbd-46e:5250", "properties":{ "idVendor": 0x46e,  "idProduct": 0x5250 },"template":"keyboard"},
+  /* Behavior Tech. Computer Corp. : KeyMaestro Multimedia Keyboard */
+  {"name" : "kbd-46e:5273", "properties":{ "idVendor": 0x46e,  "idProduct": 0x5273 },"template":"keyboard"},
+  /* Behavior Tech. Computer Corp. : KeyMaestro Keyboard */
+  {"name" : "kbd-46e:5308", "properties":{ "idVendor": 0x46e,  "idProduct": 0x5308 },"template":"keyboard"},
+  /* Behavior Tech. Computer Corp. : KeyMaestro Multimedia Keyboard/Hub */
+  {"name" : "kbd-46e:5408", "properties":{ "idVendor": 0x46e,  "idProduct": 0x5408 },"template":"keyboard"},
+  /* Behavior Tech. Computer Corp. : Portable Keyboard 86+9 keys (Model 6100C US) */
+  {"name" : "kbd-46e:5500", "properties":{ "idVendor": 0x46e,  "idProduct": 0x5500 },"template":"keyboard"},
+  /* Behavior Tech. Computer Corp. : BTC 7932 mouse+keyboard */
+  {"name" : "kbd-46e:6782", "properties":{ "idVendor": 0x46e,  "idProduct": 0x6782 },"template":"keyboard"},
+  /* Philips (or NXP) : Semiconductors CICT Keyboard */
+  {"name" : "kbd-471:401", "properties":{ "idVendor": 0x471,  "idProduct": 0x401 },"template":"keyboard"},
+  /* Philips (or NXP) : PS/2 Mouse on Semiconductors CICT Keyboard */
+  {"name" : "kbd-471:402", "properties":{ "idVendor": 0x471,  "idProduct": 0x402 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : PFU-65 Keyboard [Chicony] */
+  {"name" : "kbd-472:65", "properties":{ "idVendor": 0x472,  "idProduct": 0x65 },"template":"keyboard"},
+  /* Silitek Corp. : Keyboard */
+  {"name" : "kbd-47b:1", "properties":{ "idVendor": 0x47b,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Silitek Corp. : Keyboard and Mouse */
+  {"name" : "kbd-47b:2", "properties":{ "idVendor": 0x47b,  "idProduct": 0x2 },"template":"keyboard"},
+  /* Silitek Corp. : SK-1688U Keyboard */
+  {"name" : "kbd-47b:11", "properties":{ "idVendor": 0x47b,  "idProduct": 0x11 },"template":"keyboard"},
+  /* Silitek Corp. : SK-1789u Keyboard */
+  {"name" : "kbd-47b:f9", "properties":{ "idVendor": 0x47b,  "idProduct": 0xf9 },"template":"keyboard"},
+  /* Silitek Corp. : BlueTooth Keyboard and Mouse */
+  {"name" : "kbd-47b:101", "properties":{ "idVendor": 0x47b,  "idProduct": 0x101 },"template":"keyboard"},
+  /* Silitek Corp. : Internet Compact Keyboard */
+  {"name" : "kbd-47b:50e", "properties":{ "idVendor": 0x47b,  "idProduct": 0x50e },"template":"keyboard"},
+  /* Yamaha Corp. : S90XS Keyboard/Music Synthesizer */
+  {"name" : "kbd-499:1054", "properties":{ "idVendor": 0x499,  "idProduct": 0x1054 },"template":"keyboard"},
+  /* Yamaha Corp. : PSR-E353 digital keyboard */
+  {"name" : "kbd-499:1617", "properties":{ "idVendor": 0x499,  "idProduct": 0x1617 },"template":"keyboard"},
+  /* Acer Advanced Labs, Inc. : Keyboard (???) */
+  {"name" : "kbd-49c:2", "properties":{ "idVendor": 0x49c,  "idProduct": 0x2 },"template":"keyboard"},
+  /* Compaq Computer Corp. : Internet Keyboard */
+  {"name" : "kbd-49f:e", "properties":{ "idVendor": 0x49f,  "idProduct": 0xe },"template":"keyboard"},
+  /* Compaq Computer Corp. : KU-0133 Easy Access Interner Keyboard */
+  {"name" : "kbd-49f:51", "properties":{ "idVendor": 0x49f,  "idProduct": 0x51 },"template":"keyboard"},
+  /* Acer Peripherals Inc. (now BenQ Corp.) : Keyboard */
+  {"name" : "kbd-4a5:1", "properties":{ "idVendor": 0x4a5,  "idProduct": 0x1 },"template":"keyboard"},
+  /* IBM Corp. : Rapid Access III Keyboard */
+  {"name" : "kbd-4b3:3003", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x3003 },"template":"keyboard"},
+  /* IBM Corp. : Media Access Pro Keyboard */
+  {"name" : "kbd-4b3:3004", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x3004 },"template":"keyboard"},
+  /* IBM Corp. : Rapid Access IIIe Keyboard */
+  {"name" : "kbd-4b3:300a", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x300a },"template":"keyboard"},
+  /* IBM Corp. : UltraNav Keyboard Hub */
+  {"name" : "kbd-4b3:3016", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x3016 },"template":"keyboard"},
+  /* IBM Corp. : UltraNav Keyboard */
+  {"name" : "kbd-4b3:3018", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x3018 },"template":"keyboard"},
+  /* IBM Corp. : SK-8815 Keyboard */
+  {"name" : "kbd-4b3:301b", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x301b },"template":"keyboard"},
+  /* IBM Corp. : Enhanced Performance Keyboard */
+  {"name" : "kbd-4b3:301c", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x301c },"template":"keyboard"},
+  /* IBM Corp. : Enhanced Performance Keyboard */
+  {"name" : "kbd-4b3:3020", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x3020 },"template":"keyboard"},
+  /* IBM Corp. : NetVista Full Width Keyboard */
+  {"name" : "kbd-4b3:3025", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x3025 },"template":"keyboard"},
+  /* IBM Corp. : Keyboard w/ Card Reader */
+  {"name" : "kbd-4b3:4604", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x4604 },"template":"keyboard"},
+  /* Cypress Semiconductor Corp. : Keyboard/Hub */
+  {"name" : "kbd-4b4:101", "properties":{ "idVendor": 0x4b4,  "idProduct": 0x101 },"template":"keyboard"},
+  /* Cypress Semiconductor Corp. : Keyboard with APM */
+  {"name" : "kbd-4b4:102", "properties":{ "idVendor": 0x4b4,  "idProduct": 0x102 },"template":"keyboard"},
+  /* Cypress Semiconductor Corp. : AE-SMKD92-* [Thumb Keyboard] */
+  {"name" : "kbd-4b4:818", "properties":{ "idVendor": 0x4b4,  "idProduct": 0x818 },"template":"keyboard"},
+  /* Cypress Semiconductor Corp. : Combi Keyboard-Hub (Hub) */
+  {"name" : "kbd-4b4:5201", "properties":{ "idVendor": 0x4b4,  "idProduct": 0x5201 },"template":"keyboard"},
+  /* Cypress Semiconductor Corp. : Combi Keyboard-Hub (Keyboard) */
+  {"name" : "kbd-4b4:5202", "properties":{ "idVendor": 0x4b4,  "idProduct": 0x5202 },"template":"keyboard"},
+  /* Cypress Semiconductor Corp. : USB To keyboard/Mouse Converter */
+  {"name" : "kbd-4b4:8329", "properties":{ "idVendor": 0x4b4,  "idProduct": 0x8329 },"template":"keyboard"},
+  /* Lite-On Technology Corp. : USB Keyboard */
+  {"name" : "kbd-4ca:20", "properties":{ "idVendor": 0x4ca,  "idProduct": 0x20 },"template":"keyboard"},
+  /* Lite-On Technology Corp. : Keyboard */
+  {"name" : "kbd-4ca:4b", "properties":{ "idVendor": 0x4ca,  "idProduct": 0x4b },"template":"keyboard"},
+  /* Lite-On Technology Corp. : SK-9020 keyboard */
+  {"name" : "kbd-4ca:4f", "properties":{ "idVendor": 0x4ca,  "idProduct": 0x4f },"template":"keyboard"},
+  /* Myson Century, Inc. : OCZ Alchemy Series Elixir II Keyboard */
+  {"name" : "kbd-4cf:22", "properties":{ "idVendor": 0x4cf,  "idProduct": 0x22 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Wired Keyboard (78/79 key) [RPI Wired Keyboard 5] */
+  {"name" : "kbd-4d9:6", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x6 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Portable Keyboard */
+  {"name" : "kbd-4d9:22", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x22 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard [KBPV8000] */
+  {"name" : "kbd-4d9:129", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x129 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard */
+  {"name" : "kbd-4d9:348", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x348 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard [TEX Shinobi] */
+  {"name" : "kbd-4d9:407", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x407 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard */
+  {"name" : "kbd-4d9:1203", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x1203 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : PS/2 keyboard + mouse controller */
+  {"name" : "kbd-4d9:1400", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x1400 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard */
+  {"name" : "kbd-4d9:1503", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x1503 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard */
+  {"name" : "kbd-4d9:1603", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x1603 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard LKS02 */
+  {"name" : "kbd-4d9:1702", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x1702 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard [Diatec Filco Majestouch 2] */
+  {"name" : "kbd-4d9:1818", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x1818 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard [Diatec Filco Majestouch 1] */
+  {"name" : "kbd-4d9:2011", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x2011 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard [Das Keyboard] */
+  {"name" : "kbd-4d9:2013", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x2013 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard */
+  {"name" : "kbd-4d9:2221", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x2221 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard */
+  {"name" : "kbd-4d9:2323", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x2323 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard [Diatec Majestouch 2 Tenkeyless] */
+  {"name" : "kbd-4d9:4545", "properties":{ "idVendor": 0x4d9,  "idProduct": 0x4545 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : wireless multimedia keyboard with trackball [Trust ADURA 17911] */
+  {"name" : "kbd-4d9:a01c", "properties":{ "idVendor": 0x4d9,  "idProduct": 0xa01c },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard */
+  {"name" : "kbd-4d9:a055", "properties":{ "idVendor": 0x4d9,  "idProduct": 0xa055 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard */
+  {"name" : "kbd-4d9:a096", "properties":{ "idVendor": 0x4d9,  "idProduct": 0xa096 },"template":"keyboard"},
+  /* SCM Microsystems, Inc. : SCR338 Keyboard Smart Card Reader */
+  {"name" : "kbd-4e6:5151", "properties":{ "idVendor": 0x4e6,  "idProduct": 0x5151 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : KU-8933 Keyboard */
+  {"name" : "kbd-4f2:1", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : NT68P81 Keyboard */
+  {"name" : "kbd-4f2:2", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x2 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : KU-2971 Keyboard */
+  {"name" : "kbd-4f2:110", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x110 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : KU-9908 Keyboard */
+  {"name" : "kbd-4f2:111", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x111 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : KU-8933 Keyboard with PS/2 Mouse port */
+  {"name" : "kbd-4f2:112", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x112 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : KU-2971/KU-0325 Keyboard */
+  {"name" : "kbd-4f2:116", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x116 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : Gaming Keyboard KPD0250 */
+  {"name" : "kbd-4f2:201", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x201 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : Genius LuxeMate i200 Keyboard */
+  {"name" : "kbd-4f2:402", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x402 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : KU-0420 keyboard */
+  {"name" : "kbd-4f2:403", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x403 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : RG-0618U Wireless HID Receiver & KG-0609 Wireless Keyboard with Touchpad */
+  {"name" : "kbd-4f2:618", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x618 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : Acer KU-0760 Keyboard */
+  {"name" : "kbd-4f2:760", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x760 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : KU-0833 Keyboard */
+  {"name" : "kbd-4f2:833", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x833 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : HP Multimedia Keyboard */
+  {"name" : "kbd-4f2:841", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x841 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : HP KG-1061 Wireless Keyboard+Mouse */
+  {"name" : "kbd-4f2:1061", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x1061 },"template":"keyboard"},
+  /* Chicony Electronics Co., Ltd : Periboard 717 Mini Wireless Keyboard */
+  {"name" : "kbd-4f2:1121", "properties":{ "idVendor": 0x4f2,  "idProduct": 0x1121 },"template":"keyboard"},
+  /* Elan Microelectronics Corp. : ActiveJet K-2024 Multimedia Keyboard */
+  {"name" : "kbd-4f3:103", "properties":{ "idVendor": 0x4f3,  "idProduct": 0x103 },"template":"keyboard"},
+  /* Elan Microelectronics Corp. : Wireless Keyboard */
+  {"name" : "kbd-4f3:1a4", "properties":{ "idVendor": 0x4f3,  "idProduct": 0x1a4 },"template":"keyboard"},
+  /* Sunplus Technology Co., Ltd : Wireless keyboard/mouse */
+  {"name" : "kbd-4fc:5d8", "properties":{ "idVendor": 0x4fc,  "idProduct": 0x5d8 },"template":"keyboard"},
+  /* PFU, Ltd : Happy Hacking Keyboard Lite2 */
+  {"name" : "kbd-4fe:6", "properties":{ "idVendor": 0x4fe,  "idProduct": 0x6 },"template":"keyboard"},
+  /* Siam United Hi-Tech : DART Keyboard Mouse */
+  {"name" : "kbd-500:1", "properties":{ "idVendor": 0x500,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Siam United Hi-Tech : DART-2 Keyboard */
+  {"name" : "kbd-500:2", "properties":{ "idVendor": 0x500,  "idProduct": 0x2 },"template":"keyboard"},
+  /* Belkin Components : Nostromo SpeedPad n52te Gaming Keyboard */
+  {"name" : "kbd-50d:200", "properties":{ "idVendor": 0x50d,  "idProduct": 0x200 },"template":"keyboard"},
+  /* Sejin Electron, Inc. : Keyboard */
+  {"name" : "kbd-510:1", "properties":{ "idVendor": 0x510,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Sejin Electron, Inc. : Keyboard with PS/2 Mouse Port */
+  {"name" : "kbd-510:1000", "properties":{ "idVendor": 0x510,  "idProduct": 0x1000 },"template":"keyboard"},
+  /* EzKEY Corp. : EZ-9900C Keyboard */
+  {"name" : "kbd-518:2", "properties":{ "idVendor": 0x518,  "idProduct": 0x2 },"template":"keyboard"},
+  /* ATEN International Co., Ltd : UC-100KM PS/2 Mouse and Keyboard adapter */
+  {"name" : "kbd-557:2004", "properties":{ "idVendor": 0x557,  "idProduct": 0x2004 },"template":"keyboard"},
+  /* ATEN International Co., Ltd : Keyboard/Mouse */
+  {"name" : "kbd-557:2212", "properties":{ "idVendor": 0x557,  "idProduct": 0x2212 },"template":"keyboard"},
+  /* ATEN International Co., Ltd : Virtual mouse/keyboard device */
+  {"name" : "kbd-557:2419", "properties":{ "idVendor": 0x557,  "idProduct": 0x2419 },"template":"keyboard"},
+  /* Samsung Electro-Mechanics Co. : Keyboard */
+  {"name" : "kbd-55d:1", "properties":{ "idVendor": 0x55d,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Samsung Electro-Mechanics Co. : Keyboard V1 */
+  {"name" : "kbd-55d:6780", "properties":{ "idVendor": 0x55d,  "idProduct": 0x6780 },"template":"keyboard"},
+  /* Samsung Electro-Mechanics Co. : Keyboard Mouse */
+  {"name" : "kbd-55d:6781", "properties":{ "idVendor": 0x55d,  "idProduct": 0x6781 },"template":"keyboard"},
+  /* Monterey International Corp. : Keyboard */
+  {"name" : "kbd-566:3002", "properties":{ "idVendor": 0x566,  "idProduct": 0x3002 },"template":"keyboard"},
+  /* Monterey International Corp. : BakkerElkhuizen Wired Keyboard S-board 840 Design */
+  {"name" : "kbd-566:3013", "properties":{ "idVendor": 0x566,  "idProduct": 0x3013 },"template":"keyboard"},
+  /* Monterey International Corp. : BakkerElkhuizen Wired Keyboard S-board 840 Design USB-Hub */
+  {"name" : "kbd-566:3020", "properties":{ "idVendor": 0x566,  "idProduct": 0x3020 },"template":"keyboard"},
+  /* Monterey International Corp. : Keyboard */
+  {"name" : "kbd-566:3107", "properties":{ "idVendor": 0x566,  "idProduct": 0x3107 },"template":"keyboard"},
+  /* ZyXEL Communications Corp. : Scorpion-980N keyboard */
+  {"name" : "kbd-586:2011", "properties":{ "idVendor": 0x586,  "idProduct": 0x2011 },"template":"keyboard"},
+  /* Alcor Micro Corp. : Monterey Keyboard */
+  {"name" : "kbd-58f:2802", "properties":{ "idVendor": 0x58f,  "idProduct": 0x2802 },"template":"keyboard"},
+  /* Alcor Micro Corp. : Keyboard */
+  {"name" : "kbd-58f:9410", "properties":{ "idVendor": 0x58f,  "idProduct": 0x9410 },"template":"keyboard"},
+  /* Alcor Micro Corp. : Keyboard Hub */
+  {"name" : "kbd-58f:9472", "properties":{ "idVendor": 0x58f,  "idProduct": 0x9472 },"template":"keyboard"},
+  /* Ortek Technology, Inc. : WKB-1000S Wireless Ergo Keyboard with Touchpad */
+  {"name" : "kbd-5a4:1000", "properties":{ "idVendor": 0x5a4,  "idProduct": 0x1000 },"template":"keyboard"},
+  /* Ortek Technology, Inc. : WKB-2000 Wireless Keyboard with Touchpad */
+  {"name" : "kbd-5a4:2000", "properties":{ "idVendor": 0x5a4,  "idProduct": 0x2000 },"template":"keyboard"},
+  /* Ortek Technology, Inc. : Keyboard Mouse */
+  {"name" : "kbd-5a4:9720", "properties":{ "idVendor": 0x5a4,  "idProduct": 0x9720 },"template":"keyboard"},
+  /* Ortek Technology, Inc. : Keyboard */
+  {"name" : "kbd-5a4:9722", "properties":{ "idVendor": 0x5a4,  "idProduct": 0x9722 },"template":"keyboard"},
+  /* Ortek Technology, Inc. : MCK-600W/MCK-800USB Keyboard */
+  {"name" : "kbd-5a4:9731", "properties":{ "idVendor": 0x5a4,  "idProduct": 0x9731 },"template":"keyboard"},
+  /* Ortek Technology, Inc. : Wireless Keypad */
+  {"name" : "kbd-5a4:9783", "properties":{ "idVendor": 0x5a4,  "idProduct": 0x9783 },"template":"keyboard"},
+  /* Ortek Technology, Inc. : Targus Number Keypad */
+  {"name" : "kbd-5a4:9837", "properties":{ "idVendor": 0x5a4,  "idProduct": 0x9837 },"template":"keyboard"},
+  /* Ortek Technology, Inc. : Targus Number Keypad (Composite Device) */
+  {"name" : "kbd-5a4:9862", "properties":{ "idVendor": 0x5a4,  "idProduct": 0x9862 },"template":"keyboard"},
+  /* Cisco Systems, Inc. : Virtual Keyboard/Mouse */
+  {"name" : "kbd-5a6:a01", "properties":{ "idVendor": 0x5a6,  "idProduct": 0xa01 },"template":"keyboard"},
+  /* Apple, Inc. : USB Keyboard [Alps or Logitech, M2452] */
+  {"name" : "kbd-5ac:201", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x201 },"template":"keyboard"},
+  /* Apple, Inc. : Keyboard [ALPS] */
+  {"name" : "kbd-5ac:202", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x202 },"template":"keyboard"},
+  /* Apple, Inc. : Extended Keyboard [Mitsumi] */
+  {"name" : "kbd-5ac:205", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x205 },"template":"keyboard"},
+  /* Apple, Inc. : Extended Keyboard [Mitsumi] */
+  {"name" : "kbd-5ac:206", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x206 },"template":"keyboard"},
+  /* Apple, Inc. : Pro Keyboard [Mitsumi, A1048/US layout] */
+  {"name" : "kbd-5ac:20b", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x20b },"template":"keyboard"},
+  /* Apple, Inc. : Extended Keyboard [Mitsumi] */
+  {"name" : "kbd-5ac:20c", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x20c },"template":"keyboard"},
+  /* Apple, Inc. : Pro Keyboard [Mitsumi, A1048/JIS layout] */
+  {"name" : "kbd-5ac:20d", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x20d },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:20e", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x20e },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:20f", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x20f },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:214", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x214 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:215", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x215 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (JIS) */
+  {"name" : "kbd-5ac:216", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x216 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:217", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x217 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:218", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x218 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (JIS) */
+  {"name" : "kbd-5ac:219", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x219 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:21a", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x21a },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:21b", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x21b },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (JIS) */
+  {"name" : "kbd-5ac:21c", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x21c },"template":"keyboard"},
+  /* Apple, Inc. : Aluminum Mini Keyboard (ANSI) */
+  {"name" : "kbd-5ac:21d", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x21d },"template":"keyboard"},
+  /* Apple, Inc. : Aluminum Mini Keyboard (ISO) */
+  {"name" : "kbd-5ac:21e", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x21e },"template":"keyboard"},
+  /* Apple, Inc. : Aluminum Mini Keyboard (JIS) */
+  {"name" : "kbd-5ac:21f", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x21f },"template":"keyboard"},
+  /* Apple, Inc. : Aluminum Keyboard (ANSI) */
+  {"name" : "kbd-5ac:220", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x220 },"template":"keyboard"},
+  /* Apple, Inc. : Aluminum Keyboard (ISO) */
+  {"name" : "kbd-5ac:221", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x221 },"template":"keyboard"},
+  /* Apple, Inc. : Aluminum Keyboard (JIS) */
+  {"name" : "kbd-5ac:222", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x222 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:223", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x223 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:224", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x224 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (JIS) */
+  {"name" : "kbd-5ac:225", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x225 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:229", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x229 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (MacBook Pro) (ISO) */
+  {"name" : "kbd-5ac:22a", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x22a },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (MacBook Pro) (JIS) */
+  {"name" : "kbd-5ac:22b", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x22b },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (MacBook Pro 4,1) (ANSI) */
+  {"name" : "kbd-5ac:230", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x230 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (MacBook Pro 4,1) (ISO) */
+  {"name" : "kbd-5ac:231", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x231 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (MacBook Pro 4,1) (JIS) */
+  {"name" : "kbd-5ac:232", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x232 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:236", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x236 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:237", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x237 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (JIS) */
+  {"name" : "kbd-5ac:238", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x238 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:23f", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x23f },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:240", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x240 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (JIS) */
+  {"name" : "kbd-5ac:241", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x241 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:242", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x242 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:243", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x243 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (JIS) */
+  {"name" : "kbd-5ac:244", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x244 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:245", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x245 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:246", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x246 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (JIS) */
+  {"name" : "kbd-5ac:247", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x247 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (MacBook Air) (ISO) */
+  {"name" : "kbd-5ac:24a", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x24a },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (MacBook Air) (ISO) */
+  {"name" : "kbd-5ac:24d", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x24d },"template":"keyboard"},
+  /* Apple, Inc. : Aluminium Keyboard (ANSI) */
+  {"name" : "kbd-5ac:24f", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x24f },"template":"keyboard"},
+  /* Apple, Inc. : Aluminium Keyboard (ISO) */
+  {"name" : "kbd-5ac:250", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x250 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ANSI) */
+  {"name" : "kbd-5ac:252", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x252 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:253", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x253 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (JIS) */
+  {"name" : "kbd-5ac:254", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x254 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad */
+  {"name" : "kbd-5ac:259", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x259 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad */
+  {"name" : "kbd-5ac:25a", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x25a },"template":"keyboard"},
+  /* Apple, Inc. : Apple Internal Keyboard / Trackpad (MacBook Retina) */
+  {"name" : "kbd-5ac:263", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x263 },"template":"keyboard"},
+  /* Apple, Inc. : Magic Keyboard A1644 */
+  {"name" : "kbd-5ac:267", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x267 },"template":"keyboard"},
+  /* Apple, Inc. : Internal Keyboard/Trackpad (ISO) */
+  {"name" : "kbd-5ac:273", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x273 },"template":"keyboard"},
+  /* Apple, Inc. : Keyboard Hub [ALPS] */
+  {"name" : "kbd-5ac:1001", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x1001 },"template":"keyboard"},
+  /* Apple, Inc. : Extended Keyboard Hub [Mitsumi] */
+  {"name" : "kbd-5ac:1002", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x1002 },"template":"keyboard"},
+  /* Apple, Inc. : Hub in Pro Keyboard [Mitsumi, A1048] */
+  {"name" : "kbd-5ac:1003", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x1003 },"template":"keyboard"},
+  /* Apple, Inc. : Hub in Aluminum Keyboard */
+  {"name" : "kbd-5ac:1006", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x1006 },"template":"keyboard"},
+  /* Apple, Inc. : Bluetooth HID Keyboard */
+  {"name" : "kbd-5ac:820a", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x820a },"template":"keyboard"},
+  /* Jing-Mold Enterprise Co., Ltd : HP SK806A Keyboard */
+  {"name" : "kbd-5af:806", "properties":{ "idVendor": 0x5af,  "idProduct": 0x806 },"template":"keyboard"},
+  /* Jing-Mold Enterprise Co., Ltd : Wireless Keyboard and Mouse */
+  {"name" : "kbd-5af:809", "properties":{ "idVendor": 0x5af,  "idProduct": 0x809 },"template":"keyboard"},
+  /* Jing-Mold Enterprise Co., Ltd : Cordless Keyboard */
+  {"name" : "kbd-5af:3062", "properties":{ "idVendor": 0x5af,  "idProduct": 0x3062 },"template":"keyboard"},
+  /* Qtronix Corp. : Keyboard */
+  {"name" : "kbd-5c7:2001", "properties":{ "idVendor": 0x5c7,  "idProduct": 0x2001 },"template":"keyboard"},
+  /* Qtronix Corp. : SCorpius Keyboard */
+  {"name" : "kbd-5c7:2011", "properties":{ "idVendor": 0x5c7,  "idProduct": 0x2011 },"template":"keyboard"},
+  /* Qtronix Corp. : Ten-Keypad */
+  {"name" : "kbd-5c7:6001", "properties":{ "idVendor": 0x5c7,  "idProduct": 0x6001 },"template":"keyboard"},
+  /* Genesys Logic, Inc. : Keyboard with PS/2 Port */
+  {"name" : "kbd-5e3:a", "properties":{ "idVendor": 0x5e3,  "idProduct": 0xa },"template":"keyboard"},
+  /* Genesys Logic, Inc. : HID Keyboard Filter */
+  {"name" : "kbd-5e3:504", "properties":{ "idVendor": 0x5e3,  "idProduct": 0x504 },"template":"keyboard"},
+  /* PI Engineering, Inc. : Kinesis Advantage PRO MPC/USB Keyboard */
+  {"name" : "kbd-5f3:7", "properties":{ "idVendor": 0x5f3,  "idProduct": 0x7 },"template":"keyboard"},
+  /* PI Engineering, Inc. : Y-mouse Keyboard & Mouse Adapter */
+  {"name" : "kbd-5f3:203", "properties":{ "idVendor": 0x5f3,  "idProduct": 0x203 },"template":"keyboard"},
+  /* PSC Scanning, Inc. : Gryphon series (keyboard emulation mode) */
+  {"name" : "kbd-5f9:2206", "properties":{ "idVendor": 0x5f9,  "idProduct": 0x2206 },"template":"keyboard"},
+  /* Siemens Telecommunications Systems, Ltd : Keyboard with PS/2 Mouse Port */
+  {"name" : "kbd-5fa:3301", "properties":{ "idVendor": 0x5fa,  "idProduct": 0x3301 },"template":"keyboard"},
+  /* Siemens Telecommunications Systems, Ltd : Keyboard */
+  {"name" : "kbd-5fa:3302", "properties":{ "idVendor": 0x5fa,  "idProduct": 0x3302 },"template":"keyboard"},
+  /* Siemens Telecommunications Systems, Ltd : Keyboard with PS/2 Mouse Port */
+  {"name" : "kbd-5fa:3303", "properties":{ "idVendor": 0x5fa,  "idProduct": 0x3303 },"template":"keyboard"},
+  /* Novatek Microelectronics Corp. : Sino Wealth keyboard/mouse 2.4 GHz receiver */
+  {"name" : "kbd-603:2", "properties":{ "idVendor": 0x603,  "idProduct": 0x2 },"template":"keyboard"},
+  /* Novatek Microelectronics Corp. : Keyboard (Labtec Ultra Flat Keyboard) */
+  {"name" : "kbd-603:f1", "properties":{ "idVendor": 0x603,  "idProduct": 0xf1 },"template":"keyboard"},
+  /* Novatek Microelectronics Corp. : Keyboard (Labtec Ultra Flat Keyboard) */
+  {"name" : "kbd-603:f2", "properties":{ "idVendor": 0x603,  "idProduct": 0xf2 },"template":"keyboard"},
+  /* Solid Year : MacAlly Keyboard */
+  {"name" : "kbd-60b:1", "properties":{ "idVendor": 0x60b,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Solid Year : KSK-8003 UX Keyboard */
+  {"name" : "kbd-60b:230", "properties":{ "idVendor": 0x60b,  "idProduct": 0x230 },"template":"keyboard"},
+  /* Solid Year : DeltaCo TB-106U Keyboard */
+  {"name" : "kbd-60b:540", "properties":{ "idVendor": 0x60b,  "idProduct": 0x540 },"template":"keyboard"},
+  /* Solid Year : Japanese Keyboard - 260U */
+  {"name" : "kbd-60b:1006", "properties":{ "idVendor": 0x60b,  "idProduct": 0x1006 },"template":"keyboard"},
+  /* Solid Year : Keyboard */
+  {"name" : "kbd-60b:2101", "properties":{ "idVendor": 0x60b,  "idProduct": 0x2101 },"template":"keyboard"},
+  /* Solid Year : KSK-6001 UELX Keyboard */
+  {"name" : "kbd-60b:2231", "properties":{ "idVendor": 0x60b,  "idProduct": 0x2231 },"template":"keyboard"},
+  /* Solid Year : Gigabyte K8100 Aivia Gaming Keyboard */
+  {"name" : "kbd-60b:2270", "properties":{ "idVendor": 0x60b,  "idProduct": 0x2270 },"template":"keyboard"},
+  /* Solid Year : Cougar 500k Gaming Keyboard */
+  {"name" : "kbd-60b:500a", "properties":{ "idVendor": 0x60b,  "idProduct": 0x500a },"template":"keyboard"},
+  /* Solid Year : Thermaltake MEKA G-Unit Gaming Keyboard */
+  {"name" : "kbd-60b:5253", "properties":{ "idVendor": 0x60b,  "idProduct": 0x5253 },"template":"keyboard"},
+  /* Solid Year : ACK-571U Wireless Keyboard */
+  {"name" : "kbd-60b:5811", "properties":{ "idVendor": 0x60b,  "idProduct": 0x5811 },"template":"keyboard"},
+  /* Solid Year : Japanese Keyboard - 595U */
+  {"name" : "kbd-60b:5903", "properties":{ "idVendor": 0x60b,  "idProduct": 0x5903 },"template":"keyboard"},
+  /* Solid Year : SolidTek USB Keyboard */
+  {"name" : "kbd-60b:6002", "properties":{ "idVendor": 0x60b,  "idProduct": 0x6002 },"template":"keyboard"},
+  /* Solid Year : Japanese Keyboard - 600HM */
+  {"name" : "kbd-60b:6003", "properties":{ "idVendor": 0x60b,  "idProduct": 0x6003 },"template":"keyboard"},
+  /* Solid Year : Thermaltake eSPORTS Meka Keyboard */
+  {"name" : "kbd-60b:6231", "properties":{ "idVendor": 0x60b,  "idProduct": 0x6231 },"template":"keyboard"},
+  /* Avocent Corp. : Virtual Keyboard/Mouse */
+  {"name" : "kbd-624:249", "properties":{ "idVendor": 0x624,  "idProduct": 0x249 },"template":"keyboard"},
+  /* Avocent Corp. : Cisco Virtual Keyboard and Mouse */
+  {"name" : "kbd-624:402", "properties":{ "idVendor": 0x624,  "idProduct": 0x402 },"template":"keyboard"},
+  /* MosArt Semiconductor Corp. : Wireless Keyboard/Mouse Combo [MK1152WC] */
+  {"name" : "kbd-62a:102", "properties":{ "idVendor": 0x62a,  "idProduct": 0x102 },"template":"keyboard"},
+  /* MosArt Semiconductor Corp. : Defender Office Keyboard (K7310) S Zodiak KM-9010 */
+  {"name" : "kbd-62a:201", "properties":{ "idVendor": 0x62a,  "idProduct": 0x201 },"template":"keyboard"},
+  /* MosArt Semiconductor Corp. : Wireless Keyboard/Mouse */
+  {"name" : "kbd-62a:4101", "properties":{ "idVendor": 0x62a,  "idProduct": 0x4101 },"template":"keyboard"},
+  /* Optoelectronics Co., Ltd : Opticon OPR-2001 / NLV-1001 (keyboard mode) */
+  {"name" : "kbd-65a:1", "properties":{ "idVendor": 0x65a,  "idProduct": 0x1 },"template":"keyboard"},
+  /* HCL : Keyboard */
+  {"name" : "kbd-673:5000", "properties":{ "idVendor": 0x673,  "idProduct": 0x5000 },"template":"keyboard"},
+  /* Intermec Technologies Corp. : HID Keyboard, Barcode scanner */
+  {"name" : "kbd-67e:801", "properties":{ "idVendor": 0x67e,  "idProduct": 0x801 },"template":"keyboard"},
+  /* Saitek PLC : Gamers' Keyboard */
+  {"name" : "kbd-6a3:8000", "properties":{ "idVendor": 0x6a3,  "idProduct": 0x8000 },"template":"keyboard"},
+  /* Saitek PLC : Eclipse Keyboard */
+  {"name" : "kbd-6a3:8020", "properties":{ "idVendor": 0x6a3,  "idProduct": 0x8020 },"template":"keyboard"},
+  /* Saitek PLC : Eclipse II Keyboard */
+  {"name" : "kbd-6a3:8021", "properties":{ "idVendor": 0x6a3,  "idProduct": 0x8021 },"template":"keyboard"},
+  /* Toshiba : Japanese Keyboard */
+  {"name" : "kbd-6d5:4000", "properties":{ "idVendor": 0x6d5,  "idProduct": 0x4000 },"template":"keyboard"},
+  /* Emine Technology Co. : KVM Switch Keyboard */
+  {"name" : "kbd-6f2:11", "properties":{ "idVendor": 0x6f2,  "idProduct": 0x11 },"template":"keyboard"},
+  /* Magic Control Technology Corp. : PS/2 Keyboard and Mouse */
+  {"name" : "kbd-711:260", "properties":{ "idVendor": 0x711,  "idProduct": 0x260 },"template":"keyboard"},
+  /* Mad Catz, Inc. : S.T.R.I.K.E.7 Keyboard */
+  {"name" : "kbd-738:a109", "properties":{ "idVendor": 0x738,  "idProduct": 0xa109 },"template":"keyboard"},
+  /* OmniKey AG : CCID Smart Card Reader Keyboard */
+  {"name" : "kbd-76b:a011", "properties":{ "idVendor": 0x76b,  "idProduct": 0xa011 },"template":"keyboard"},
+  /* Forward Electronics Co., Ltd : NEC Keyboard */
+  {"name" : "kbd-77c:5", "properties":{ "idVendor": 0x77c,  "idProduct": 0x5 },"template":"keyboard"},
+  /* Casio Computer Co., Ltd : MIDI Keyboard */
+  {"name" : "kbd-7cf:6802", "properties":{ "idVendor": 0x7cf,  "idProduct": 0x6802 },"template":"keyboard"},
+  /* Casio Computer Co., Ltd : CTK-3500 (MIDI keyboard) */
+  {"name" : "kbd-7cf:6803", "properties":{ "idVendor": 0x7cf,  "idProduct": 0x6803 },"template":"keyboard"},
+  /* Thomann : SWISSONIC EasyKeys61 Midikeyboard */
+  {"name" : "kbd-7fc:1113", "properties":{ "idVendor": 0x7fc,  "idProduct": 0x1113 },"template":"keyboard"},
+  /* MagTek : Mini Swipe Reader (Keyboard Emulation) */
+  {"name" : "kbd-801:1", "properties":{ "idVendor": 0x801,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Topre Corporation : RealForce Compact Keyboard */
+  {"name" : "kbd-853:200", "properties":{ "idVendor": 0x853,  "idProduct": 0x200 },"template":"keyboard"},
+  /* Precise Biometrics : 100 SC BioKeyboard */
+  {"name" : "kbd-8c3:3", "properties":{ "idVendor": 0x8c3,  "idProduct": 0x3 },"template":"keyboard"},
+  /* Precise Biometrics : 100 A BioKeyboard */
+  {"name" : "kbd-8c3:6", "properties":{ "idVendor": 0x8c3,  "idProduct": 0x6 },"template":"keyboard"},
+  /* Siemens AG : keyboard front panel Cockpit */
+  {"name" : "kbd-908:4b3", "properties":{ "idVendor": 0x908,  "idProduct": 0x4b3 },"template":"keyboard"},
+  /* KORG, Inc. : nanoKEY MIDI keyboard */
+  {"name" : "kbd-944:10d", "properties":{ "idVendor": 0x944,  "idProduct": 0x10d },"template":"keyboard"},
+  /* Zippy Technology Corp. : Sanwa Supply Inc. Small Keyboard */
+  {"name" : "kbd-99a:638", "properties":{ "idVendor": 0x99a,  "idProduct": 0x638 },"template":"keyboard"},
+  /* Zippy Technology Corp. : EL-610 Super Mini Electron luminescent Keyboard */
+  {"name" : "kbd-99a:610c", "properties":{ "idVendor": 0x99a,  "idProduct": 0x610c },"template":"keyboard"},
+  /* Zippy Technology Corp. : SANWA Supply Inc. Slim Keyboard */
+  {"name" : "kbd-99a:6330", "properties":{ "idVendor": 0x99a,  "idProduct": 0x6330 },"template":"keyboard"},
+  /* Zippy Technology Corp. : WK-713 Multimedia Keyboard */
+  {"name" : "kbd-99a:713a", "properties":{ "idVendor": 0x99a,  "idProduct": 0x713a },"template":"keyboard"},
+  /* Zippy Technology Corp. : Hyper Slim Keyboard */
+  {"name" : "kbd-99a:7160", "properties":{ "idVendor": 0x99a,  "idProduct": 0x7160 },"template":"keyboard"},
+  /* A4Tech Co., Ltd. : KV-300H Isolation Keyboard */
+  {"name" : "kbd-9da:260", "properties":{ "idVendor": 0x9da,  "idProduct": 0x260 },"template":"keyboard"},
+  /* AKAI  Professional M.I. Corp. : MPK25 MIDI Keyboard */
+  {"name" : "kbd-9e8:71", "properties":{ "idVendor": 0x9e8,  "idProduct": 0x71 },"template":"keyboard"},
+  /* AKAI  Professional M.I. Corp. : LPK25 MIDI Keyboard */
+  {"name" : "kbd-9e8:76", "properties":{ "idVendor": 0x9e8,  "idProduct": 0x76 },"template":"keyboard"},
+  /* TG3 Electronics, Inc. : Deck 82-key backlit keyboard */
+  {"name" : "kbd-a34:110", "properties":{ "idVendor": 0xa34,  "idProduct": 0x110 },"template":"keyboard"},
+  /* Evolution Electronics, Ltd : MK-249C MIDI Keyboard */
+  {"name" : "kbd-a4d:8e", "properties":{ "idVendor": 0xa4d,  "idProduct": 0x8e },"template":"keyboard"},
+  /* Evolution Electronics, Ltd : MK-461C MIDI Keyboard */
+  {"name" : "kbd-a4d:a3", "properties":{ "idVendor": 0xa4d,  "idProduct": 0xa3 },"template":"keyboard"},
+  /* Broadcom Corp. : Keyboard (Boot Interface Subclass) */
+  {"name" : "kbd-a5c:4502", "properties":{ "idVendor": 0xa5c,  "idProduct": 0x4502 },"template":"keyboard"},
+  /* Broadcom Corp. : BCM5880 Secure Applications Processor with secure keyboard */
+  {"name" : "kbd-a5c:5803", "properties":{ "idVendor": 0xa5c,  "idProduct": 0x5803 },"template":"keyboard"},
+  /* Chesen Electronics Corp. : Keyboard */
+  {"name" : "kbd-a81:101", "properties":{ "idVendor": 0xa81,  "idProduct": 0x101 },"template":"keyboard"},
+  /* Chesen Electronics Corp. : Keyboard */
+  {"name" : "kbd-a81:103", "properties":{ "idVendor": 0xa81,  "idProduct": 0x103 },"template":"keyboard"},
+  /* Chesen Electronics Corp. : PS/2 Keyboard+Mouse Adapter */
+  {"name" : "kbd-a81:205", "properties":{ "idVendor": 0xa81,  "idProduct": 0x205 },"template":"keyboard"},
+  /* Wincor Nixdorf International GmbH : POS Keyboard, TA58P-USB */
+  {"name" : "kbd-aa7:100", "properties":{ "idVendor": 0xaa7,  "idProduct": 0x100 },"template":"keyboard"},
+  /* Wincor Nixdorf International GmbH : POS Keyboard, TA85P-USB */
+  {"name" : "kbd-aa7:101", "properties":{ "idVendor": 0xaa7,  "idProduct": 0x101 },"template":"keyboard"},
+  /* Wincor Nixdorf International GmbH : POS Keyboard, TA59-USB */
+  {"name" : "kbd-aa7:102", "properties":{ "idVendor": 0xaa7,  "idProduct": 0x102 },"template":"keyboard"},
+  /* Wincor Nixdorf International GmbH : POS Keyboard, TA60-USB */
+  {"name" : "kbd-aa7:103", "properties":{ "idVendor": 0xaa7,  "idProduct": 0x103 },"template":"keyboard"},
+  /* Wincor Nixdorf International GmbH : SNIkey Keyboard, SNIKey-KB-USB */
+  {"name" : "kbd-aa7:104", "properties":{ "idVendor": 0xaa7,  "idProduct": 0x104 },"template":"keyboard"},
+  /* Wincor Nixdorf International GmbH : Hub SNIKey Keyboard */
+  {"name" : "kbd-aa7:502", "properties":{ "idVendor": 0xaa7,  "idProduct": 0x502 },"template":"keyboard"},
+  /* Gear Head : Keyboard */
+  {"name" : "kbd-b38:3", "properties":{ "idVendor": 0xb38,  "idProduct": 0x3 },"template":"keyboard"},
+  /* Gear Head : 107-Key Keyboard */
+  {"name" : "kbd-b38:10", "properties":{ "idVendor": 0xb38,  "idProduct": 0x10 },"template":"keyboard"},
+  /* Comfort Keyboard Co. : Comfort Keyboard */
+  {"name" : "kbd-b51:20", "properties":{ "idVendor": 0xb51,  "idProduct": 0x20 },"template":"keyboard"},
+  /* Fujitsu Siemens Computers : Keyboard FSC KBPC PX */
+  {"name" : "kbd-bf8:100c", "properties":{ "idVendor": 0xbf8,  "idProduct": 0x100c },"template":"keyboard"},
+  /* Fujitsu Siemens Computers : Keyboard KB SCR */
+  {"name" : "kbd-bf8:1017", "properties":{ "idVendor": 0xbf8,  "idProduct": 0x1017 },"template":"keyboard"},
+  /* Metrologic Instruments : Metrologic MS7120 Barcode Scanner (keyboard mode) */
+  {"name" : "kbd-c2e:204", "properties":{ "idVendor": 0xc2e,  "idProduct": 0x204 },"template":"keyboard"},
+  /* Microdia : Redragon Mitra RGB Keyboard */
+  {"name" : "kbd-c45:5004", "properties":{ "idVendor": 0xc45,  "idProduct": 0x5004 },"template":"keyboard"},
+  /* Microdia : Backlit Gaming Keyboard */
+  {"name" : "kbd-c45:652f", "properties":{ "idVendor": 0xc45,  "idProduct": 0x652f },"template":"keyboard"},
+  /* Tangtop Technology Co., Ltd : HID Keyboard */
+  {"name" : "kbd-d3d:1", "properties":{ "idVendor": 0xd3d,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Darfon Electronics Corp. : Keyboard */
+  {"name" : "kbd-d62:4", "properties":{ "idVendor": 0xd62,  "idProduct": 0x4 },"template":"keyboard"},
+  /* Darfon Electronics Corp. : Keyboard */
+  {"name" : "kbd-d62:1b", "properties":{ "idVendor": 0xd62,  "idProduct": 0x1b },"template":"keyboard"},
+  /* Darfon Electronics Corp. : Benq X120 Internet Keyboard Pro */
+  {"name" : "kbd-d62:1c", "properties":{ "idVendor": 0xd62,  "idProduct": 0x1c },"template":"keyboard"},
+  /* Darfon Electronics Corp. : AM805 Keyboard */
+  {"name" : "kbd-d62:2021", "properties":{ "idVendor": 0xd62,  "idProduct": 0x2021 },"template":"keyboard"},
+  /* Darfon Electronics Corp. : Dell L20U Multimedia Keyboard */
+  {"name" : "kbd-d62:2106", "properties":{ "idVendor": 0xd62,  "idProduct": 0x2106 },"template":"keyboard"},
+  /* Darfon Electronics Corp. : HP Business Slim Keyboard */
+  {"name" : "kbd-d62:910e", "properties":{ "idVendor": 0xd62,  "idProduct": 0x910e },"template":"keyboard"},
+  /* Access IS : Barcode Module - Virtual Keyboard */
+  {"name" : "kbd-db5:13a", "properties":{ "idVendor": 0xdb5,  "idProduct": 0x13a },"template":"keyboard"},
+  /* Precision Squared Technology Corp. : Wireless Touchpad Keyboard */
+  {"name" : "kbd-dc6:2301", "properties":{ "idVendor": 0xdc6,  "idProduct": 0x2301 },"template":"keyboard"},
+  /* VMware, Inc. : Virtual Keyboard */
+  {"name" : "kbd-e0f:6", "properties":{ "idVendor": 0xe0f,  "idProduct": 0x6 },"template":"keyboard"},
+  /* Megawin Technology Co., Ltd : Defender Gaming Keyboard */
+  {"name" : "kbd-e6a:2c0", "properties":{ "idVendor": 0xe6a,  "idProduct": 0x2c0 },"template":"keyboard"},
+  /* Megawin Technology Co., Ltd : Truly Ergonomic Computer Keyboard (Device Firmware Update mode) */
+  {"name" : "kbd-e6a:30b", "properties":{ "idVendor": 0xe6a,  "idProduct": 0x30b },"template":"keyboard"},
+  /* Megawin Technology Co., Ltd : Truly Ergonomic Computer Keyboard */
+  {"name" : "kbd-e6a:30c", "properties":{ "idVendor": 0xe6a,  "idProduct": 0x30c },"template":"keyboard"},
+  /* Megawin Technology Co., Ltd : GEMBIRD Flexible keyboard KB-109F-B-DE */
+  {"name" : "kbd-e6a:6001", "properties":{ "idVendor": 0xe6a,  "idProduct": 0x6001 },"template":"keyboard"},
+  /* GreenAsia Inc. : Multimedia Keyboard Controller */
+  {"name" : "kbd-e8f:21", "properties":{ "idVendor": 0xe8f,  "idProduct": 0x21 },"template":"keyboard"},
+  /* GreenAsia Inc. : multimedia keyboard controller */
+  {"name" : "kbd-e8f:22", "properties":{ "idVendor": 0xe8f,  "idProduct": 0x22 },"template":"keyboard"},
+  /* Fingerworks, Inc. : Composite HID (Keyboard and Mouse) */
+  {"name" : "kbd-e97:908", "properties":{ "idVendor": 0xe97,  "idProduct": 0x908 },"template":"keyboard"},
+  /* TG3 Electronics : Recreated ZX Spectrum Keyboard */
+  {"name" : "kbd-f39:404", "properties":{ "idVendor": 0xf39,  "idProduct": 0x404 },"template":"keyboard"},
+  /* TG3 Electronics : Keyboard [87 Francium Pro] */
+  {"name" : "kbd-f39:876", "properties":{ "idVendor": 0xf39,  "idProduct": 0x876 },"template":"keyboard"},
+  /* TG3 Electronics : DK2108SZ Keyboard [Ducky Zero] */
+  {"name" : "kbd-f39:1086", "properties":{ "idVendor": 0xf39,  "idProduct": 0x1086 },"template":"keyboard"},
+  /* Osterhout Design Group : Bluetooth Keypad */
+  {"name" : "kbd-fe0:200", "properties":{ "idVendor": 0xfe0,  "idProduct": 0x200 },"template":"keyboard"},
+  /* Labtec : Wireless Keyboard */
+  {"name" : "kbd-1020:6", "properties":{ "idVendor": 0x1020,  "idProduct": 0x6 },"template":"keyboard"},
+  /* Labtec : Wireless Optical Mouse/Keyboard */
+  {"name" : "kbd-1020:106", "properties":{ "idVendor": 0x1020,  "idProduct": 0x106 },"template":"keyboard"},
+  /* Grand-tek Technology Co., Ltd : HID Keyboard/Mouse PS/2 Translator */
+  {"name" : "kbd-108b:5", "properties":{ "idVendor": 0x108b,  "idProduct": 0x5 },"template":"keyboard"},
+  /* Uni Class Technology Co., Ltd : KVM Human Interface Composite Device (Keyboard/Mouse ports) */
+  {"name" : "kbd-10d5:5552", "properties":{ "idVendor": 0x10d5,  "idProduct": 0x5552 },"template":"keyboard"},
+  /* ruwido austria GmbH : Infrared Keyboard V2.01 */
+  {"name" : "kbd-119b:400", "properties":{ "idVendor": 0x119b,  "idProduct": 0x400 },"template":"keyboard"},
+  /* Generic : Andrzej Szombierski kuku.eu.org keyboard */
+  {"name" : "kbd-1209:cbd", "properties":{ "idVendor": 0x1209,  "idProduct": 0xcbd },"template":"keyboard"},
+  /* Generic : Dygma Shortcut Keyboard */
+  {"name" : "kbd-1209:2201", "properties":{ "idVendor": 0x1209,  "idProduct": 0x2201 },"template":"keyboard"},
+  /* Generic : Keyboardio Model 01 Bootloader */
+  {"name" : "kbd-1209:2300", "properties":{ "idVendor": 0x1209,  "idProduct": 0x2300 },"template":"keyboard"},
+  /* Generic : Keyboardio Model 01 */
+  {"name" : "kbd-1209:2301", "properties":{ "idVendor": 0x1209,  "idProduct": 0x2301 },"template":"keyboard"},
+  /* Generic : K.T.E.C. Keyboard Device */
+  {"name" : "kbd-1209:2328", "properties":{ "idVendor": 0x1209,  "idProduct": 0x2328 },"template":"keyboard"},
+  /* Generic : kinX Keyboard Controller */
+  {"name" : "kbd-1209:345c", "properties":{ "idVendor": 0x1209,  "idProduct": 0x345c },"template":"keyboard"},
+  /* Generic : Atreus Keyboards Atreus Keyboard */
+  {"name" : "kbd-1209:a1e5", "properties":{ "idVendor": 0x1209,  "idProduct": 0xa1e5 },"template":"keyboard"},
+  /* Generic : keyplus split keyboard firmware */
+  {"name" : "kbd-1209:bb00", "properties":{ "idVendor": 0x1209,  "idProduct": 0xbb00 },"template":"keyboard"},
+  /* Generic : keyplus nRF24 wireless keyboard dongle */
+  {"name" : "kbd-1209:bb02", "properties":{ "idVendor": 0x1209,  "idProduct": 0xbb02 },"template":"keyboard"},
+  /* TiPro : programmable keyboard */
+  {"name" : "kbd-1222:faca", "properties":{ "idVendor": 0x1222,  "idProduct": 0xfaca },"template":"keyboard"},
+  /* Focusrite-Novation : Nocturn Keyboard */
+  {"name" : "kbd-1235:12", "properties":{ "idVendor": 0x1235,  "idProduct": 0x12 },"template":"keyboard"},
+  /* Belkin : Wireless Trackball Keyboard */
+  {"name" : "kbd-1241:504", "properties":{ "idVendor": 0x1241,  "idProduct": 0x504 },"template":"keyboard"},
+  /* Belkin : Keyboard */
+  {"name" : "kbd-1241:1503", "properties":{ "idVendor": 0x1241,  "idProduct": 0x1503 },"template":"keyboard"},
+  /* Belkin : Keyboard */
+  {"name" : "kbd-1241:1603", "properties":{ "idVendor": 0x1241,  "idProduct": 0x1603 },"template":"keyboard"},
+  /* Belkin : Keyboard */
+  {"name" : "kbd-1241:f767", "properties":{ "idVendor": 0x1241,  "idProduct": 0xf767 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Unique NFC/RFID reader (keyboard emulation) */
+  {"name" : "kbd-1243:e000", "properties":{ "idVendor": 0x1243,  "idProduct": 0xe000 },"template":"keyboard"},
+  /* Logic3 / SpectraVideo plc : G-720 Keyboard */
+  {"name" : "kbd-1267:103", "properties":{ "idVendor": 0x1267,  "idProduct": 0x103 },"template":"keyboard"},
+  /* Belkin Components [hex] : 104-key keyboard */
+  {"name" : "kbd-1293:2101", "properties":{ "idVendor": 0x1293,  "idProduct": 0x2101 },"template":"keyboard"},
+  /* Mobility : EasiDock 200 Keyboard and Mouse Port */
+  {"name" : "kbd-1342:201", "properties":{ "idVendor": 0x1342,  "idProduct": 0x201 },"template":"keyboard"},
+  /* PCPlay : Konig Electronic CMP-KEYPAD12 Numeric Keypad */
+  {"name" : "kbd-13ba:1", "properties":{ "idVendor": 0x13ba,  "idProduct": 0x1 },"template":"keyboard"},
+  /* PCPlay : PS/2 Keyboard+Mouse Adapter */
+  {"name" : "kbd-13ba:17", "properties":{ "idVendor": 0x13ba,  "idProduct": 0x17 },"template":"keyboard"},
+  /* Trust : Isla Keyboard */
+  {"name" : "kbd-145f:176", "properties":{ "idVendor": 0x145f,  "idProduct": 0x176 },"template":"keyboard"},
+  /* Trust : Keyboard [GXT 830] */
+  {"name" : "kbd-145f:1e5", "properties":{ "idVendor": 0x145f,  "idProduct": 0x1e5 },"template":"keyboard"},
+  /* Razer USA, Ltd : Gaming Keyboard [TRON] */
+  {"name" : "kbd-1532:23", "properties":{ "idVendor": 0x1532,  "idProduct": 0x23 },"template":"keyboard"},
+  /* Razer USA, Ltd : Gaming Keyboard [Star Wars: The Old Republic] */
+  {"name" : "kbd-1532:2b", "properties":{ "idVendor": 0x1532,  "idProduct": 0x2b },"template":"keyboard"},
+  /* Razer USA, Ltd : RZ03-0133 Gaming Lapboard, Keyboard Mouse Combo, Dongle [Turret Dongle] */
+  {"name" : "kbd-1532:4a", "properties":{ "idVendor": 0x1532,  "idProduct": 0x4a },"template":"keyboard"},
+  /* Razer USA, Ltd : Tarantula Keyboard */
+  {"name" : "kbd-1532:102", "properties":{ "idVendor": 0x1532,  "idProduct": 0x102 },"template":"keyboard"},
+  /* Razer USA, Ltd : Gaming Keyboard [Reclusa] */
+  {"name" : "kbd-1532:103", "properties":{ "idVendor": 0x1532,  "idProduct": 0x103 },"template":"keyboard"},
+  /* Razer USA, Ltd : Gaming Keyboard [ProType] */
+  {"name" : "kbd-1532:105", "properties":{ "idVendor": 0x1532,  "idProduct": 0x105 },"template":"keyboard"},
+  /* Razer USA, Ltd : Gaming Keyboard [ProType] */
+  {"name" : "kbd-1532:106", "properties":{ "idVendor": 0x1532,  "idProduct": 0x106 },"template":"keyboard"},
+  /* Razer USA, Ltd : Lycosa Keyboard */
+  {"name" : "kbd-1532:109", "properties":{ "idVendor": 0x1532,  "idProduct": 0x109 },"template":"keyboard"},
+  /* Razer USA, Ltd : Gaming Keyboard [Arctosa] */
+  {"name" : "kbd-1532:10b", "properties":{ "idVendor": 0x1532,  "idProduct": 0x10b },"template":"keyboard"},
+  /* Razer USA, Ltd : RZ07-0074 Gaming Keypad [Orbweaver] */
+  {"name" : "kbd-1532:113", "properties":{ "idVendor": 0x1532,  "idProduct": 0x113 },"template":"keyboard"},
+  /* Razer USA, Ltd : RZ03-0080, Gaming Keyboard [Deathstalker Essential] */
+  {"name" : "kbd-1532:118", "properties":{ "idVendor": 0x1532,  "idProduct": 0x118 },"template":"keyboard"},
+  /* Razer USA, Ltd : Gaming Keyboard [Lycosa] */
+  {"name" : "kbd-1532:119", "properties":{ "idVendor": 0x1532,  "idProduct": 0x119 },"template":"keyboard"},
+  /* Razer USA, Ltd : Gaming Keyboard Dock [Edge Keyboard Dock] */
+  {"name" : "kbd-1532:11e", "properties":{ "idVendor": 0x1532,  "idProduct": 0x11e },"template":"keyboard"},
+  /* Razer USA, Ltd : Gaming Keyboard [Reclusa] */
+  {"name" : "kbd-1532:200", "properties":{ "idVendor": 0x1532,  "idProduct": 0x200 },"template":"keyboard"},
+  /* Razer USA, Ltd : Orbweaver Chroma keypad */
+  {"name" : "kbd-1532:207", "properties":{ "idVendor": 0x1532,  "idProduct": 0x207 },"template":"keyboard"},
+  /* Razer USA, Ltd : Cynosa Pro keyboard (Cynosa Pro Bundle) */
+  {"name" : "kbd-1532:20d", "properties":{ "idVendor": 0x1532,  "idProduct": 0x20d },"template":"keyboard"},
+  /* Razer USA, Ltd : Gaming Keyboard [BlackWidow X Tournament Edition] */
+  {"name" : "kbd-1532:21b", "properties":{ "idVendor": 0x1532,  "idProduct": 0x21b },"template":"keyboard"},
+  /* Razer USA, Ltd : RZ03-0203 Gaming Keyboard [BlackWidow Chroma V2] */
+  {"name" : "kbd-1532:221", "properties":{ "idVendor": 0x1532,  "idProduct": 0x221 },"template":"keyboard"},
+  /* Razer USA, Ltd : RZ03-0274 Gaming Keyboard [Cynosa Lite] */
+  {"name" : "kbd-1532:23f", "properties":{ "idVendor": 0x1532,  "idProduct": 0x23f },"template":"keyboard"},
+  /* Razer USA, Ltd : RZ07-0311 Gaming Keypad [Tartarus Pro] */
+  {"name" : "kbd-1532:244", "properties":{ "idVendor": 0x1532,  "idProduct": 0x244 },"template":"keyboard"},
+  /* Razer USA, Ltd : RZ03-0338, Gaming Keyboard [Ornata V2] */
+  {"name" : "kbd-1532:25d", "properties":{ "idVendor": 0x1532,  "idProduct": 0x25d },"template":"keyboard"},
+  /* Razer USA, Ltd : R201-0282 Gaming Keyboard, Mouse Combination [Turret For Xbox One] */
+  {"name" : "kbd-1532:904", "properties":{ "idVendor": 0x1532,  "idProduct": 0x904 },"template":"keyboard"},
+  /* Olimex Ltd. : TERES Keyboard+Touchpad */
+  {"name" : "kbd-15ba:3c", "properties":{ "idVendor": 0x15ba,  "idProduct": 0x3c },"template":"keyboard"},
+  /* GIGA-TMS INC. : PCR330A RFID Reader (125 kHz, keyboard emulation) */
+  {"name" : "kbd-1667:5", "properties":{ "idVendor": 0x1667,  "idProduct": 0x5 },"template":"keyboard"},
+  /* Van Ooijen Technische Informatica : Teensy Keyboard */
+  {"name" : "kbd-16c0:47c", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x47c },"template":"keyboard"},
+  /* Van Ooijen Technische Informatica : Teensy Keyboard+Debug */
+  {"name" : "kbd-16c0:47d", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x47d },"template":"keyboard"},
+  /* Van Ooijen Technische Informatica : Teensyduino Keyboard+Mouse+Joystick */
+  {"name" : "kbd-16c0:482", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x482 },"template":"keyboard"},
+  /* Van Ooijen Technische Informatica : Teensyduino Serial+Keyboard+Mouse+Joystick */
+  {"name" : "kbd-16c0:487", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x487 },"template":"keyboard"},
+  /* Van Ooijen Technische Informatica : HID device except mice, keyboards, and joysticks */
+  {"name" : "kbd-16c0:5df", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x5df },"template":"keyboard"},
+  /* Van Ooijen Technische Informatica : HID device except mice, keyboards, and joysticks */
+  {"name" : "kbd-16c0:27d9", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x27d9 },"template":"keyboard"},
+  /* Van Ooijen Technische Informatica : Keyboard */
+  {"name" : "kbd-16c0:27db", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x27db },"template":"keyboard"},
+  /* QSENN : GP-K7000 keyboard */
+  {"name" : "kbd-173d:2", "properties":{ "idVendor": 0x173d,  "idProduct": 0x2 },"template":"keyboard"},
+  /* MSI : steel series rgb keyboard */
+  {"name" : "kbd-1770:ff00", "properties":{ "idVendor": 0x1770,  "idProduct": 0xff00 },"template":"keyboard"},
+  /* Multiple Vendors : Axium AX-KPC Keypad */
+  {"name" : "kbd-1781:7e1", "properties":{ "idVendor": 0x1781,  "idProduct": 0x7e1 },"template":"keyboard"},
+  /* Multiple Vendors : Axium AX-KPD Keypad */
+  {"name" : "kbd-1781:7e2", "properties":{ "idVendor": 0x1781,  "idProduct": 0x7e2 },"template":"keyboard"},
+  /* Lenovo : Smartcard Keyboard */
+  {"name" : "kbd-17ef:6007", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x6007 },"template":"keyboard"},
+  /* Lenovo : ThinkPad Keyboard with TrackPoint */
+  {"name" : "kbd-17ef:6009", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x6009 },"template":"keyboard"},
+  /* Lenovo : Mini Wireless Keyboard N5901 */
+  {"name" : "kbd-17ef:6014", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x6014 },"template":"keyboard"},
+  /* Lenovo : Ultraslim Plus Wireless Keyboard and Mouse */
+  {"name" : "kbd-17ef:6022", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x6022 },"template":"keyboard"},
+  /* Lenovo : Black Silk Keyboard */
+  {"name" : "kbd-17ef:602d", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x602d },"template":"keyboard"},
+  /* Lenovo : Wireless Dongle for Keyboard and Mouse */
+  {"name" : "kbd-17ef:6032", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x6032 },"template":"keyboard"},
+  /* Lenovo : ThinkPad Compact Keyboard with TrackPoint */
+  {"name" : "kbd-17ef:6047", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x6047 },"template":"keyboard"},
+  /* Lenovo : Professional Wireless Keyboard and Mouse Combo */
+  {"name" : "kbd-17ef:609b", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x609b },"template":"keyboard"},
+  /* Lenovo : Professional Wireless Keyboard */
+  {"name" : "kbd-17ef:609c", "properties":{ "idVendor": 0x17ef,  "idProduct": 0x609c },"template":"keyboard"},
+  /* Lenovo : Virtual Keyboard and Mouse */
+  {"name" : "kbd-17ef:b000", "properties":{ "idVendor": 0x17ef,  "idProduct": 0xb000 },"template":"keyboard"},
+  /* Lenovo : Virtual Keyboard and Mouse / Mass Storage */
+  {"name" : "kbd-17ef:b003", "properties":{ "idVendor": 0x17ef,  "idProduct": 0xb003 },"template":"keyboard"},
+  /* Unicomp, Inc. : Model M Keyboard */
+  {"name" : "kbd-17f6:709", "properties":{ "idVendor": 0x17f6,  "idProduct": 0x709 },"template":"keyboard"},
+  /* Unicomp, Inc. : Ruffian 6 Keyboard v3 [Model M] */
+  {"name" : "kbd-17f6:822", "properties":{ "idVendor": 0x17f6,  "idProduct": 0x822 },"template":"keyboard"},
+  /* Itron Technology iONE : Func KB-460 Gaming Keyboard */
+  {"name" : "kbd-195d:2030", "properties":{ "idVendor": 0x195d,  "idProduct": 0x2030 },"template":"keyboard"},
+  /* Itron Technology iONE : Scorpius wireless keyboard */
+  {"name" : "kbd-195d:7777", "properties":{ "idVendor": 0x195d,  "idProduct": 0x7777 },"template":"keyboard"},
+  /* Shenzhen Riitek Technology Co., Ltd : wireless mini keyboard with touchpad */
+  {"name" : "kbd-1997:409", "properties":{ "idVendor": 0x1997,  "idProduct": 0x409 },"template":"keyboard"},
+  /* Shenzhen Riitek Technology Co., Ltd : wireless mini keyboard with touchpad */
+  {"name" : "kbd-1997:2433", "properties":{ "idVendor": 0x1997,  "idProduct": 0x2433 },"template":"keyboard"},
+  /* China Resource Semico Co., Ltd : Keyboard */
+  {"name" : "kbd-1a2c:21", "properties":{ "idVendor": 0x1a2c,  "idProduct": 0x21 },"template":"keyboard"},
+  /* China Resource Semico Co., Ltd : Multimedia Keyboard */
+  {"name" : "kbd-1a2c:24", "properties":{ "idVendor": 0x1a2c,  "idProduct": 0x24 },"template":"keyboard"},
+  /* China Resource Semico Co., Ltd : Keyboard */
+  {"name" : "kbd-1a2c:2124", "properties":{ "idVendor": 0x1a2c,  "idProduct": 0x2124 },"template":"keyboard"},
+  /* China Resource Semico Co., Ltd : Keyboard */
+  {"name" : "kbd-1a2c:2d23", "properties":{ "idVendor": 0x1a2c,  "idProduct": 0x2d23 },"template":"keyboard"},
+  /* China Resource Semico Co., Ltd : Backlit Keyboard [Cougar Vantar] */
+  {"name" : "kbd-1a2c:427c", "properties":{ "idVendor": 0x1a2c,  "idProduct": 0x427c },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard */
+  {"name" : "kbd-1a81:2004", "properties":{ "idVendor": 0x1a81,  "idProduct": 0x2004 },"template":"keyboard"},
+  /* Holtek Semiconductor, Inc. : Keyboard */
+  {"name" : "kbd-1a81:4001", "properties":{ "idVendor": 0x1a81,  "idProduct": 0x4001 },"template":"keyboard"},
+  /* Corsair : Vengeance K60 Keyboard */
+  {"name" : "kbd-1b1c:a60", "properties":{ "idVendor": 0x1b1c,  "idProduct": 0xa60 },"template":"keyboard"},
+  /* Corsair : Raptor K50 Keyboard */
+  {"name" : "kbd-1b1c:1b04", "properties":{ "idVendor": 0x1b1c,  "idProduct": 0x1b04 },"template":"keyboard"},
+  /* Corsair : Vengeance K65 Gaming Keyboard */
+  {"name" : "kbd-1b1c:1b07", "properties":{ "idVendor": 0x1b1c,  "idProduct": 0x1b07 },"template":"keyboard"},
+  /* Corsair : Vengeance K95 Keyboard */
+  {"name" : "kbd-1b1c:1b08", "properties":{ "idVendor": 0x1b1c,  "idProduct": 0x1b08 },"template":"keyboard"},
+  /* Corsair : Vengeance K70R keyboard */
+  {"name" : "kbd-1b1c:1b09", "properties":{ "idVendor": 0x1b1c,  "idProduct": 0x1b09 },"template":"keyboard"},
+  /* Corsair : K95 RGB Mechanical Gaming Keyboard */
+  {"name" : "kbd-1b1c:1b11", "properties":{ "idVendor": 0x1b1c,  "idProduct": 0x1b11 },"template":"keyboard"},
+  /* Corsair : Vengeance K70RGB keyboard */
+  {"name" : "kbd-1b1c:1b13", "properties":{ "idVendor": 0x1b1c,  "idProduct": 0x1b13 },"template":"keyboard"},
+  /* Corsair : STRAFE RGB Gaming Keyboard */
+  {"name" : "kbd-1b1c:1b20", "properties":{ "idVendor": 0x1b1c,  "idProduct": 0x1b20 },"template":"keyboard"},
+  /* Corsair : K95 RGB Platinum Keyboard [RGP0056] */
+  {"name" : "kbd-1b1c:1b2d", "properties":{ "idVendor": 0x1b1c,  "idProduct": 0x1b2d },"template":"keyboard"},
+  /* Corsair : Corsair Corsair Gaming K55 RGB Keyboard */
+  {"name" : "kbd-1b1c:1b3d", "properties":{ "idVendor": 0x1b1c,  "idProduct": 0x1b3d },"template":"keyboard"},
+  /* Harmonix Music : Rock Band 3 Keyboard wii interface */
+  {"name" : "kbd-1bad:3330", "properties":{ "idVendor": 0x1bad,  "idProduct": 0x3330 },"template":"keyboard"},
+  /* Sunplus Innovation Technology Inc. : SPRF2413A [2.4GHz Wireless Keyboard/Mouse Receiver] */
+  {"name" : "kbd-1bcf:5c5", "properties":{ "idVendor": 0x1bcf,  "idProduct": 0x5c5 },"template":"keyboard"},
+  /* Sunplus Innovation Technology Inc. : Micro keyboard & mouse receiver */
+  {"name" : "kbd-1bcf:5cf", "properties":{ "idVendor": 0x1bcf,  "idProduct": 0x5cf },"template":"keyboard"},
+  /* SiGma Micro : Keyboard TRACER Gamma Ivory */
+  {"name" : "kbd-1c4f:2", "properties":{ "idVendor": 0x1c4f,  "idProduct": 0x2 },"template":"keyboard"},
+  /* SiGma Micro : Genius KB-120 Keyboard */
+  {"name" : "kbd-1c4f:e", "properties":{ "idVendor": 0x1c4f,  "idProduct": 0xe },"template":"keyboard"},
+  /* SiGma Micro : Keyboard */
+  {"name" : "kbd-1c4f:26", "properties":{ "idVendor": 0x1c4f,  "idProduct": 0x26 },"template":"keyboard"},
+  /* SiGma Micro : Touchpad (integrated in detachable keyboard of Chuwi SurBook) */
+  {"name" : "kbd-1c4f:63", "properties":{ "idVendor": 0x1c4f,  "idProduct": 0x63 },"template":"keyboard"},
+  /* C-Thru Music Ltd. : AXiS-49 Harmonic Table MIDI Keyboard */
+  {"name" : "kbd-1d17:1", "properties":{ "idVendor": 0x1d17,  "idProduct": 0x1 },"template":"keyboard"},
+  /* OpenMoko, Inc. : Key64 Keyboard */
+  {"name" : "kbd-1d50:6027", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6027 },"template":"keyboard"},
+  /* OpenMoko, Inc. : Teensy 2.0 Development Board [ErgoDox Keyboard] */
+  {"name" : "kbd-1d50:6028", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6028 },"template":"keyboard"},
+  /* OpenMoko, Inc. : frobiac / adnw keyboard */
+  {"name" : "kbd-1d50:6033", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6033 },"template":"keyboard"},
+  /* OpenMoko, Inc. : antiAFK keyboard */
+  {"name" : "kbd-1d50:609c", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x609c },"template":"keyboard"},
+  /* OpenMoko, Inc. : keyboard (bootloader) */
+  {"name" : "kbd-1d50:60a3", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x60a3 },"template":"keyboard"},
+  /* OpenMoko, Inc. : Nucular Keyboard adapter */
+  {"name" : "kbd-1d50:60c0", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x60c0 },"template":"keyboard"},
+  /* OpenMoko, Inc. : Alpen Clack keyboard */
+  {"name" : "kbd-1d50:60e8", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x60e8 },"template":"keyboard"},
+  /* OpenMoko, Inc. : keyman64 keyboard itercepter */
+  {"name" : "kbd-1d50:60e9", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x60e9 },"template":"keyboard"},
+  /* OpenMoko, Inc. : Thomson MO5 keyboard */
+  {"name" : "kbd-1d50:6118", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6118 },"template":"keyboard"},
+  /* OpenMoko, Inc. : Ultimate Hacking Keyboard */
+  {"name" : "kbd-1d50:6122", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6122 },"template":"keyboard"},
+  /* Xenta : Wireless Receiver (Keyboard and Mouse) */
+  {"name" : "kbd-1d57:5", "properties":{ "idVendor": 0x1d57,  "idProduct": 0x5 },"template":"keyboard"},
+  /* Xenta : 2.4GHz Receiver (Keyboard and Mouse) */
+  {"name" : "kbd-1d57:32da", "properties":{ "idVendor": 0x1d57,  "idProduct": 0x32da },"template":"keyboard"},
+  /* Xenta : Wireless Receiver (Keyboard and Mouse) */
+  {"name" : "kbd-1d57:ac01", "properties":{ "idVendor": 0x1d57,  "idProduct": 0xac01 },"template":"keyboard"},
+  /* Xenta : RFID Receiver (Keyboard) */
+  {"name" : "kbd-1d57:ac08", "properties":{ "idVendor": 0x1d57,  "idProduct": 0xac08 },"template":"keyboard"},
+  /* Xenta : 2.4GHz Wireless Receiver (Mini Keyboard & Mouse) */
+  {"name" : "kbd-1d57:fa20", "properties":{ "idVendor": 0x1d57,  "idProduct": 0xfa20 },"template":"keyboard"},
+  /* TypeMatrix : 2030 USB Keyboard */
+  {"name" : "kbd-1e54:2030", "properties":{ "idVendor": 0x1e54,  "idProduct": 0x2030 },"template":"keyboard"},
+  /* ROCCAT : Sova Keyboard */
+  {"name" : "kbd-1e7d:2f76", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x2f76 },"template":"keyboard"},
+  /* ROCCAT : Sova MK Keyboard */
+  {"name" : "kbd-1e7d:2f94", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x2f94 },"template":"keyboard"},
+  /* ROCCAT : Suora Keyboard */
+  {"name" : "kbd-1e7d:2fa8", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x2fa8 },"template":"keyboard"},
+  /* ROCCAT : Skeltr Keyboard */
+  {"name" : "kbd-1e7d:2fc6", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x2fc6 },"template":"keyboard"},
+  /* ROCCAT : Ryos MK FX Keyboard */
+  {"name" : "kbd-1e7d:2fda", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x2fda },"template":"keyboard"},
+  /* ROCCAT : Arvo Keyboard */
+  {"name" : "kbd-1e7d:30d4", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x30d4 },"template":"keyboard"},
+  /* ROCCAT : Ryos MK Keyboard */
+  {"name" : "kbd-1e7d:3138", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x3138 },"template":"keyboard"},
+  /* ROCCAT : Ryos TKL Keyboard */
+  {"name" : "kbd-1e7d:316a", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x316a },"template":"keyboard"},
+  /* ROCCAT : Isku Keyboard */
+  {"name" : "kbd-1e7d:319c", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x319c },"template":"keyboard"},
+  /* ROCCAT : Ryos MK Glow Keyboard */
+  {"name" : "kbd-1e7d:31ce", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x31ce },"template":"keyboard"},
+  /* ROCCAT : Ryos MK Pro Keyboard */
+  {"name" : "kbd-1e7d:3232", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x3232 },"template":"keyboard"},
+  /* ROCCAT : Suora FX Keyboard */
+  {"name" : "kbd-1e7d:3246", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x3246 },"template":"keyboard"},
+  /* ROCCAT : Isku FX Keyboard */
+  {"name" : "kbd-1e7d:3264", "properties":{ "idVendor": 0x1e7d,  "idProduct": 0x3264 },"template":"keyboard"},
+  /* SHARKOON Technologies GmbH : [Mediatrack Edge Mini Keyboard] */
+  {"name" : "kbd-1ea7:66", "properties":{ "idVendor": 0x1ea7,  "idProduct": 0x66 },"template":"keyboard"},
+  /* SHARKOON Technologies GmbH : Keyboard */
+  {"name" : "kbd-1ea7:907", "properties":{ "idVendor": 0x1ea7,  "idProduct": 0x907 },"template":"keyboard"},
+  /* SHARKOON Technologies GmbH : SHARK ZONE K30 Illuminated Gaming Keyboard */
+  {"name" : "kbd-1ea7:2007", "properties":{ "idVendor": 0x1ea7,  "idProduct": 0x2007 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : HR200 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:103", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x103 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : HR100/HR3260 cordless/HR3290 cordless/BS80 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:c03", "properties":{ "idVendor": 0x1eab,  "idProduct": 0xc03 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : EM2028 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:d03", "properties":{ "idVendor": 0x1eab,  "idProduct": 0xd03 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : EM30xx/EM20xx/HR3260 corded/HR200C Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:1303", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1303 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : HR15-xx Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:1403", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1403 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : FM100-M/3250 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:1603", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1603 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : EM1300 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:1903", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1903 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : HR3290 corded/HR22 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:1a03", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1a03 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : HR2150 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:1c03", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1c03 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : FM430 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:1d03", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1d03 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : HR42 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:1e03", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1e03 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : HR11+ Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:1f03", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1f03 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : EM2037v2 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:2003", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x2003 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : EM13x5-LD/HR15-70/HR100-70/HR12/HR1150-70 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:8003", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x8003 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : EM3080-01/EM3095/FR20/FM30 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:8203", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x8203 },"template":"keyboard"},
+  /* Fujian Newland Computer Co., Ltd : HR2160 Barcode scanner engine (HID keyboard) */
+  {"name" : "kbd-1eab:8303", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x8303 },"template":"keyboard"},
+  /* Texas Instruments : MSP430 HID Keyboard Example */
+  {"name" : "kbd-2047:315", "properties":{ "idVendor": 0x2047,  "idProduct": 0x315 },"template":"keyboard"},
+  /* Texas Instruments : MSP430 Keyboard Example */
+  {"name" : "kbd-2047:401", "properties":{ "idVendor": 0x2047,  "idProduct": 0x401 },"template":"keyboard"},
+  /* ActionStar : Keyboard/Mouse Switch */
+  {"name" : "kbd-2101:1402", "properties":{ "idVendor": 0x2101,  "idProduct": 0x1402 },"template":"keyboard"},
+  /* MacAlly : iWebKey Keyboard */
+  {"name" : "kbd-2222:4", "properties":{ "idVendor": 0x2222,  "idProduct": 0x4 },"template":"keyboard"},
+  /* MacAlly : ICEKey Keyboard */
+  {"name" : "kbd-2222:5", "properties":{ "idVendor": 0x2222,  "idProduct": 0x5 },"template":"keyboard"},
+  /* Tronsmart : TSM01 Air Mouse + Keyboard */
+  {"name" : "kbd-2319:14", "properties":{ "idVendor": 0x2319,  "idProduct": 0x14 },"template":"keyboard"},
+  /* Shenzhen Rapoo Technology Co., Ltd. : KX Keyboard */
+  {"name" : "kbd-24ae:1", "properties":{ "idVendor": 0x24ae,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Shenzhen Rapoo Technology Co., Ltd. : E9260 Wireless Multi-mode Keyboard */
+  {"name" : "kbd-24ae:1813", "properties":{ "idVendor": 0x24ae,  "idProduct": 0x1813 },"template":"keyboard"},
+  /* Metadot : Das Keyboard 4 */
+  {"name" : "kbd-24f0:105", "properties":{ "idVendor": 0x24f0,  "idProduct": 0x105 },"template":"keyboard"},
+  /* Metadot : Das Keyboard 4 */
+  {"name" : "kbd-24f0:140", "properties":{ "idVendor": 0x24f0,  "idProduct": 0x140 },"template":"keyboard"},
+  /* Metadot : Das Keyboard 5Q */
+  {"name" : "kbd-24f0:2020", "properties":{ "idVendor": 0x24f0,  "idProduct": 0x2020 },"template":"keyboard"},
+  /* Cooler Master Co., Ltd. : Storm QuickFire Rapid Mechanical Keyboard */
+  {"name" : "kbd-2516:4", "properties":{ "idVendor": 0x2516,  "idProduct": 0x4 },"template":"keyboard"},
+  /* Cooler Master Co., Ltd. : Storm QuickFire Pro/Ultimate keyboard */
+  {"name" : "kbd-2516:15", "properties":{ "idVendor": 0x2516,  "idProduct": 0x15 },"template":"keyboard"},
+  /* Cooler Master Co., Ltd. : QuickFire Rapid-i Keyboard */
+  {"name" : "kbd-2516:20", "properties":{ "idVendor": 0x2516,  "idProduct": 0x20 },"template":"keyboard"},
+  /* Cooler Master Co., Ltd. : Masterkeys Lite L Combo RGB Keyboard */
+  {"name" : "kbd-2516:42", "properties":{ "idVendor": 0x2516,  "idProduct": 0x42 },"template":"keyboard"},
+  /* Dracal/Raphnet technologies : Dreamcast (Keyboard mode) */
+  {"name" : "kbd-289b:a", "properties":{ "idVendor": 0x289b,  "idProduct": 0xa },"template":"keyboard"},
+  /* Dracal/Raphnet technologies : Gamecube/N64 controller v2.9 (Keyboard mode) */
+  {"name" : "kbd-289b:b", "properties":{ "idVendor": 0x289b,  "idProduct": 0xb },"template":"keyboard"},
+  /* Miselu : C.24 keyboard */
+  {"name" : "kbd-2961:1", "properties":{ "idVendor": 0x2961,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Kinesis Corporation : Advantage2 Keyboard */
+  {"name" : "kbd-29ea:102", "properties":{ "idVendor": 0x29ea,  "idProduct": 0x102 },"template":"keyboard"},
+  /* Smak Tecnologia e Automacao LTDA : SKO44 Optical Keyboard */
+  {"name" : "kbd-3219:44", "properties":{ "idVendor": 0x3219,  "idProduct": 0x44 },"template":"keyboard"},
+  /* System76 : Launch Configurable Keyboard (launch_1) */
+  {"name" : "kbd-3384:1", "properties":{ "idVendor": 0x3384,  "idProduct": 0x1 },"template":"keyboard"},
+  /* Dell Computer Corp. : DRAC 5 Virtual Keyboard and Mouse */
+  {"name" : "kbd-413c:0", "properties":{ "idVendor": 0x413c,  "idProduct": 0x0 },"template":"keyboard"},
+  /* Dell Computer Corp. : Keyboard Hub */
+  {"name" : "kbd-413c:1001", "properties":{ "idVendor": 0x413c,  "idProduct": 0x1001 },"template":"keyboard"},
+  /* Dell Computer Corp. : Keyboard Hub */
+  {"name" : "kbd-413c:1002", "properties":{ "idVendor": 0x413c,  "idProduct": 0x1002 },"template":"keyboard"},
+  /* Dell Computer Corp. : Keyboard Hub */
+  {"name" : "kbd-413c:1003", "properties":{ "idVendor": 0x413c,  "idProduct": 0x1003 },"template":"keyboard"},
+  /* Dell Computer Corp. : Multimedia Pro Keyboard Hub */
+  {"name" : "kbd-413c:1005", "properties":{ "idVendor": 0x413c,  "idProduct": 0x1005 },"template":"keyboard"},
+  /* Dell Computer Corp. : Keyboard HID Support */
+  {"name" : "kbd-413c:2001", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2001 },"template":"keyboard"},
+  /* Dell Computer Corp. : SK-8125 Keyboard */
+  {"name" : "kbd-413c:2002", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2002 },"template":"keyboard"},
+  /* Dell Computer Corp. : Keyboard SK-8115 */
+  {"name" : "kbd-413c:2003", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2003 },"template":"keyboard"},
+  /* Dell Computer Corp. : RT7D50 Keyboard */
+  {"name" : "kbd-413c:2005", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2005 },"template":"keyboard"},
+  /* Dell Computer Corp. : Keyboard */
+  {"name" : "kbd-413c:2010", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2010 },"template":"keyboard"},
+  /* Dell Computer Corp. : Multimedia Pro Keyboard */
+  {"name" : "kbd-413c:2011", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2011 },"template":"keyboard"},
+  /* Dell Computer Corp. : SK-3106 Keyboard */
+  {"name" : "kbd-413c:2100", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2100 },"template":"keyboard"},
+  /* Dell Computer Corp. : SK-3205 SmartCard Reader Keyboard */
+  {"name" : "kbd-413c:2101", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2101 },"template":"keyboard"},
+  /* Dell Computer Corp. : Model L100 Keyboard */
+  {"name" : "kbd-413c:2105", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2105 },"template":"keyboard"},
+  /* Dell Computer Corp. : QuietKey Keyboard */
+  {"name" : "kbd-413c:2106", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2106 },"template":"keyboard"},
+  /* Dell Computer Corp. : KB212-B Quiet Key Keyboard */
+  {"name" : "kbd-413c:2107", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2107 },"template":"keyboard"},
+  /* Dell Computer Corp. : KB216 Wired Keyboard */
+  {"name" : "kbd-413c:2113", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2113 },"template":"keyboard"},
+  /* Dell Computer Corp. : Keyboard and mouse dongle */
+  {"name" : "kbd-413c:2501", "properties":{ "idVendor": 0x413c,  "idProduct": 0x2501 },"template":"keyboard"},
+  /* Dell Computer Corp. : Integrated Keyboard */
+  {"name" : "kbd-413c:8157", "properties":{ "idVendor": 0x413c,  "idProduct": 0x8157 },"template":"keyboard"},
+  /* Dell Computer Corp. : Integrated Keyboard */
+  {"name" : "kbd-413c:8161", "properties":{ "idVendor": 0x413c,  "idProduct": 0x8161 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad STICK1A */
+  {"name" : "kbd-6244:400", "properties":{ "idVendor": 0x6244,  "idProduct": 0x400 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad STICK1A */
+  {"name" : "kbd-6244:401", "properties":{ "idVendor": 0x6244,  "idProduct": 0x401 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad STICK2 Firmware download */
+  {"name" : "kbd-6244:460", "properties":{ "idVendor": 0x6244,  "idProduct": 0x460 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad STICK2 */
+  {"name" : "kbd-6244:461", "properties":{ "idVendor": 0x6244,  "idProduct": 0x461 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad STICK1B Firmware download */
+  {"name" : "kbd-6244:470", "properties":{ "idVendor": 0x6244,  "idProduct": 0x470 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad STICK1B */
+  {"name" : "kbd-6244:471", "properties":{ "idVendor": 0x6244,  "idProduct": 0x471 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad STICK3 Firmware download */
+  {"name" : "kbd-6244:480", "properties":{ "idVendor": 0x6244,  "idProduct": 0x480 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad STICK3 */
+  {"name" : "kbd-6244:481", "properties":{ "idVendor": 0x6244,  "idProduct": 0x481 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad STICK2B Firmware download */
+  {"name" : "kbd-6244:500", "properties":{ "idVendor": 0x6244,  "idProduct": 0x500 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad STICK2B */
+  {"name" : "kbd-6244:501", "properties":{ "idVendor": 0x6244,  "idProduct": 0x501 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad (STICK2C Firmware download, 32/64bits */
+  {"name" : "kbd-6244:520", "properties":{ "idVendor": 0x6244,  "idProduct": 0x520 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad (STICK2C, 32/64bits) */
+  {"name" : "kbd-6244:521", "properties":{ "idVendor": 0x6244,  "idProduct": 0x521 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad (STICK4A Firmware download, 32/64bits) */
+  {"name" : "kbd-6244:570", "properties":{ "idVendor": 0x6244,  "idProduct": 0x570 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad (STICK4A, 32/64bits) */
+  {"name" : "kbd-6244:571", "properties":{ "idVendor": 0x6244,  "idProduct": 0x571 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad (STICK5A Firmware download, 32/64bits) */
+  {"name" : "kbd-6244:580", "properties":{ "idVendor": 0x6244,  "idProduct": 0x580 },"template":"keyboard"},
+  /* LightingSoft AG : Touch Sensitive Intelligent Control Keypad (STICK5A, 32/64bits) */
+  {"name" : "kbd-6244:581", "properties":{ "idVendor": 0x6244,  "idProduct": 0x581 },"template":"keyboard"},
+  /* CME (Central Music Co.) : UF5/UF6/UF7/UF8 MIDI Master Keyboard */
+  {"name" : "kbd-7104:2202", "properties":{ "idVendor": 0x7104,  "idProduct": 0x2202 },"template":"keyboard"},
+  /* Intel Corp. : Cherry MiniatureCard Keyboard */
+  {"name" : "kbd-8086:dad", "properties":{ "idVendor": 0x8086,  "idProduct": 0xdad },"template":"keyboard"},
+  /* Hapurs : HPBT05R 2.4 G Mini Wireless Touchpad Keyboard */
+  {"name" : "kbd-8301:89", "properties":{ "idVendor": 0x8301,  "idProduct": 0x89 },"template":"keyboard"},
+]

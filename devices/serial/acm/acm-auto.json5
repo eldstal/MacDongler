@@ -1,0 +1,567 @@
+/*
+ * Auto-generated device database file
+ * Do not edit, this will probably be overwritten!
+ * The command line used to generate this file was:
+ * make-device-db --usb-id-file /tmp/usb.ids --template acm-2.0 --name-prefix acm --vendor-regex .* --product-regex serial|(^acm)|( acm )|cdc acm|((rs|tia|eia)-?(232|422|423485))
+ */
+
+[
+  /* Atmel Corp. : at90usbkey sample firmware (CDC ACM) */
+  {"name" : "acm-3eb:2018", "properties":{ "idVendor": 0x3eb,  "idProduct": 0x2018 },"template":"acm-2.0"},
+  /* Atmel Corp. : LUFA USB to Serial Adapter Project */
+  {"name" : "acm-3eb:204b", "properties":{ "idVendor": 0x3eb,  "idProduct": 0x204b },"template":"acm-2.0"},
+  /* Atmel Corp. : LUFA Virtual Serial/Mass Storage Demo */
+  {"name" : "acm-3eb:2068", "properties":{ "idVendor": 0x3eb,  "idProduct": 0x2068 },"template":"acm-2.0"},
+  /* Atmel Corp. : XPLAIN evaluation kit (CDC ACM) */
+  {"name" : "acm-3eb:210d", "properties":{ "idVendor": 0x3eb,  "idProduct": 0x210d },"template":"acm-2.0"},
+  /* Atmel Corp. : ATMEGA328P-XMINI (CDC ACM) */
+  {"name" : "acm-3eb:2145", "properties":{ "idVendor": 0x3eb,  "idProduct": 0x2145 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : H4SMK 7 Port Hub / Bricked Counterfeit FT232 Serial (UART) IC */
+  {"name" : "acm-403:0", "properties":{ "idVendor": 0x403,  "idProduct": 0x0 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Serial Converter */
+  {"name" : "acm-403:232", "properties":{ "idVendor": 0x403,  "idProduct": 0x232 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : FT232 Serial (UART) IC */
+  {"name" : "acm-403:6001", "properties":{ "idVendor": 0x403,  "idProduct": 0x6001 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Serial Converter */
+  {"name" : "acm-403:6007", "properties":{ "idVendor": 0x403,  "idProduct": 0x6007 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Serial Converter */
+  {"name" : "acm-403:6008", "properties":{ "idVendor": 0x403,  "idProduct": 0x6008 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Serial Converter */
+  {"name" : "acm-403:6009", "properties":{ "idVendor": 0x403,  "idProduct": 0x6009 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : FT232BM [SIENNA Serial Interface] */
+  {"name" : "acm-403:8348", "properties":{ "idVendor": 0x403,  "idProduct": 0x8348 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : FT8U100AX Serial Port */
+  {"name" : "acm-403:8372", "properties":{ "idVendor": 0x403,  "idProduct": 0x8372 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : US Interface Navigator (RS232 and CONFIG lines) */
+  {"name" : "acm-403:b812", "properties":{ "idVendor": 0x403,  "idProduct": 0xb812 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Egnite GmbH - JTAG/RS-232 adapter */
+  {"name" : "acm-403:bdc8", "properties":{ "idVendor": 0x403,  "idProduct": 0xbdc8 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Xsens serial converter */
+  {"name" : "acm-403:d38a", "properties":{ "idVendor": 0x403,  "idProduct": 0xd38a },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Xsens serial converter */
+  {"name" : "acm-403:d38b", "properties":{ "idVendor": 0x403,  "idProduct": 0xd38b },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Xsens serial converter */
+  {"name" : "acm-403:d38e", "properties":{ "idVendor": 0x403,  "idProduct": 0xd38e },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Xsens serial converter */
+  {"name" : "acm-403:d38f", "properties":{ "idVendor": 0x403,  "idProduct": 0xd38f },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Actisense USG-1 NMEA Serial Gateway */
+  {"name" : "acm-403:d9a9", "properties":{ "idVendor": 0x403,  "idProduct": 0xd9a9 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Qundis Serial Infrared Head */
+  {"name" : "acm-403:daf4", "properties":{ "idVendor": 0x403,  "idProduct": 0xdaf4 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : USB-RS232 OptoBridge */
+  {"name" : "acm-403:e889", "properties":{ "idVendor": 0x403,  "idProduct": 0xe889 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : HAMEG HO870 Serial Port */
+  {"name" : "acm-403:ed71", "properties":{ "idVendor": 0x403,  "idProduct": 0xed71 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : HAMEG HO720 Serial Port */
+  {"name" : "acm-403:ed72", "properties":{ "idVendor": 0x403,  "idProduct": 0xed72 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : HAMEG HO730 Serial Port */
+  {"name" : "acm-403:ed73", "properties":{ "idVendor": 0x403,  "idProduct": 0xed73 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : HAMEG HO820 Serial Port */
+  {"name" : "acm-403:ed74", "properties":{ "idVendor": 0x403,  "idProduct": 0xed74 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Serial Converter 422/485 [Vardaan VEUSB422R3] */
+  {"name" : "acm-403:f070", "properties":{ "idVendor": 0x403,  "idProduct": 0xf070 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : 4N-GALAXY Serial Converter */
+  {"name" : "acm-403:f3c0", "properties":{ "idVendor": 0x403,  "idProduct": 0xf3c0 },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : Matrix Orbital USB Serial */
+  {"name" : "acm-403:fa00", "properties":{ "idVendor": 0x403,  "idProduct": 0xfa00 },"template":"acm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : USB47xx/49xx hub integrated serial port */
+  {"name" : "acm-424:4944", "properties":{ "idVendor": 0x424,  "idProduct": 0x4944 },"template":"acm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : USB47xx/49xx hub integrated serial + I2S audio port */
+  {"name" : "acm-424:4946", "properties":{ "idVendor": 0x424,  "idProduct": 0x4946 },"template":"acm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : USB47xx/49xx hub integrated serial + I2S audio + HID port */
+  {"name" : "acm-424:4947", "properties":{ "idVendor": 0x424,  "idProduct": 0x4947 },"template":"acm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : USB47xx/49xx hub integrated WinUSB + serial port */
+  {"name" : "acm-424:494c", "properties":{ "idVendor": 0x424,  "idProduct": 0x494c },"template":"acm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : USB47xx/49xx hub integrated WinUSB + serial + I2S audio port */
+  {"name" : "acm-424:494e", "properties":{ "idVendor": 0x424,  "idProduct": 0x494e },"template":"acm-2.0"},
+  /* Microchip Technology, Inc. (formerly SMSC) : USB47xx/49xx hub integrated WinUSB + serial + I2S audio + HID port */
+  {"name" : "acm-424:494f", "properties":{ "idVendor": 0x424,  "idProduct": 0x494f },"template":"acm-2.0"},
+  /* Texas Instruments, Inc. : TUSB5052 Serial */
+  {"name" : "acm-451:505f", "properties":{ "idVendor": 0x451,  "idProduct": 0x505f },"template":"acm-2.0"},
+  /* Texas Instruments, Inc. : TUSB9261 SerialATA-Bridge */
+  {"name" : "acm-451:9261", "properties":{ "idVendor": 0x451,  "idProduct": 0x9261 },"template":"acm-2.0"},
+  /* American Megatrends, Inc. : Serial & Parallel Ports */
+  {"name" : "acm-46b:500", "properties":{ "idVendor": 0x46b,  "idProduct": 0x500 },"template":"acm-2.0"},
+  /* STMicroelectronics : ST Micro Serial Bridge */
+  {"name" : "acm-483:7270", "properties":{ "idVendor": 0x483,  "idProduct": 0x7270 },"template":"acm-2.0"},
+  /* IBM Corp. : Serial Converter */
+  {"name" : "acm-4b3:4482", "properties":{ "idVendor": 0x4b3,  "idProduct": 0x4482 },"template":"acm-2.0"},
+  /* Cypress Semiconductor Corp. : CDC ACM serial port */
+  {"name" : "acm-4b4:8", "properties":{ "idVendor": 0x4b4,  "idProduct": 0x8 },"template":"acm-2.0"},
+  /* Cypress Semiconductor Corp. : HID->COM RS232 Adapter */
+  {"name" : "acm-4b4:5500", "properties":{ "idVendor": 0x4b4,  "idProduct": 0x5500 },"template":"acm-2.0"},
+  /* I-O Data Device, Inc. : Serial USB-RSAQ1 */
+  {"name" : "acm-4bb:a03", "properties":{ "idVendor": 0x4bb,  "idProduct": 0xa03 },"template":"acm-2.0"},
+  /* ST-Ericsson : Ux500 serial debug port */
+  {"name" : "acm-4cc:2323", "properties":{ "idVendor": 0x4cc,  "idProduct": 0x2323 },"template":"acm-2.0"},
+  /* Microchip Technology, Inc. : CDC RS-232 Emulation Demo */
+  {"name" : "acm-4d8:a", "properties":{ "idVendor": 0x4d8,  "idProduct": 0xa },"template":"acm-2.0"},
+  /* Microchip Technology, Inc. : PICkit Serial Analyzer */
+  {"name" : "acm-4d8:36", "properties":{ "idVendor": 0x4d8,  "idProduct": 0x36 },"template":"acm-2.0"},
+  /* Microchip Technology, Inc. : AGP LIN Serial Analyzer */
+  {"name" : "acm-4d8:a04", "properties":{ "idVendor": 0x4d8,  "idProduct": 0xa04 },"template":"acm-2.0"},
+  /* Panasonic (Matsushita) : DVC USB-SERIAL Driver for WinXP */
+  {"name" : "acm-4da:2317", "properties":{ "idVendor": 0x4da,  "idProduct": 0x2317 },"template":"acm-2.0"},
+  /* Sharp Corp. : USB-to-Serial Comm. Port */
+  {"name" : "acm-4dd:90d0", "properties":{ "idVendor": 0x4dd,  "idProduct": 0x90d0 },"template":"acm-2.0"},
+  /* Sunplus Technology Co., Ltd : SPCP825 RS232C Adapter */
+  {"name" : "acm-4fc:201", "properties":{ "idVendor": 0x4fc,  "idProduct": 0x201 },"template":"acm-2.0"},
+  /* Belkin Components : F5U103 Serial Adapter [etek] */
+  {"name" : "acm-50d:103", "properties":{ "idVendor": 0x50d,  "idProduct": 0x103 },"template":"acm-2.0"},
+  /* Belkin Components : F5U257 Serial */
+  {"name" : "acm-50d:257", "properties":{ "idVendor": 0x50d,  "idProduct": 0x257 },"template":"acm-2.0"},
+  /* Belkin Components : F5U409 Serial */
+  {"name" : "acm-50d:409", "properties":{ "idVendor": 0x50d,  "idProduct": 0x409 },"template":"acm-2.0"},
+  /* Belkin Components : F5U120-PC Serial Port */
+  {"name" : "acm-50d:1203", "properties":{ "idVendor": 0x50d,  "idProduct": 0x1203 },"template":"acm-2.0"},
+  /* Netchip Technology, Inc. : Linux-USB Serial Gadget */
+  {"name" : "acm-525:a4a6", "properties":{ "idVendor": 0x525,  "idProduct": 0xa4a6 },"template":"acm-2.0"},
+  /* Netchip Technology, Inc. : Linux-USB Serial Gadget (CDC ACM mode) */
+  {"name" : "acm-525:a4a7", "properties":{ "idVendor": 0x525,  "idProduct": 0xa4a7 },"template":"acm-2.0"},
+  /* Sony Corp. : Clie PEG-N7x0C/PEG-T425 PalmOS PDA Serial */
+  {"name" : "acm-54c:66", "properties":{ "idVendor": 0x54c,  "idProduct": 0x66 },"template":"acm-2.0"},
+  /* Sony Corp. : Clie NR70 PDA Serial */
+  {"name" : "acm-54c:9a", "properties":{ "idVendor": 0x54c,  "idProduct": 0x9a },"template":"acm-2.0"},
+  /* Sony Corp. : Clie PEG-TJ35 PDA Serial */
+  {"name" : "acm-54c:169", "properties":{ "idVendor": 0x54c,  "idProduct": 0x169 },"template":"acm-2.0"},
+  /* ATEN International Co., Ltd : UC-232A Serial Port [pl2303] */
+  {"name" : "acm-557:2008", "properties":{ "idVendor": 0x557,  "idProduct": 0x2008 },"template":"acm-2.0"},
+  /* ATEN International Co., Ltd : UC-2324 4xSerial Ports [mos7840] */
+  {"name" : "acm-557:2011", "properties":{ "idVendor": 0x557,  "idProduct": 0x2011 },"template":"acm-2.0"},
+  /* ATEN International Co., Ltd : UC-2322 2xSerial Ports [mos7820] */
+  {"name" : "acm-557:7820", "properties":{ "idVendor": 0x557,  "idProduct": 0x7820 },"template":"acm-2.0"},
+  /* Peracom Networks, Inc. : Serial Port [etek] */
+  {"name" : "acm-565:1", "properties":{ "idVendor": 0x565,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* eTEK Labs : Kwik232 Serial Port */
+  {"name" : "acm-56c:8007", "properties":{ "idVendor": 0x56c,  "idProduct": 0x8007 },"template":"acm-2.0"},
+  /* Alcor Micro Corp. : USB-Serial Adapter */
+  {"name" : "acm-58f:9720", "properties":{ "idVendor": 0x58f,  "idProduct": 0x9720 },"template":"acm-2.0"},
+  /* Omron Corp. : FT232BM [E58CIFQ1 with FTDI USB2Serial Converter] */
+  {"name" : "acm-590:51", "properties":{ "idVendor": 0x590,  "idProduct": 0x51 },"template":"acm-2.0"},
+  /* Kawasaki LSI : USB-to-RS-232 */
+  {"name" : "acm-5e9:c", "properties":{ "idVendor": 0x5e9,  "idProduct": 0xc },"template":"acm-2.0"},
+  /* Kawasaki LSI : USB-to-RS-232 */
+  {"name" : "acm-5e9:d", "properties":{ "idVendor": 0x5e9,  "idProduct": 0xd },"template":"acm-2.0"},
+  /* Kawasaki LSI : RS-232 J104 */
+  {"name" : "acm-5e9:14", "properties":{ "idVendor": 0x5e9,  "idProduct": 0x14 },"template":"acm-2.0"},
+  /* PSC Scanning, Inc. : Gryphon series (RS-232 emulation mode) */
+  {"name" : "acm-5f9:4204", "properties":{ "idVendor": 0x5f9,  "idProduct": 0x4204 },"template":"acm-2.0"},
+  /* Optoelectronics Co., Ltd : NLV-1001 (serial mode) / OPN-2001 [Opticon] */
+  {"name" : "acm-65a:9", "properties":{ "idVendor": 0x65a,  "idProduct": 0x9 },"template":"acm-2.0"},
+  /* Cypress Semiconductor : USB to Serial */
+  {"name" : "acm-665:5161", "properties":{ "idVendor": 0x665,  "idProduct": 0x5161 },"template":"acm-2.0"},
+  /* Prolific Technology, Inc. : Motorola Serial Adapter */
+  {"name" : "acm-67b:307", "properties":{ "idVendor": 0x67b,  "idProduct": 0x307 },"template":"acm-2.0"},
+  /* Prolific Technology, Inc. : PL2303 Serial (IODATA USB-RSAQ2) */
+  {"name" : "acm-67b:4bb", "properties":{ "idVendor": 0x67b,  "idProduct": 0x4bb },"template":"acm-2.0"},
+  /* Prolific Technology, Inc. : PL2303 Serial Port / Mobile Action MA-8910P */
+  {"name" : "acm-67b:2303", "properties":{ "idVendor": 0x67b,  "idProduct": 0x2303 },"template":"acm-2.0"},
+  /* Prolific Technology, Inc. : PL2303 Serial Adapter (IODATA USB-RSAQ3) */
+  {"name" : "acm-67b:aaa2", "properties":{ "idVendor": 0x67b,  "idProduct": 0xaaa2 },"template":"acm-2.0"},
+  /* Prolific Technology, Inc. : PL2303x Serial Adapter */
+  {"name" : "acm-67b:aaa3", "properties":{ "idVendor": 0x67b,  "idProduct": 0xaaa3 },"template":"acm-2.0"},
+  /* Keyspan : USA-49W serial adapter [no firmware] */
+  {"name" : "acm-6cd:109", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x109 },"template":"acm-2.0"},
+  /* Keyspan : USA-49W serial adapter */
+  {"name" : "acm-6cd:10a", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x10a },"template":"acm-2.0"},
+  /* Keyspan : USA-19Qi serial adapter [no firmware] */
+  {"name" : "acm-6cd:10b", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x10b },"template":"acm-2.0"},
+  /* Keyspan : USA-19Qi serial adapter */
+  {"name" : "acm-6cd:10c", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x10c },"template":"acm-2.0"},
+  /* Keyspan : USA-19Q serial Adapter (no firmware) */
+  {"name" : "acm-6cd:10d", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x10d },"template":"acm-2.0"},
+  /* Keyspan : USA-19Q serial Adapter */
+  {"name" : "acm-6cd:10e", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x10e },"template":"acm-2.0"},
+  /* Keyspan : USA-18 serial Adapter */
+  {"name" : "acm-6cd:111", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x111 },"template":"acm-2.0"},
+  /* Keyspan : USA-18XA serial Adapter (no firmware) */
+  {"name" : "acm-6cd:116", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x116 },"template":"acm-2.0"},
+  /* Keyspan : USA-18XA serial Adapter */
+  {"name" : "acm-6cd:117", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x117 },"template":"acm-2.0"},
+  /* Keyspan : USA-49Wlc serial adapter [no firmware] */
+  {"name" : "acm-6cd:11a", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x11a },"template":"acm-2.0"},
+  /* Keyspan : MPR Serial Preloader (MPRQI) */
+  {"name" : "acm-6cd:11b", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x11b },"template":"acm-2.0"},
+  /* Keyspan : MPR Serial (MPRQI) */
+  {"name" : "acm-6cd:11c", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x11c },"template":"acm-2.0"},
+  /* Keyspan : MPR Serial Preloader (MPRQ) */
+  {"name" : "acm-6cd:11d", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x11d },"template":"acm-2.0"},
+  /* Keyspan : MPR Serial (MPRQ) */
+  {"name" : "acm-6cd:11e", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x11e },"template":"acm-2.0"},
+  /* Keyspan : USA-19hs serial adapter */
+  {"name" : "acm-6cd:121", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x121 },"template":"acm-2.0"},
+  /* Keyspan : USA-49Wlc serial adapter */
+  {"name" : "acm-6cd:12a", "properties":{ "idVendor": 0x6cd,  "idProduct": 0x12a },"template":"acm-2.0"},
+  /* Magic Control Technology Corp. : BAY-3U1S1P Serial Port */
+  {"name" : "acm-711:200", "properties":{ "idVendor": 0x711,  "idProduct": 0x200 },"template":"acm-2.0"},
+  /* Magic Control Technology Corp. : MCT1S Serial Port */
+  {"name" : "acm-711:210", "properties":{ "idVendor": 0x711,  "idProduct": 0x210 },"template":"acm-2.0"},
+  /* Magic Control Technology Corp. : MCT-232 Serial Port */
+  {"name" : "acm-711:230", "properties":{ "idVendor": 0x711,  "idProduct": 0x230 },"template":"acm-2.0"},
+  /* Magic Control Technology Corp. : Serial On Port */
+  {"name" : "acm-711:232", "properties":{ "idVendor": 0x711,  "idProduct": 0x232 },"template":"acm-2.0"},
+  /* Amitm : USC-1000 Serial Port */
+  {"name" : "acm-729:1000", "properties":{ "idVendor": 0x729,  "idProduct": 0x1000 },"template":"acm-2.0"},
+  /* Sagem : USB-Serial Controller */
+  {"name" : "acm-79b:27", "properties":{ "idVendor": 0x79b,  "idProduct": 0x27 },"template":"acm-2.0"},
+  /* Elektor : USBuart Serial Port */
+  {"name" : "acm-7cd:1", "properties":{ "idVendor": 0x7cd,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* Palm, Inc. : Serial Adapter [for Palm III] */
+  {"name" : "acm-830:80", "properties":{ "idVendor": 0x830,  "idProduct": 0x80 },"template":"acm-2.0"},
+  /* B&B Electronics : uLinks USOTL4 RS422/485 Adapter */
+  {"name" : "acm-856:ac01", "properties":{ "idVendor": 0x856,  "idProduct": 0xac01 },"template":"acm-2.0"},
+  /* Xircom : Portstation Dual Serial Port */
+  {"name" : "acm-85a:1", "properties":{ "idVendor": 0x85a,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* Xircom : 1 port to Serial Converter */
+  {"name" : "acm-85a:21", "properties":{ "idVendor": 0x85a,  "idProduct": 0x21 },"template":"acm-2.0"},
+  /* Xircom : 2 port to Serial Converter */
+  {"name" : "acm-85a:23", "properties":{ "idVendor": 0x85a,  "idProduct": 0x23 },"template":"acm-2.0"},
+  /* Xircom : 1 port to Serial Converter */
+  {"name" : "acm-85a:27", "properties":{ "idVendor": 0x85a,  "idProduct": 0x27 },"template":"acm-2.0"},
+  /* Xircom : 1 port to Serial */
+  {"name" : "acm-85a:8021", "properties":{ "idVendor": 0x85a,  "idProduct": 0x8021 },"template":"acm-2.0"},
+  /* Xircom : 2 port to Serial */
+  {"name" : "acm-85a:8023", "properties":{ "idVendor": 0x85a,  "idProduct": 0x8023 },"template":"acm-2.0"},
+  /* Xircom : PGSDB9 Serial Port */
+  {"name" : "acm-85a:8027", "properties":{ "idVendor": 0x85a,  "idProduct": 0x8027 },"template":"acm-2.0"},
+  /* Olitec, Inc. : USB-RS232 Bridge */
+  {"name" : "acm-8e3:2", "properties":{ "idVendor": 0x8e3,  "idProduct": 0x2 },"template":"acm-2.0"},
+  /* GoHubs, Inc. : GoCOM232 Serial */
+  {"name" : "acm-921:1001", "properties":{ "idVendor": 0x921,  "idProduct": 0x1001 },"template":"acm-2.0"},
+  /* FLIR Systems : Serial Port */
+  {"name" : "acm-9cb:1008", "properties":{ "idVendor": 0x9cb,  "idProduct": 0x1008 },"template":"acm-2.0"},
+  /* ID Tech : IDT1221U RS-232 Adapter */
+  {"name" : "acm-acd:300", "properties":{ "idVendor": 0xacd,  "idProduct": 0x300 },"template":"acm-2.0"},
+  /* Omnidirectional Control Technology, Inc. : Serial */
+  {"name" : "acm-b39:421", "properties":{ "idVendor": 0xb39,  "idProduct": 0x421 },"template":"acm-2.0"},
+  /* Omnidirectional Control Technology, Inc. : LAN DOCK Serial Converter */
+  {"name" : "acm-b39:c03", "properties":{ "idVendor": 0xb39,  "idProduct": 0xc03 },"template":"acm-2.0"},
+  /* Prolific Technology Inc. : USB-Serial Controller [Icom Inc. OPC-478UC] */
+  {"name" : "acm-c26:18", "properties":{ "idVendor": 0xc26,  "idProduct": 0x18 },"template":"acm-2.0"},
+  /* RFIDeas, Inc : pcProx Plus RFID Reader (CDC serial) */
+  {"name" : "acm-c27:232a", "properties":{ "idVendor": 0xc27,  "idProduct": 0x232a },"template":"acm-2.0"},
+  /* Metrologic Instruments : Metrologic MS7120 Barcode Scanner (uni-directional serial mode) */
+  {"name" : "acm-c2e:700", "properties":{ "idVendor": 0xc2e,  "idProduct": 0x700 },"template":"acm-2.0"},
+  /* Metrologic Instruments : Metrologic MS7120 Barcode Scanner (bi-directional serial mode) */
+  {"name" : "acm-c2e:720", "properties":{ "idVendor": 0xc2e,  "idProduct": 0x720 },"template":"acm-2.0"},
+  /* Allied Telesis KK. : AT-VT-Kit3 Serial Adapter */
+  {"name" : "acm-caa:3001", "properties":{ "idVendor": 0xcaa,  "idProduct": 0x3001 },"template":"acm-2.0"},
+  /* UTStarcom : DV007 [serial] */
+  {"name" : "acm-d08:602", "properties":{ "idVendor": 0xd08,  "idProduct": 0x602 },"template":"acm-2.0"},
+  /* Powercom Co., Ltd : Black Knight PRO / WOW Uninterruptible Power Supply (Cypress HID->COM RS232) */
+  {"name" : "acm-d9f:2", "properties":{ "idVendor": 0xd9f,  "idProduct": 0x2 },"template":"acm-2.0"},
+  /* Access IS : Barcode Module - CDC serial */
+  {"name" : "acm-db5:139", "properties":{ "idVendor": 0xdb5,  "idProduct": 0x139 },"template":"acm-2.0"},
+  /* A&D Medical : AND Serial Cable [AND Smart Cable] */
+  {"name" : "acm-dbc:3", "properties":{ "idVendor": 0xdbc,  "idProduct": 0x3 },"template":"acm-2.0"},
+  /* Speed Dragon Multimedia, Ltd : MS3303H USB-to-Serial Bridge */
+  {"name" : "acm-e55:110b", "properties":{ "idVendor": 0xe55,  "idProduct": 0x110b },"template":"acm-2.0"},
+  /* Ours Technology, Inc. : OTi-6858 serial adapter */
+  {"name" : "acm-ea0:6858", "properties":{ "idVendor": 0xea0,  "idProduct": 0x6858 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:1103", "properties":{ "idVendor": 0x106c,  "idProduct": 0x1103 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:1104", "properties":{ "idVendor": 0x106c,  "idProduct": 0x1104 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:1106", "properties":{ "idVendor": 0x106c,  "idProduct": 0x1106 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:1302", "properties":{ "idVendor": 0x106c,  "idProduct": 0x1302 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:1403", "properties":{ "idVendor": 0x106c,  "idProduct": 0x1403 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:1502", "properties":{ "idVendor": 0x106c,  "idProduct": 0x1502 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:1602", "properties":{ "idVendor": 0x106c,  "idProduct": 0x1602 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:2103", "properties":{ "idVendor": 0x106c,  "idProduct": 0x2103 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:2302", "properties":{ "idVendor": 0x106c,  "idProduct": 0x2302 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:2401", "properties":{ "idVendor": 0x106c,  "idProduct": 0x2401 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:2403", "properties":{ "idVendor": 0x106c,  "idProduct": 0x2403 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:2502", "properties":{ "idVendor": 0x106c,  "idProduct": 0x2502 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:2602", "properties":{ "idVendor": 0x106c,  "idProduct": 0x2602 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:3eb4", "properties":{ "idVendor": 0x106c,  "idProduct": 0x3eb4 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:4101", "properties":{ "idVendor": 0x106c,  "idProduct": 0x4101 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:4302", "properties":{ "idVendor": 0x106c,  "idProduct": 0x4302 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:4502", "properties":{ "idVendor": 0x106c,  "idProduct": 0x4502 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:4602", "properties":{ "idVendor": 0x106c,  "idProduct": 0x4602 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:5102", "properties":{ "idVendor": 0x106c,  "idProduct": 0x5102 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:5301", "properties":{ "idVendor": 0x106c,  "idProduct": 0x5301 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:5402", "properties":{ "idVendor": 0x106c,  "idProduct": 0x5402 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:5501", "properties":{ "idVendor": 0x106c,  "idProduct": 0x5501 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:5601", "properties":{ "idVendor": 0x106c,  "idProduct": 0x5601 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:a001", "properties":{ "idVendor": 0x106c,  "idProduct": 0xa001 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Packet Service Diagnostic Serial Port (WDM) */
+  {"name" : "acm-106c:c500", "properties":{ "idVendor": 0x106c,  "idProduct": 0xc500 },"template":"acm-2.0"},
+  /* Silicon Labs : C8051F38x HDBaseT Wall Plate Receiver with IR, RS-232, and PoH [UHBX-R-WP] */
+  {"name" : "acm-10c4:8acb", "properties":{ "idVendor": 0x10c4,  "idProduct": 0x8acb },"template":"acm-2.0"},
+  /* Silicon Labs : C8051F38x 4K HDMI Audio Extractor w/Audio Amplifier, HDBT Input, Line Audio Input RS-232 Ports and IP Control [VSA-X21] */
+  {"name" : "acm-10c4:8af8", "properties":{ "idVendor": 0x10c4,  "idProduct": 0x8af8 },"template":"acm-2.0"},
+  /* Silicon Labs : C8051F38x 4K HDMI Audio Extractor w/Audio Amplifier, HDBT Input, Line Audio Input RS-232 Ports and IP Control [SC-3H] */
+  {"name" : "acm-10c4:8b8c", "properties":{ "idVendor": 0x10c4,  "idProduct": 0x8b8c },"template":"acm-2.0"},
+  /* Moxa Technologies Co., Ltd. : UPort 1150 1-Port RS-232/422/485 */
+  {"name" : "acm-110a:1150", "properties":{ "idVendor": 0x110a,  "idProduct": 0x1150 },"template":"acm-2.0"},
+  /* Moxa Technologies Co., Ltd. : UPort 1250 2-Port RS-232/422/485 */
+  {"name" : "acm-110a:1250", "properties":{ "idVendor": 0x110a,  "idProduct": 0x1250 },"template":"acm-2.0"},
+  /* Moxa Technologies Co., Ltd. : UPort 1250I 2-Port RS-232/422/485 with Isolation */
+  {"name" : "acm-110a:1251", "properties":{ "idVendor": 0x110a,  "idProduct": 0x1251 },"template":"acm-2.0"},
+  /* Moxa Technologies Co., Ltd. : UPort 1410 4-Port RS-232 */
+  {"name" : "acm-110a:1410", "properties":{ "idVendor": 0x110a,  "idProduct": 0x1410 },"template":"acm-2.0"},
+  /* Moxa Technologies Co., Ltd. : UPort 1450 4-Port RS-232/422/485 */
+  {"name" : "acm-110a:1450", "properties":{ "idVendor": 0x110a,  "idProduct": 0x1450 },"template":"acm-2.0"},
+  /* Moxa Technologies Co., Ltd. : UPort 1450I 4-Port RS-232/422/485 with Isolation */
+  {"name" : "acm-110a:1451", "properties":{ "idVendor": 0x110a,  "idProduct": 0x1451 },"template":"acm-2.0"},
+  /* Moxa Technologies Co., Ltd. : UPort 1610-16 16-Port RS-232 */
+  {"name" : "acm-110a:1613", "properties":{ "idVendor": 0x110a,  "idProduct": 0x1613 },"template":"acm-2.0"},
+  /* Moxa Technologies Co., Ltd. : UPort 1610-8 8-Port RS-232 */
+  {"name" : "acm-110a:1618", "properties":{ "idVendor": 0x110a,  "idProduct": 0x1618 },"template":"acm-2.0"},
+  /* Moxa Technologies Co., Ltd. : UPort 1650-16 16-Port RS-232/422/485 */
+  {"name" : "acm-110a:1653", "properties":{ "idVendor": 0x110a,  "idProduct": 0x1653 },"template":"acm-2.0"},
+  /* Moxa Technologies Co., Ltd. : UPort 1650-8 8-Port RS-232/422/485 */
+  {"name" : "acm-110a:1658", "properties":{ "idVendor": 0x110a,  "idProduct": 0x1658 },"template":"acm-2.0"},
+  /* Alcatel (?) : Serial cable (v2) for TD-10 Mobile Phone */
+  {"name" : "acm-11f7:2df", "properties":{ "idVendor": 0x11f7,  "idProduct": 0x2df },"template":"acm-2.0"},
+  /* Generic : GCBASIC Serial CDC Stack */
+  {"name" : "acm-1209:2004", "properties":{ "idVendor": 0x1209,  "idProduct": 0x2004 },"template":"acm-2.0"},
+  /* Generic : SensePost Universal Serial aBUSe - Generic HID */
+  {"name" : "acm-1209:6667", "properties":{ "idVendor": 0x1209,  "idProduct": 0x6667 },"template":"acm-2.0"},
+  /* Generic : ReSwitched Libtransistor Serial Console */
+  {"name" : "acm-1209:8b00", "properties":{ "idVendor": 0x1209,  "idProduct": 0x8b00 },"template":"acm-2.0"},
+  /* zebris Medical GmbH : USB-RS232 Adaptor */
+  {"name" : "acm-1283:100", "properties":{ "idVendor": 0x1283,  "idProduct": 0x100 },"template":"acm-2.0"},
+  /* ThorLabs : PM101 Serial PD Power Meter */
+  {"name" : "acm-1313:8076", "properties":{ "idVendor": 0x1313,  "idProduct": 0x8076 },"template":"acm-2.0"},
+  /* Mobility : EasiDock 200 Serial Port */
+  {"name" : "acm-1342:202", "properties":{ "idVendor": 0x1342,  "idProduct": 0x202 },"template":"acm-2.0"},
+  /* P&E Microcomputer Systems : OpenSDA - CDC Serial Port */
+  {"name" : "acm-1357:89", "properties":{ "idVendor": 0x1357,  "idProduct": 0x89 },"template":"acm-2.0"},
+  /* Radio Shack : 26-183 Serial Cable */
+  {"name" : "acm-1453:4026", "properties":{ "idVendor": 0x1453,  "idProduct": 0x4026 },"template":"acm-2.0"},
+  /* First International Computer, Inc. : OpenMoko Neo1973 u-boot cdc_acm serial port */
+  {"name" : "acm-1457:5119", "properties":{ "idVendor": 0x1457,  "idProduct": 0x5119 },"template":"acm-2.0"},
+  /* First International Computer, Inc. : HXD8 u-boot usbtty CDC ACM Mode */
+  {"name" : "acm-1457:511a", "properties":{ "idVendor": 0x1457,  "idProduct": 0x511a },"template":"acm-2.0"},
+  /* First International Computer, Inc. : SMDK2440 u-boot usbtty CDC ACM mode */
+  {"name" : "acm-1457:511b", "properties":{ "idVendor": 0x1457,  "idProduct": 0x511b },"template":"acm-2.0"},
+  /* First International Computer, Inc. : SMDK2443 u-boot usbtty CDC ACM mode */
+  {"name" : "acm-1457:511c", "properties":{ "idVendor": 0x1457,  "idProduct": 0x511c },"template":"acm-2.0"},
+  /* First International Computer, Inc. : QT2410 u-boot usbtty CDC ACM mode */
+  {"name" : "acm-1457:511d", "properties":{ "idVendor": 0x1457,  "idProduct": 0x511d },"template":"acm-2.0"},
+  /* First International Computer, Inc. : OpenMoko Neo1973 u-boot usbtty generic serial */
+  {"name" : "acm-1457:5120", "properties":{ "idVendor": 0x1457,  "idProduct": 0x5120 },"template":"acm-2.0"},
+  /* StarTech.com Ltd. : Serial Adapter ICUSB2321X [TUSB3410I] */
+  {"name" : "acm-14b0:3410", "properties":{ "idVendor": 0x14b0,  "idProduct": 0x3410 },"template":"acm-2.0"},
+  /* MIR Srl : spirotel serial */
+  {"name" : "acm-152b:13", "properties":{ "idVendor": 0x152b,  "idProduct": 0x13 },"template":"acm-2.0"},
+  /* Olimex Ltd. : ARM-USB-OCD-H JTAG+RS232 */
+  {"name" : "acm-15ba:2b", "properties":{ "idVendor": 0x15ba,  "idProduct": 0x2b },"template":"acm-2.0"},
+  /* Inside Out Networks [hex] : EdgePort/4 Serial Port */
+  {"name" : "acm-1608:1", "properties":{ "idVendor": 0x1608,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* Entrega [hex] : 1S Serial Port */
+  {"name" : "acm-1645:1", "properties":{ "idVendor": 0x1645,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* Entrega [hex] : 2S Serial Port */
+  {"name" : "acm-1645:2", "properties":{ "idVendor": 0x1645,  "idProduct": 0x2 },"template":"acm-2.0"},
+  /* Entrega [hex] : 1S25 Serial Port */
+  {"name" : "acm-1645:3", "properties":{ "idVendor": 0x1645,  "idProduct": 0x3 },"template":"acm-2.0"},
+  /* Entrega [hex] : 4S Serial Port */
+  {"name" : "acm-1645:4", "properties":{ "idVendor": 0x1645,  "idProduct": 0x4 },"template":"acm-2.0"},
+  /* Entrega [hex] : 1 port to Serial Converter */
+  {"name" : "acm-1645:80", "properties":{ "idVendor": 0x1645,  "idProduct": 0x80 },"template":"acm-2.0"},
+  /* Entrega [hex] : 1 port to Serial Converter */
+  {"name" : "acm-1645:81", "properties":{ "idVendor": 0x1645,  "idProduct": 0x81 },"template":"acm-2.0"},
+  /* Entrega [hex] : 1S9 Serial Port */
+  {"name" : "acm-1645:93", "properties":{ "idVendor": 0x1645,  "idProduct": 0x93 },"template":"acm-2.0"},
+  /* Entrega [hex] : 1 port to Serial */
+  {"name" : "acm-1645:8001", "properties":{ "idVendor": 0x1645,  "idProduct": 0x8001 },"template":"acm-2.0"},
+  /* Entrega [hex] : 2x Serial Port */
+  {"name" : "acm-1645:8002", "properties":{ "idVendor": 0x1645,  "idProduct": 0x8002 },"template":"acm-2.0"},
+  /* Entrega [hex] : 1 port to Serial */
+  {"name" : "acm-1645:8003", "properties":{ "idVendor": 0x1645,  "idProduct": 0x8003 },"template":"acm-2.0"},
+  /* Entrega [hex] : 2U4S serial/usb hub */
+  {"name" : "acm-1645:8004", "properties":{ "idVendor": 0x1645,  "idProduct": 0x8004 },"template":"acm-2.0"},
+  /* Entrega [hex] : 1 port to Serial */
+  {"name" : "acm-1645:8080", "properties":{ "idVendor": 0x1645,  "idProduct": 0x8080 },"template":"acm-2.0"},
+  /* Entrega [hex] : 1 port to Serial */
+  {"name" : "acm-1645:8081", "properties":{ "idVendor": 0x1645,  "idProduct": 0x8081 },"template":"acm-2.0"},
+  /* Entrega [hex] : PortGear Serial Port */
+  {"name" : "acm-1645:8093", "properties":{ "idVendor": 0x1645,  "idProduct": 0x8093 },"template":"acm-2.0"},
+  /* Kondo Kagaku : Serial Adapter */
+  {"name" : "acm-165c:2", "properties":{ "idVendor": 0x165c,  "idProduct": 0x2 },"template":"acm-2.0"},
+  /* Van Ooijen Technische Informatica : Teensy Serial */
+  {"name" : "acm-16c0:47a", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x47a },"template":"acm-2.0"},
+  /* Van Ooijen Technische Informatica : Teensy Serial+Debug */
+  {"name" : "acm-16c0:47b", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x47b },"template":"acm-2.0"},
+  /* Van Ooijen Technische Informatica : Teensyduino Serial */
+  {"name" : "acm-16c0:483", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x483 },"template":"acm-2.0"},
+  /* Van Ooijen Technische Informatica : Teensyduino Serial+Keyboard+Mouse+Joystick */
+  {"name" : "acm-16c0:487", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x487 },"template":"acm-2.0"},
+  /* QinHeng Electronics : CH341 in serial mode, usb to serial port converter */
+  {"name" : "acm-1a86:5523", "properties":{ "idVendor": 0x1a86,  "idProduct": 0x5523 },"template":"acm-2.0"},
+  /* QinHeng Electronics : CH340 serial converter */
+  {"name" : "acm-1a86:7522", "properties":{ "idVendor": 0x1a86,  "idProduct": 0x7522 },"template":"acm-2.0"},
+  /* QinHeng Electronics : CH340 serial converter */
+  {"name" : "acm-1a86:7523", "properties":{ "idVendor": 0x1a86,  "idProduct": 0x7523 },"template":"acm-2.0"},
+  /* QinHeng Electronics : HID-based serial adapter */
+  {"name" : "acm-1a86:e008", "properties":{ "idVendor": 0x1a86,  "idProduct": 0xe008 },"template":"acm-2.0"},
+  /* Schweitzer Engineering Laboratories, Inc : C662 Serial Cable */
+  {"name" : "acm-1adb:1", "properties":{ "idVendor": 0x1adb,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* Sunplus Innovation Technology Inc. : SPIF30x Serial-ATA bridge */
+  {"name" : "acm-1bcf:c31", "properties":{ "idVendor": 0x1bcf,  "idProduct": 0xc31 },"template":"acm-2.0"},
+  /* Luminary Micro Inc. : CDC serial port [TivaWare] */
+  {"name" : "acm-1cbe:2", "properties":{ "idVendor": 0x1cbe,  "idProduct": 0x2 },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : Neo1973/FreeRunner u-boot cdc_acm serial port */
+  {"name" : "acm-1d50:5119", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x5119 },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : HXD8 u-boot usbtty CDC ACM Mode */
+  {"name" : "acm-1d50:511a", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x511a },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : SMDK2440 u-boot usbtty CDC ACM mode */
+  {"name" : "acm-1d50:511b", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x511b },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : SMDK2443 u-boot usbtty CDC ACM mode */
+  {"name" : "acm-1d50:511c", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x511c },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : QT2410 u-boot usbtty CDC ACM mode */
+  {"name" : "acm-1d50:511d", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x511d },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : Neo1973/FreeRunner u-boot usbtty generic serial */
+  {"name" : "acm-1d50:5120", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x5120 },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : Keyglove (Serial) */
+  {"name" : "acm-1d50:6026", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6026 },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : Marlin 2.0 (Serial) */
+  {"name" : "acm-1d50:6029", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6029 },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : Paparazzi (Serial) */
+  {"name" : "acm-1d50:603d", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x603d },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : xser serial */
+  {"name" : "acm-1d50:6059", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6059 },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : CPC FPGA (Serial) */
+  {"name" : "acm-1d50:6065", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6065 },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : Orbotron 9000 (Serial) */
+  {"name" : "acm-1d50:6067", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6067 },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : The Glitch Serial */
+  {"name" : "acm-1d50:6073", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x6073 },"template":"acm-2.0"},
+  /* OpenMoko, Inc. : Simple CC25xx programmer / serial board */
+  {"name" : "acm-1d50:60bc", "properties":{ "idVendor": 0x1d50,  "idProduct": 0x60bc },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : HR200 Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:106", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x106 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : HR100/HR3260 cordless/HR3290 cordless/BS80 Barcode scanner engine (USB Serial CDC) */
+  {"name" : "acm-1eab:c06", "properties":{ "idVendor": 0x1eab,  "idProduct": 0xc06 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : EM2028 Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:d06", "properties":{ "idVendor": 0x1eab,  "idProduct": 0xd06 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : EM30xx/EM20xx/HR3260 corded/HR200C Barcode scanner engine (USB serial CDC) */
+  {"name" : "acm-1eab:1306", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1306 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : HR15-xx Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:1406", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1406 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : FM100-M/3250 Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:1606", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1606 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : EM1300 Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:1906", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1906 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : HR3290 corded/HR22 Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:1a06", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1a06 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : HR2150 Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:1c06", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1c06 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : FM430 Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:1d06", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1d06 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : HR42 Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:1e06", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1e06 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : HR11+ Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:1f06", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x1f06 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : EM2037v2 Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:2006", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x2006 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : EM13x5-LD/HR15-70/HR100-70/HR12/HR1150-70 Barcode scanner engine (USB Serial CDC) */
+  {"name" : "acm-1eab:8006", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x8006 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : EM3080-01/EM3095/FR20/FM30 Barcode scanner engine (USB Serial CDC) */
+  {"name" : "acm-1eab:8206", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x8206 },"template":"acm-2.0"},
+  /* Fujian Newland Computer Co., Ltd : HR2160 Barcode scanner engine (Serial CDC) */
+  {"name" : "acm-1eab:8306", "properties":{ "idVendor": 0x1eab,  "idProduct": 0x8306 },"template":"acm-2.0"},
+  /* Leaflabs : Maple serial interface */
+  {"name" : "acm-1eaf:4", "properties":{ "idVendor": 0x1eaf,  "idProduct": 0x4 },"template":"acm-2.0"},
+  /* NXP Semiconductors : i.MX 8M Dual/8M QuadLite/8M Quad Serial Downloader */
+  {"name" : "acm-1fc9:12b", "properties":{ "idVendor": 0x1fc9,  "idProduct": 0x12b },"template":"acm-2.0"},
+  /* Qi Hardware : Milkymist JTAG/serial */
+  {"name" : "acm-20b7:713", "properties":{ "idVendor": 0x20b7,  "idProduct": 0x713 },"template":"acm-2.0"},
+  /* RT Systems : FT232RL [RTS05 Serial Cable] */
+  {"name" : "acm-2100:9e5f", "properties":{ "idVendor": 0x2100,  "idProduct": 0x9e5f },"template":"acm-2.0"},
+  /* Arduino SA : Uno (CDC ACM) */
+  {"name" : "acm-2341:1", "properties":{ "idVendor": 0x2341,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* Arduino SA : Mega 2560 (CDC ACM) */
+  {"name" : "acm-2341:10", "properties":{ "idVendor": 0x2341,  "idProduct": 0x10 },"template":"acm-2.0"},
+  /* Arduino SA : Serial Adapter (CDC ACM) */
+  {"name" : "acm-2341:3b", "properties":{ "idVendor": 0x2341,  "idProduct": 0x3b },"template":"acm-2.0"},
+  /* Arduino SA : Mega ADK (CDC ACM) */
+  {"name" : "acm-2341:3f", "properties":{ "idVendor": 0x2341,  "idProduct": 0x3f },"template":"acm-2.0"},
+  /* Arduino SA : Mega 2560 R3 (CDC ACM) */
+  {"name" : "acm-2341:42", "properties":{ "idVendor": 0x2341,  "idProduct": 0x42 },"template":"acm-2.0"},
+  /* Arduino SA : Uno R3 (CDC ACM) */
+  {"name" : "acm-2341:43", "properties":{ "idVendor": 0x2341,  "idProduct": 0x43 },"template":"acm-2.0"},
+  /* Arduino SA : Mega ADK R3 (CDC ACM) */
+  {"name" : "acm-2341:44", "properties":{ "idVendor": 0x2341,  "idProduct": 0x44 },"template":"acm-2.0"},
+  /* Arduino SA : Serial R3 (CDC ACM) */
+  {"name" : "acm-2341:45", "properties":{ "idVendor": 0x2341,  "idProduct": 0x45 },"template":"acm-2.0"},
+  /* Arduino SA : Leonardo (CDC ACM, HID) */
+  {"name" : "acm-2341:8036", "properties":{ "idVendor": 0x2341,  "idProduct": 0x8036 },"template":"acm-2.0"},
+  /* Arduino SA : Robot Control Board (CDC ACM, HID) */
+  {"name" : "acm-2341:8038", "properties":{ "idVendor": 0x2341,  "idProduct": 0x8038 },"template":"acm-2.0"},
+  /* Arduino SA : Robot Motor Board (CDC ACM, HID) */
+  {"name" : "acm-2341:8039", "properties":{ "idVendor": 0x2341,  "idProduct": 0x8039 },"template":"acm-2.0"},
+  /* Tripp-Lite : U209-000-R Serial Port */
+  {"name" : "acm-2478:2008", "properties":{ "idVendor": 0x2478,  "idProduct": 0x2008 },"template":"acm-2.0"},
+  /* Shenzhen Rapoo Technology Co., Ltd. : 2.4G Wireless Device Serial */
+  {"name" : "acm-24ae:2000", "properties":{ "idVendor": 0x24ae,  "idProduct": 0x2000 },"template":"acm-2.0"},
+  /* Ultimaker B.V. : 3D printer serial interface */
+  {"name" : "acm-28c7:1", "properties":{ "idVendor": 0x28c7,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* dog hunter AG : Arduino usb2serial */
+  {"name" : "acm-2a03:3b", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x3b },"template":"acm-2.0"},
+  /* dog hunter AG : Arduino Due (usb2serial) */
+  {"name" : "acm-2a03:3d", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x3d },"template":"acm-2.0"},
+  /* dog hunter AG : Linino ONE (CDC ACM) */
+  {"name" : "acm-2a03:8001", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x8001 },"template":"acm-2.0"},
+  /* dog hunter AG : Arduino Leonardo (CDC ACM) */
+  {"name" : "acm-2a03:8036", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x8036 },"template":"acm-2.0"},
+  /* dog hunter AG : Arduino Micro (CDC ACM) */
+  {"name" : "acm-2a03:8037", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x8037 },"template":"acm-2.0"},
+  /* dog hunter AG : Arduino Robot Control (CDC ACM) */
+  {"name" : "acm-2a03:8038", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x8038 },"template":"acm-2.0"},
+  /* dog hunter AG : Arduino Robot Motor (CDC ACM) */
+  {"name" : "acm-2a03:8039", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x8039 },"template":"acm-2.0"},
+  /* dog hunter AG : Arduino Micro ADK rev3 (CDC ACM) */
+  {"name" : "acm-2a03:803a", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x803a },"template":"acm-2.0"},
+  /* dog hunter AG : Arduino Explora (CDC ACM) */
+  {"name" : "acm-2a03:803c", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x803c },"template":"acm-2.0"},
+  /* dog hunter AG : Arduino Yun (CDC ACM) */
+  {"name" : "acm-2a03:8041", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x8041 },"template":"acm-2.0"},
+  /* dog hunter AG : Arduino Zero Pro (CDC ACM) */
+  {"name" : "acm-2a03:804d", "properties":{ "idVendor": 0x2a03,  "idProduct": 0x804d },"template":"acm-2.0"},
+  /* Meizu Corp. : MX Phone (MTP & ACM & ADB) */
+  {"name" : "acm-2a45:200a", "properties":{ "idVendor": 0x2a45,  "idProduct": 0x200a },"template":"acm-2.0"},
+  /* Meteca SA : ABC (CDC ACM) */
+  {"name" : "acm-3112:3", "properties":{ "idVendor": 0x3112,  "idProduct": 0x3 },"template":"acm-2.0"},
+  /* Sitecom : USB to serial cable (v2) */
+  {"name" : "acm-6189:2068", "properties":{ "idVendor": 0x6189,  "idProduct": 0x2068 },"template":"acm-2.0"},
+  /* Arkmicro Technologies Inc. : ARK3116 Serial */
+  {"name" : "acm-6547:232", "properties":{ "idVendor": 0x6547,  "idProduct": 0x232 },"template":"acm-2.0"},
+  /* MosChip Semiconductor : MCS7703 Serial Port Adapter */
+  {"name" : "acm-9710:7703", "properties":{ "idVendor": 0x9710,  "idProduct": 0x7703 },"template":"acm-2.0"},
+  /* MosChip Semiconductor : MCS7715 Parallel and serial port adapter */
+  {"name" : "acm-9710:7715", "properties":{ "idVendor": 0x9710,  "idProduct": 0x7715 },"template":"acm-2.0"},
+  /* MosChip Semiconductor : MCS7717 3-port hub with serial and parallel adapter */
+  {"name" : "acm-9710:7717", "properties":{ "idVendor": 0x9710,  "idProduct": 0x7717 },"template":"acm-2.0"},
+  /* MosChip Semiconductor : MCS7720 Dual serial port adapter */
+  {"name" : "acm-9710:7720", "properties":{ "idVendor": 0x9710,  "idProduct": 0x7720 },"template":"acm-2.0"},
+  /* MosChip Semiconductor : MCS7810 Serial Port Adapter */
+  {"name" : "acm-9710:7810", "properties":{ "idVendor": 0x9710,  "idProduct": 0x7810 },"template":"acm-2.0"},
+  /* MosChip Semiconductor : MCS7820 Dual Serial Port Adapter */
+  {"name" : "acm-9710:7820", "properties":{ "idVendor": 0x9710,  "idProduct": 0x7820 },"template":"acm-2.0"},
+  /* MosChip Semiconductor : MCS7820/MCS7840 2/4 port serial adapter */
+  {"name" : "acm-9710:7840", "properties":{ "idVendor": 0x9710,  "idProduct": 0x7840 },"template":"acm-2.0"},
+]

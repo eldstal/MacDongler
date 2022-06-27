@@ -1,0 +1,731 @@
+/*
+ * Auto-generated device database file
+ * Do not edit, this will probably be overwritten!
+ * The command line used to generate this file was:
+ * make-device-db --usb-id-file /tmp/usb.ids --template acm-2.0 --name-prefix acm --vendor-regex .* --product-regex modem
+ */
+
+[
+  /* TP-Link : MA180 UMTS Modem */
+  {"name" : "acm-200:201", "properties":{ "idVendor": 0x200,  "idProduct": 0x201 },"template":"acm-2.0"},
+  /* HP, Inc : un2400 Gobi Wireless Modem */
+  {"name" : "acm-3f0:1f1d", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x1f1d },"template":"acm-2.0"},
+  /* HP, Inc : un2400 Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-3f0:201d", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x201d },"template":"acm-2.0"},
+  /* HP, Inc : Gobi 2000 Wireless Modem (QDL mode) */
+  {"name" : "acm-3f0:241d", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x241d },"template":"acm-2.0"},
+  /* HP, Inc : Gobi 2000 Wireless Modem */
+  {"name" : "acm-3f0:251d", "properties":{ "idVendor": 0x3f0,  "idProduct": 0x251d },"template":"acm-2.0"},
+  /* Future Technology Devices International, Ltd : HCP HIT GSM/GPRS modem [Cinterion MC55i] */
+  {"name" : "acm-403:a951", "properties":{ "idVendor": 0x403,  "idProduct": 0xa951 },"template":"acm-2.0"},
+  /* Nokia Mobile Phones : C7-00 (Modem mode) */
+  {"name" : "acm-421:396", "properties":{ "idVendor": 0x421,  "idProduct": 0x396 },"template":"acm-2.0"},
+  /* Nokia Mobile Phones : 6230i Modem */
+  {"name" : "acm-421:428", "properties":{ "idVendor": 0x421,  "idProduct": 0x428 },"template":"acm-2.0"},
+  /* Nokia Mobile Phones : CS-15 (Internet Stick 3G modem) */
+  {"name" : "acm-421:610", "properties":{ "idVendor": 0x421,  "idProduct": 0x610 },"template":"acm-2.0"},
+  /* Texas Instruments, Inc. : AU5 ADSL Modem (pre-reenum) */
+  {"name" : "acm-451:6000", "properties":{ "idVendor": 0x451,  "idProduct": 0x6000 },"template":"acm-2.0"},
+  /* Texas Instruments, Inc. : AU5 ADSL Modem */
+  {"name" : "acm-451:6001", "properties":{ "idVendor": 0x451,  "idProduct": 0x6001 },"template":"acm-2.0"},
+  /* SONICblue, Inc. : Supra Express 56K modem */
+  {"name" : "acm-45a:7da", "properties":{ "idVendor": 0x45a,  "idProduct": 0x7da },"template":"acm-2.0"},
+  /* SONICblue, Inc. : SupraMax 2890 56K Modem [Lucent Atlas] */
+  {"name" : "acm-45a:b4a", "properties":{ "idVendor": 0x45a,  "idProduct": 0xb4a },"template":"acm-2.0"},
+  /* SONICblue, Inc. : SupraMax 56K Modem */
+  {"name" : "acm-45a:b68", "properties":{ "idVendor": 0x45a,  "idProduct": 0xb68 },"template":"acm-2.0"},
+  /* Agere Systems, Inc. (Lucent) : Systems Soft Modem */
+  {"name" : "acm-47e:2892", "properties":{ "idVendor": 0x47e,  "idProduct": 0x2892 },"template":"acm-2.0"},
+  /* Agere Systems, Inc. (Lucent) : Lucent 56k Modem */
+  {"name" : "acm-47e:bad1", "properties":{ "idVendor": 0x47e,  "idProduct": 0xbad1 },"template":"acm-2.0"},
+  /* Agere Systems, Inc. (Lucent) : Atlas Modem */
+  {"name" : "acm-47e:f101", "properties":{ "idVendor": 0x47e,  "idProduct": 0xf101 },"template":"acm-2.0"},
+  /* STMicroelectronics : 56k SoftModem */
+  {"name" : "acm-483:7554", "properties":{ "idVendor": 0x483,  "idProduct": 0x7554 },"template":"acm-2.0"},
+  /* STMicroelectronics : Swann ST56 Modem */
+  {"name" : "acm-483:ff10", "properties":{ "idVendor": 0x483,  "idProduct": 0xff10 },"template":"acm-2.0"},
+  /* U.S. Robotics (3Com) : OfficeConnect Analog Modem */
+  {"name" : "acm-4c1:82", "properties":{ "idVendor": 0x4c1,  "idProduct": 0x82 },"template":"acm-2.0"},
+  /* U.S. Robotics (3Com) : HomeConnect IDSL Modem */
+  {"name" : "acm-4c1:b9", "properties":{ "idVendor": 0x4c1,  "idProduct": 0xb9 },"template":"acm-2.0"},
+  /* U.S. Robotics (3Com) : 56k Voice FaxModem Pro */
+  {"name" : "acm-4c1:3021", "properties":{ "idVendor": 0x4c1,  "idProduct": 0x3021 },"template":"acm-2.0"},
+  /* Panasonic (Matsushita) : Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-4da:250c", "properties":{ "idVendor": 0x4da,  "idProduct": 0x250c },"template":"acm-2.0"},
+  /* Panasonic (Matsushita) : Gobi Wireless Modem */
+  {"name" : "acm-4da:250d", "properties":{ "idVendor": 0x4da,  "idProduct": 0x250d },"template":"acm-2.0"},
+  /* Samsung Electronics Co., Ltd : Usb Modem Enumerator */
+  {"name" : "acm-4e8:6640", "properties":{ "idVendor": 0x4e8,  "idProduct": 0x6640 },"template":"acm-2.0"},
+  /* Samsung Electronics Co., Ltd : Escape Composite driver for Android Phones: Modem+Diagnostic+ADB */
+  {"name" : "acm-4e8:6868", "properties":{ "idVendor": 0x4e8,  "idProduct": 0x6868 },"template":"acm-2.0"},
+  /* Samsung Electronics Co., Ltd : GT-B3710 LTE Modem */
+  {"name" : "acm-4e8:6876", "properties":{ "idVendor": 0x4e8,  "idProduct": 0x6876 },"template":"acm-2.0"},
+  /* Brother Industries, Ltd : DCP1000 Port(FaxModem) */
+  {"name" : "acm-4f9:112", "properties":{ "idVendor": 0x4f9,  "idProduct": 0x112 },"template":"acm-2.0"},
+  /* Brother Industries, Ltd : MFC9700 Port(FaxModem) */
+  {"name" : "acm-4f9:114", "properties":{ "idVendor": 0x4f9,  "idProduct": 0x114 },"template":"acm-2.0"},
+  /* Brother Industries, Ltd : MFC580 Port(FaxModem) */
+  {"name" : "acm-4f9:120", "properties":{ "idVendor": 0x4f9,  "idProduct": 0x120 },"template":"acm-2.0"},
+  /* Brother Industries, Ltd : MFC-8220 Port(FaxModem) */
+  {"name" : "acm-4f9:150", "properties":{ "idVendor": 0x4f9,  "idProduct": 0x150 },"template":"acm-2.0"},
+  /* Brother Industries, Ltd : MFC-3820JN Port(FaxModem) */
+  {"name" : "acm-4f9:158", "properties":{ "idVendor": 0x4f9,  "idProduct": 0x158 },"template":"acm-2.0"},
+  /* Brother Industries, Ltd : MFC-7820N Port(FaxModem) */
+  {"name" : "acm-4f9:181", "properties":{ "idVendor": 0x4f9,  "idProduct": 0x181 },"template":"acm-2.0"},
+  /* Brother Industries, Ltd : MFC-8460N Port(FaxModem) */
+  {"name" : "acm-4f9:1a5", "properties":{ "idVendor": 0x4f9,  "idProduct": 0x1a5 },"template":"acm-2.0"},
+  /* Brother Industries, Ltd : MFC-8860DN Port(FaxModem) */
+  {"name" : "acm-4f9:1a6", "properties":{ "idVendor": 0x4f9,  "idProduct": 0x1a6 },"template":"acm-2.0"},
+  /* 3Com Corp. : HomeConnect ADSL Modem Driver */
+  {"name" : "acm-506:100", "properties":{ "idVendor": 0x506,  "idProduct": 0x100 },"template":"acm-2.0"},
+  /* 3Com Corp. : HomeConnect Cable Modem External with */
+  {"name" : "acm-506:2922", "properties":{ "idVendor": 0x506,  "idProduct": 0x2922 },"template":"acm-2.0"},
+  /* 3Com Corp. : U.S.Robotics 56000 Voice FaxModem Pro */
+  {"name" : "acm-506:3021", "properties":{ "idVendor": 0x506,  "idProduct": 0x3021 },"template":"acm-2.0"},
+  /* 3Com Corp. : 3CP4218 ADSL Modem (pre-init) */
+  {"name" : "acm-506:f002", "properties":{ "idVendor": 0x506,  "idProduct": 0xf002 },"template":"acm-2.0"},
+  /* 3Com Corp. : 3CP4218 ADSL Modem */
+  {"name" : "acm-506:f003", "properties":{ "idVendor": 0x506,  "idProduct": 0xf003 },"template":"acm-2.0"},
+  /* 3Com Corp. : 3CP4218 ADSL Modem (pre-init) */
+  {"name" : "acm-506:f100", "properties":{ "idVendor": 0x506,  "idProduct": 0xf100 },"template":"acm-2.0"},
+  /* Aztech Systems, Ltd : ADSL Modem */
+  {"name" : "acm-509:801", "properties":{ "idVendor": 0x509,  "idProduct": 0x801 },"template":"acm-2.0"},
+  /* Aztech Systems, Ltd : ADSL Modem (RFC1483) */
+  {"name" : "acm-509:802", "properties":{ "idVendor": 0x509,  "idProduct": 0x802 },"template":"acm-2.0"},
+  /* Aztech Systems, Ltd : DSL Modem */
+  {"name" : "acm-509:806", "properties":{ "idVendor": 0x509,  "idProduct": 0x806 },"template":"acm-2.0"},
+  /* Aztech Systems, Ltd : Binatone ADSL500 Modem Network Interface */
+  {"name" : "acm-509:80f", "properties":{ "idVendor": 0x509,  "idProduct": 0x80f },"template":"acm-2.0"},
+  /* Aztech Systems, Ltd : Pirelli ADSL Modem Network Interface */
+  {"name" : "acm-509:812", "properties":{ "idVendor": 0x509,  "idProduct": 0x812 },"template":"acm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : V.90 modem */
+  {"name" : "acm-572:1232", "properties":{ "idVendor": 0x572,  "idProduct": 0x1232 },"template":"acm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : Typhoon Redfun Modem V90 56k */
+  {"name" : "acm-572:1234", "properties":{ "idVendor": 0x572,  "idProduct": 0x1234 },"template":"acm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : HCF V90 Data Fax Voice Modem */
+  {"name" : "acm-572:1252", "properties":{ "idVendor": 0x572,  "idProduct": 0x1252 },"template":"acm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : Zoom V.92 Faxmodem */
+  {"name" : "acm-572:1253", "properties":{ "idVendor": 0x572,  "idProduct": 0x1253 },"template":"acm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : Modem Enumerator */
+  {"name" : "acm-572:1301", "properties":{ "idVendor": 0x572,  "idProduct": 0x1301 },"template":"acm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : TrendNet TFM-561 modem */
+  {"name" : "acm-572:1328", "properties":{ "idVendor": 0x572,  "idProduct": 0x1328 },"template":"acm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : AccessRunner ADSL Modem */
+  {"name" : "acm-572:cafe", "properties":{ "idVendor": 0x572,  "idProduct": 0xcafe },"template":"acm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : ADSL Modem */
+  {"name" : "acm-572:cb00", "properties":{ "idVendor": 0x572,  "idProduct": 0xcb00 },"template":"acm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : ADSL Modem */
+  {"name" : "acm-572:cb01", "properties":{ "idVendor": 0x572,  "idProduct": 0xcb01 },"template":"acm-2.0"},
+  /* Conexant Systems (Rockwell), Inc. : StarModem Network Interface */
+  {"name" : "acm-572:cb06", "properties":{ "idVendor": 0x572,  "idProduct": 0xcb06 },"template":"acm-2.0"},
+  /* ZyXEL Communications Corp. : LAN Modem */
+  {"name" : "acm-586:3304", "properties":{ "idVendor": 0x586,  "idProduct": 0x3304 },"template":"acm-2.0"},
+  /* ZyXEL Communications Corp. : ADSL Modem Prestige 600 series */
+  {"name" : "acm-586:3309", "properties":{ "idVendor": 0x586,  "idProduct": 0x3309 },"template":"acm-2.0"},
+  /* ZyXEL Communications Corp. : ADSL Modem Interface */
+  {"name" : "acm-586:330a", "properties":{ "idVendor": 0x586,  "idProduct": 0x330a },"template":"acm-2.0"},
+  /* ZyXEL Communications Corp. : USB Broadband ADSL Modem Rev 1.10 */
+  {"name" : "acm-586:330e", "properties":{ "idVendor": 0x586,  "idProduct": 0x330e },"template":"acm-2.0"},
+  /* Omron Corp. : Cable Modem */
+  {"name" : "acm-590:4", "properties":{ "idVendor": 0x590,  "idProduct": 0x4 },"template":"acm-2.0"},
+  /* Apple, Inc. : Modem */
+  {"name" : "acm-5ac:1401", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x1401 },"template":"acm-2.0"},
+  /* Apple, Inc. : HCF V.90 Data/Fax Modem */
+  {"name" : "acm-5ac:8202", "properties":{ "idVendor": 0x5ac,  "idProduct": 0x8202 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Select RW-200 CDMA Wireless Modem */
+  {"name" : "acm-5c6:114", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x114 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : CDMA Wireless Modem/Phone */
+  {"name" : "acm-5c6:3100", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x3100 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : CDMA Wireless Modem */
+  {"name" : "acm-5c6:3196", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x3196 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : CDMA Wireless Modem/Phone */
+  {"name" : "acm-5c6:3197", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x3197 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : SIMCom SIM5218 modem */
+  {"name" : "acm-5c6:9000", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9000 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Gobi Wireless Modem */
+  {"name" : "acm-5c6:9001", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9001 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Gobi Wireless Modem */
+  {"name" : "acm-5c6:9002", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9002 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9008", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9008 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9201", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9201 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Gobi Wireless Modem */
+  {"name" : "acm-5c6:9202", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9202 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Gobi Wireless Modem */
+  {"name" : "acm-5c6:9203", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9203 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Acer Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9211", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9211 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Acer Gobi Wireless Modem */
+  {"name" : "acm-5c6:9212", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9212 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Acer Gobi 2000 Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9214", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9214 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Quectel EC20 LTE modem / Acer Gobi 2000 Wireless Modem */
+  {"name" : "acm-5c6:9215", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9215 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9221", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9221 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Gobi Wireless Modem */
+  {"name" : "acm-5c6:9222", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9222 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Sony Gobi 2000 Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9224", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9224 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Sony Gobi 2000 Wireless Modem */
+  {"name" : "acm-5c6:9225", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9225 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9231", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9231 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Top Global Gobi 2000 Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9234", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9234 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Top Global Gobi 2000 Wireless Modem */
+  {"name" : "acm-5c6:9235", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9235 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Samsung Gobi 2000 Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9244", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9244 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Samsung Gobi 2000 Wireless Modem */
+  {"name" : "acm-5c6:9245", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9245 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Asus Gobi 2000 Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9264", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9264 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : Asus Gobi 2000 Wireless Modem */
+  {"name" : "acm-5c6:9265", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9265 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : iRex Technologies Gobi 2000 Wireless Modem (QDL mode) */
+  {"name" : "acm-5c6:9274", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9274 },"template":"acm-2.0"},
+  /* Qualcomm, Inc. : iRex Technologies Gobi 2000 Wireless Modem */
+  {"name" : "acm-5c6:9275", "properties":{ "idVendor": 0x5c6,  "idProduct": 0x9275 },"template":"acm-2.0"},
+  /* Prolific Technology, Inc. : Onext EG210U MODEM */
+  {"name" : "acm-67b:610", "properties":{ "idVendor": 0x67b,  "idProduct": 0x610 },"template":"acm-2.0"},
+  /* Prolific Technology, Inc. : AlDiga AL-11U Quad-band GSM/GPRS/EDGE modem */
+  {"name" : "acm-67b:611", "properties":{ "idVendor": 0x67b,  "idProduct": 0x611 },"template":"acm-2.0"},
+  /* Efficient Networks, Inc. : Efficient ADSL Modem */
+  {"name" : "acm-67c:4031", "properties":{ "idVendor": 0x67c,  "idProduct": 0x4031 },"template":"acm-2.0"},
+  /* Efficient Networks, Inc. : Alcatel Speedstream 4060 ADSL Modem */
+  {"name" : "acm-67c:4060", "properties":{ "idVendor": 0x67c,  "idProduct": 0x4060 },"template":"acm-2.0"},
+  /* Efficient Networks, Inc. : Efficient Networks Virtual Bus for ADSL Modem */
+  {"name" : "acm-67c:5667", "properties":{ "idVendor": 0x67c,  "idProduct": 0x5667 },"template":"acm-2.0"},
+  /* Efficient Networks, Inc. : Efficient Networks Virtual Bus for ADSL Modem */
+  {"name" : "acm-67c:d667", "properties":{ "idVendor": 0x67c,  "idProduct": 0xd667 },"template":"acm-2.0"},
+  /* Virata, Ltd : DSL-200 ADSL Modem */
+  {"name" : "acm-67f:4552", "properties":{ "idVendor": 0x67f,  "idProduct": 0x4552 },"template":"acm-2.0"},
+  /* Virata, Ltd : DSL Modem */
+  {"name" : "acm-67f:6542", "properties":{ "idVendor": 0x67f,  "idProduct": 0x6542 },"template":"acm-2.0"},
+  /* Virata, Ltd : DSL Modem */
+  {"name" : "acm-67f:6549", "properties":{ "idVendor": 0x67f,  "idProduct": 0x6549 },"template":"acm-2.0"},
+  /* Virata, Ltd : DSL Modem */
+  {"name" : "acm-67f:7541", "properties":{ "idVendor": 0x67f,  "idProduct": 0x7541 },"template":"acm-2.0"},
+  /* Siemens Information and Communication Products : A-100-I ADSL Modem */
+  {"name" : "acm-681:2b", "properties":{ "idVendor": 0x681,  "idProduct": 0x2b },"template":"acm-2.0"},
+  /* Siemens Information and Communication Products : GSM module MC35/ES75 USB Modem */
+  {"name" : "acm-681:34", "properties":{ "idVendor": 0x681,  "idProduct": 0x34 },"template":"acm-2.0"},
+  /* ZD Incorporated : HSDPA Modem */
+  {"name" : "acm-685:7000", "properties":{ "idVendor": 0x685,  "idProduct": 0x7000 },"template":"acm-2.0"},
+  /* Askey Computer Corp. : Cable Modem */
+  {"name" : "acm-69a:303", "properties":{ "idVendor": 0x69a,  "idProduct": 0x303 },"template":"acm-2.0"},
+  /* Askey Computer Corp. : Scientific Atlanta WebSTAR 100 & 200 series Cable Modem */
+  {"name" : "acm-69a:402", "properties":{ "idVendor": 0x69a,  "idProduct": 0x402 },"template":"acm-2.0"},
+  /* Askey Computer Corp. : Scientific Atlanta WebSTAR 2000 series Cable Modem */
+  {"name" : "acm-69a:4402", "properties":{ "idVendor": 0x69a,  "idProduct": 0x4402 },"template":"acm-2.0"},
+  /* Askey Computer Corp. : Scientific Atlanta WebSTAR 300 series Cable Modem */
+  {"name" : "acm-69a:4403", "properties":{ "idVendor": 0x69a,  "idProduct": 0x4403 },"template":"acm-2.0"},
+  /* Askey Computer Corp. : Scientific-Atlanta WebSTAR 2000 series Cable Modem */
+  {"name" : "acm-69a:4501", "properties":{ "idVendor": 0x69a,  "idProduct": 0x4501 },"template":"acm-2.0"},
+  /* Thomson, Inc. : DCM245 Cable Modem */
+  {"name" : "acm-69b:704", "properties":{ "idVendor": 0x69b,  "idProduct": 0x704 },"template":"acm-2.0"},
+  /* Thomson, Inc. : THG540K Cable Modem */
+  {"name" : "acm-69b:705", "properties":{ "idVendor": 0x69b,  "idProduct": 0x705 },"template":"acm-2.0"},
+  /* Allied Data Technologies BV : Tornado Speakerphone FaxModem 56.0 */
+  {"name" : "acm-69f:10", "properties":{ "idVendor": 0x69f,  "idProduct": 0x10 },"template":"acm-2.0"},
+  /* Allied Data Technologies BV : Tornado Speakerphone FaxModem 56.0 */
+  {"name" : "acm-69f:11", "properties":{ "idVendor": 0x69f,  "idProduct": 0x11 },"template":"acm-2.0"},
+  /* Westell : WireSpeed Dual Connect Modem */
+  {"name" : "acm-6a9:5", "properties":{ "idVendor": 0x6a9,  "idProduct": 0x5 },"template":"acm-2.0"},
+  /* Westell : WireSpeed Dual Connect Modem */
+  {"name" : "acm-6a9:6", "properties":{ "idVendor": 0x6a9,  "idProduct": 0x6 },"template":"acm-2.0"},
+  /* Westell : WireSpeed Dual Connect Modem */
+  {"name" : "acm-6a9:a", "properties":{ "idVendor": 0x6a9,  "idProduct": 0xa },"template":"acm-2.0"},
+  /* Westell : WireSpeed Dual Connect Modem */
+  {"name" : "acm-6a9:b", "properties":{ "idVendor": 0x6a9,  "idProduct": 0xb },"template":"acm-2.0"},
+  /* Alcatel Telecom : SpeedTouch ISDN or ADSL Modem */
+  {"name" : "acm-6b9:4061", "properties":{ "idVendor": 0x6b9,  "idProduct": 0x4061 },"template":"acm-2.0"},
+  /* Alcatel Telecom : DynaMiTe Modem */
+  {"name" : "acm-6b9:a5a5", "properties":{ "idVendor": 0x6b9,  "idProduct": 0xa5a5 },"template":"acm-2.0"},
+  /* Terayon Communication Systems : Cable Modem */
+  {"name" : "acm-6cc:101", "properties":{ "idVendor": 0x6cc,  "idProduct": 0x101 },"template":"acm-2.0"},
+  /* Terayon Communication Systems : Cable Modem */
+  {"name" : "acm-6cc:102", "properties":{ "idVendor": 0x6cc,  "idProduct": 0x102 },"template":"acm-2.0"},
+  /* Terayon Communication Systems : Cable Modem */
+  {"name" : "acm-6cc:103", "properties":{ "idVendor": 0x6cc,  "idProduct": 0x103 },"template":"acm-2.0"},
+  /* Terayon Communication Systems : Cable Modem */
+  {"name" : "acm-6cc:104", "properties":{ "idVendor": 0x6cc,  "idProduct": 0x104 },"template":"acm-2.0"},
+  /* Terayon Communication Systems : Cable Modem */
+  {"name" : "acm-6cc:304", "properties":{ "idVendor": 0x6cc,  "idProduct": 0x304 },"template":"acm-2.0"},
+  /* Multi-Tech Systems, Inc. : MT9234ZBA-USB MultiModem ZBA */
+  {"name" : "acm-6e0:319", "properties":{ "idVendor": 0x6e0,  "idProduct": 0x319 },"template":"acm-2.0"},
+  /* Multi-Tech Systems, Inc. : MT5634ZBA-USB MultiModemUSB (old firmware) */
+  {"name" : "acm-6e0:f101", "properties":{ "idVendor": 0x6e0,  "idProduct": 0xf101 },"template":"acm-2.0"},
+  /* Multi-Tech Systems, Inc. : MT5634ZBA-USB MultiModemUSB (new firmware) */
+  {"name" : "acm-6e0:f104", "properties":{ "idVendor": 0x6e0,  "idProduct": 0xf104 },"template":"acm-2.0"},
+  /* Multi-Tech Systems, Inc. : MT5634ZBA-USB-V92 MultiModemUSB */
+  {"name" : "acm-6e0:f107", "properties":{ "idVendor": 0x6e0,  "idProduct": 0xf107 },"template":"acm-2.0"},
+  /* Multi-Tech Systems, Inc. : MT9234ZBA-USB-CDC-ACM-XR MultiModem ZBA CDC-ACM-XR */
+  {"name" : "acm-6e0:f120", "properties":{ "idVendor": 0x6e0,  "idProduct": 0xf120 },"template":"acm-2.0"},
+  /* Centillium Communications Corp. : Palladia 300/400 Adsl Modem */
+  {"name" : "acm-723:2", "properties":{ "idVendor": 0x723,  "idProduct": 0x2 },"template":"acm-2.0"},
+  /* Lasat Communications A/S : 560V Modem */
+  {"name" : "acm-734:1", "properties":{ "idVendor": 0x734,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* Lasat Communications A/S : Lasat 560V Modem */
+  {"name" : "acm-734:2", "properties":{ "idVendor": 0x734,  "idProduct": 0x2 },"template":"acm-2.0"},
+  /* Linksys : BEFCMU10 v4 Cable Modem */
+  {"name" : "acm-77b:8be", "properties":{ "idVendor": 0x77b,  "idProduct": 0x8be },"template":"acm-2.0"},
+  /* Digicom S.p.A. : Palladio USB V.92 Modem */
+  {"name" : "acm-7a1:d952", "properties":{ "idVendor": 0x7a1,  "idProduct": 0xd952 },"template":"acm-2.0"},
+  /* Motorola BCS, Inc. : SURFboard Voice over IP Cable Modem */
+  {"name" : "acm-7b2:100", "properties":{ "idVendor": 0x7b2,  "idProduct": 0x100 },"template":"acm-2.0"},
+  /* Motorola BCS, Inc. : SurfBoard SB4100 Cable Modem */
+  {"name" : "acm-7b2:4100", "properties":{ "idVendor": 0x7b2,  "idProduct": 0x4100 },"template":"acm-2.0"},
+  /* Motorola BCS, Inc. : SurfBoard SB4200 Cable Modem */
+  {"name" : "acm-7b2:4200", "properties":{ "idVendor": 0x7b2,  "idProduct": 0x4200 },"template":"acm-2.0"},
+  /* Motorola BCS, Inc. : SurfBoard 4210 Cable Modem */
+  {"name" : "acm-7b2:4210", "properties":{ "idVendor": 0x7b2,  "idProduct": 0x4210 },"template":"acm-2.0"},
+  /* Motorola BCS, Inc. : SURFboard SB4220 Cable Modem */
+  {"name" : "acm-7b2:4220", "properties":{ "idVendor": 0x7b2,  "idProduct": 0x4220 },"template":"acm-2.0"},
+  /* Motorola BCS, Inc. : SurfBoard SB5100 Cable Modem */
+  {"name" : "acm-7b2:5100", "properties":{ "idVendor": 0x7b2,  "idProduct": 0x5100 },"template":"acm-2.0"},
+  /* Motorola BCS, Inc. : SurfBoard SB5101 Cable Modem */
+  {"name" : "acm-7b2:5101", "properties":{ "idVendor": 0x7b2,  "idProduct": 0x5101 },"template":"acm-2.0"},
+  /* Motorola BCS, Inc. : SurfBoard SB5120 Cable Modem (RNDIS) */
+  {"name" : "acm-7b2:5120", "properties":{ "idVendor": 0x7b2,  "idProduct": 0x5120 },"template":"acm-2.0"},
+  /* Motorola BCS, Inc. : Surfboard 5121 Cable Modem */
+  {"name" : "acm-7b2:5121", "properties":{ "idVendor": 0x7b2,  "idProduct": 0x5121 },"template":"acm-2.0"},
+  /* AboCom Systems Inc : DSB-560 Modem [atlas] */
+  {"name" : "acm-7b8:f101", "properties":{ "idVendor": 0x7b8,  "idProduct": 0xf101 },"template":"acm-2.0"},
+  /* D-Link System : DSL-302G Modem */
+  {"name" : "acm-7d1:13f1", "properties":{ "idVendor": 0x7d1,  "idProduct": 0x13f1 },"template":"acm-2.0"},
+  /* Ambient Technologies, Inc. : V.90 Modem */
+  {"name" : "acm-7e1:5201", "properties":{ "idVendor": 0x7e1,  "idProduct": 0x5201 },"template":"acm-2.0"},
+  /* Zoom Telephonics, Inc. : V92 Faxmodem */
+  {"name" : "acm-803:1300", "properties":{ "idVendor": 0x803,  "idProduct": 0x1300 },"template":"acm-2.0"},
+  /* Zoom Telephonics, Inc. : V.92 56K Mini External Modem Model 3095 */
+  {"name" : "acm-803:3095", "properties":{ "idVendor": 0x803,  "idProduct": 0x3095 },"template":"acm-2.0"},
+  /* Zoom Telephonics, Inc. : Cable Modem */
+  {"name" : "acm-803:5241", "properties":{ "idVendor": 0x803,  "idProduct": 0x5241 },"template":"acm-2.0"},
+  /* Zoom Telephonics, Inc. : DSL Modem */
+  {"name" : "acm-803:5551", "properties":{ "idVendor": 0x803,  "idProduct": 0x5551 },"template":"acm-2.0"},
+  /* Zoom Telephonics, Inc. : 2986L FaxModem */
+  {"name" : "acm-803:9700", "properties":{ "idVendor": 0x803,  "idProduct": 0x9700 },"template":"acm-2.0"},
+  /* Zoom Telephonics, Inc. : Cable Modem */
+  {"name" : "acm-803:9800", "properties":{ "idVendor": 0x803,  "idProduct": 0x9800 },"template":"acm-2.0"},
+  /* Accton Technology Corp. : Cable Modem */
+  {"name" : "acm-83a:6500", "properties":{ "idVendor": 0x83a,  "idProduct": 0x6500 },"template":"acm-2.0"},
+  /* Global Village : TelePort V.90 Fax/Modem */
+  {"name" : "acm-83f:b100", "properties":{ "idVendor": 0x83f,  "idProduct": 0xb100 },"template":"acm-2.0"},
+  /* Ericsson, Inc., Blue Ridge Labs : ADSL Modem HM120dp Loader */
+  {"name" : "acm-8ea:c9", "properties":{ "idVendor": 0x8ea,  "idProduct": 0xc9 },"template":"acm-2.0"},
+  /* Ericsson, Inc., Blue Ridge Labs : ADSL WAN Modem HM120dp */
+  {"name" : "acm-8ea:ca", "properties":{ "idVendor": 0x8ea,  "idProduct": 0xca },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : DSL Modem */
+  {"name" : "acm-915:1", "properties":{ "idVendor": 0x915,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : ADSL ATM Modem */
+  {"name" : "acm-915:2", "properties":{ "idVendor": 0x915,  "idProduct": 0x2 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : LAN Modem */
+  {"name" : "acm-915:5", "properties":{ "idVendor": 0x915,  "idProduct": 0x5 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : ADSL LAN Modem */
+  {"name" : "acm-915:8000", "properties":{ "idVendor": 0x915,  "idProduct": 0x8000 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : DSL-302G Modem */
+  {"name" : "acm-915:8005", "properties":{ "idVendor": 0x915,  "idProduct": 0x8005 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : ADSL WAN Modem */
+  {"name" : "acm-915:8101", "properties":{ "idVendor": 0x915,  "idProduct": 0x8101 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : DSL-200 ADSL Modem */
+  {"name" : "acm-915:8102", "properties":{ "idVendor": 0x915,  "idProduct": 0x8102 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : DSL-200 ADSL Modem */
+  {"name" : "acm-915:8103", "properties":{ "idVendor": 0x915,  "idProduct": 0x8103 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : DSL-200 Modem */
+  {"name" : "acm-915:8104", "properties":{ "idVendor": 0x915,  "idProduct": 0x8104 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : DSL Modem */
+  {"name" : "acm-915:8400", "properties":{ "idVendor": 0x915,  "idProduct": 0x8400 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : DSL Modem */
+  {"name" : "acm-915:8401", "properties":{ "idVendor": 0x915,  "idProduct": 0x8401 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : DSL Modem */
+  {"name" : "acm-915:8402", "properties":{ "idVendor": 0x915,  "idProduct": 0x8402 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : DSL Modem */
+  {"name" : "acm-915:8500", "properties":{ "idVendor": 0x915,  "idProduct": 0x8500 },"template":"acm-2.0"},
+  /* GlobeSpan, Inc. : DSL Modem */
+  {"name" : "acm-915:8501", "properties":{ "idVendor": 0x915,  "idProduct": 0x8501 },"template":"acm-2.0"},
+  /* Toshiba Corp. : PCX1100U Cable Modem (WDM) */
+  {"name" : "acm-930:301", "properties":{ "idVendor": 0x930,  "idProduct": 0x301 },"template":"acm-2.0"},
+  /* Toshiba Corp. : PCX2000 Cable Modem (WDM) */
+  {"name" : "acm-930:302", "properties":{ "idVendor": 0x930,  "idProduct": 0x302 },"template":"acm-2.0"},
+  /* Toshiba Corp. : Cable Modem PCX3000 */
+  {"name" : "acm-930:305", "properties":{ "idVendor": 0x930,  "idProduct": 0x305 },"template":"acm-2.0"},
+  /* Toshiba Corp. : Cable Modem PCX2500 */
+  {"name" : "acm-930:307", "properties":{ "idVendor": 0x930,  "idProduct": 0x307 },"template":"acm-2.0"},
+  /* Toshiba Corp. : PCX2200 Cable Modem (WDM) */
+  {"name" : "acm-930:308", "properties":{ "idVendor": 0x930,  "idProduct": 0x308 },"template":"acm-2.0"},
+  /* Toshiba Corp. : PCX5000 Cable Modem (WDM) */
+  {"name" : "acm-930:309", "properties":{ "idVendor": 0x930,  "idProduct": 0x309 },"template":"acm-2.0"},
+  /* Toshiba Corp. : Cable Modem PCX2600 */
+  {"name" : "acm-930:30b", "properties":{ "idVendor": 0x930,  "idProduct": 0x30b },"template":"acm-2.0"},
+  /* Auerswald GmbH & Co. KG : COMpact 2104 DSL (DSL modem) */
+  {"name" : "acm-9bf:8000", "properties":{ "idVendor": 0x9bf,  "idProduct": 0x8000 },"template":"acm-2.0"},
+  /* Auerswald GmbH & Co. KG : COMpact 4406 DSL (DSL modem) */
+  {"name" : "acm-9bf:8001", "properties":{ "idVendor": 0x9bf,  "idProduct": 0x8001 },"template":"acm-2.0"},
+  /* ZyDAS : ZyXEL Omni FaxModem 56K */
+  {"name" : "acm-ace:1602", "properties":{ "idVendor": 0xace,  "idProduct": 0x1602 },"template":"acm-2.0"},
+  /* ZyDAS : ZyXEL Omni FaxModem 56K UNO */
+  {"name" : "acm-ace:1608", "properties":{ "idVendor": 0xace,  "idProduct": 0x1608 },"template":"acm-2.0"},
+  /* ZyDAS : ZyXEL Omni FaxModem 56K Plus */
+  {"name" : "acm-ace:1611", "properties":{ "idVendor": 0xace,  "idProduct": 0x1611 },"template":"acm-2.0"},
+  /* Option : Globetrotter HSDPA Modem */
+  {"name" : "acm-af0:6971", "properties":{ "idVendor": 0xaf0,  "idProduct": 0x6971 },"template":"acm-2.0"},
+  /* Option : Globetrotter HSUPA Modem (aka iCON HSUPA E) */
+  {"name" : "acm-af0:7251", "properties":{ "idVendor": 0xaf0,  "idProduct": 0x7251 },"template":"acm-2.0"},
+  /* Option : Globetrotter HSUPA Modem (icon 411 aka "Vodafone K3760") */
+  {"name" : "acm-af0:7501", "properties":{ "idVendor": 0xaf0,  "idProduct": 0x7501 },"template":"acm-2.0"},
+  /* Option : Globetrotter MO40x 3G Modem (GTM 382) */
+  {"name" : "acm-af0:7601", "properties":{ "idVendor": 0xaf0,  "idProduct": 0x7601 },"template":"acm-2.0"},
+  /* Option : Globetrotter HSUPA Modem (aka icon 451) */
+  {"name" : "acm-af0:7701", "properties":{ "idVendor": 0xaf0,  "idProduct": 0x7701 },"template":"acm-2.0"},
+  /* ASUSTek Computer, Inc. : Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-b05:1774", "properties":{ "idVendor": 0xb05,  "idProduct": 0x1774 },"template":"acm-2.0"},
+  /* ASUSTek Computer, Inc. : Gobi Wireless Modem */
+  {"name" : "acm-b05:1776", "properties":{ "idVendor": 0xb05,  "idProduct": 0x1776 },"template":"acm-2.0"},
+  /* ASUSTek Computer, Inc. : Cable Modem */
+  {"name" : "acm-b05:6101", "properties":{ "idVendor": 0xb05,  "idProduct": 0x6101 },"template":"acm-2.0"},
+  /* U.S. Robotics : 56K Faxmodem */
+  {"name" : "acm-baf:ec", "properties":{ "idVendor": 0xbaf,  "idProduct": 0xec },"template":"acm-2.0"},
+  /* U.S. Robotics : USR5637 56K Faxmodem */
+  {"name" : "acm-baf:303", "properties":{ "idVendor": 0xbaf,  "idProduct": 0x303 },"template":"acm-2.0"},
+  /* U.S. Robotics : FaxModem Model 5633 */
+  {"name" : "acm-baf:6112", "properties":{ "idVendor": 0xbaf,  "idProduct": 0x6112 },"template":"acm-2.0"},
+  /* Ambit Microsystems Corp. : USB Cable Modem */
+  {"name" : "acm-bb2:6098", "properties":{ "idVendor": 0xbb2,  "idProduct": 0x6098 },"template":"acm-2.0"},
+  /* HTC (High Tech Computer Corp.) : Desire HD (modem mode) */
+  {"name" : "acm-bb4:ffe", "properties":{ "idVendor": 0xbb4,  "idProduct": 0xffe },"template":"acm-2.0"},
+  /* IPWireless, Inc. : UMTS-TDD (TD-CDMA) modem */
+  {"name" : "acm-bc3:1", "properties":{ "idVendor": 0xbc3,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* MediaTek Inc. : GSM modem [Medion Surfstick Model:S4222] */
+  {"name" : "acm-e8d:a5", "properties":{ "idVendor": 0xe8d,  "idProduct": 0xa5 },"template":"acm-2.0"},
+  /* Sony Ericsson Mobile Communications AB : WMC Modem */
+  {"name" : "acm-fce:1010", "properties":{ "idVendor": 0xfce,  "idProduct": 0x1010 },"template":"acm-2.0"},
+  /* Sony Ericsson Mobile Communications AB : VDC EGPRS Modem */
+  {"name" : "acm-fce:d019", "properties":{ "idVendor": 0xfce,  "idProduct": 0xd019 },"template":"acm-2.0"},
+  /* Sony Ericsson Mobile Communications AB : 520 WMC Data Modem */
+  {"name" : "acm-fce:d025", "properties":{ "idVendor": 0xfce,  "idProduct": 0xd025 },"template":"acm-2.0"},
+  /* Sony Ericsson Mobile Communications AB : MD300 Mobile Broadband Modem */
+  {"name" : "acm-fce:d0cf", "properties":{ "idVendor": 0xfce,  "idProduct": 0xd0cf },"template":"acm-2.0"},
+  /* Sony Ericsson Mobile Communications AB : C902 Phone [Modem] */
+  {"name" : "acm-fce:d0d4", "properties":{ "idVendor": 0xfce,  "idProduct": 0xd0d4 },"template":"acm-2.0"},
+  /* Sony Ericsson Mobile Communications AB : MD400 Mobile Broadband Modem */
+  {"name" : "acm-fce:d0e1", "properties":{ "idVendor": 0xfce,  "idProduct": 0xd0e1 },"template":"acm-2.0"},
+  /* Sony Ericsson Mobile Communications AB : J108i Cedar (modem mode) */
+  {"name" : "acm-fce:d14e", "properties":{ "idVendor": 0xfce,  "idProduct": 0xd14e },"template":"acm-2.0"},
+  /* LG Electronics, Inc. : CDMA Modem */
+  {"name" : "acm-1004:6800", "properties":{ "idVendor": 0x1004,  "idProduct": 0x6800 },"template":"acm-2.0"},
+  /* Netopia, Inc. : Cayman 3352 DSL Modem */
+  {"name" : "acm-100d:3342", "properties":{ "idVendor": 0x100d,  "idProduct": 0x3342 },"template":"acm-2.0"},
+  /* Netopia, Inc. : DSL Modem */
+  {"name" : "acm-100d:6072", "properties":{ "idVendor": 0x100d,  "idProduct": 0x6072 },"template":"acm-2.0"},
+  /* BMS International Beheer N.V. : DSL 7420 LAN Modem */
+  {"name" : "acm-1054:5005", "properties":{ "idVendor": 0x1054,  "idProduct": 0x5005 },"template":"acm-2.0"},
+  /* Motorola Electronics Taiwan, Ltd [hex] : SB4100 USB Cable Modem */
+  {"name" : "acm-1063:4100", "properties":{ "idVendor": 0x1063,  "idProduct": 0x4100 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : CDMA 2000 1xRTT USB modem (HX-550C) */
+  {"name" : "acm-106c:1101", "properties":{ "idVendor": 0x106c,  "idProduct": 0x1101 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : Broadband Wireless modem */
+  {"name" : "acm-106c:3701", "properties":{ "idVendor": 0x106c,  "idProduct": 0x3701 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : PANTECH USB MODEM [UM175] */
+  {"name" : "acm-106c:3714", "properties":{ "idVendor": 0x106c,  "idProduct": 0x3714 },"template":"acm-2.0"},
+  /* Curitel Communications, Inc. : UMW190 Modem */
+  {"name" : "acm-106c:3716", "properties":{ "idVendor": 0x106c,  "idProduct": 0x3716 },"template":"acm-2.0"},
+  /* GCT Semiconductor, Inc. : LU150 LTE Modem [Yota LU150] */
+  {"name" : "acm-1076:8002", "properties":{ "idVendor": 0x1076,  "idProduct": 0x8002 },"template":"acm-2.0"},
+  /* SK Teletech Co., Ltd : MHS291LVW LTE Modem [Verizon Jetpack 4G LTE Mobile Hotspot MHS291L] (Zero CD Mode) */
+  {"name" : "acm-10a9:6080", "properties":{ "idVendor": 0x10a9,  "idProduct": 0x6080 },"template":"acm-2.0"},
+  /* SK Teletech Co., Ltd : MHS291LVW LTE Modem [Verizon Jetpack 4G LTE Mobile Hotspot MHS291L] (Modem Mode) */
+  {"name" : "acm-10a9:6085", "properties":{ "idVendor": 0x10a9,  "idProduct": 0x6085 },"template":"acm-2.0"},
+  /* Silicon Labs : MobiData EDGE USB Modem */
+  {"name" : "acm-10ce:ea6a", "properties":{ "idVendor": 0x10ce,  "idProduct": 0xea6a },"template":"acm-2.0"},
+  /* Analog Devices Canada, Ltd (Allied Telesyn) : AT-AR215 DSL Modem */
+  {"name" : "acm-1110:900f", "properties":{ "idVendor": 0x1110,  "idProduct": 0x900f },"template":"acm-2.0"},
+  /* Analog Devices Canada, Ltd (Allied Telesyn) : AT-AR215 DSL Modem */
+  {"name" : "acm-1110:9010", "properties":{ "idVendor": 0x1110,  "idProduct": 0x9010 },"template":"acm-2.0"},
+  /* Wavecom : Fastrack Xtend FXT001 Modem */
+  {"name" : "acm-114f:1234", "properties":{ "idVendor": 0x114f,  "idProduct": 0x1234 },"template":"acm-2.0"},
+  /* Compaq Computer Corp. [hex] (Digital Dream ??) : 56k FaxModem */
+  {"name" : "acm-1183:4008", "properties":{ "idVendor": 0x1183,  "idProduct": 0x4008 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : MC5727 CDMA modem */
+  {"name" : "acm-1199:24", "properties":{ "idVendor": 0x1199,  "idProduct": 0x24 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : MC5720 Wireless Modem */
+  {"name" : "acm-1199:218", "properties":{ "idVendor": 0x1199,  "idProduct": 0x218 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : MC8700 Modem */
+  {"name" : "acm-1199:68a3", "properties":{ "idVendor": 0x1199,  "idProduct": 0x68a3 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem (QDL mode) */
+  {"name" : "acm-1199:9000", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9000 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-1199:9001", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9001 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-1199:9002", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9002 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-1199:9003", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9003 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-1199:9004", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9004 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-1199:9005", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9005 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-1199:9006", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9006 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-1199:9007", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9007 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-1199:9008", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9008 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-1199:9009", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9009 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-1199:900a", "properties":{ "idVendor": 0x1199,  "idProduct": 0x900a },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : MC8305 Modem */
+  {"name" : "acm-1199:9011", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9011 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Sierra Wireless Gobi 3000 Modem device (MC8355) */
+  {"name" : "acm-1199:9013", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9013 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : EM7305 Modem */
+  {"name" : "acm-1199:9041", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9041 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 9x15 Multimode 3G/4G LTE Modem (NAT mode) */
+  {"name" : "acm-1199:9055", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9055 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : Gobi 9x15 Multimode 3G/4G LTE Modem (IP passthrough mode) */
+  {"name" : "acm-1199:9057", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9057 },"template":"acm-2.0"},
+  /* Sierra Wireless, Inc. : AirPrime MC7455 3G/4G LTE Modem */
+  {"name" : "acm-1199:9071", "properties":{ "idVendor": 0x1199,  "idProduct": 0x9071 },"template":"acm-2.0"},
+  /* Qualcomm Flarion Technologies, Inc. / Leadtek Research, Inc. : FDM 2xxx Flash-OFDM modem */
+  {"name" : "acm-1291:10", "properties":{ "idVendor": 0x1291,  "idProduct": 0x10 },"template":"acm-2.0"},
+  /* Qualcomm Flarion Technologies, Inc. / Leadtek Research, Inc. : LR7F06/LR7F14 Flash-OFDM modem */
+  {"name" : "acm-1291:11", "properties":{ "idVendor": 0x1291,  "idProduct": 0x11 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : E161/E169/E620/E800 HSDPA Modem */
+  {"name" : "acm-12d1:1001", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1001 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : E220 HSDPA Modem / E230/E270/E870 HSDPA/HSUPA Modem */
+  {"name" : "acm-12d1:1003", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1003 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : EM770W miniPCI WCDMA Modem */
+  {"name" : "acm-12d1:1404", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1404 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : EC1260 Wireless Data Modem HSD USB Card */
+  {"name" : "acm-12d1:140b", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x140b },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : HSPA modem */
+  {"name" : "acm-12d1:1446", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1446 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : K5005 Vodafone LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "acm-12d1:14c3", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x14c3 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : K5005 Vodafone LTE/UMTS/GSM MOdem/Networkcard */
+  {"name" : "acm-12d1:14c8", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x14c8 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : K3770 3G Modem */
+  {"name" : "acm-12d1:14c9", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x14c9 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : K3770 3G Modem (Mass Storage Mode) */
+  {"name" : "acm-12d1:14d1", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x14d1 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : E3372 LTE/UMTS/GSM HiLink Modem/Networkcard */
+  {"name" : "acm-12d1:14dc", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x14dc },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : Gobi 3000 HSPA+ Modem */
+  {"name" : "acm-12d1:14f1", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x14f1 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : Modem (Mass Storage Mode) */
+  {"name" : "acm-12d1:14fe", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x14fe },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : E398 LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "acm-12d1:1505", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1505 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : Modem/Networkcard */
+  {"name" : "acm-12d1:1506", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1506 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : E398 LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "acm-12d1:150a", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x150a },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : K5150 LTE modem */
+  {"name" : "acm-12d1:1575", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1575 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : ME936 LTE/HSDPA+ 4G modem */
+  {"name" : "acm-12d1:15bb", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x15bb },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : E3131 3G/UMTS/HSPA+ Modem (Mass Storage Mode) */
+  {"name" : "acm-12d1:15ca", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x15ca },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : Broadband stick (modem on) */
+  {"name" : "acm-12d1:1c05", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1c05 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : E173s 3G broadband stick (modem off) */
+  {"name" : "acm-12d1:1c0b", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1c0b },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : K5150 LTE modem (Mass Storage Mode) */
+  {"name" : "acm-12d1:1f16", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x1f16 },"template":"acm-2.0"},
+  /* Huawei Technologies Co., Ltd. : WiMAX USB modem(s) */
+  {"name" : "acm-12d1:380b", "properties":{ "idVendor": 0x12d1,  "idProduct": 0x380b },"template":"acm-2.0"},
+  /* Novatel Wireless : Gobi Wireless Modem */
+  {"name" : "acm-1410:a001", "properties":{ "idVendor": 0x1410,  "idProduct": 0xa001 },"template":"acm-2.0"},
+  /* Novatel Wireless : Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-1410:a008", "properties":{ "idVendor": 0x1410,  "idProduct": 0xa008 },"template":"acm-2.0"},
+  /* Trust : K56 V92 Modem */
+  {"name" : "acm-145f:106", "properties":{ "idVendor": 0x145f,  "idProduct": 0x106 },"template":"acm-2.0"},
+  /* UBIQUAM Co., Ltd. : CDMA 1xRTT USB Modem (U-100/105/200/300/520) */
+  {"name" : "acm-1529:3100", "properties":{ "idVendor": 0x1529,  "idProduct": 0x3100 },"template":"acm-2.0"},
+  /* OQO : Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-1557:a80", "properties":{ "idVendor": 0x1557,  "idProduct": 0xa80 },"template":"acm-2.0"},
+  /* Inside Out Networks [hex] : MultiTech Systems MT4X56 Modem */
+  {"name" : "acm-1608:1403", "properties":{ "idVendor": 0x1608,  "idProduct": 0x1403 },"template":"acm-2.0"},
+  /* Actiontec Electronics, Inc. [hex] : Modem */
+  {"name" : "acm-1668:333", "properties":{ "idVendor": 0x1668,  "idProduct": 0x333 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : Creative Modem Blaster DE5670 */
+  {"name" : "acm-1690:101", "properties":{ "idVendor": 0x1690,  "idProduct": 0x101 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : V1456 VQE-R2 Modem [conexant] */
+  {"name" : "acm-1690:102", "properties":{ "idVendor": 0x1690,  "idProduct": 0x102 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : 1456 VQE-R3 Modem [conexant] */
+  {"name" : "acm-1690:103", "properties":{ "idVendor": 0x1690,  "idProduct": 0x103 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : HCF V90 Data Fax RTAD Modem */
+  {"name" : "acm-1690:104", "properties":{ "idVendor": 0x1690,  "idProduct": 0x104 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : HCF V.90 Data,Fax,RTAD Modem */
+  {"name" : "acm-1690:107", "properties":{ "idVendor": 0x1690,  "idProduct": 0x107 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : MagicXpress V.90 Pocket Modem [conexant] */
+  {"name" : "acm-1690:109", "properties":{ "idVendor": 0x1690,  "idProduct": 0x109 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : Voyager ADSL Modem Loader */
+  {"name" : "acm-1690:203", "properties":{ "idVendor": 0x1690,  "idProduct": 0x203 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : Voyager ADSL Modem */
+  {"name" : "acm-1690:204", "properties":{ "idVendor": 0x1690,  "idProduct": 0x204 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : DSL Modem */
+  {"name" : "acm-1690:205", "properties":{ "idVendor": 0x1690,  "idProduct": 0x205 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : GlobeSpan ADSL WAN Modem */
+  {"name" : "acm-1690:206", "properties":{ "idVendor": 0x1690,  "idProduct": 0x206 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : DSL Modem */
+  {"name" : "acm-1690:208", "properties":{ "idVendor": 0x1690,  "idProduct": 0x208 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : Voyager 100 ADSL Modem */
+  {"name" : "acm-1690:209", "properties":{ "idVendor": 0x1690,  "idProduct": 0x209 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : Globespan Virata ADSL LAN Modem */
+  {"name" : "acm-1690:211", "properties":{ "idVendor": 0x1690,  "idProduct": 0x211 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : DSL Modem */
+  {"name" : "acm-1690:212", "properties":{ "idVendor": 0x1690,  "idProduct": 0x212 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : HM121d DSL Modem */
+  {"name" : "acm-1690:213", "properties":{ "idVendor": 0x1690,  "idProduct": 0x213 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : HM121d DSL Modem */
+  {"name" : "acm-1690:214", "properties":{ "idVendor": 0x1690,  "idProduct": 0x214 },"template":"acm-2.0"},
+  /* Askey Computer Corp. [hex] : Voyager 105 ADSL Modem */
+  {"name" : "acm-1690:215", "properties":{ "idVendor": 0x1690,  "idProduct": 0x215 },"template":"acm-2.0"},
+  /* Van Ooijen Technische Informatica : CDC-ACM class devices (modems) */
+  {"name" : "acm-16c0:27dd", "properties":{ "idVendor": 0x16c0,  "idProduct": 0x27dd },"template":"acm-2.0"},
+  /* AnyDATA Corporation : CDMA/UMTS/GPRS modem */
+  {"name" : "acm-16d5:6202", "properties":{ "idVendor": 0x16d5,  "idProduct": 0x6202 },"template":"acm-2.0"},
+  /* AnyDATA Corporation : CDMA 2000 1xRTT/EV-DO Modem */
+  {"name" : "acm-16d5:6501", "properties":{ "idVendor": 0x16d5,  "idProduct": 0x6501 },"template":"acm-2.0"},
+  /* AnyDATA Corporation : CDMA/UMTS/GPRS modem */
+  {"name" : "acm-16d5:6502", "properties":{ "idVendor": 0x16d5,  "idProduct": 0x6502 },"template":"acm-2.0"},
+  /* AnyDATA Corporation : ADU-890WH modem */
+  {"name" : "acm-16d5:6603", "properties":{ "idVendor": 0x16d5,  "idProduct": 0x6603 },"template":"acm-2.0"},
+  /* JABLOCOM s.r.o. : GDP-04 modem */
+  {"name" : "acm-16d6:8003", "properties":{ "idVendor": 0x16d6,  "idProduct": 0x8003 },"template":"acm-2.0"},
+  /* JABLOCOM s.r.o. : BTP-06 modem */
+  {"name" : "acm-16d6:8007", "properties":{ "idVendor": 0x16d6,  "idProduct": 0x8007 },"template":"acm-2.0"},
+  /* CMOTECH Co., Ltd. : CMOTECH CDMA Technologies modem */
+  {"name" : "acm-16d8:5141", "properties":{ "idVendor": 0x16d8,  "idProduct": 0x5141 },"template":"acm-2.0"},
+  /* CMOTECH Co., Ltd. : CCU-550 CDMA EV-DO modem */
+  {"name" : "acm-16d8:5533", "properties":{ "idVendor": 0x16d8,  "idProduct": 0x5533 },"template":"acm-2.0"},
+  /* CMOTECH Co., Ltd. : CDMA 2000 1xRTT/1xEVDO modem */
+  {"name" : "acm-16d8:5543", "properties":{ "idVendor": 0x16d8,  "idProduct": 0x5543 },"template":"acm-2.0"},
+  /* CMOTECH Co., Ltd. : CMOTECH CDMA Technologies modem */
+  {"name" : "acm-16d8:6280", "properties":{ "idVendor": 0x16d8,  "idProduct": 0x6280 },"template":"acm-2.0"},
+  /* CMOTECH Co., Ltd. : CNU-680 CDMA EV-DO modem */
+  {"name" : "acm-16d8:6803", "properties":{ "idVendor": 0x16d8,  "idProduct": 0x6803 },"template":"acm-2.0"},
+  /* CMOTECH Co., Ltd. : Gobi 2000 Wireless Modem (QDL mode) */
+  {"name" : "acm-16d8:8001", "properties":{ "idVendor": 0x16d8,  "idProduct": 0x8001 },"template":"acm-2.0"},
+  /* CMOTECH Co., Ltd. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-16d8:8002", "properties":{ "idVendor": 0x16d8,  "idProduct": 0x8002 },"template":"acm-2.0"},
+  /* Axesstel, Inc. : wireless modem */
+  {"name" : "acm-1726:1000", "properties":{ "idVendor": 0x1726,  "idProduct": 0x1000 },"template":"acm-2.0"},
+  /* Axesstel, Inc. : wireless modem */
+  {"name" : "acm-1726:2000", "properties":{ "idVendor": 0x1726,  "idProduct": 0x2000 },"template":"acm-2.0"},
+  /* Axesstel, Inc. : wireless modem */
+  {"name" : "acm-1726:3000", "properties":{ "idVendor": 0x1726,  "idProduct": 0x3000 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : CDMA Wireless Modem */
+  {"name" : "acm-19d2:1", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x1 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : MF 195E (HSPA+ Modem) */
+  {"name" : "acm-19d2:146", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x146 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : AX226 WIMAX MODEM (After Modeswitch) */
+  {"name" : "acm-19d2:172", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x172 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : LTE4G O2 ZTE MF821D LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "acm-19d2:325", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x325 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : LTE4G O2 ZTE MF821D LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "acm-19d2:326", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x326 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : K3805-Z vodafone WCDMA/GSM Modem - storage mode (made by ZTE) */
+  {"name" : "acm-19d2:1001", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x1001 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : K3805-Z vodafone WCDMA/GSM Modem/Networkcard (made by ZTE) */
+  {"name" : "acm-19d2:1002", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x1002 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : K5006-Z vodafone LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "acm-19d2:1017", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x1017 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : K5006-Z vodafone LTE/UMTS/GSM Modem/Networkcard */
+  {"name" : "acm-19d2:1018", "properties":{ "idVendor": 0x19d2,  "idProduct": 0x1018 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-19d2:fff2", "properties":{ "idVendor": 0x19d2,  "idProduct": 0xfff2 },"template":"acm-2.0"},
+  /* ZTE WCDMA Technologies MSM : Gobi Wireless Modem */
+  {"name" : "acm-19d2:fff3", "properties":{ "idVendor": 0x19d2,  "idProduct": 0xfff3 },"template":"acm-2.0"},
+  /* T & A Mobile Phones : Alcatel one touch 4030D modem connection */
+  {"name" : "acm-1bbb:3", "properties":{ "idVendor": 0x1bbb,  "idProduct": 0x3 },"template":"acm-2.0"},
+  /* OMEGA TECHNOLOGY : WL-72B 3.5G MODEM */
+  {"name" : "acm-1c9e:6061", "properties":{ "idVendor": 0x1c9e,  "idProduct": 0x6061 },"template":"acm-2.0"},
+  /* TechFaith Wireless Technology Limited : HSUPA Modem FLYING-LARK46-VER0.07 [Flying Angel] */
+  {"name" : "acm-1d09:1026", "properties":{ "idVendor": 0x1d09,  "idProduct": 0x1026 },"template":"acm-2.0"},
+  /* Gemalto M2M GmbH : EGS3 GSM/GPRS modem */
+  {"name" : "acm-1e2d:4f", "properties":{ "idVendor": 0x1e2d,  "idProduct": 0x4f },"template":"acm-2.0"},
+  /* Gemalto M2M GmbH : Zoom 4625 Modem */
+  {"name" : "acm-1e2d:5b", "properties":{ "idVendor": 0x1e2d,  "idProduct": 0x5b },"template":"acm-2.0"},
+  /* Gemalto M2M GmbH : ALSx PLSx LTE modem */
+  {"name" : "acm-1e2d:61", "properties":{ "idVendor": 0x1e2d,  "idProduct": 0x61 },"template":"acm-2.0"},
+  /* Cal-Comp : CDMA USB Modem A600 */
+  {"name" : "acm-1f28:20", "properties":{ "idVendor": 0x1f28,  "idProduct": 0x20 },"template":"acm-2.0"},
+  /* Franklin Wireless : U770 3G/4G Wimax/4G LTE Modem */
+  {"name" : "acm-1fac:232", "properties":{ "idVendor": 0x1fac,  "idProduct": 0x232 },"template":"acm-2.0"},
+  /* Vertex Wireless Co., Ltd. : VW100 series CDMA EV-DO Rev.A modem */
+  {"name" : "acm-1fe7:1000", "properties":{ "idVendor": 0x1fe7,  "idProduct": 0x1000 },"template":"acm-2.0"},
+  /* D-Link Corp. : DSL-200 ADSL ATM Modem */
+  {"name" : "acm-2001:5100", "properties":{ "idVendor": 0x2001,  "idProduct": 0x5100 },"template":"acm-2.0"},
+  /* D-Link Corp. : Cable Modem */
+  {"name" : "acm-2001:9414", "properties":{ "idVendor": 0x2001,  "idProduct": 0x9414 },"template":"acm-2.0"},
+  /* D-Link Corp. : Broadband Cable Modem Remote NDIS Device */
+  {"name" : "acm-2001:9b00", "properties":{ "idVendor": 0x2001,  "idProduct": 0x9b00 },"template":"acm-2.0"},
+  /* D-Link Corp. : Accent Communications Modem */
+  {"name" : "acm-2001:f10d", "properties":{ "idVendor": 0x2001,  "idProduct": 0xf10d },"template":"acm-2.0"},
+  /* Broadxent (Creative Labs) : DE5771 Modem Blaster */
+  {"name" : "acm-2162:500c", "properties":{ "idVendor": 0x2162,  "idProduct": 0x500c },"template":"acm-2.0"},
+  /* Motorola PCS : GSM Modem */
+  {"name" : "acm-22b8:2805", "properties":{ "idVendor": 0x22b8,  "idProduct": 0x2805 },"template":"acm-2.0"},
+  /* Motorola PCS : CDMA modem */
+  {"name" : "acm-22b8:2a02", "properties":{ "idVendor": 0x22b8,  "idProduct": 0x2a02 },"template":"acm-2.0"},
+  /* Motorola PCS : Usb Modem */
+  {"name" : "acm-22b8:2a42", "properties":{ "idVendor": 0x22b8,  "idProduct": 0x2a42 },"template":"acm-2.0"},
+  /* Motorola PCS : ROKR Z6 (modem mode) */
+  {"name" : "acm-22b8:6422", "properties":{ "idVendor": 0x22b8,  "idProduct": 0x6422 },"template":"acm-2.0"},
+  /* Motorola PCS : CDC Modem */
+  {"name" : "acm-22b8:6631", "properties":{ "idVendor": 0x22b8,  "idProduct": 0x6631 },"template":"acm-2.0"},
+  /* Teracom : Huwaii 3g wireless modem */
+  {"name" : "acm-230d:103", "properties":{ "idVendor": 0x230d,  "idProduct": 0x103 },"template":"acm-2.0"},
+  /* TP-Link : HSUPA Modem MA180 */
+  {"name" : "acm-2357:201", "properties":{ "idVendor": 0x2357,  "idProduct": 0x201 },"template":"acm-2.0"},
+  /* Quectel Wireless Solutions Co., Ltd. : EC21 LTE modem */
+  {"name" : "acm-2c7c:121", "properties":{ "idVendor": 0x2c7c,  "idProduct": 0x121 },"template":"acm-2.0"},
+  /* Quectel Wireless Solutions Co., Ltd. : EC25 LTE modem */
+  {"name" : "acm-2c7c:125", "properties":{ "idVendor": 0x2c7c,  "idProduct": 0x125 },"template":"acm-2.0"},
+  /* Quectel Wireless Solutions Co., Ltd. : EG91 LTE modem */
+  {"name" : "acm-2c7c:191", "properties":{ "idVendor": 0x2c7c,  "idProduct": 0x191 },"template":"acm-2.0"},
+  /* Quectel Wireless Solutions Co., Ltd. : EG95 LTE modem */
+  {"name" : "acm-2c7c:195", "properties":{ "idVendor": 0x2c7c,  "idProduct": 0x195 },"template":"acm-2.0"},
+  /* Quectel Wireless Solutions Co., Ltd. : BG96 CAT-M1/NB-IoT modem */
+  {"name" : "acm-2c7c:296", "properties":{ "idVendor": 0x2c7c,  "idProduct": 0x296 },"template":"acm-2.0"},
+  /* Quectel Wireless Solutions Co., Ltd. : EG06/EP06/EM06 LTE-A modem */
+  {"name" : "acm-2c7c:306", "properties":{ "idVendor": 0x2c7c,  "idProduct": 0x306 },"template":"acm-2.0"},
+  /* Quectel Wireless Solutions Co., Ltd. : AG35 LTE modem */
+  {"name" : "acm-2c7c:435", "properties":{ "idVendor": 0x2c7c,  "idProduct": 0x435 },"template":"acm-2.0"},
+  /* Fibocom : L830-EB-00 LTE WWAN Modem */
+  {"name" : "acm-2cb7:210", "properties":{ "idVendor": 0x2cb7,  "idProduct": 0x210 },"template":"acm-2.0"},
+  /* Dell Computer Corp. : Dell Wireless 5560 HSPA+ Mobile Broadband Modem */
+  {"name" : "acm-413c:21d7", "properties":{ "idVendor": 0x413c,  "idProduct": 0x21d7 },"template":"acm-2.0"},
+  /* Dell Computer Corp. : Wireless 5700 Mobile Broadband (CDMA EV-DO) Minicard Modem */
+  {"name" : "acm-413c:8114", "properties":{ "idVendor": 0x413c,  "idProduct": 0x8114 },"template":"acm-2.0"},
+  /* Dell Computer Corp. : Wireless 5500 Mobile Broadband (3G HSDPA) Minicard Modem */
+  {"name" : "acm-413c:8115", "properties":{ "idVendor": 0x413c,  "idProduct": 0x8115 },"template":"acm-2.0"},
+  /* Dell Computer Corp. : Wireless 5505 Mobile Broadband (3G HSDPA) Minicard Modem */
+  {"name" : "acm-413c:8116", "properties":{ "idVendor": 0x413c,  "idProduct": 0x8116 },"template":"acm-2.0"},
+  /* Dell Computer Corp. : Wireless 5700 Mobile Broadband (CDMA EV-DO) Expresscard Modem */
+  {"name" : "acm-413c:8117", "properties":{ "idVendor": 0x413c,  "idProduct": 0x8117 },"template":"acm-2.0"},
+  /* Dell Computer Corp. : Gobi Wireless Modem (QDL mode) */
+  {"name" : "acm-413c:8171", "properties":{ "idVendor": 0x413c,  "idProduct": 0x8171 },"template":"acm-2.0"},
+  /* Dell Computer Corp. : Gobi Wireless Modem */
+  {"name" : "acm-413c:8172", "properties":{ "idVendor": 0x413c,  "idProduct": 0x8172 },"template":"acm-2.0"},
+  /* Dell Computer Corp. : Gobi 2000 Wireless Modem (QDL mode) */
+  {"name" : "acm-413c:8185", "properties":{ "idVendor": 0x413c,  "idProduct": 0x8185 },"template":"acm-2.0"},
+  /* Dell Computer Corp. : Gobi 2000 Wireless Modem */
+  {"name" : "acm-413c:8186", "properties":{ "idVendor": 0x413c,  "idProduct": 0x8186 },"template":"acm-2.0"},
+  /* Dell Computer Corp. : DW5560 miniPCIe HSPA+ Mobile Broadband Modem */
+  {"name" : "acm-413c:818e", "properties":{ "idVendor": 0x413c,  "idProduct": 0x818e },"template":"acm-2.0"},
+  /* Intel Corp. : PRO/DSL 3220 Modem - WAN */
+  {"name" : "acm-8086:3100", "properties":{ "idVendor": 0x8086,  "idProduct": 0x3100 },"template":"acm-2.0"},
+  /* Intel Corp. : PRO/DSL 3220 Modem */
+  {"name" : "acm-8086:3101", "properties":{ "idVendor": 0x8086,  "idProduct": 0x3101 },"template":"acm-2.0"},
+  /* Intel Corp. : AnyPointÂ® 3240 Modem - WAN */
+  {"name" : "acm-8086:3240", "properties":{ "idVendor": 0x8086,  "idProduct": 0x3240 },"template":"acm-2.0"},
+  /* Intel Corp. : AnyPointÂ® 3240 Modem */
+  {"name" : "acm-8086:3241", "properties":{ "idVendor": 0x8086,  "idProduct": 0x3241 },"template":"acm-2.0"},
+  /* Intel Corp. : Modem Flashloader */
+  {"name" : "acm-8087:716", "properties":{ "idVendor": 0x8087,  "idProduct": 0x716 },"template":"acm-2.0"},
+]
