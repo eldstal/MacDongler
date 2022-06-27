@@ -16,9 +16,11 @@
 
 import copy
 import time
+import traceback
 
 import status
 
+import heur.hid.leds
 import heur.net.rx
 import heur.net.ifup
 import heur.serial.rx
@@ -44,6 +46,12 @@ HEURISTICS = {
               "device_types": [ "serial" ],
               "handler": heur.serial.rx.RX
             },
+
+  "hid.leds": {
+              "description": "Test the num lock, caps lock and scroll lock LEDs for responsiveness",
+              "device_types": [ "hid" ],
+              "handler": heur.hid.leds.Leds
+            },
 }
 
 def list_heuristics(conf):
@@ -56,6 +64,10 @@ def user_friendly_device(conf, dev, path):
     devpath = heur.net.util.find_iface(conf, dev, path)
   elif dev["type"] == "serial":
     devpath = heur.serial.util.find_tty(conf, dev, path)
+  elif dev["type"] == "hid":
+    devpath = heur.hid.util.find_hiddev(conf, dev, path)
+    if type(devpath) == list:
+      devpath = devpath[0]
   if devpath is None:
     return path
   return devpath
@@ -122,6 +134,7 @@ def test_device(conf, dev, path):
       passed = obj.test(conf, dev, path)
     except Exception as e:
       status.error(f"Failed to measure heuristic {name}: " + str(e))
+      if conf.debug: traceback.format_exc()
 
     results.append(passed)
 

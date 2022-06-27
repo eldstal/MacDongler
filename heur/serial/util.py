@@ -9,12 +9,12 @@ import status
 
 def find_tty(conf, dev, path):
 
-  dev = None
+  devnode = None
 
   if conf.serial_device is not None:
-    dev = conf.serial_device
-    if not os.path.exists(dev):
-      status.warn(f"Configured gadget serial device {dev} does not exist.")
+    devnode = conf.serial_device
+    if not os.path.exists(devnode):
+      status.warn(f"Configured gadget serial device {devnode} does not exist.")
       return None
 
   # There appears to be no perfectly reliable mapping between our
