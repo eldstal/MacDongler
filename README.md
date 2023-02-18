@@ -206,5 +206,4 @@ write a template for a specific mass storage device, and then generate new devic
     - storage: was the FAT read?
     - storage: was anything updated (last mount time?!)
     - storage: transferred bytes?
-    - hid: Hit caps lock and num lock, see if the LEDs change?
     - generic: number of USB commands received...?

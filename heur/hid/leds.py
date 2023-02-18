@@ -34,8 +34,21 @@ class Leds:
         rept = self.try_read_report(fd, 0.1)
         if rept is None: break
 
+      #
+      # Using the hid_gadget_test program from kernel sources,
+      # we can glean this:
+      # --caps-lock
+      # xmit report: 00 00 39 00 00 00 00 00
+      # xmit report: 00 00 00 00 00 00 00 00
+      # recv report: 02
+      # --caps-lock
+      # xmit report: 00 00 39 00 00 00 00 00
+      # xmit report: 00 00 00 00 00 00 00 00
+      # recv report: 00
+
       for code in [ 0x53,     # Num lock
                     0x39,     # Caps lock
+                    #0x84,     # Scroll lock, doesn't seem to work for this
                   ]:
 
         # Send a report to toggle that function
@@ -45,13 +58,13 @@ class Leds:
         os.write(fd, tx_report)
         os.write(fd, bytes([0x00]*8))
         rept_1 = self.try_read_report(fd, 1)
-        status.debug(f"heur.hid.leds: code {code} A: {rept_1}")
+        status.debug(f"heur.hid.leds: key code {code} once: {rept_1}")
 
         # Send the command twice!
         os.write(fd, tx_report)
         os.write(fd, bytes([0x00]*8))
         rept_2 = self.try_read_report(fd, 1)
-        status.debug(f"heur.hid.leds: code {code} B: {rept_2}")
+        status.debug(f"heur.hid.leds: key code {code} twice: {rept_2}")
 
         if rept_1 != rept_2:
           success = True

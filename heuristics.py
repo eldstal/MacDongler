@@ -48,7 +48,7 @@ HEURISTICS = {
             },
 
   "hid.leds": {
-              "description": "Test the num lock, caps lock and scroll lock LEDs for responsiveness",
+              "description": "Test the num lock and caps lock LEDs for responsiveness",
               "device_types": [ "hid" ],
               "handler": heur.hid.leds.Leds
             },
