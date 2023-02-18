@@ -17,8 +17,7 @@ These things need to be set up in the system before MacDongler will run properly
     - `CONFIG_USB_CONFIGFS`
     - `CONFIG_USB_LIBCOMPOSITE`
 
- 2. Make sure at least one `udc` kernel module is compiled in or loaded, i.e.
-    your desired USB Device Controller is visible under `/sys/class/udc`
+ 2. Make sure at least one `udc` kernel module is compiled in or loaded, i.e.  your desired USB Device Controller is visible under `/sys/class/udc`
     ```
     # modprobe dummy_hcd
     # ls -l /sys/class/udc

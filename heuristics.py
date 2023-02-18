@@ -23,6 +23,7 @@ import status
 import heur.hid.leds
 import heur.net.rx
 import heur.net.ifup
+import heur.net.link
 import heur.serial.rx
 
 import stimulation
@@ -39,6 +40,12 @@ HEURISTICS = {
               "description": "Test if the link is brought up automatically by the host",
               "device_types": [ "net" ],
               "handler": heur.net.ifup.IfUp
+            },
+
+  "net.link": {
+              "description": "Test if the interface detects a physical link",
+              "device_types": [ "net" ],
+              "handler": heur.net.link.Link
             },
 
   "serial.rx": {
