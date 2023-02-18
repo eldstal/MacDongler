@@ -40,7 +40,7 @@ def _net_transmit_pcap(conf, dev, path):
   for filename in conf.net_transmit_pcap:
     if not os.path.exists(filename):
       status.warn(f"stim.net.pcap: pcap file not found: {filename}")
-      return
+      continue
 
     try:
       result = subprocess.run(["tcpreplay", f"--intf1={iface}", filename],
@@ -71,7 +71,7 @@ def _serial_transmit_file(conf, dev, path):
   for filename in conf.serial_transmit_file:
     if not os.path.exists(filename):
       status.warn(f"stim.serial.transmit: input file not found: {filename}")
-      return
+      continue
 
     data = open(filename, "rb").read()
     status.debug(f"stim.serial.transmit: Writing data to serial port (non-blocking)")
