@@ -83,6 +83,7 @@ def sanity_configfs(conf):
   return True,""
 
 def sanity_devices(conf):
+  status.info("Loading device database...")
   devices,msg = devicespec.load_devices(conf)
   if devices is None:
     return False,msg
