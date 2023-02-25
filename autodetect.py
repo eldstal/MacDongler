@@ -32,6 +32,9 @@ def detect_configfs(conf):
 def detect_udc(conf):
   if conf.udc_controller: return
 
+  # In pretend mode, we won't be interacting with any USB controller
+  if conf.pretend: return
+
   if not os.path.isdir("/sys/class/udc"):
     status.error("Unable to autodetect UDC controller. No /sys/class/udc/ found.")
     return

@@ -12,6 +12,7 @@ import json5
 from sanity import passes_sanity_checks
 from autodetect import detect_settings
 from devicespec import load_devices, expand_device_list
+from pretend import pretend
 import heuristics
 import status
 import resume
@@ -155,6 +156,12 @@ def operation_delete_devices(conf):
       status.error(f"Failed to delete gadget {path}: " + str(e))
       print(traceback.format_exc())
 
+
+def operation_pretend(conf, devices):
+  pretend(conf, devices)
+
+  return 0
+
 def main():
   parser = argparse.ArgumentParser()
 
@@ -166,6 +173,9 @@ def main():
 
   parser.add_argument("--test-multiple-devices", "-m", action="store_true", default=False,
                       help="Test the listed devices, one at a time. See also --heuristics to set how working devices are identified.")
+
+  parser.add_argument("--pretend", "-p", action="store_true", default=False,
+                      help="Perform no actual tests - only log a pseudo-realistic run. Use this to test your new frontend.")
 
   parser.add_argument("--delete-devices", "-x", action="store_true", default=False,
                       help="Delete emulated device(s) before continuing")
@@ -300,6 +310,10 @@ def main():
 
   # Handle the magic "all" keyword
   conf.heuristics = heuristics.expand_heuristics_list(conf, conf.devices)
+
+  # Just simulate normal behavior for a while, do nothing else
+  if conf.pretend:
+    return operation_pretend(conf, devices)
 
   # Delete isn't exclusive, we can do that before carrying out another operation
   # This is beneficial during testing, to both clean up and then load a new device

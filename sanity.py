@@ -27,10 +27,11 @@ def sanity_options(conf):
                       conf.create_device,
                       conf.list_supported_devices,
                       conf.list_heuristics,
+                      conf.pretend,
                       conf.sanity ]
   modes = [ conf.delete_devices, conf.delete_all_devices ] + exclusive_modes
   if sum(exclusive_modes) > 1:
-    return False, "More than one operation specified. Only one of --scan-devices, --create-device, --list-supported-devices, --list-heuristics, --sanity supported."
+    return False, "More than one operation specified. Only one of --scan-devices, --create-device, --list-supported-devices, --list-heuristics, --pretend, --sanity supported."
 
   if sum(modes) == 0:
     return False, "No operation specified. See --help for more information."
@@ -44,6 +45,11 @@ def sanity_commands(conf):
   return True,""
 
 def sanity_udc(conf):
+  # In pretend mode, we won't be interacting with the actual USB controller
+  # so no need to require it.
+  if conf.pretend:
+    return True, ""
+
   if not os.path.isdir("/sys/class/udc"):
     return False, ("No /sys/class/udc/ found. Ensure your UDC driver is loaded. "+
                   " If this system has no UDC controller in hardware, load the 'dummy_hcd' kernel module.")
@@ -57,6 +63,10 @@ def sanity_udc(conf):
 
 
 def sanity_configfs(conf):
+  # In pretend mode, we won't be setting up any devices, so no need to require configfs
+  if conf.pretend:
+    return True, ""
+
   if not conf.configfs:
     return False, (f"No configfs configured. Ensure that a configfs is mounted or specify its location with --configfs")
 

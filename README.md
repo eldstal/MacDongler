@@ -92,6 +92,12 @@ The `--output` file follows the exact same format as the device database, and ca
 
 Since scanning takes a while, and typically only embedded devices have access to a USB Device Controller, the `--status-file` is machine-parsable to allow for more user-friendly front-ends.
 
+If you're developing your own front-end, try the `--pretend` mode, which generates dummy output without actually messing around with USB gadgets:
+
+```
+  $ ./MacDongler --pretend --status-file /tmp/macdongler.log net
+```
+
 #### pioled
 If you are running MacDongler on a rasberry pi equipped with an [Adafruit PiOLED](https://www.adafruit.com/product/3527), the script `frontends/macdongler-pioled.py` visualizes the current progress:
 
