@@ -99,9 +99,9 @@ If you're developing your own front-end, try the `--pretend` mode, which generat
 ```
 
 #### pioled
-If you are running MacDongler on a rasberry pi equipped with an [Adafruit PiOLED](https://www.adafruit.com/product/3527), the script `frontends/macdongler-pioled.py` visualizes the current progress:
+If you are running MacDongler on a rasberry pi equipped with an [Adafruit PiOLED](https://www.adafruit.com/product/3527), the script `frontends/pioled/macdongler-pioled.py` visualizes the current progress:
 
-![Photo of the tiny little PiOLED screen showing MacDongler output live](frontends/macdongler-pioled.jpg)
+![Photo of the tiny little PiOLED screen showing MacDongler output live](frontends/pioled/macdongler-pioled.jpg)
 
 The display shows current progress, the number of successful devices found, the name of the current device under test, and the bottom line contains the latest warning, error or found device.
 
