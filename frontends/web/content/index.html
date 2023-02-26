@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MacDongler Web UI</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+
+		<style>
+			div#progress { padding-top: 10px; }
+		</style>
+  </head>
+  <body>
+
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary" data-bs-theme="dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">MacDongler</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="#progress">Progress</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#found">Found Devices</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#errors">Errors</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#warnings">Warnings</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#log">Log</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="progress" class="container">
+			<h4>Progress</h4>
+			<div id="mcd_progress_container" class="progress" role="progressbar" aria-label="Current progress" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
+				<div id="mcd_progress_percent" class="progress-bar" style="width: 99%">99%</div>
+			</div>
+			<p></p>
+		</div>
+
+		<div id="status" class="container">
+			<h4>Status</h4>
+
+				<dl class="row row-cols-2">
+					<dt class="col-sm-2  col-md-2  col-lg-1">Tested:</dt>
+					<dd class="col-sm-10 col-md-10 col-lg-11"><span id="mcd_progress_current">0</span> / <span id="mcd_progress_target">0</span></dd>
+
+					<dt class="col-sm-2  col-md-2  col-lg-1">Found:</dt>
+					<dd class="col-sm-10 col-md-10 col-lg-11"><span id="mcd_count_found">0</span></dd>
+
+					<dt class="col-sm-2  col-md-2  col-lg-1">Current:</dt>
+					<dd class="col-sm-10 col-md-10 col-lg-11"><span id="mcd_device_current"></dd>
+
+				</dl>
+
+		</div>
+
+
+		<div id="found" class="container">
+			<h4>Found Devices</h4>
+
+			<table class="table table-striped table-sm">
+				<thead>
+					<tr class="table-primary">
+						<th>Name</th>
+						<th>Type</th>
+						<th>VID:PID</th>
+					</tr>
+				</thead>
+				<tbody id="mcd_table_devices">
+					<tr class="table-success"><td>ecm-2.0</td><td>net</td><td>0013:3700</td></tr>
+					<tr class="table-success"><td>ecm-2.1</td><td>net</td><td>0013:3800</td></tr>
+					<tr class="table-success"><td>ecm-2.2</td><td>net</td><td>0013:3900</td></tr>
+					<tr class="table-success"><td>ecm-2.3</td><td>net</td><td>0013:3A00</td></tr>
+					<tr class="table-success"><td>ecm-2.4</td><td>net</td><td>0013:3B00</td></tr>
+				</tbody>
+
+			</table>
+		</div>
+
+		<div id="errors" class="container">
+			<h4>Errors</h4>
+			<table class="table table-sm">
+				<thead>
+					<tr class="table-primary">
+						<th>Time</th>
+						<th>Type</th>
+						<th>Message</th>
+					</tr>
+				</thead>
+				<tbody id="mcd_table_errors">
+					<tr class="table-danger"   ><td>17:00:00</td><td>error</td><td>Failed to set up secondary capacitor</td></tr>
+				</tbody>
+
+			</table>
+		</div>
+
+		<div id="warnings" class="container">
+			<h4>Warnings</h4>
+
+			<table class="table table-sm">
+				<thead>
+					<tr class="table-primary">
+						<th>Time</th>
+						<th>Type</th>
+						<th>Message</th>
+					</tr>
+				</thead>
+				<tbody id="mcd_table_warnings">
+					<tr class="table-warning"  ><td>17:15:05</td><td>warning</td><td>This doesn't seem quite right</td></tr>
+				</tbody>
+
+			</table>
+		</div>
+
+		<div id="log" class="container">
+			<h4>Log</h4>
+
+			<table class="table table-sm">
+				<thead>
+					<tr class="table-primary">
+						<th>Time</th>
+						<th>Type</th>
+						<th>Message</th>
+					</tr>
+				</thead>
+				<tbody id="mcd_table_log">
+					<tr class="table-secondary"><td>17:30:25</td><td>debug</td><td>Something pretty uninteresting happened</td></tr>
+					<tr class="table-success"  ><td>17:25:15</td><td>found</td><td>A new working device was found!</td></tr>
+					<tr class="table-warning"  ><td>17:15:05</td><td>warning</td><td>This doesn't seem quite right</td></tr>
+					<tr class="table-danger"   ><td>17:00:00</td><td>error</td><td>Failed to set up secondary capacitor</td></tr>
+					<tr                        ><td>16:59:59</td><td>info</td><td>Started up</td></tr>
+				</tbody>
+
+			</table>
+		</div>
+
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <span class="text-muted">
+            Made with Bootstrap.css. Theme is <a href="https://bootswatch.com/sandstone/">Sandstone</a> by <a href="https://thomaspark.co/">Thomas Park</a>
+          </span>
+      </footer>
+    </div>
+
+
+
+
+    <script src="/static/js/bootstrap.bundle.js"></script>
+    <script src="/static/js/macdongler.js"></script>
+  </body>
+</html>
+

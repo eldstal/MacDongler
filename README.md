@@ -98,10 +98,23 @@ If you're developing your own front-end, try the `--pretend` mode, which generat
   $ ./MacDongler --pretend --status-file /tmp/macdongler.log net
 ```
 
+#### Web
+A small web app is included, which can be served from the device running MacDongler. It reads and visualizes the status file during a test, and shows it in your browser.
+
+![A simple web-page showing current progress of a MacDongler scan](frontends/macdongler-webui.png)
+
+The app runs in the browser, and is tolerant to server restart (as may be necessary for stability).
+
+To use the web UI:
+
+1. Configure MacDongler to write to a status-file using `-f` or `--status-file`
+2. Enter `frontends/web/` and run `./Server.py` with the same `--status-file` option
+3. Connect with your browser!
+
 #### pioled
 If you are running MacDongler on a rasberry pi equipped with an [Adafruit PiOLED](https://www.adafruit.com/product/3527), the script `frontends/pioled/macdongler-pioled.py` visualizes the current progress:
 
-![Photo of the tiny little PiOLED screen showing MacDongler output live](frontends/pioled/macdongler-pioled.jpg)
+![Photo of the tiny little PiOLED screen showing MacDongler output live](frontends/macdongler-pioled.jpg)
 
 The display shows current progress, the number of successful devices found, the name of the current device under test, and the bottom line contains the latest warning, error or found device.
 
@@ -188,8 +201,6 @@ write a template for a specific mass storage device, and then generate new devic
 
 
 ## TODO
- - Web frontend
-    - Serve from the same device, but run the logic in the browser to survive slow boot loops.
  - Sanity check device database.
     - Are you using functions that aren't defined?
     - Do you have a valid device type?

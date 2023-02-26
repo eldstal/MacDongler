@@ -31,12 +31,13 @@ def pretend(conf, devices):
 
   random.shuffle(outcomes)
 
+  status.progress(0, len(conf.devices))
+
   for i in range(len(conf.devices)):
     name = conf.devices[i]
     dev = devices[name]
     path = f"/sys/config/kernel/usb_gadget/macdongler_{i}"
 
-    status.progress(i, len(conf.devices))
     status.testing_device(conf, dev)
 
     outcome = outcomes[i]
@@ -44,14 +45,18 @@ def pretend(conf, devices):
     time.sleep(random.uniform(3, 15))
 
     if outcome == "error":
+      status.warn(f"Device creation seems slow...")
+      time.sleep(2)
       status.error(f"Creating device {name}: Unable to set it up properly.")
-      continue
 
     elif outcome == "good":
       status.found_device(conf, dev, path)
 
     elif outcome == "bad":
       status.info(f"Checked device {name}, was not accepted by the host")
+
+
+    status.progress(i+1, len(conf.devices))
 
 
 

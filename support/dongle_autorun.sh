@@ -25,6 +25,9 @@ if [ ! -f ${EMERGENCYFILE} ]; then
   exit 0
 fi
 
+# Start a front-end of your choice
+( cd ${MACDONGLER_ROOT}/frontends/web && ./Server.py --status-file ${LOGFILE} ) &
+
 ${MACDONGLER_ROOT}/MacDongler \
                               --resume-file "${RESUMEFILE}" \
                               --resume \
