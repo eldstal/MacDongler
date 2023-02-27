@@ -70,19 +70,19 @@ The `--output` file follows the exact same format as the device database, and ca
 
 ```
     # Run the scan against our host
-  $ ./MacDongler --output /tmp/network.json5 --test-multiple net
+  $ ./MacDongler --output /tmp/serial.json5 --test-multiple serial
     ...
     FOUND: Device acm-2.0 appears to work!
     ...
 
     # Take a look at what was found
-  $ ./MacDongler --device-db /tmp/network.json5 --list-devices
+  $ ./MacDongler --device-db /tmp/serial.json5 --list-devices
     ...
     acm-2.0
     ...
 
     # Emulate one of the successful devices
-  $ ./MacDongler --device-db /tmp/network.json5 --create-device acm-2.0
+  $ ./MacDongler --device-db /tmp/serial.json5 --create-device acm-2.0
     ...
     INFO: Created device acm-2.0 at /dev/ttyGS0
 
